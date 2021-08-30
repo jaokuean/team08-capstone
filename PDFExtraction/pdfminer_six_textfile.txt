@@ -1,0 +1,8195 @@
+Environmental, Social  
+and Governance Report
+2019–2020
+
+Table of  
+Contents
+
+02  Message from Our Chairman and CEO
+
+03 
+
+ ESG Strategy and Approach
+
+07   Addressing Climate Change
+
+29  Operating Safely
+
+37  Supporting Our Team Members
+
+47  Serving Our Customers
+
+51  TCFD and SASB Indexes
+
+53  Data Tables
+
+About this Report
+
+In this 2019–2020 ESG Report, we include a discussion of American’s 
+
+approach to managing our most material ESG issues, along with 
+
+American Airlines is committed to providing regular and transparent 
+
+highlights of our progress and performance in 2019 and, where 
+
+information about our strategies and performance on the environ-
+
+relevant, into 2020. Unless noted otherwise, performance data is  
+
+mental, social and governance (ESG) issues that are most important 
+
+as of December 31, 2019.
+
+to our company and our stakeholders. We have produced an annual 
+
+Corporate Responsibility Report since 2007, but this year’s report 
+
+marks a new phase in the evolution of our reporting. We seek to 
+
+adhere to best practices for ESG disclosure, so for the first time we 
+
+are aligning our report with the recommendations of the Task Force 
+
+on Climate-related Financial Disclosures (TCFD) and the standard 
+
+for the airline industry developed by the Sustainability Accounting 
+
+Standards Board (SASB). We view both of these reporting frame-
+
+works as important indicators of the ESG issues that investors and 
+
+others consider most material. To reflect our updated reporting 
+
+strategy, we are adopting the title ESG Report going forward. We 
+
+intend to continue providing our stakeholders with information on  
+
+our ESG performance annually. 
+
+About American Airlines Group
+
+American’s purpose is to care for people on life’s journey. Shares 
+
+of American Airlines Group Inc. trade on Nasdaq under the ticker 
+
+symbol AAL, and the company’s stock is included in the S&P  
+
+500. Learn more about what’s happening at American by visiting 
+
+news.aa.com, and connect with American on Twitter @AmericanAir 
+
+and at Facebook.com/AmericanAirlines.
+
+1
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+A key focus of this report is our strategy for addressing climate change. 
+
+Investors and other stakeholders rightly expect us to demonstrate that 
+
+we understand the risks that climate change presents for our business 
+
+and are taking steps to get on a low-carbon path. The science makes 
+
+clear that getting on this path requires significant reductions in green-
+
+house gas (GHG) emissions — and that is why we’ve set a new goal  
+
+to achieve net zero carbon emissions by 2050. 
+
+Reaching this ambitious goal will require operational, technological, 
+
+policy and market advances, many of which are outside of our direct 
+
+control. Our strategy is focused on driving improvements within our 
+
+operations while helping to facilitate the broader changes needed to 
+
+enable the transition to low-carbon aviation. We have made significant 
+
+investments in fleet renewal that have given American the youngest 
+
+fleet of any U.S. network carrier. And, as a result of COVID-19, we are 
+
+retiring older, less fuel-efficient aircraft even more quickly. Acceler-
+
+ating the commercial availability and use of sustainable aviation fuel 
+
+(SAF) — which can reduce lifecycle GHG emissions by up to 80% 
+
+compared with conventional jet fuel — is another critical part of our 
+
+long-term carbon-reduction pathway. We’ve committed to purchase  
+
+9 million gallons of SAF over three years and, in parallel, are working 
+
+to make our operations more fuel efficient. 
+
+We’re committed to advancing these efforts even as we work to 
+
+shepherd our company through one of its most challenging periods. 
+
+The COVID-19 pandemic has brought unprecedented disruption to 
+
+our industry. Throughout the crisis, we have worked to care for our 
+
+“ It has never been more clear that we 
+
+have to work harder to build a more 
+
+resilient and just society, economy 
+
+and planet.”
+
+is right. As an airline, creating connections is our business; we exist  
+
+to bring the world and people closer together. Fundamental to this  
+
+is our unequivocal belief that the lives of our Black team members,  
+
+customers and community members matter. We know actions are  
+
+more important than words, so we are taking concrete steps to translate  
+
+our conviction into meaningful change, starting within our company. 
+
+We are listening to and learning from the experiences of our Black 
+
+colleagues and customers and partnering with them to develop 
+
+solutions to the issues they have raised. We are taking a hard look at 
+
+our own policies, hiring, customer service practices, training programs 
+
+and policy advocacy to identify how we can do a better job to support 
+
+our team members, diversify our talent pipeline and be responsive to 
+
+our customers. We know we have work to do, and we pledge to do it. 
+
+The confluence of the increasingly visible effects of climate change, 
+
+the ongoing COVID-19 pandemic and urgent calls for racial justice 
+
+underscore why our focus on ESG is so critical: It has never been 
+
+more clear that we have to work harder to build a more resilient 
+
+and just society, economy and planet. At American Airlines, we are 
+
+ Message from 
+ Our Chairman 
+ and CEO
+
+Companies today face growing expectations to demonstrate they are 
+
+team members and customers, restore confidence in air travel and 
+
+effectively managing, measuring and reporting on environmental, social 
+
+strengthen our financial footing. I couldn’t be prouder of the way our 
+
+determined to do our part. 
+
+and governance (ESG) issues. At American Airlines, we welcome this 
+
+team members are taking care of our customers and each other as 
+
+scrutiny. We know that rigorous ESG management is critical not only 
+
+we deal with this crisis. With demand for air travel still dramatically 
+
+to the long-term success of our company, but also to the health of the 
+
+reduced, however, we have also had to become a smaller airline for at 
+
+planet we all share. While we have long focused on these issues, this 
+
+least a period of time, including making painful reductions to our team.
+
+year’s ESG Report — which is our first aligned with the standards of 
+
+both the Task Force on Climate-related Financial Disclosures and the 
+
+Sustainability Accounting Standards Board — marks a new point in the 
+
+evolution of our ESG approach and transparency.
+
+The past year has tested our mettle in other ways as well. Our nation is 
+
+Doug Parker   |   Chairman and CEO
+
+reckoning with senseless murders of Black Americans, systemic racism 
+
+October 2020
+
+and inequality. It is clear that we must redouble our efforts to do what 
+
+2
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+ESG Strategy  
+and Approach
+
+3
+
+CEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+At American Airlines, we know that rigorous management of environmental, social 
+and governance (ESG) issues is critical to the long-term success of our company 
+and our planet. This includes effectively governing our business and holding 
+ourselves accountable on a set of key issues that are important to our company 
+and our stakeholders. It also means being responsive to our stakeholders and 
+transparent about our performance.
+
+business and is embedded within our corporate strategy 
+
+Management of ESG issues is integral to how we operate our 
+
+reason American has thrived for more than 90 years is because we 
+
+and objectives. While many issues that fall under the ESG 
+
+umbrella are not new for our company — indeed, a key 
+
+have long recognized the importance of these issues — we have 
+
+Our top material ESG issues are: 
+
+ • Climate change and fuel efficiency
+
+ • Customer satisfaction and operational performance 
+
+ • Diversity, equity and inclusion
+
+ • Safety (including flight safety and team member health and safety)
+
+recently worked to develop a more integrated approach to ESG 
+
+ • Team member and labor relations
+
+management, measurement and reporting. 
+
+Our Material Issues 
+
+Our ESG strategy focuses on the issues that are most important to 
+
+our company and our stakeholders. Since 2009, we have undertaken 
+
+periodic materiality assessments to evaluate areas of risk and opportu-
+
+nity, as well as the concerns and expectations of our stakeholders. We 
+
+conducted our most recent assessment process in 2018, and in 2020 
+
+we reviewed this analysis. One key new input to our analysis was the 
+
+Management and Governance 
+
+Since ESG issues touch nearly every aspect of our business, day-to-day 
+
+management of the individual elements is distributed throughout our 
+
+operations and functions. As part of our effort to take a more integrated  
+
+approach to ESG management, we have recently taken steps to enhance 
+
+our leadership and coordination of ESG efforts and reconsider the way 
+
+these issues are overseen by our Board of Directors. 
+
+Sustainability Accounting Standards Board’s standards for airlines; we 
+
+We formally placed responsibility for companywide ESG efforts in our 
+
+consider these standards an important indicator of investor perspec-
+
+Corporate Affairs group, with a team that already had responsibility for 
+
+tives on the most material ESG issues for our industry.
+
+Through this latest review, we affirmed that the material issues we had 
+
+identified remain relevant, though in some instances we refined their 
+
+scope and how we prioritize them. 
+
+some of the major building blocks, including corporate governance, 
+
+government relations, labor relations and real estate. We recruited a 
+
+new Managing Director for ESG in 2019 and reorganized our sustain-
+
+ability group under her leadership. In 2020, we also reconstituted 
+
+our Sustainability Steering Committee, which is a cross-functional 
+
+4
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Public Policy and  
+Political Contributions
+
+Engaging in the political, legislative and regulatory process is 
+important to our success, and we have adopted policies that set 
+forth how we do so. 
+
+In 2020, we updated our Statement on Public Policy Engagement 
+and Political Participation to better reflect best practices. This 
+includes committing to not use corporate funds for a wide range 
+of political activities, including contributions to candidates, 
+political party committees and political action committees. We 
+also commit to not use corporate funds for the electioneering 
+activities that the Supreme Court allowed in Citizens United. On 
+the rare occasion when we do use corporate funds to contribute 
+to a state or local ballot initiative or a 501(c)(4) organization, we  
+committed to disclose that contribution. We also updated the 
+charter for the Board’s Corporate Governance and Public Respon-
+sibility Committee to clarify that it oversees the company’s major 
+advocacy priorities and activities, principal trade association 
+memberships and political contributions. 
+
+Team members may voluntarily participate in the political 
+process by joining the company’s nonpartisan political action 
+committee (PAC), the American Airlines PAC, which is governed by 
+comprehensive federal, state and local regulations that require 
+filing monthly reports with the Federal Election Commission, 
+among other reporting and disclosure requirements. American’s 
+Executive Vice President of Corporate Affairs and the Board’s 
+Corporate Governance and Public Responsibility Committee 
+oversee the company’s political engagements and compliance 
+with our policies. 
+
+For more information, please see our Statement on Public Policy  
+Engagement and Political Participation. 
+
+5
+
+and cross-operational group of leaders from across our business, led 
+
+by our Executive Vice President of Corporate Affairs. We tasked the 
+
+committee with advising on the development of American’s updated 
+
+climate change strategy (see p. 14). 
+
+Although our full Board continues to oversee our ESG efforts, we 
+
+assigned primary responsibility for coordinating oversight to the 
+
+Board’s Corporate Governance and Public Responsibility Committee 
+
+(formerly known as the Nominating and Corporate Governance 
+
+Committee) and updated its charter in 2020 to document this role. 
+
+For more information on American’s 
+corporate governance policies and pro-
+cedures, including committee charters 
+and information on the members of our 
+Board, go to our website. 
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Our ESG Goals 
+
+Our long-term corporate and ESG strategy is guided and measured by three overarching objectives — each 
+underpinned by specific and detailed goals — aimed at keeping American healthy, competitive and successful 
+by thinking forward and maintaining a strong financial foundation. These objectives are as follows:
+
+Create a world-class 
+customer experience: 
+Deliver operational 
+excellence and grow  
+our global network
+
+Make culture a  
+competitive advantage:  
+Build on an environment 
+that cares for team 
+members
+
+Build American  
+to Thrive Forever:  
+Improve profitability 
+and deliver innovative 
+technology
+
+Climate Change and Fuel Efficiency
+
+2019 Goals
+Attain a 1.5% improvement in average 
+fuel efficiency from 2014 through  
+2020, or 9% cumulatively over the  
+six years
+
+2019 Performance
+Achieved a 0.1% efficiency improve-
+ment in 2019, for a 5.3% cumulative 
+improvement during the first five 
+years of the six-year goal
+
+2020+ Goal
+Achieve net zero direct carbon 
+emissions by 2050
+
+We intend to develop intermediate  
+goals once our demand forecast is 
+stabilized
+
+Source 2.5 million gigajoules (GJs)  
+of cost-competitive renewable 
+energy by 2025
+
+Sourced nearly 200,000 GJs of 
+renewable energy in 2019. Contracted 
+with Neste to purchase 9 million 
+gallons of sustainable aviation fuel 
+over the next three years, which 
+should provide more than 1.1 million 
+GJs of renewable energy
+
+Diversity, Equity and Inclusion
+
+2019 Goals
+Launch in-person implicit bias 
+training for all team members 
+systemwide
+
+2019 Performance
+Delivered implicit bias training to 
+more than 100,000 team members
+
+2020 Goals
+Listen more intentionally to team member 
+concerns and address those concerns in 
+our learning, development, advancement 
+and recruitment programs and processes
+
+Provide additional learning opportunities 
+beyond implicit bias to deepen awareness 
+of diversity and inclusion issues 
+
+Launch an external Community Council 
+composed of executives and a cross-section 
+of Black community leaders to provide 
+feedback on company initiatives
+
+Safety Management
+
+2019 & 2020 Goals
+Maintain the highest passenger safety standards, with 
+zero serious customer injuries
+
+2019 Performance
+Experienced zero serious customer injuries
+
+Reduce on-the-job team member injuries
+
+Reduce aircraft ground damage
+
+Reduced team member injury rate by 5.8% in regional op-
+erations; saw rate increase by 3.9% in mainline operations
+
+Saw regional aircraft damage rates increase 4.3% and 
+mainline damage rates increase 16.3%
+
+Customer Satisfaction and Operational Performance
+
+2019 & 2020 Goals
+Improve Likelihood to Recommend scores
+
+Achieve improved systemwide operational metrics, 
+including on-time performance percentage, completion 
+factor percentage and mishandled baggage rate
+
+2019 Performance
+Likelihood to Recommend score dropped fractionally in 
+2019, largely due to an illegal maintenance disruption under-
+taken by a union during collective bargaining negotiations
+
+On-time performance and completion factor metrics 
+improved fractionally in 2019; after a challenging first half 
+of 2019, the baggage metric steadily improved in the 
+third and fourth quarters
+
+Team Member and Labor Relations
+
+2019 Goals
+Achieve a joint collective 
+bargaining agreement with 
+mainline fleet service and 
+maintenance teams
+
+Launch new uniforms with 
+highest levels of safety, comfort 
+and durability
+
+2019 Performance
+In the first quarter of 2020, reached 
+an agreement with the TWU–IAM 
+for a new, five-year contract for  
+our maintenance and fleet service 
+team members 
+
+Successfully launched new 
+uniforms with highest levels of 
+safety, comfort and durability
+
+2020 Goal
+Support our team members with 
+emotional, physical and financial well-
+being resources
+
+6
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Addressing 
+Climate Change
+
+7
+
+CEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Climate change is a pressing global challenge, and American Airlines believes we 
+must do our part to address it. That is why we have set a new goal to achieve net 
+zero carbon emissions by 2050. While ambition is important, we know that what 
+matters most is that we have a clear roadmap — with both a long-term vision and 
+intermediate milestones — for how we will achieve it.
+
+reduction pathway to 2050 and to refine and expand 
+
+We have launched an effort to build American’s carbon 
+
+step toward both efforts, and we intend to develop intermediate 
+
+associated with climate change. This report is our first 
+
+our strategy for addressing the risks and opportunities 
+
+goals once our demand forecast is stabilized following the disruption 
+
+caused by the COVID-19 pandemic. 
+
+We expect there will be a higher price on carbon in the future — 
+
+which reinforces our intention to drive to net zero — and we are 
+
+developing a strategy to position our company to succeed. 
+
+While there are many steps we can take to reduce our carbon footprint, 
+
+transitioning to a low- or no-carbon aviation future will depend on 
+
+the combined efforts of the private sector and effective policies from 
+
+governments at all levels, along with advances in airframe, engine and 
+
+fuel technologies. We are committed to helping lead the way. 
+
+Advancing Industry Goals
+
+The global airline industry contributes about 2% of all human-induced 
+carbon dioxide (CO2) emissions, and our industry’s share of global 
+emissions is projected to rise. Our industry is one of the few sectors 
+that has established global CO2 emissions goals, which include an 
+average improvement in fuel efficiency of 1.5% per year from 2009 to 
+
+2020, carbon-neutral growth after 2020 and a 50% reduction in net 
+aviation CO2 emissions from 2005 levels by 2050. 
+
+Our Goals
+
+Achieve net zero direct  
+carbon emissions by 2050
+
+Source 2.5 million gigajoules (GJ)  
+of renewable energy by 2025
+
+Attain a 1.5% improvement  
+in average fuel efficiency from  
+2014 through 2020, or 9%  
+cumulatively over the six years
+
+To achieve these important industry goals, American adopted two 
+
+environmental sustainability targets for our own operations: attain  
+
+an average improvement in fuel efficiency of 1.5% per year from 2014 
+
+8
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+American Airlines is proud to be part of the oneworld® alliance, 
+which in September 2020 became the first global airline alliance 
+to unite behind a common target to achieve carbon neutrality. 
+Each member airline in the alliance will develop its individual 
+approach to reach the target of net zero carbon emissions by 
+2050, through various initiatives such as efficiency measures, 
+investments in sustainable aviation fuels and more fuel-efficient 
+aircraft and carbon offsets, among other measures.
+
+(the first full year after we merged with US Airways) through 2020, 
+
+we increase the scale of our company’s ambitions to achieve net zero 
+
+address critical global challenges that have profound implications 
+
+and source 2.5 GJ of renewable energy by 2025. In addition, along 
+
+carbon emissions by 2050. As one of the world’s largest airlines, we 
+
+for people and economies and reinforced our work to make our 
+
+with others in our industry, we are subject to the Carbon Offsetting 
+
+and Reduction Scheme for International Aviation (CORSIA), which 
+aims to achieve carbon-neutral growth in CO2 emissions from interna-
+tional aviation after 2020. Adopted by the United Nations’ International 
+
+know we need to be a leader in helping to drive the operational, policy 
+and technological changes needed to reduce CO2 emissions from air 
+travel to try to limit global warming to 1.5° Celsius, which is the limit 
+
+advised by the Intergovernmental Panel on Climate Change (IPCC) to 
+
+Civil Aviation Organization (ICAO) in 2016 and currently being imple-
+
+avoid the most damaging and irreversible impacts of climate change. 
+
+company stronger and more resilient.
+
+In the remainder of this section, we detail our carbon footprint and 
+
+greenhouse gas (GHG) emissions performance trends, discuss our 
+
+strategy for addressing climate change, report on our analysis of 
+
+climate-related risks and opportunities and describe the company’s 
+
+mented by the United States and countries around the world, CORSIA 
+
+is the first global carbon pricing mechanism covering an entire sector. 
+
+While the COVID-19 crisis has upended our industry and compelled 
+
+governance of climate-related issues. 
+
+us to adjust the pace of some of our efforts, it has not diminished 
+
+American supports our industry’s goals — but we believe the scale 
+
+our belief in the importance of addressing climate change. Instead, 
+
+of the climate challenge, and the science behind it, demands that  
+
+the pandemic has underscored the need for collective action to 
+
+9
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Carbon Anatomy of a Flight
+
+Many factors determine the amount of GHG emissions associated with a  
+particular flight. Fuel efficiency of the aircraft is a key factor, but it’s not the  
+only one — and efficiency itself is influenced by a complex set of variables.  
+
+Here are the main determinants of a flight’s carbon footprint:
+
+Aircraft design
+Modern aircraft incorporate many features to save fuel, including 
+the use of lightweight materials, aerodynamic design and more 
+fuel-efficient engines.
+
+Many aircraft have winglets, which are 
+small additions at the end of wings  
+that reduce drag and can improve fuel  
+efficiency by up to 4%. 
+
+Fuel efficiency is so sensitive to the 
+weight of an aircraft that using a thinner 
+paint across a fleet could save a million 
+gallons of fuel each year.
+
+Distance of flight
+The takeoff and climb phases of a 
+flight burn more fuel than the cruising 
+or landing phases, which makes 
+shorter flights less fuel efficient  
+than long-haul flights.
+
+15–20%
+
+IMPROVEMENT IN FUEL  
+EFFICIENCY ON AVERAGE  
+WITH EACH NEW  
+GENERATION OF AIRCRAFT 
+
+Type of fuel
+While the vast majority of aviation 
+fuel used today is petroleum-based, 
+sustainable aviation fuel from 
+renewable feedstocks can cut 
+lifecycle carbon emissions  
+related to fuel by up to 80%. 
+
+On the ground
+Single-engine taxiing and the use of 
+high-speed tugs reduce the amount 
+of jet fuel needed to move aircraft on 
+the ground. And operators plug into 
+grid electricity at the gate, which is 
+typically less carbon intensive than 
+using the plane’s auxiliary power.
+
+48
+
+M METRIC  
+TONS OF CO2
+
+COULD BE SAVED ANNUALLY THROUGH 
+IMPROVEMENTS IN AIR TRAFFIC  
+CONTROL MANAGEMENT — EQUAL  
+TO ALMOST 5 BILLION GALLONS OF  
+JET FUEL A YEAR1 (SEE P. 18)
+
+One way airlines measure fuel efficiency and 
+GHG intensity is by dividing absolute fuel use 
+or emissions by revenue ton miles (RTM). 
+
+RTM is the weight of revenue-generating pas-
+sengers and cargo, and it — along with GHG  
+intensity — is affected by the following factors:
+
+Seats on the plane
+The number of seats on a given aircraft varies  
+depending on how it is configured — such as the 
+space devoted to first-class seating, galleys and bath-
+rooms — and the design of the seats themselves.
+
+Number of passengers
+While the number of seats on a plane determines the 
+maximum passenger capacity, any given flight may 
+operate with fewer passengers. Operating at or close 
+to the maximum capacity increases fuel efficiency.
+
+Cargo
+Many passenger flights also carry cargo, which 
+may include mail and items like medicines that 
+need to get to their destination quickly. This 
+adds revenue and increases efficiency.
+
+1.   https://www.icao.int/environmental-protection/Documents/ICAO-ENV-Report2019-F1-WEB%20(1).pdf
+
+American Airlines 2019-2020 ESG Report
+
+10
+
+CEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Our GHG Emissions in 2019
+Total emissions (Scopes 1, 2, and 3): 63.5 million metric tons of carbon dioxide equivalents (CO2e)
+
+SCOPE 1
+99.3% from jet fuel  
+(mainline and regional operations)
+
+SCOPE 2
+100% from purchased electricity 
+(location-based)
+
+84% 
+
+of our total carbon footprint  
+is from jet fuel
+
+SCOPE 3
+56% from jet fuel  
+(contracted regional  
+carriers and upstream  
+fuel emissions)
+
+31.9% from purchased  
+goods and services
+
+34.7%
+
+64.8%
+
+0.5%
+
+Our Business in 2019*
+
+Operated  
+1,547 aircraft
+
+Carried 680K tons  
+of cargo
+
+Grew revenue passenger 
+miles by 4.4% compared  
+with 2018
+
+Flew 215 million passengers 
+on 2.3 million flights
+
+* All data are as of December 31, 2019, or for full-year 2019, as applicable
+
+Operated an average  
+of 6,300 flights per day to 
+more than 365 destinations 
+in 61 countries
+
+Our Carbon Footprint
+
+Nearly all — 99% — of the GHG emissions from American’s direct 
+
+operations result from burning jet fuel. So reducing our consumption 
+
+of petroleum-based jet fuel is the single best way we can reduce 
+
+our carbon footprint. A variety of factors — from the aircraft we fly 
+
+to where and how we fly them — affect our fuel use and associated 
+
+emissions. We have taken a range of actions to be more fuel efficient 
+
+in our operations and increase our use of renewable energy (see  
+
+Our Strategy on p. 14). We have made progress — but we know we 
+
+have more to do.
+
+Our GHG Emissions in 2019
+
+American’s Scope 1 (direct) GHG emissions — which account for 
+
+about two-thirds of our GHG footprint — stem almost entirely from 
+
+the burning of jet fuel by our aircraft, plus a small portion from the 
+
+fuel used by our ground service equipment. Our Scope 2 emissions 
+
+include emissions associated with the purchase of electricity to run 
+
+our operations, and they make up the smallest portion of our carbon 
+
+footprint (0.5%). Our estimated Scope 3 (upstream and downstream) 
+
+emissions are nearly 35% of our overall emissions, the largest 
+
+element of which is upstream emissions associated with the 
+
+production of jet fuel, followed by emissions from our third-party 
+
+regional carriers and those associated with purchased goods and 
+
+services and team member travel. 
+
+Fuel-Efficiency Performance
+
+We improved the average fuel efficiency of our mainline operations  
+
+by 7.4% between 2014 and 2019, including a 0.8% improvement 
+
+during 2019 alone. 
+
+We typically track efficiency using revenue ton miles (RTM), which 
+
+measure the fuel needed (and associated GHG emissions) to fly one 
+
+ton of payload — the combined weight of passengers, their bags and 
+
+11
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+cargo on an aircraft — one mile. The less fuel needed per RTM, the 
+
+more efficient the flight. Consistent with the industry’s goal, we set a 
+
+Fuel-Efficiency Performance
+
+target to improve our fuel efficiency by an average of 1.5% annually — 
+
+or 9% cumulatively — from 2014 to 2020.
+
+While we were just shy of achieving our cumulative goal of a 7.5% 
+
+improvement by year-end 2019 in our mainline operations, improving 
+
+efficiency in our regional operations has been more challenging. In 
+
+2019, we achieved a 2% efficiency improvement in our regional opera-
+
+tions, but our cumulative improvement since 2014 is 1.6%. Collectively, 
+
+our mainline and regional operations have achieved a 5.3% efficiency 
+
+improvement since 2014. 
+
+Absolute Emissions
+
+In 2019, our Scope 1 emissions were up 2% compared with 2018. 
+
+Since 2005, however, we have reduced our systemwide Scope 1 
+
+emissions by 8% due to improved fuel efficiency, while increasing  
+
+the number of passengers and amount of cargo we carried. 
+
+The increase in emissions in 2019 was driven by growth in our network, 
+
+particularly by our regional carriers. Emissions from our mainline oper-
+
+ations increased 0.6% from 2018 to 2019, whereas emissions from our 
+
+wholly owned regional carriers were up nearly 15% as they flew almost 
+
+75,000 additional flights and added seven new destinations to our route 
+
+map. While only about 12% of our total emissions came from these 
+
+wholly owned regional carriers, they were the fastest-growing part 
+
+of our network, and regional aircraft are on average less fuel efficient 
+
+per ton mile than mainline aircraft (see Community Connectivity and 
+
+Climate Change on p. 13). 
+
+Our Scope 2 (location-based) emissions decreased by 10% in 2019 
+
+because we were able to lower the carbon intensity of the electric 
+
+power we purchased. Our Scope 3 emissions increased by 2% in  
+
+2019 compared to the prior year.
+
+(cid:25)
+(cid:25)
+(cid:9)
+
+(cid:10)
+(cid:11)
+(cid:12)
+(cid:13)
+(cid:25)
+(cid:22)
+(cid:26)
+(cid:14)
+(cid:24)
+
+(cid:23)
+(cid:16)
+(cid:28)
+(cid:21)
+(cid:15)
+(cid:16)
+(cid:26)
+(cid:17)
+(cid:28)
+(cid:26)
+(cid:18)
+(cid:26)
+(cid:19)
+(cid:25)
+(cid:19)
+(cid:26)
+(cid:20)
+(cid:22)
+(cid:28)
+(cid:21)
+(cid:24)
+(cid:22)
+(cid:22)
+(cid:24)
+(cid:23)
+(cid:26)
+(cid:28)
+
+(cid:25)
+
+(cid:25)
+
+(cid:24)
+(cid:25)
+(cid:26)
+(cid:27)
+(cid:28)
+(cid:29)
+(cid:30)
+(cid:31)
+
+(cid:13)
+
+(cid:13)
+
+(cid:16)
+
+(cid:4)
+(cid:14)
+(cid:4)
+(cid:10)
+(cid:15)
+(cid:18)
+(cid:14)
+(cid:5)
+(cid:6)
+(cid:22)
+(cid:13)
+(cid:7)
+(cid:10)
+(cid:8)
+(cid:9)
+(cid:10)
+(cid:17)
+(cid:13)
+(cid:11)
+(cid:16)
+(cid:12)
+(cid:17)
+(cid:14)
+(cid:20)
+(cid:14)
+(cid:15)
+(cid:16)
+(cid:17)
+(cid:18)
+(cid:21)
+(cid:20)
+(cid:21)
+(cid:22)
+
+(cid:19)
+
+(cid:13)
+
+(cid:26)(cid:29)
+
+(cid:25)(cid:29)
+
+(cid:31)(cid:26)(cid:29)
+
+(cid:31)(cid:27)(cid:29)
+
+(cid:31)(cid:28)(cid:29)
+
+(cid:31)(cid:30)(cid:29)
+
+(cid:29)
+
+(cid:31)(cid:25)
+
+(cid:31)(cid:26)
+
+(cid:31)(cid:27)
+
+(cid:31)(cid:28)
+
+(cid:31)(cid:30)(cid:29)
+
+(cid:31)(cid:30)(cid:29)(cid:23)
+
+(cid:31)(cid:30)(cid:29)(cid:24)
+
+(cid:31)(cid:30)(cid:29)(cid:25)
+
+(cid:31)(cid:30)(cid:29)(cid:26)
+
+(cid:31)(cid:30)(cid:29)(cid:27)
+
+(cid:31)(cid:30)(cid:29)(cid:28)
+
+Emissions Avoided Due to Fuel-Efficiency Improvements
+
+(cid:31)(cid:30)(cid:29)(cid:25)
+
+(cid:31)(cid:30)(cid:29)(cid:26)
+
+(cid:31)(cid:30)(cid:29)(cid:27)
+
+(cid:31)(cid:30)(cid:29)(cid:28)
+
+PERFORMANCE
+
+GOAL
+
+(cid:31)(cid:30)(cid:29)(cid:24)
+
+(cid:28)(cid:30)(cid:29)
+
+(cid:31)(cid:30)(cid:29)
+
+(cid:27)(cid:30)(cid:26)
+
+(cid:25)(cid:30)(cid:24)
+
+(cid:23)(cid:30)(cid:29)
+
+12
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Community Connectivity and Climate Change
+
+Connectivity is at the heart of American’s purpose and value proposition, 
+and our regional carriers are an integral part of that. In 2019, approximately 
+59 million passengers boarded our regional carriers’ aircraft, more than 
+40% of whom connected to or from our mainline flights. 
+
+This is precisely the kind of connectivity that our hub-and-spoke network 
+is designed to facilitate: Through our regional carriers, we serve smaller 
+communities and low-density markets that don’t have the passenger 
+traffic to support larger, mainline aircraft. Then, through our hub airports 
+across the United States and our international gateways, we connect 
+those passengers to destinations around the world. In fact, American 
+provided small communities nearly 60% more one-stop connection 
+options than other U.S. network carriers in 2019.2 Thanks to the power  
+of our network, we connect more people to more places.
+
+We believe deeply in the value of connectivity. Commercial air service not 
+only expands horizons and connects people, it also provides significant 
+economic opportunity for local communities. 
+
+But shorter flights on smaller planes come at a fuel-efficiency cost. The 
+takeoff and climb phases of a flight burn more fuel than the cruising phase, 
+which makes shorter regional flights less fuel efficient than long-haul flights. 
+In addition, when we were building out our regional fleet, the advancements 
+in aircraft and engine design that have improved the fuel efficiency of our 
+mainline fleet were not — and sometimes still aren’t — available on smaller 
+aircraft. Altogether, the result is that for each mile we fly a passenger or unit of 
+cargo, regional aircraft are on average less fuel efficient than mainline aircraft. 
+
+Our commitment to providing industry-leading regional service makes it 
+more challenging for us to meet our fuel-efficiency targets. By appropriately 
+balancing our climate change goals with our commitment to connectivity, 
+we believe we can best help the communities we serve to thrive. 
+
+$134 billion in economic activity 
+generated by air service to the 570 small 
+community airports across the United States
+
+1 million jobs created by air service to 
+those community airports, which generate 
+$36 billion in wages and tax revenue to 
+those states and communities3
+
+2.  Data are for the 100 smallest markets in the United States with air service by at least one U.S. 
+network carrier based on actual schedules flown in July 2019, using origin/destination data. 
+
+3. https://www.raa.org/wp-content/uploads/2019/04/RAA_RH_2019_Q1_g.pdf
+
+60%
+
+more one-stop connection options provided 
+by American than other U.S. network carriers 
+in 2019
+
+13
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Getting to Net Zero in 2050: American’s Initial Pathway
+
+(cid:29)(cid:31)
+
+  Business-as-usual CO2e emissions
+  Flight operations and efficiency
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  Fleet renewal
+
+  Next-generation aircraft
+
+  Air traffic control modernization
+
+  Sustainable aviation fuel
+
+  Market-based solutions
+  GHG goal
+
+(cid:16)
+
+(cid:25)
+
+(cid:22)
+(cid:17)
+(cid:18)
+(cid:25)
+(cid:24)
+(cid:28)
+(cid:26)
+(cid:27)
+(cid:28)
+(cid:21)
+(cid:25)
+(cid:19)
+(cid:30)
+(cid:20)
+(cid:21)
+(cid:22)
+(cid:23)
+
+(cid:25)
+
+(cid:25)
+(cid:24)
+(cid:28)
+(cid:26)
+(cid:27)
+(cid:28)
+
+(cid:30)
+(cid:29)
+(cid:29)
+(cid:30)
+
+(cid:31)
+
+(cid:30)(cid:31)
+
+(cid:31)
+
+(cid:31)(cid:30)(cid:31)(cid:31)
+
+Our Strategy
+
+(cid:31)(cid:30)(cid:31)(cid:27)
+
+(cid:31)(cid:30)(cid:26)(cid:30)
+
+(cid:31)(cid:30)(cid:26)(cid:28)
+
+(cid:31)(cid:30)(cid:26)(cid:25)
+
+(cid:31)(cid:30)(cid:28)(cid:31)
+
+(cid:31)(cid:30)(cid:28)(cid:27)
+
+(cid:31)(cid:30)(cid:29)(cid:30)
+
+American’s strategy to achieve net zero carbon emissions by 2050 
+
+and technological advances needed to enable the transition to 
+
+Jet fuel consumption is the chief source of our direct GHG emissions 
+
+is focused on driving operational and technical improvements that 
+
+low-carbon aviation. 
+
+reduce GHG emissions by continuously improving fuel efficiency 
+
+and substituting petroleum-based fuels with lower-carbon alter-
+
+natives. We also expect to rely on market-based mechanisms, 
+
+including carbon offsets, certainly over the short to medium terms 
+
+and potentially over the long term as well, depending on how 
+
+quickly the market for sustainable aviation fuel develops. In parallel, 
+
+we are helping to facilitate the broader policy, market, infrastructure 
+
+We are targeting our efforts where we can have the most mean-
+
+ingful near-term impact in reducing our carbon footprint and  
+
+mitigating our most significant climate-related risks (see Identifying 
+
+Over the past several years, American has undertaken the most exten-
+
+and Assessing Climate-Related Risks, p. 20). The following outlines 
+
+sive fleet renewal effort in the history of our industry. Since 2013, we 
+
+the key components of our climate strategy. 
+
+have taken delivery of 550 new, more fuel-efficient aircraft — at a cost 
+
+of $23 billion — including the Boeing 787 and the Airbus 321neo, which 
+
+were developed with the latest engine and airframe technologies.  
+
+ 
+
+Aircraft Fuel Efficiency
+
+and one of the largest categories of expense for our company. As 
+
+a result, maximizing the fuel efficiency of our aircraft is both a core 
+
+focus of our climate change strategy and a key business objective. 
+
+14
+
+LEVERS THAT WE CONTROL
+
+ • Flight operations and efficiency
+
+ • Fleet renewal
+
+LEVERS UNDER THE CONTROL OF 
+OTHERS (GOVERNMENTS, OTHER  
+INDUSTRIES) 
+
+ • Next-generation aircraft
+
+ • Air traffic control modernization
+
+ • Sustainable aviation fuel
+
+MARKET-BASED MEASURES
+ • CORSIA
+ • Voluntary carbon offsets
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+flight altitudes and speeds. This can save fuel and reduce emissions, 
+
+Other changes include increasing our use of single-engine taxi 
+
+particularly on long-haul flights. By mid-2020, we were using this 
+
+operation (i.e., using just one aircraft engine to taxi to the gate after 
+
+technology on 85% of our mainline aircraft. 
+
+landing). This technique reduces the carbon emissions produced by 
+
+We are also reducing jet fuel consumption pre- and post-flight. This 
+
+on-the-ground fuel use represents approximately 6% of our total jet fuel 
+
+consumption. For example, we are reducing the use of onboard auxiliary 
+
+taxiing by 20–40%.4 We are also working to reduce excess weight on 
+
+each aircraft, from using lighter materials on board to optimizing the 
+
+amount of extra fuel each flight carries.
+
+power units (APUs) during flight preparation by connecting to ground 
+
+The next largest source of American’s direct GHG emissions after jet 
+
+power at the airport terminal, rather than relying on jet fuel to heat or 
+
+fuel — albeit a distant second, representing only 1% of our Scope 1 
+
+cool the aircraft, operate onboard lighting and run other functions while 
+
+emissions — comes from the fuel used by required ground service 
+
+the aircraft is parked at the gate. This simple change in operational 
+
+equipment (GSE), such as baggage carts, cargo loaders, pushout 
+
+behavior provides a substantial opportunity to decrease both costs and 
+
+tractors and maintenance equipment. As part of our climate strategy, 
+
+emissions, since electric power is less carbon intensive. We estimate 
+
+we are purchasing low-emission GSE vehicles and working to tran-
+
+that by reducing the time an APU is run by just one minute on every 
+
+sition from diesel- or gasoline-powered GSE to electric GSE. In 2019, 
+
+flight, an aircraft can save 1,000 gallons or more of jet fuel annually. 
+
+we added more than 50 electric-powered vehicles to our GSE fleet.
+
+Invested
+
+$23B 
+
+in 550 more fuel-efficient aircraft 
+since 2013, the largest fleet renewal 
+effort in the history of our industry
+
+Over the same period, we retired a similar number of older, less fuel- 
+
+efficient planes, including retiring the last of our McDonnell Douglas 
+
+MD-80 aircraft in 2019. And because of the reduction in demand due 
+
+to the COVID-19 pandemic, we accelerated the retirement of four 
+
+additional aircraft types — Embraer E190s, Boeing 757s, Boeing 767s 
+
+and Airbus A330-300s — and certain older regional aircraft. In addition, 
+
+we anticipate benefiting from increased fuel efficiency as the Boeing 
+
+737 MAX comes back into service. The MAX is 35% more efficient than 
+
+the fleet of Boeing 757s that we retired earlier this year. 
+
+Our fleet renewal effort will have the greatest near-term impact on 
+
+emissions, since each new generation of aircraft targets fuel-efficiency 
+
+improvements of 10–15%, though there are factors beyond the aircraft 
+
+itself that affect fuel efficiency (see Carbon Anatomy of a Flight, p. 10). 
+
+Over the long term, we expect to rely on future technologies, including 
+
+new engine and aircraft technology, air traffic control reform and sustain-
+
+able aviation fuels, to achieve our goal of net zero emissions by 2050. 
+
+Operational Efficiency in the Air and on the Ground
+
+Alongside fleet renewal efforts, we are investing in new technology 
+
+to help our aircraft operate more efficiently. For example, in 2020 we 
+
+began deploying specialized software that uses real-time weather 
+
+conditions to provide our flight crews with better data about optimal 
+
+4.  https://www.nlr.org/areas-of-change/increasing-single-engine-taxi- 
+
+operations-taxi-inboard-engines-4-engine-aircraft/
+
+15
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+SAF 101
+
+What is sustainable aviation fuel (SAF)?
+
+SAF is jet fuel produced from renewable hydrocarbon resources, 
+including both biological and nonbiological resources. SAF can be 
+produced from a range of feedstocks, including municipal solid 
+waste, used cooking oil, plant oils, waste gases and agricultural 
+residues. SAF is certified as Jet-A1 fuel, which means it meets the 
+same performance standards as conventional jet fuel and can be 
+used without technical modifications to aircraft.
+
+What are the benefits?
+
+SAF reduces lifecycle GHG emissions by up to 80% compared 
+with conventional, petroleum-based jet fuel. To realize this 
+benefit, however, SAF must be sustainably produced — using 
+feedstocks and methods that don’t compete with food production 
+and don’t contribute to deforestation, natural resource depletion 
+or climate change. To ensure they don’t, airlines are encouraged 
+to follow rigorous, independently verified sustainability standards 
+for SAF production.
+
+What are the challenges? 
+
+SAF is available now — but at smaller quantities and a significant 
+price premium compared with conventional kerosene (fossil-
+based) jet fuel, because the SAF market is still at a nascent 
+stage of development. To be a feasible alternative for widespread 
+commercial use, SAF must be cost-competitive with conventional 
+jet fuel and must not be disadvantaged relative to other fuels 
+because of incentive programs. It also must be available at scale. 
+And that requires both investments in production capacity and 
+smart government policies.
+
+The SAF CO2 Lifecycle: From Cooking Oil to Jet Fuel
+
+Here’s the CO2 lifecycle when used cooking oil — a common feedstock used to produce SAF — is converted to jet fuel:
+
+CO2 in the atmosphere is 
+absorbed by plants during 
+photosynthesis
+
+Plants produce oil 
+seeds
+
+Oil seeds are crushed to 
+make cooking oil
+
+Jet fuel is combusted during 
+flight, which emits CO2
+
+Collected oil is 
+processed into jet fuel
+
+Used cooking oil is 
+collected from restaurants 
+
+Sustainable Aviation Fuel 
+
+American recognizes that increasing the use of sustainable aviation 
+
+fuel — which can reduce lifecycle GHG emissions by up to 80% 
+
+compared with conventional, petroleum-based jet fuel — must be 
+
+a core part of our low-carbon pathway. But while the SAF industry 
+
+is continuing to invest and grow production capacity, there remain 
+
+largest single SAF purchasing commitment in our industry, but it still 
+
+represents considerably less than 1% of our total annual fuel consump-
+
+tion. Bringing the SAF market to scale will require the combined efforts of 
+
+the private sector and effective policies from governments at all levels. By 
+
+committing to this initial order from Neste, we aim to help facilitate more 
+
+widespread production of SAF and accelerate its commercial viability. 
+
+significant challenges to the availability of SAF in the quantities and at 
+
+American is also involved in other efforts and collaborations to build the 
+
+the prices necessary to materially reduce emissions in the near term. 
+
+market for SAF and identify other ways to reduce emissions associated 
+
+In early 2020, we committed to purchase 9 million gallons of SAF over 
+
+three years from Neste, a leading producer of renewable products. This 
+
+SAF will be certified through the International Sustainability and Carbon 
+
+Certification scheme. We began to take delivery of Neste SAF at San 
+
+Francisco International Airport in July 2020. This commitment contributes 
+
+to our goal of sourcing 2.5 million GJ of cost-competitive renewable 
+
+energy by 2025. When announced, our agreement with Neste was the 
+
+with aviation. We participate in the World Economic Forum’s Clean 
+
+Skies for Tomorrow Coalition and Business for Social Responsibility’s 
+
+Sustainable Air Freight Alliance. We also participate in the Commercial 
+
+Aviation Alternative Fuels Initiative, which brings together airlines, alter-
+
+native fuel producers, and university and governmental stakeholders. 
+
+And we have on-the-ground efforts at a number of airports — including 
+
+Dallas/Fort Worth International Airport, San Francisco International 
+
+Airport and Seattle-Tacoma International Airport — to use SAF. 
+
+16
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Carbon Offsets
+
+While the core focus of American’s climate strategy is increasing effi-
+
+ciency and reducing emissions, we recognize that carbon offsets also 
+
+have a role to play. As part of our support for CORSIA, we endorsed 
+
+later phases.
+
+CORSIA intact. In mid-2020, the ICAO decided that 2019 emissions 
+
+will serve as the baseline for the first phase of CORSIA implementation 
+
+(2021–2023), and that in 2022 it will consider the baseline for CORSIA’s 
+
+the industry goal to achieve carbon-neutral growth in emissions 
+
+In addition, in 2020, we introduced a customer-facing carbon offset 
+
+from international aviation after 2020, relative to a baseline set at the 
+
+program, enabling our passengers to offset their emissions from air 
+
+average of 2019 and 2020 emissions. 
+
+However, the collapse in demand for air travel in 2020 because of 
+
+COVID-19 distorted the planned baseline. To bring the costs of compli-
+
+ance in line with what was originally intended, the industry petitioned 
+
+to change the CORSIA baseline to include only 2019 emissions levels. 
+
+Such a change was vital to keeping the credibility and feasibility of 
+
+travel. The program enables customers to purchase verified offsets 
+
+through Cool Effect, a nonprofit organization. Customers can purchase 
+
+offsets in a portfolio of projects that include work to prevent deforesta-
+
+tion in Brazil and protect peat marshlands in Indonesia (see photo at 
+
+left). For more information, see www.cooleffect/american-airlines. 
+
+Renewable Energy Use in Our Facilities
+
+Over the past several years, we have expanded our use of renewable 
+
+energy to power our administrative, ground and support operations. 
+
+While emissions associated with the purchase of electricity to run 
+
+our operations comprise the smallest portion of our carbon footprint, 
+
+switching to renewable energy provides an immediate opportunity to 
+
+reduce our GHG emissions. 
+
+We have focused our renewable energy efforts on our primary facilities 
+
+in North Texas, where we have our largest airport operation, and our 
+
+Fort Worth campus, which includes our integrated operations center, 
+
+the majority of our training facilities, a large call center and our principal 
+
+offices. The electricity used on our campus and at our Dallas/Fort 
+
+Worth International Airport terminals and facilities is from renewable 
+
+sources. As of April 2020, American was the highest-ranked trans-
+
+portation company — and among the top 50 companies overall —  
+
+on the U.S. Environmental Protection Agency’s (EPA’s) Green Power 
+
+Partnership Fortune 500® Partners List.
+
+We have also undertaken a range of other initiatives to make our new 
+
+and existing facilities more energy efficient and sustainable (see Our 
+
+Other Environmental Efforts, p. 19).
+
+Public Policy and Collaboration
+
+We recognize that we cannot achieve our ambitious goal of net 
+zero carbon emissions by 2050 on our own. Given the nature of 
+the climate challenge and of our industry, achieving our goal will 
+depend not only on our own efforts but also on sound policy and 
+meaningful collaboration across the public and private sectors.
+
+For example, smart policies that help the nascent SAF market to 
+grow to commercial scale will be critical. In all future projections 
+of low- or no-carbon aviation, SAF must play an increasingly large 
+role in satisfying fuel demand. But current production levels are 
+well below the scale needed to make SAF cost-competitive with 
+conventional jet fuel. Through incentives, credits, investments 
+in research and other policy tools, governments can create the 
+market conditions needed to make SAF an economically viable 
+alternative to conventional jet fuel. 
+
+Another high-impact way to reduce GHG emissions associated 
+with aviation in the United States would be to modernize our air 
+traffic control (ATC) system. This would help to alleviate congestion 
+and reduce delays that result in additional fuel consumption and  
+associated emissions — not to mention frustration for passen-
+gers. ATC reform is projected to bring up to 12% fuel and emissions  
+savings. But developing and implementing a more modern and 
+efficient ATC system requires government and our industry to 
+work together (see p. 18). 
+
+In these and other areas, we believe it is important for our company 
+to play a constructive role in advancing policies that are consistent 
+with the goals of the Paris Agreement. That’s why we supported 
+the Business Roundtable’s September 2020 update of its principles 
+and policies addressing climate change. The update prioritizes 
+the alignment of climate goals with scientific evidence, interna-
+tional engagement and support for investments in innovation.
+
+17
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Modernizing Our Air Traffic  
+Control System 
+
+Our Air Traffic Control (ATC) system is a vital part of our country’s 
+
+transportation infrastructure — equally important to the economy 
+
+and society as the bridges, highways, rails and roads we travel on the 
+
+ground. The design and operation of our ATC system also has environ-
+
+mental implications: The more efficiently aircraft can travel our routes in 
+
+the skies, the less fuel they burn and the fewer emissions they produce.
+
+While the United States has the safest ATC system in the world, it 
+
+continues to rely too heavily on outdated technology and processes 
+
+that are inefficient or poorly equipped to accommodate growing air 
+
+traffic. At the same time, the complexity of our air space is expanding 
+
+rapidly — from the dramatic uptick in drone use to emerging urban  
+
+air mobility technologies. 
+
+To keep pace with these demands — and to help reduce aviation’s 
+
+impact on the climate — it is essential we modernize our ATC system, 
+which in turn can reduce millions of tons of CO2 each year. However, it 
+must have the best technology and the operational agility and flexibility 
+
+to deploy it fully and quickly. This goal requires timely and effective 
+
+government policies that ensure an integrated approach by airlines, 
+
+airports and air traffic management.
+
+Up to 12% reduction in fuel use and GHG 
+emissions can be achieved by completing 
+the transition to a satellite-based 
+navigation system5
+
+5. https://www.airlines.org/wp-content/uploads/2019/02/Young-Testimony.pdf
+
+6. https://www.faa.gov/nextgen/media/BusinessCaseForNextGen-2016.pdf
+
+Realizing the Promise of NextGen
+
+NextGen is the common term for the Federal Aviation Administration’s 
+
+(FAA) plan to modernize the country’s network of aviation infrastructure, 
+
+technology and services. A key part of NextGen involves moving from 
+
+outdated radar technology to a primarily satellite-enabled navigation 
+
+system, backed up by more sophisticated radar, which will allow FAA 
+
+and operators to create optimal flight paths and arrival and landing 
+
+operations — significantly reducing flying time and GHG emissions. 
+
+A critical part of enhancing the efficiency of air traffic management 
+
+is strengthening the ability of FAA to deploy and, in partnership 
+
+with airlines and airports, to accelerate and operationalize NextGen 
+
+capabilities and the next generation of technological advancements.
+
+The FAA anticipates that through 2030, 
+NextGen’s benefits include:
+
+Reducing CO2 emissions by 27 million 
+metric tons — equivalent to taking 5.9 
+million cars off the road6
+
+Eliminating 38% of delays, saving $106.7 
+billion in passenger value of time
+
+The ATC and Climate Connection
+
+About a third of all flight delays are caused by solvable ATC issues, often unrelated to airline operations. The congestion, delays and diversions that 
+
+result from our outmoded ATC system significantly increase fuel burn and GHG emissions. Inefficiencies in our current ATC system increase 
+
+emissions from gate to gate: 
+
+On the ground
+
+Takeoff and landing
+
+In the air
+
+Delays and congestion result in aircraft 
+
+Outdated technology and procedures often 
+
+Indirect flight paths increase flight time and fuel 
+
+spending more time on the taxiway waiting for 
+
+force aircraft to forgo the most fuel-efficient 
+
+burn, while inefficient air-space management 
+
+departure slots and gates upon arrival 
+
+continuous climb and descent operations
+
+can require additional separation between 
+
+aircraft while en route and more aircraft in 
+
+holding patterns awaiting clearance to land
+
+18
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Our Other Environmental Efforts
+
+Renewable Energy
+
+While reducing our carbon footprint is the most significant way American  
+can minimize our impact on the environment, we also work hard to improve  
+environmental sustainability across our operations. For example:
+
+Environmental Management
+
+In 2019, American became the first major U.S. carrier to begin the process of seeking certification 
+
+for our environmental management system under the International Air Transport Association’s 
+
+Environmental Assessment (IEnvA) program, which assesses airline performance against 
+
+sustainability standards for air quality and emissions, noise, fuel consumption, recycling and 
+
+sustainable procurement. Airlines certified under IEnvA standards will also be ISO 14001 certified.
+
+Green Building
+
+We are integrating green building principles — such as energy efficiency, water conservation and 
+
+sustainable materials — into our new and renovated facilities. We have multiple LEED Gold- and 
+
+Silver-certified facilities across the United States; most recently, we opened two new LEED 
+
+Gold-certified buildings — called Skyview 7 and 8 — at our corporate headquarters campus in 
+
+Fort Worth in 2019. The buildings’ sustainable design features include the use of materials that 
+
+meet stringent requirements for low or no volatile organic compounds, preferred parking for 
+
+zero- and low-emitting vehicles and a 97% diversion of construction waste to landfills. Skyview 8  
+
+also boasts a 41% reduction in water use compared with standard practices through its high- 
+
+efficiency water fixtures and other features. The new campus replaced 21 acres of formerly 
+
+concrete surfaces with water-efficient landscaping, which included planting 3,000 trees. 
+
+Aircraft Noise
+
+We recognize and are committed to addressing the ongoing concerns of local communities 
+
+regarding aircraft noise. Our fleet of mainline aircraft is the youngest among U.S. network carriers, 
+
+and these newer aircraft are up to 50% quieter than the aircraft they replaced. We are proud of the 
+
+fact that our entire mainline and regional fleet of aircraft meets ICAO Chapter 4 noise certification 
+
+standards. American continues our work with airports, communities and the Federal Aviation 
+
+Administration (FAA) to find reasonable solutions.
+
+We have set a goal to source 2.5 million GJ of cost-competitive renewable energy to power our 
+
+operations by 2025 — the equivalent of nearly 20 million gallons of jet fuel. In 2019, we sourced nearly 
+
+200,000 GJ through the purchase of electricity from renewable sources for our headquarters facilities 
+
+and operations at Dallas/Fort Worth International Airport, which are 100% powered by renewable 
+
+energy. As of April 2020, American was the highest-ranked transportation company — and among the  
+
+top 50 companies overall — on the U.S. EPA’s Green Power Partnership Fortune 500® Partners List.
+
+Energy Efficiency
+
+We are taking steps across all of our facilities to make them more energy efficient. For example, 
+
+we are re-lighting our 13 hangar facilities with high-efficiency LED lights, which use only 20% of 
+
+the electricity of the lights they replace. In 2019, we completed the re-lighting of our maintenance 
+
+facility in Pittsburgh — bringing to five the number of hangar facilities where we’ve made the switch 
+
+to 100% LED — and we are well on our way to completing the effort at the remaining ones. 
+
+Waste Reduction and Recycling
+
+We have a variety of efforts aimed at reducing waste and increasing recycling onboard our 
+
+aircraft and within our facilities. On average, American recycles about 340,000 pounds of 
+
+aluminum cans annually through our flight services. And we have changed our processes and 
+
+materials — including by switching from plastic to bamboo stir sticks — to eliminate thousands  
+
+of pounds of unnecessary plastic in 2019. 
+
+During the COVID-19 pandemic, we adjusted our onboard meal service to protect the health and 
+
+safety of our passengers and team members. Some of these adjustments, such as providing bottles 
+
+of water rather than refilling cups to minimize contact, present challenges to advancing our waste 
+
+and recycling goals. As soon as it’s safe to do so, we will ramp up and launch a range of planned 
+
+new efforts to reduce, reuse and recycle across our operations.
+
+For data on our performance related to energy use, air 
+emissions, waste, water, noise and other environmental topics, 
+see p. 54.
+
+19
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Identifying and Assessing  
+Climate-Related Risks
+
+We know that effectively managing and mitigating the climate-related 
+
+risks facing our company starts with a comprehensive understanding 
+
+of those risks and their potential impacts on our business, operations 
+
+and the broader environment in which we work. This insight is a key 
+
+basis for our updated climate strategy and lays the foundation for 
+
+more deeply integrating climate risk analysis into our ongoing risk 
+
+management and business planning processes. 
+
+Our Process
+
+Through our existing enterprisewide risk management process, 
+
+American monitors and manages a broad range of strategic, financial 
+
+and operational risks, including certain climate change risks. To develop 
+
+a more robust understanding of the climate risk landscape, in 2020 we 
+
+launched a process focused specifically on identifying and assessing 
+
+the climate-related risks facing our company over the short, medium 
+
+and long terms. The initial qualitative phase, in which we considered 
+
+both physical and transition risks, informs future quantitative analysis, 
+
+and we will continue to refine and improve the process.
+
+This process — and our related reporting — has been informed by 
+
+the Task Force on Climate-related Financial Disclosures, the leading 
+
+framework for disclosure on climate-related risk.
+
+The Task Force on Climate-related 
+Financial Disclosures divides risks into 
+two categories: 
+
+Risks related to the physical impacts of 
+climate change, including from acute 
+weather events and chronic changes to 
+the climate that may present operational 
+risk for companies
+
+Risks related to the transition to a lower-
+carbon economy, including the policy, 
+legal, technology and market changes 
+that may pose financial and reputational 
+risk for companies
+
+Physical Risk Assessment 
+
+We focused our physical risk analysis on 10 strategically important 
+
+sites for our company: the nine hub airports that form the foundation 
+
+of our network, and our largest maintenance facility, which is in Tulsa, 
+
+Oklahoma. Our largest hub, in Dallas/Fort Worth, Texas, is also home 
+
+to our corporate headquarters, our integrated operations center and 
+
+our primary training facility.
+
+20
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+For each site, we considered the likelihood and implications of acute 
+
+risks, such as extreme weather events, and chronic risks, such as 
+
+sustained increased temperatures. We looked first at historical trends 
+
+and impacts, including changes between 1990 and 2018, and then at 
+
+projections for 2035 and 2060. We based these future projections on 
+
+the IPCC’s Representative Concentration Pathway (RCP) 8.5 emissions 
+
+scenario, which assumes essentially “business as usual” between now 
+
+and 2100. We chose the high-emissions RCP 8.5 scenario because it 
+
+produces an up-to-6° C rise in global temperatures, which would cause 
+
+the most significant potential physical impacts on our facilities, creating 
+
+an upper-level boundary condition for our analysis. 
+
+We identified and assessed potential physical risks from chronic 
+
+changes in climate norms (such as rising sea levels, increasing 
+
+temperatures and changes in precipitation) and acute events (such  
+
+as cyclones, flooding, drought and extreme heat). We used down-
+
+scaled climate data and projections that enabled us to evaluate the 
+
+likelihood that climate-related impacts will affect our operations at 
+
+each of the 10 sites in the assessment in 2035 and 2060. Our sources 
+
+included data from the U.S. Global Change Research Program’s 
+
+Fourth National Climate Assessment, Climate Central’s States at Risk, 
+
+the U.S. EPA’s Climate Resilience Evaluation & Awareness Tool, and 
+
+other relevant resources for non-U.S. data where needed. 
+
+We then established criteria to evaluate the relative business impor-
+
+tance of each site — such as capital assets on site and flight activity 
+
+— and combined that value-at-risk assessment with the hazards 
+
+assessment. Taken together, this analysis will help us determine 
+
+resilience investment priorities and mitigation strategies. 
+
+Transition Risk Assessment
+
+We based our analysis on the International Energy Agency’s (IEA’s) 
+
+muted in the medium and long terms. As a result, we believe they 
+
+2019 World Energy Outlook global climate change scenarios, which 
+
+remain useful analytical tools for establishing a climate-related risk 
+
+include a 6° C Current Policies scenario that generally aligns with 
+
+assessment process that can be refined. 
+
+the higher-emissions RCP 8.5 scenario we used for our physical 
+
+risk assessment, a 2.7° C Stated Policies Scenario in which the 
+
+policies agreed to as part of the Paris Agreement are enacted, and 
+
+a 1.65°–1.85° C Sustainable Development Scenario that would align 
+
+with net zero carbon by 2070. 
+
+We then engaged leaders and experts from across our business and 
+
+operations to qualitatively assess the potential transition risks and 
+
+opportunities, based on the different assumptions (see table on p. 22).  
+
+We used this analysis to inform our strategy for mitigating climate-
+
+related risk and driving progress toward our company’s longer-term 
+
+For each scenario, we assessed policy assumptions for major emitting 
+
+goal of net zero carbon emissions by 2050. 
+
+countries and cross-cutting global policies, along with transport 
+
+sector assumptions. We also looked at GDP and population growth 
+
+assumptions by region and the forecasted price of carbon and crude 
+
+Our Findings
+
+We also looked at American’s exposure to transition risks related to 
+
+oil under the scenarios. We recognize that in 2020 the COVID-19 
+
+climate change, including the policy and legal, technology, market, 
+
+pandemic created a dramatic and unanticipated shock to the global 
+
+reputation and operational risks — as well as opportunities — that 
+
+economy and policy landscape that will affect these scenarios, but 
+
+could arise from the transition to a low-carbon or carbon-constrained 
+
+because material policy changes are likely to take effect gradually, the 
+
+economy. 
+
+impact of the pandemic on these variables is likely to grow increasingly 
+
+The initial qualitative phase of our assessment yielded important insights 
+
+into the nature, likelihood and projected impact of climate-related risks 
+
+facing American currently and in the medium and long terms (in 2035 
+
+and 2060, respectively). We are using these insights to guide our climate 
+
+change strategy and goals, develop mitigation strategies and inform 
+
+future analysis of the financial impacts of the risks identified. 
+
+21
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Climate-Related Risks and Opportunities
+Key Risks
+
+Timeline
+
+Physical Risks
+
+Short Term Medium Term Long Term
+
+2020
+
+2035
+
+2060
+
+Transition Risks and Opportunities
+
+0–2 Years
+
+2–15 years
+
+15–30 years
+
+Risk Type
+
+Climate-Related  
+Risk Definition
+
+Potential Financial Impact
+
+Short  
+Term
+
+Medium  
+Term
+
+Long  
+Term
+
+Mitigation Strategy
+
+Policy  
+and legal
+
+Technology 
+
+ 
+
+s
+k
+s
+i
+R
+n
+o
+i
+t
+i
+s
+n
+a
+r
+T
+
+Market
+
+The risk from existing and 
+emerging regulation aimed at 
+addressing climate change. 
+This might include: 
+
+ • Increased pricing of GHG 
+
+emissions
+
+ • Enhanced reporting 
+
+obligations
+
+ • Exposure to litigation
+
+ • Limits on a license to 
+
+operate
+
+The risk from emerging tech-
+nologies aimed at supporting 
+the global low-carbon transi-
+tion. This might include:
+
+ • Substitution of existing 
+
+products and services with 
+lower-emission options
+
+ • Upfront costs to transition to 
+lower-emission technology 
+
+The risk from shifting supply 
+and demand as economies 
+react to climate change. This 
+might include:
+
+ • Changing customer behavior
+
+ • Uncertainty in market signals
+
+ • Increased cost of raw 
+
+materials
+
+New carbon taxes could increase the price of jet fuel, 
+which would raise our operating costs and potentially 
+reduce demand for travel.
+
+Regional or country-specific aviation emission reduction 
+policies could undercut CORSIA’s place as a single global 
+approach to addressing international aviation emissions, 
+raising our compliance and reporting costs and potentially 
+impacting our international joint venture contracts.
+
+Policymakers in the U.S. could enact laws setting domestic 
+emission reduction targets for airlines, which could limit our 
+ability to grow. They could also mandate new technologies 
+that would impose significant capital and operating costs on 
+us to meet those requirements.
+
+Recent completion of our fleet renewal program gives us 
+the youngest fleet among U.S. network carriers; however, 
+more aggressive emission constraints imposed in the 
+near to medium term may place us at a disadvantage to 
+competitors who are beginning to upgrade their fleets to 
+the most recent generation of aircraft.
+
+There is a risk that technology does not develop suffi-
+ciently to allow us to meet our ambitious climate goals.
+
+Business customers may choose to use alternatives to 
+travel, such as virtual meetings and workspaces.
+
+The collateral we use to secure loans — in the form of 
+aircraft, spare parts and airport slots — could lose value 
+as customer demand shifts and economies move to 
+low-carbon alternatives.
+
+Greater development of high-speed rail in markets now 
+served by short-haul flights could provide passengers 
+with lower-carbon alternatives to flying with us.
+
+We are developing a robust and multifaceted long-term climate 
+change strategy aimed at driving progress toward ambitious goals 
+and positioning our company to be a leader on sustainability. 
+
+We monitor emerging regulations around the world to understand  
+the risks and opportunities for our business. And we work with 
+policymakers to identify policy solutions that can help the aviation 
+industry reduce its emissions through new technologies. We also 
+continue to advocate for CORSIA as the single global approach to 
+addressing emissions from international aviation. 
+
+We continue to seek efficiency gains in our operations, pursue 
+opportunities to employ SAF and seek to employ lower-emission 
+or zero-emission technologies as they become available on a 
+commercially reasonable basis.
+
+Since 2013, we have undertaken an extensive fleet replacement initia-
+tive, taking delivery of 550 new, more fuel-efficient aircraft, including 
+the Boeing 787 Dreamliner and the Airbus 321neo, which are among 
+the most fuel-efficient aircraft on the market. Over the same period, 
+we retired a similar number of older, less fuel-efficient aircraft. 
+
+We will continue to engage with SAF producers and airframe and 
+aircraft engine manufacturers to better understand new low-carbon 
+technologies that may become available over our planning horizon.
+
+We recently introduced a carbon offsetting opportunity for our 
+customers as a way to enable to them to travel efficiently while 
+also offsetting the GHG impact of their flights. We intend to further 
+integrate other sustainability practices into the products, services 
+and experiences we offer our customers. 
+
+We will deepen our customer relationships by partnering with a range 
+of stakeholders, including governments, manufacturers, suppliers and 
+customers, on sustainability initiatives that have the potential to boost 
+low-carbon pathways, such as sustainable aviation fuels.
+
+22
+
+Potential Financial Impact LevelLowMediumHighAmerican Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Potential Financial Impact
+
+Short  
+Term
+
+Medium  
+Term
+
+Long  
+Term
+
+Mitigation Strategy
+
+Risk Type
+
+Reputation
+
+Climate-Related  
+Risk Definition
+
+The risks of damage to brand 
+value and loss of customer 
+base from shifting public 
+sentiment about climate 
+change. This may include:
+
+ • Shifts in customer prefer-
+
+ences
+
+ • Stigmatization of the sector
+
+ • Increased stakeholder 
+
+concern
+
+Acute
+
+The risk of increasing severity 
+of weather events
+
+ 
+
+s
+k
+s
+i
+R
+n
+o
+i
+t
+i
+s
+n
+a
+r
+T
+
+s
+k
+s
+i
+R
+
+ 
+l
+
+a
+c
+i
+s
+y
+h
+P
+
+Growing recognition among U.S. consumers that climate 
+change is a serious danger may mean some customers 
+choose to fly less frequently or fly on an airline they 
+perceive as more sustainable.
+
+Investors may demand more aggressive sustainability 
+goals and practices from our industry.
+
+Extremely high temperatures may exceed the maximum 
+allowable temperature at which our aircraft are certified 
+by the FAA to operate.
+
+Increases in hot days can interrupt our operations by 
+causing heat buckling on runways and taxiways and 
+other infrastructure damage. Such damage in turn can 
+increase operational and repair costs for airports —  
+costs that would be passed through to us.
+
+In extreme cases, it may become difficult to cool aircraft 
+to an acceptable temperature for customers and crew.
+
+Increased frequency and intensity of hurricanes places 
+operations and infrastructure at Miami International 
+Airport at risk. Increases in storm activities can result  
+in substantial costs relating to canceled flights and 
+airport closures.
+
+We are developing a robust and multifaceted long-term climate 
+change strategy aimed at driving progress toward ambitious goals 
+and positioning our company to be a leader on sustainability.
+
+We intend to continue our efforts to reduce carbon emissions using 
+the various levers available to us at this time — including consider-
+ation of how to include modern aircraft, efficient technology, sound 
+operational practices and sustainable fuels — in our overall climate 
+mitigation strategy. We are looking to embrace new low-carbon  
+levers as they become available.
+
+We also plan to continue to communicate our sustainability practices  
+to our customers, team members and suppliers so they understand  
+the measures we are taking to reduce our climate impact.
+
+We will continue to monitor temperatures at airports exposed to acute 
+temperature risk and work with aircraft manufacturers to ensure that 
+our aircraft are able to operate safely under a range  
+of operational conditions. 
+
+Over the next five years, we intend to incorporate the projected impacts 
+of climate change into design standards for physical assets, capital 
+improvement plans, disaster management, emergency response  
+and scheduling.
+
+To mitigate projected impacts from increasing temperatures, we plan 
+to invest in additional ground cooling and upgrades to gate-based 
+cooling systems.
+
+We are investigating options to mitigate the impacts of hurricanes, 
+which may include enhancing airport infrastructure to withstand 
+stronger winds from storms. 
+
+23
+
+Potential Financial Impact LevelKey Risks (continued)LowMediumHighAmerican Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Risk Type
+
+Climate-Related  
+Risk Definition
+
+Potential Financial Impact
+
+Short  
+Term
+
+Medium  
+Term
+
+Long  
+Term
+
+Mitigation Strategy
+
+Acute 
+(continued)
+
+The risk of increasing severity 
+of weather events
+
+Flooding from intense precipitation at major hubs in 
+Charlotte, North Carolina; Los Angeles; and London 
+can interrupt critical expansion strategies. Increases in 
+precipitation can result in excess loading of stormwater 
+infrastructure designed for lesser flows, increasing the 
+risk of flooding. Increases in the severity of storms can 
+cause flooding, which can wear infrastructure.
+
+Cyclonic events in the Gulf of Mexico region — where 
+almost 50% of U.S. crude oil refining capacity is located 
+— can disrupt fuel supplies. A significant portion of 
+our fuel is sourced from Gulf of Mexico refineries and 
+is stored in, or must be transported from, the region, 
+which poses a risk to our operations if those facilities are 
+disabled for any period of time. Pipelines and storage 
+terminals may also be at risk from extreme weather. 
+Terminals may be supplied via ocean-going vessels if 
+refineries are shut down, but there are no viable alterna-
+tives to move the amount of fuel stranded if pipelines are 
+shut down due to flooding or other hurricane impacts.
+
+Sea-level rise in Miami, Los Angeles, Philadelphia and 
+New York may require hardening of the airports in these 
+locations, or even relocation.
+
+Because high air temperatures reduce air density, chron-
+ically high temperatures at some of our hub airports 
+may require restricting the availability of seats for sale 
+in certain markets, the use of aircraft with higher engine 
+thrust and potentially reduced schedules. 
+
+s
+k
+s
+i
+R
+
+ 
+l
+
+a
+c
+i
+s
+y
+h
+P
+
+Chronic
+
+The risk of longer-term 
+changes in weather patterns
+
+To mitigate the impact of flooding on infrastructure, we plan to 
+incorporate the projected impacts of increasing precipitation into 
+design standards for physical assets, capital improvement plans, 
+disaster management and emergency response, master plan 
+development and early warning systems.
+
+Our strategies to mitigate this risk include sourcing our fuel from 
+multiple regions and maintaining a reserve of fuel at our hub 
+airports. The number of days of operations held in these reserves 
+varies by airport, depending on the risk of extreme weather, the 
+number of pipelines that serve the airport and other factors. We 
+monitor closely the changing likelihood of severe weather and 
+adjust these reserves accordingly.
+
+Another strategy to mitigate this risk is our work to expand the 
+commercial availability of SAF, which has the potential to further 
+diversify fuel sources and supply.
+
+We recognize that we cannot halt sea-level rise on our own. Given 
+the vulnerability of these key airports to flooding from sea-level 
+rise, and the resulting impact to business continuity, we intend to 
+investigate options to mitigate the impacts of sea-level rise, which 
+may include fortifying the shoreline around those facilities and, as a 
+last resort, considering options for relocation to areas further inland. 
+The cost/benefit of available options may lead to adjustments to our 
+network. We also plan to engage with policymakers to explore paths 
+to greater resiliency. 
+
+Over the next five years, we plan to incorporate the projected 
+impacts of climate change into aircraft purchasing plans, routing 
+and scheduling. We will also work with airframe and engine manu-
+facturers to develop aircraft that meet the technical specifications 
+required for operation at airports with sustained high temperatures.
+
+24
+
+Potential Financial Impact LevelKey Risks (continued)LowMediumHighAmerican Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Opportunity Type
+
+Potential Financial Impact
+
+Short  
+Term
+
+Medium  
+Term
+
+Long  
+Term
+
+Realization Strategy
+
+Resource efficiency
+
+Reduce fuel costs by continuously modernizing our fleet with more 
+efficient aircraft and operational improvements
+
+Energy resources
+
+Shift to increasing shares of SAF, reducing exposure to the cost of 
+growing carbon regulation and diversifying fuel supply
+
+Products and  
+services
+
+Markets
+
+Resilience
+
+Attract travelers with a preference for low-carbon travel
+
+Increase scheduled flights at our hubs that are at lower risk of adverse 
+effects from climate change, such as Charlotte Douglas International 
+Airport (CLT) and Dallas/Fort Worth International Airport (DFW)
+
+Continue to expand our network of hubs and gateways across 
+multiple sites with reduced climate risk, which we expect will in turn 
+provide more connectivity for our customers
+
+We already have the youngest fleet among U.S. network carriers, and we 
+are planning to continue our fleet modernization program in the coming 
+years. We are pursuing measures to improve operational efficiency, 
+including further strengthening our fuel conservation management and 
+oversight. We will also continue to advocate with policymakers for reform 
+of the nation’s air traffic control system, which has the potential to reduce 
+GHG emissions from aviation.
+
+We have executed an offtake agreement with Neste, agreeing to purchase 
+9 million gallons of SAF over three years beginning in 2020. We plan to 
+continue to pursue opportunities to increase our use of SAF and advocate 
+for policies that will increase SAF production capacity and improve its 
+commercial viability.
+
+We have added a consumer-facing carbon offset option on our website 
+and are exploring other opportunities to provide low-carbon offerings to 
+our customers.
+
+CLT is American’s second-busiest hub and is geographically well-positioned 
+to connect passengers domestically and internationally. Plans for the 
+expansion and augmentation of current services will be considered. DFW 
+is currently our largest hub, but there remains opportunity for growth.
+
+Our planned resilience program includes:
+
+ • Conducting criticality and resilience assessments for operational 
+
+procedures and existing infrastructure
+
+ • Integrating the projected impacts of climate change into business 
+
+continuity plans and emergency planning
+
+ • Developing effective communication channels with airport staff and 
+aviation stakeholders, including air navigation service providers, 
+off-airport service providers, academia, communities and municipal 
+authorities responsible for weather monitoring, climate analysis and 
+disaster management
+
+25
+
+Potential Financial Opportunity LevelKey Opportunities (continued)LowNoneMediumHighAmerican Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Climate-Related Risks and Opportunities (continued)
+
+Climate-Related Scenarios Used to Explore the Resiliency  
+of Our Short-, Medium- and Long-Term Strategy 
+
+Name
+
+Scenario
+
+Warming Above 
+Pre-Industrial Levels 
+Projected for 2100
+
+American Airlines 
+2030 Global Annual 
+Emissions in MMTCO2
+
+*
+
+Business-as-usual
+
+Approximately 6° C
+
+52.5
+
+IEA 2019 World Energy 
+Outlook (WEO) Current 
+Policies Scenario (CPS)
+
+Existing expressed 
+commitments to 
+mitigation
+
+IEA 2019 WEO Stated 
+Policies Scenario 
+(STEPS)
+
+Approximately 2.7° C
+
+33.1
+
+Rapid reductions 
+in line with Paris 
+Agreement
+
+IEA 2019 WEO Sustain-
+able Development 
+Scenario (SDS)
+
+66% chance of 1.8° C 
+or less
+
+26.5
+
+* Million metric tons of CO2
+
+Results of Carbon Risk Scenario Analysis Used to Quantify the  
+Annual Financial Impact of Rising Energy Costs 
+
+Carbon Risk Pricing Metric
+
+Climate Scenarios
+
+Annual Impact in 2030  
+Compared to 2019 Baseline
+
+STEPS
+
+SDS
+
+Potential cost of carbon (million dollars)
+
+$139.97
+
+$425.39
+
+Percentage change in fuel costs
+
+1.16%
+
+3.53%
+
+Potential change in operating margin
+
+(0.21) pts
+
+(0.25) pts
+
+(0.75) pts
+
+CPS
+
+$116.98
+
+0.97%
+
+Extreme Heat and Flight
+
+One impact of climate change — which is already being felt across the southwestern part of the United 
+States — will be more frequent heat waves and extreme temperature days. Rising temperatures will 
+affect how people live and how industries operate, including airlines. 
+
+Extreme heat affects aircraft in several ways. Hotter air is less dense than cooler air, meaning higher 
+temperatures result in less lift and require more engine thrust for planes to take off. Hotter, thinner air 
+also reduces engine output. While most aircraft can operate in very high temperatures (generally up 
+to 126° F), doing so depends on a variety of factors — such as airport infrastructure and altitude — and 
+requires making operational changes. And, smaller regional aircraft typically have lower maximum 
+temperature thresholds. 
+
+Constructing longer runways, which can accommodate the higher speeds needed to attain the altitude 
+required by the flight path, is one way to enable planes to take off in hotter weather. A more immediate 
+way is to reduce aircraft weight — thereby reducing the thrust required to take off — by limiting the 
+number of passengers or the amount of cargo. On a typical American flight from Phoenix to New York,  
+for example, we can fly with all the seats filled when it’s 100° F. But if the temperature goes up to 110° F,  
+the flight’s capacity goes down by six seats — and if it rises to 120° F, we may have to reduce our maximum 
+capacity by as many as 35 seats. 
+
+Increases in the number of hot days can cause heat buckling on runways and taxiways and other infra-
+structure damage. And in extreme cases, it may become difficult to cool the aircraft to an acceptable 
+temperature for customers and crew.
+
+As part of our analysis of climate-related risks, we have identified which of our key sites face risks from 
+increased temperatures and more frequent extreme heat events in the short, medium and long terms. 
+And we are exploring strategies for mitigating those risks, such as making schedule changes to have 
+more flights depart during cooler times of day at certain times of year and implementing new health and 
+safety procedures for our team members. 
+
+26
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Chronic Risks
+
+Acute Risks
+
+Increased  
+Temperatures
+
+Sea-Level  
+Rise
+
+Precipitation 
+Changes
+
+Flooding
+
+Cyclonic 
+Events
+
+Extended 
+Drought
+
+Extreme  
+Temperatures
+
+Timeframe
+
+2035
+
+2060
+
+2035
+
+2060
+
+2035
+
+2060
+
+2035
+
+2060
+
+2035
+
+2060
+
+2035
+
+2060
+
+2035
+
+2060
+
+Site-Level Analysis of Physical Risks
+
+Our initial assessment indicates that our existing risk manage-
+
+ment processes, including diversification of key assets and 
+
+revenue streams and allocation of risk to third parties such 
+
+as insurance companies — as well as ongoing due diligence 
+
+related to changes in the likelihood of acute hazards — have 
+
+been effective in avoiding material risk from the physical 
+
+impacts of climate change. 
+
+We will regularly evaluate and refine our risk management 
+
+processes to ensure they remain effective as climate-related 
+
+risks evolve and emerge. We will also continue to monitor 
+
+and assess the key physical risks identified during our initial 
+
+assessment, which include those noted in the table at right: 
+
+Risk assessments were based on qualitative analysis that 
+considered and factored in both the likelihood and the conse-
+quences of a particular risk affecting operations at each site  
+over the two time horizons. 
+
+Low Risk
+
+Medium Risk
+
+High Risk
+
+Charlotte 
+(CLT)
+
+Chicago 
+(ORD)
+
+Dallas/Fort Worth 
+(DFW)
+
+London 
+(LHR)
+
+Los Angeles 
+(LAX)
+
+Miami 
+(MIA)
+
+New York 
+(JFK and LGA)
+
+Philadelphia 
+(PHL)
+
+Phoenix 
+(PHX)
+
+Tulsa 
+(Tech Ops)
+
+27
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Governance and Management
+
+plans to update and expand American’s sustainability strategy, with a 
+
+Our Sustainability Steering Committee — which is a cross- 
+
+focus on addressing climate-related risks and opportunities. 
+
+functional and cross-operational group of leaders from across 
+
+The potential impacts of climate change span many aspects of 
+
+American’s business. Day-to-day management of climate-related 
+
+Management Responsibility
+
+issues is embedded across our company — from our Airport Opera-
+
+Led by an Executive Vice President who reports directly to the CEO, 
+
+tions teams that do resiliency planning for more frequent and severe 
+
+American’s Corporate Affairs group has responsibility for managing 
+
+weather events, to our Fuel Procurement team working to secure 
+
+and coordinating the company’s ESG efforts, including those related 
+
+cost-competitive supplies of sustainable aviation fuel.
+
+to sustainability and climate change. In 2019, we recruited a new 
+
+Managing Director for ESG and reorganized the sustainability group  
+
+under her leadership. This group was tasked with, among other respon-
+
+sibilities, facilitating the enterprisewide climate risk assessment and 
+
+scenario-planning process to inform our new climate strategy.
+
+our business — has responsibility for monitoring global trends, 
+
+responding to stakeholder inquiries, offering recommendations to 
+
+senior leadership and engaging with our Board on sustainability 
+
+issues. Led by our Executive Vice President of Corporate Affairs, 
+
+the group includes representatives from Airport Operations, Flight 
+
+Operations, Technical Operations, Cargo, Finance, Safety, People and 
+
+Communications, Legal, Government Affairs and Investor Relations.  
+
+In 2020, this committee is focusing on identifying, assessing and 
+
+making recommendations for addressing climate-related risks  
+
+and opportunities.
+
+As climate change has become a more pressing challenge for our 
+
+company and our planet, we have taken steps to formalize and 
+
+centralize coordination of how American manages climate-related 
+
+issues. This includes reconsidering the way environmental, social 
+
+and governance (ESG) matters — and climate change, in particular 
+
+— are overseen by our Board of Directors to ensure we have robust 
+
+governance of climate-related risks and opportunities. It also includes 
+
+enhancing our management capacity to lead the development and 
+
+execution of our long-term climate change strategy.
+
+Board-Level Oversight
+
+American’s Board of Directors oversees the company’s enterprisewide 
+
+approach to risk management. Either as a full Board or through one 
+
+or more of its committees, the Board reviews strategy and manage-
+
+ment’s assessment of material risks affecting our business, including 
+
+potential climate-related risks.
+
+The Corporate Governance and Public Responsibility Committee 
+
+has primary responsibility for oversight of American’s sustainability 
+
+efforts. In 2020, the committee’s charter was updated to formally 
+
+codify this role, including explicit reference to its oversight of 
+
+climate-related risks and opportunities. The committee meets every 
+
+quarter, and beginning in 2020, climate-related issues will be a 
+
+standing agenda item for committee meetings and included in all 
+
+quarterly updates. 
+
+The full Board receives periodic updates on climate-related issues, most 
+
+recently at its October 2019 meeting when it approved management’s 
+
+28
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Operating 
+Safely
+
+29
+
+CEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+At American Airlines, our first priority — and our foremost duty to our customers 
+and our team members — is ensuring we operate every flight safely. Flight safety 
+means protecting our customers and team members from the start through the  
+end of a trip, from boarding passengers and loading baggage before departure  
+to parking the aircraft on arrival and deplaning passengers and team members.
+
+cess, and we are proud to have safely transported more  
+
+Running a safe and reliable operation is critical to our suc- 
+
+in 2019. Since our merger with US Airways at the end of 
+
+2013, our team members have safely transported more than 1 billion 
+
+than 215 million customers on more than 2.3 million flights 
+
+passengers.
+
+We are dedicated to fostering and sustaining a culture of safety 
+
+that guides every decision we make. We have helped change the 
+
+way the industry uses operational data and works with the Federal 
+
+Aviation Administration (FAA) to identify and address risks. We have 
+
+empowered every team member who touches our aircraft to take a 
+
+plane out of service if there is a safety concern. And we have built 
+
+a culture that encourages all team members and contractors to ask 
+
+questions and report safety hazards, concerns and incidents without 
+
+fear of reprisal.
+
+Our best-in-class maintenance program meets or exceeds FAA and 
+
+manufacturer requirements. In 2019, we had the largest maintenance 
+
+team in the industry with 15,000 Technical Operations professionals, 
+
+which includes more than 9,000 FAA-licensed aviation maintenance 
+
+technicians and more than 100 FAA-awarded Master Mechanics. 
+
+We are constantly improving our maintenance and safety processes 
+
+through state-of-the-art data analysis.
+
+Our Goals
+
+Maintain the highest passenger  
+safety standards, with zero serious  
+customer injuries 
+
+Reduce on-the-job team  
+member injuries 
+
+Reduce aircraft ground damage
+
+We aim to improve our team member safety performance every  
+
+operations, several key metrics have worsened since 2017. In 2020, 
+
+year, but we have not met our own goals in this area. While we  
+
+we are redoubling our efforts to keep our team members safe, and 
+
+are deeply saddened to have experienced an employee fatality at  
+
+we are already seeing results. 
+
+one of our wholly owned regional carriers in 2019 (see p. 33), key 
+
+safety metrics for our regional operations have improved since 
+
+2017 — reflecting our continual efforts to strengthen our safety- and 
+
+health-related policies, procedures and practices. In our mainline 
+
+30
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+We have empowered every team member 
+who touches our aircraft to take a plane out 
+of service if there is a safety concern.
+
+Safety Governance and  
+Management
+
+An uncompromising commitment to safety, security and continuous 
+
+improvement is a shared responsibility — from our Board of Directors 
+
+to frontline team members. 
+
+Our Chief Executive Officer retains ultimate responsibility and 
+
+authority for safety performance, and our Board of Directors receives 
+
+monthly updates on key safety performance metrics. In July 2020, we 
+
+updated the charter for the Board of Directors’ Corporate Governance 
+
+and Public Responsibility Committee to include safety as one of its 
+
+formal oversight responsibilities. That committee will review quarterly 
+
+presentations from management on our safety performance and will 
+
+also receive the same monthly updates that management receives. 
+
+The safety of our customers and team members is guided by our 
+
+Safety Management System (SMS), an organizationwide approach 
+
+to managing risk and assuring the safety of our operations and team 
+
+members. Our SMS emphasizes safety management as a funda-
+
+mental business process to be considered in the same manner as 
+
+SMS promotes a culture in which our team members proactively 
+
+commitment to safety performance and to improving the level of 
+
+identify, analyze and mitigate risks throughout all aspects of our 
+
+safety through measurable goals and key performance indicators. 
+
+operations. The SMS ensures robust and repeatable processes driven 
+
+Part of our SMS foundation, the policy helps to create a culture that 
+
+by data to reduce risks and continuously improve and enhance safety 
+
+encourages effective management of risk along with continuous 
+
+for our customers and team members. We collaborate closely with the 
+
+improvement. The Safety Policy complies with all applicable regula-
+
+FAA to maintain operational safety at the highest level possible and 
+
+tory requirements and laws in the countries in which we operate  
+
+actively share best practices with our industry peers, governments 
+
+and establishes standards for acceptable operational behaviors. 
+
+and aerospace manufacturers.
+
+Safety Policy
+
+Safety Assurance
+
+The Safety Assurance component of our SMS outlines how we use 
+
+Our Corporate Safety Policy applies to all team members, business 
+
+data collection and conduct quality assurance and internal oversight 
+
+partners, contractors and consultants, and it sets American’s safety 
+
+to validate the effectiveness of risk controls and the performance of 
+
+objectives and standards and assigns responsibilities for safety 
+
+the SMS. Through the Safety Assurance component, we verify that 
+
+across our organization. The policy also conveys management’s 
+
+risk controls in our operational processes continue to conform to the 
+
+The Four Components of Our SMS
+
+SAFETY POLICY
+Establishes senior management’s 
+
+commitment to continually 
+
+improve safety; defines the 
+
+methods, processes and 
+
+organizational structure  
+
+needed to meet goals
+
+SAFETY RISK MANAGEMENT
+Determines the need for, and 
+
+adequacy of, new revised 
+
+risk controls, based on the 
+
+Applies to
+
+100%
+
+of team members, business 
+partners, contractors  
+and consultants 
+
+SAFETY ASSURANCE
+Evaluates the continued effec-
+
+tiveness of implemented risk 
+
+control strategies; supports the 
+
+identification of new hazards
+
+11,952
+
+reports in 2019 
+
+1,222
+
+risk management  
+worksheets  
+completed in 2019
+
+SAFETY PROMOTION
+Includes training, communication 
+
+and other actions to create a 
+
+positive safety culture within all 
+
+levels of the workforce 
+
+219,400
+
+hours of employee  
+safety training in 2019
+
+other aspects of business management. It involves a full commitment 
+
+assessment of acceptable risk
+
+from the most senior levels of our company through to each team 
+
+member to integrate safety into all parts of how we do our jobs. Our 
+
+31
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+requirements for which they are intended and that they remain effective 
+
+Flight Operations Quality Assurance
+
+safety, our SMS goes further to evaluate a wider range of global risks, 
+
+discrepancies, which are then reviewed jointly by management, the 
+
+IOSA Audit
+
+at maintaining risks at acceptable levels.
+
+Aviation Safety Action Program 
+
+We proactively mitigate any risks to team members before those risks 
+
+can cause injury. In a large organization like ours, one challenge in 
+
+countering potential hazards is that the individuals who can implement 
+
+positive change cannot be the eyes and ears for the whole system. 
+
+We therefore rely on the Aviation Safety Action Program (ASAP), an 
+
+industry tool that encourages voluntary reporting of safety events or 
+
+relevant union and the FAA. The goal of ASAP is to prevent accidents 
+
+and incidents by encouraging frontline team members and airlines 
+
+to report safety information that can identify safety risks, rather than 
+
+letting such incidents go undocumented. American was the first airline 
+
+to create an ASAP program; they have since been adopted by more 
+
+than 250 carriers worldwide. 
+
+In 2019, American recorded 11,952 ASAP reports, up from 10,924 
+
+in 2018. We view an increase in ASAP reports as a positive trend 
+
+because it gives us more opportunities to identify and resolve 
+
+potential safety issues and signals that team members are comfort-
+
+Flight Operations Quality Assurance is a voluntary safety program 
+
+administered jointly by American and the Allied Pilots Association 
+
+(APA) that uses routinely recorded flight data to proactively identify 
+
+including operational disruptions. 
+
+Safety Promotion
+
+and correct deficiencies in flight operations. Through this program, we 
+
+Safety culture is the foundation of any SMS, with trust at the core. At 
+
+routinely monitor approximately 90% of our flights, using algorithms 
+
+American, we believe in a Just Culture approach, which encourages 
+
+that sift through each flight’s data looking for potential safety events. 
+
+each team member to take responsibility and accountability for 
+
+We use the results to understand pilot performance and to monitor 
+
+achieving the highest safety standards and results. This approach, 
+
+aircraft systems, performance and operational efficiency. 
+
+As part of our commitment to transparency and monitoring, we are a 
+
+registered participant in the International Air Transport Association’s 
+
+Operational Safety Audit (IOSA) program, an internationally recog-
+
+nized evaluation system designed to assess an airline’s operational 
+
+management and control systems. The IOSA audit, which takes place 
+
+every two years, creates a structured methodology with standardized 
+
+checklists that are comparable on a worldwide basis, enabling and 
+
+Our Emergency Response Manual (ERM), which establishes effective 
+
+maximizing the joint use of audit reports. 
+
+and efficient response practices for various types of emergencies, is an 
+
+Safety Risk Management
+
+able raising safety concerns when they see them. Currently, we have 
+
+The Safety Risk Management (SRM) element of our SMS provides a 
+
+ASAPs for Flight, Flight Service, Dispatch, Technical Operations 
+
+decision-making process for identifying hazards and mitigating risk 
+
+and Central Load Planning. To enhance our safety performance and 
+
+based on a thorough understanding of our systems and their operating 
+
+culture, we are expanding safety reporting with a new Ground Safety 
+
+environment. SRM enables us to consider the risks in our operations 
+
+Action Program (GSAP). This will enable full reporting for ramp 
+
+employees. We created GSAP by collaborating with the Transport 
+
+and reduce them to an acceptable level. We use the SRM process 
+
+whenever there is a significant change to our operations, such as 
+
+Workers Union of America–International Association of Machinists & 
+
+delivery of a new type of aircraft or the addition of a new airport to 
+
+Aerospace Workers (TWU–IAM) and the FAA. The ASAP and GSAP 
+
+our network. We also apply SRM when our Safety Assurance process 
+
+programs will be able to share information that cuts across multiple 
+
+workgroups. This allows for comprehensive reporting and actions 
+
+to address safety risks across all of our operations. All programs will 
+
+use event review committees composed of representatives from the 
+
+company, the relevant union and the FAA.
+
+identifies a new hazard or the ineffective control of an existing hazard.
+
+We use several tools to identify hazards and evaluate the need for 
+
+new or revised risk controls. The process of risk management is the 
+
+same regardless of the trigger or event, and our SMS looks at multiple 
+
+factors for risk. While the FAA requirements are geared toward flight 
+
+which we have championed for more than a decade and has since 
+
+become an accepted aviation industry standard, encourages team 
+
+members to report errors, risky decisions or omissions without fear of 
+
+punitive actions (although a clear line differentiates between accept-
+
+able and unacceptable behaviors). We train our teams to look at 
+
+potential safety events using three types of behaviors: human errors, 
+
+at-risk behavior and reckless behavior. 
+
+Responding to Emergencies
+
+integral part of our SMS program. The ERM serves as the governing 
+
+document for the entire American Airlines Corporate Emergency 
+
+Response Plan and details guidelines to prepare for and respond to 
+
+emergencies, responsibilities for team members across our organi-
+
+zation, protocols for communicating with both internal and external 
+
+stakeholders and mechanisms for stakeholders to report emergencies. 
+
+3,900+ 
+
+risk management worksheets completed 
+since our merger with US Airways in 2013
+
+32
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+The ERM includes a detailed Pandemic Preparedness and Response 
+
+Our senior leadership team, including our Chief Executive Officer 
+
+that would be less hot to wear and give them greater visibility. We 
+
+Plan, which we put into action once the severity of the COVID-19 
+
+and our company President, receive monthly updates on team 
+
+tested prototypes of the new caps at locations with high head/scalp 
+
+pandemic became clear. The pandemic response plan provides 
+
+member safety. These updates are provided as part of our SMS. 
+
+injury rates and, based on the feedback we received, rolled out two 
+
+uniform policies and procedures for protecting our team members 
+
+(See more on p. 31.) 
+
+new bump caps to our entire team in 2019.
+
+and customers and facilitates coordination among our Chief Medical 
+
+Officer, our pandemic committee and regulatory agencies. American’s 
+
+corporate response is guided by the World Health Organization’s 
+
+Pandemic Level ratings, in addition to information from the Centers 
+
+for Disease Control and Prevention. (See p. 35 for more on our 
+
+response to COVID-19.)
+
+Across our organization, we focus on injury reduction, evaluate trends 
+
+We also recently developed a program for team members who suffer 
+
+and develop programs to enhance safety. We have been centralizing 
+
+repeated on-the-job injuries. The initiative will evaluate whether 
+
+our data collection and injury reporting tools to provide better visibility 
+
+these team members are working unsafely — and therefore need 
+
+and access to company leaders. In addition to monitoring injury 
+
+trainings and tools to change their work behaviors — or if their initial 
+
+rates, we closely track aircraft ground damage because it is strongly 
+
+injuries made them more susceptible to repeated injuries. 
+
+Team Member Safety
+
+Maintaining a safe workplace for every one of our team members is 
+
+a cornerstone of American’s safety program, and we aim to reduce 
+
+our employee injury rate every year. Although our regional operations 
+
+reduce them. 
+
+correlated with on-the-job injuries. 
+
+We have developed a strong culture of injury reporting, and team 
+
+members are urged to report all injuries — including those that do not 
+
+require medical attention — because having the most comprehensive 
+
+view possible into potential injury risks is critical to finding ways to 
+
+have improved over the last three years, we have experienced a 
+
+Among all team member groups, our ramp agents have the highest 
+
+disappointing increase in injuries across our mainline operations 
+
+rate of injuries, primarily as the result of lifting baggage, often 
+
+during this same period.
+
+In 2019, we were deeply saddened to experience an employee fatality 
+
+— a valued member of our ground support crew in our regional 
+
+operations. We can — and must — do better, and we have therefore 
+
+increased safety oversight at the highest levels of our company and 
+
+put into place new initiatives and structures designed to improve 
+
+safety throughout our operations. (See p. 31 for information on 
+
+Board of Director oversight.) 
+
+In August, a ramp agent was killed during an accident at Charlotte 
+
+Douglas International Airport. Described as a hard worker and dedicated 
+
+team member, he was passionate about people and airplanes. He was 
+
+also known for shining a positive light in any situation. Our wholly owned 
+
+regional carrier, Piedmont, continues to investigate the root cause of 
+
+the accident and implement risk controls while working with the U.S. 
+
+Occupational Safety and Health Administration (OSHA) to ensure the 
+
+safest environment for our team members and customers.
+
+in awkward and tight spaces. We recently conducted a training 
+
+program on proper lifting techniques and hired on-site athletic 
+
+trainers at our busiest airport hubs to work with ramp agents on 
+
+body mechanics and fitness. Our flight attendant group has the 
+
+second highest rate of injuries, followed by aircraft mechanics. To 
+
+address flight attendant injuries during flight, we established a 
+
+Turbulence Task Force to provide policies, procedures and capabil-
+
+ities to reduce team member and passenger injuries and improve 
+
+the flight experience. Through this group, we have revised our 
+
+turbulence avoidance and event procedures, strengthened our seat 
+
+belt policy, and improved our technology to provide our pilots with 
+
+real-time turbulence avoidance information.
+
+To reduce head and scalp injuries among mechanics, we introduced a 
+
+new bump cap, which is a hat with a hard plastic insert — worn when 
+
+hard hats are not required — that helps protect against injuries. Our 
+
+mechanics told us that they wanted a lighter cap with a shorter bill 
+
+Partnering with Our Unions
+
+We work with our unions on an ongoing basis to identify safety 
+concerns and new ways to improve our safety performance. The 
+ASAP process described on p. 32 is the result of cooperation 
+between airlines and their union partners. Such cooperation 
+is integral to our entire safety program. Over the course of 10 
+months in 2019–2020, for example, we teamed up with union 
+leaders from the TWU–IAM and the APA to evaluate safety risks 
+at the gate at our 14 largest airports and to develop mitigation 
+plans for each identified risk. This exercise resulted in a number 
+of findings, all of which are being addressed now. 
+
+Importantly, our unions have been instrumental in developing 
+and communicating new team member safety measures enacted 
+because of the COVID-19 pandemic. Learn more on p. 35.
+
+33
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+ 
+
+Mainline 
+
+Regional
+
+Saf ety Performance
+
+Flight Safety Performance
+
+Number of flights*
+
+Number of aviation accidents**
+
+s
+c
+i
+r
+t
+e
+M
+B
+S
+A
+S
+
+ 
+
+Number of enforcement actions from government agencies***
+
+Number of safety risks and hazardous situations identified†
+
+Percentage of safety risks and hazardous situations identified that were mitigated‡
+
+Aircraft ground damages (rate per 10,000 departures)§
+
+ASAP reports
+
+*  Mainline and owned regional
+
+2019
+
+1.9 million
+
+4
+
+0
+
+81
+
+97%
+
+2.43
+
+11,952
+
+3
+
+0
+
+372
+
+97%
+
+0.72
+
+10,349
+
+**   Defined according to the International Civil Aviation Organization (Annex 13) and the National Transportation Safety Board (Part 830). Of the four mainline accidents in 2019, three involved crew member 
+injuries due to turbulence and the fourth involved aircraft damage to a wingtip. Of the three regional accidents in 2019, one involved a crew member injury due to turbulence, a second involved a crew 
+member injury when one aircraft touched another while taxiing and a third involved a skid off a runway under icy conditions (with no injuries). No customer was injured in these accidents.
+
+*** Defined to include enforcement actions by the FAA, the European Aviation Safety Agency or equivalent national authorities related to the regulation of aviation safety.
+
+†   The majority of our risk assessments are performed proactively prior to implementing or revising systems/procedures. American’s comprehensive SMS covers safety risks and hazardous situations 
+
+related to six areas: flight safety, flight service, ground operations, technical operations (maintenance), security and environmental. The figures reported here include all such risks identified by our SMS. 
+Regional data combines all risks from Piedmont, PSA and Envoy airlines.
+
+‡   Our SMS requires that we mitigate identified risks, particularly high risks, to as low as reasonably practicable (ALARP). 3% of our 2019 identified risks were already ALARP. These systemic and residual 
+
+risks are monitored, measured and tracked.
+
+§   We use guidance from Airlines for America to determine aircraft ground damages.
+
+Team Member Safety Performance
+
+2019
+
+2018
+
+2017
+
+ 
+
+Mainline 
+
+Regional
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Injury rate*
+
+Lost day rate**
+
+Work-related fatalities
+
+*  Total recordable cases per 200,000 manhours
+
+9.57
+
+6.14
+
+0
+
+7.11
+
+3.74
+
+1
+
+9.21
+
+5.43
+
+0
+
+7.55
+
+3.88
+
+0
+
+8.43
+
+4.89
+
+0
+
+8.13
+
+3.88
+
+0
+
+** The lost day rate, which OSHA calls the Days Away from Work Injury and Illness rate, is calculated as the number of cases multiplied by 200,000 work hours divided by total hours worked.
+
+34
+
+VPP Status
+
+OSHA’s Voluntary Protection Program (VPP) recognizes 
+employers and workers who have implemented effective safety 
+and health management systems and maintain injury and illness 
+rates below U.S. Bureau of Labor Statistics’ national averages 
+for their industries. The VPP is focused on preventing fatalities, 
+injuries and illnesses through a system that emphasizes hazard 
+prevention and control, worksite analysis and training. Our Tech 
+Ops–Tulsa Auxiliary Power Unit and Aircraft Wiring Center facility 
+was the first group at American to become VPP-certified, and our 
+maintenance centers in Pittsburgh and Charlotte are seeking  
+VPP certification. 
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Responding to COVID-19
+
+Travel with Confidence
+
+The high-efficiency particulate air (HEPA) filtration system on board our 
+
+and airports, enhancing procedures on all flights and developing new 
+
+entire mainline fleet — and most regional jets — provides a complete 
+
+disinfection protocols for catering equipment and supplies. 
+
+COVID-19 has forced us to rethink how we deliver our services, to 
+
+keep customers and team members healthy and to provide peace of 
+
+mind during air travel.
+
+Throughout the pandemic, we have worked closely with the Centers 
+
+for Disease Control and Prevention and a range of outside experts to 
+
+understand the latest developments and determine the adaptations 
+
+necessary for our operations. In June 2020, we announced our new 
+
+Travel Health Advisory Panel, which is providing us with advice and 
+
+guidance on disease prevention, cleaning procedures and other 
+
+public health matters. This panel complements our internal COVID-19 
+
+working group of experts from across our business, including our 
+
+medical director; this group meets regularly to review the latest 
+
+guidance from health officials and coordinate our response. 
+
+air change every two to four minutes. HEPA technology is similar to the 
+
+standards for hospitals, helping keep environments clear of bacteria and 
+
+viruses while providing clean air.
+
+In addition, we have put in place a multilayered and ever-evolving ap-
+
+proach to protect the health of customers and team members, including:
+
+ • Requiring face coverings for customers throughout their entire 
+
+journey — and denying boarding or future travel for customers 
+
+ • Asking customers during check-in to certify that they have been 
+
+free of COVID-19 symptoms for the past 14 days
+
+ • Instituting temperature checks for team members at major 
+
+locations across the system
+
+ • Offering preflight COVID-19 testing for customers traveling to 
+
+international destinations, starting with Jamaica and the Bahamas, 
+
+with plans to expand the program to additional markets
+
+These are just some of the important safety measures we are taking. 
+
+Our Clean Commitment
+
+The American Airlines Clean Commitment is our promise that we’re 
+
+taking bold measures and using the latest products and technology to 
+
+help ensure the well-being of our customers when they travel with us 
+
+and the well-being of our team members as they provide this service. We 
+
+have expanded our already comprehensive efforts to clean our aircraft 
+
+In late August, we became the first airline to announce plans to upgrade 
+
+to SurfaceWise2, a breakthrough electrostatic spraying solution from 
+
+Allied BioScience. The SurfaceWise2 solution is the first long-lasting 
+
+Visit our website for the most up-to-date 
+information on our response to COVID-19 
+and what we are doing to keep our cus-
+tomers and team members safe.
+
+7.  American Airlines requires all customers over the age of 2 to wear face coverings at airports and 
+on board. The only time face coverings may be removed at the airport or on board is when the 
+customer is eating or drinking.
+
+35
+
+The COVID-19 pandemic has disrupted our world, our industry and 
+
+who refuse to comply7
+
+our company to an extraordinary and unprecedented extent, upending 
+
+ • Making the wearing of a face covering an essential function of 
+
+business as usual across every sector of society and devastating 
+
+our team members’ jobs, requiring them while at work
+
+families and communities with immeasurable pain and loss. 
+
+ • Enhancing cleaning procedures on our aircraft, in our airports 
+
+Since the start of the crisis, our foremost priorities have been the 
+
+and at our facilities
+
+health and well-being of our customers and team members and, 
+
+ • Installing plexiglass shields at ticket counters and boarding gates
+
+notwithstanding the impact of the virus on customer demand, the 
+
+ • Deploying touchless check-in at airports, including printing 
+
+continued ability of American to deliver access to needed air service 
+
+baggage tags at kiosks
+
+across our nation and provide livelihoods for our team members.
+
+ • Modifying onboard food and beverage service to minimize contact
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+product approved by the U.S. Environmental Protection Agency to help 
+
+checking team members’ temperatures when they enter their work 
+
+fight the spread of COVID-19. SurfaceWise2 creates an invisible barrier 
+
+location. Those who record a temperature above the limit set by 
+
+Supporting Our Communities
+
+on surfaces, which physically breaks down and kills virus cells, helping to 
+
+the CDC or applicable government order are sent home. We’ve also 
+
+protect passengers and team members against COVID-19 transmission 
+
+made COVID-19 testing more accessible for team members.
+
+via surfaces, particularly on high-touch areas such as seats, armrests, tray 
+
+tables and overhead bin doors.
+
+Team members are eligible for two weeks of paid leave if they are 
+
+awaiting test results, have received a confirmed diagnosis, or have 
+
+We also were the first airline to begin working with the Global Biorisk 
+
+been ordered quarantined by a physician or public health official 
+
+Advisory Council (GBAC) for STARTM accreditation for our fleet and 
+
+because of exposure. 
+
+customer lounges. GBAC STAR accreditation demonstrates that 
+
+proper cleaning and disinfection practices, procedures and systems 
+
+are in place to prepare for, respond to and recover from pandemics. 
+
+We expect to receive full accreditation by the end of 2020 for our 
+
+entire fleet and all lounges. GBAC is a division of ISSA, the worldwide 
+
+cleaning industry association.
+
+We also have been offering voluntary and extended leave options for 
+
+team members who do not feel comfortable going to work or who 
+
+need the flexibility to care for children or other family members. All of 
+
+our voluntary leave programs come with continued health benefits 
+
+and continued company match to 401(k) and other contractual 
+
+pension programs. As we adjust our business to the lower demand 
+
+The combination of required face coverings, thorough cleaning 
+
+levels for air travel in a pandemic, we are doing everything we can 
+
+protocols, HEPA filters and the use of SurfaceWise2 will help make 
+
+to support our team members whose positions have been cut. Learn 
+
+the travel experience even safer for team members and customers 
+
+more on p. 45.
+
+who are ready to return to the skies.
+
+Taking Care of Our Team Members
+
+Offering Flexibility for Customers
+
+Flexibility is one way to improve peace of mind in today’s travel envi-
+
+To take good care of our customers, we must take good care of our 
+
+ronment. We recently announced we are eliminating change fees for all  
+
+team. The extensive safety measures we have enacted in response 
+
+domestic and short-haul international flights on Premium Cabin fares 
+
+to COVID-19 are designed to protect customers and team members.
+
+and most Main Cabin fares for tickets purchased October 1, 2020, and 
+
+All team members must wear face coverings when indoors and on 
+
+aircraft. Face coverings are also required when working outdoors, 
+
+except in extreme heat. 
+
+To help ensure a safe work environment for everyone, mainline 
+
+team members are required to complete a short self-declaration 
+
+beyond. We’re also giving customers the ability to fly standby for free 
+
+on earlier flights to the same destination on the same day, and we’re 
+
+providing access to upgrades and seats for all fare types.
+
+Our aim is to make travel easier and less complicated for customers, 
+
+giving them more flexibility when they travel on American.
+
+called “Well for Work” at least every 31 days. This self-declaration 
+
+During 2020, we also began notifying customers whose flights may 
+
+is designed to reduce the spread of COVID-19 by asking team 
+
+be full, allowing them to move at no cost to more open flights. If space 
+
+members to monitor their health daily for any new, unusual or 
+
+is available on the aircraft once boarding is complete — considering 
+
+worsening COVID-19 symptoms and to take appropriate safety 
+
+any aircraft weight or balance restrictions — customers may move to 
+
+precautions when necessary. And at many of our locations, we’re 
+
+another seat within their ticketed cabin.
+
+When COVID-19 struck, American quickly mobilized to address  
+critical needs in communities across our nation that were affected  
+by the pandemic. To ensure the world’s goods continued to get 
+where they needed to go, we used aircraft otherwise grounded to 
+fly cargo flights carrying life-saving pharmaceuticals and medical 
+supplies, as well as fresh produce, electronics and manufacturing 
+parts, to keep the global supply chain moving. As of September 
+2020, we had operated 2,500 cargo-only flights to transport these 
+critical goods and supplies around the globe.
+
+As of August 2020, we had contributed more than 1 million pounds 
+of food from our inventory to food banks across the country — the 
+result of excess supplies given our reduced flying schedule. We 
+provided thousands of care packages to military bases for troops 
+quarantined after returning from deployment and donated supply 
+kits to hospitals in major U.S. cities. In cooperation with our 
+generous customers, we raised more than $3 million to support 
+the American Red Cross and its volunteers. And, team members at 
+multiple locations sewed masks for their coworkers and members 
+of the community.
+
+In May 2020, American and Hyatt awarded more than 4,000 health 
+care professionals — from doctors, physician assistants and 
+nurses to facilities and food service teams — at a hard-hit New 
+York City hospital with three-night complimentary vacations, in 
+recognition of the extraordinary care these individuals provide to 
+the community. We also have awarded hundreds of thousands of 
+air miles points to small businesses and nonprofit organizations 
+needing travel support.
+
+36
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Supporting  
+Our Team  
+Members
+
+37
+
+CEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Our team members are our most important asset — and we believe that if we create 
+an environment where they feel supported, they will take good care of our customers. 
+To do this, we must continue to build a diverse and inclusive environment, helping all 
+team members reach their full potential and providing them with health and wellness 
+support. This philosophy has long guided our company and is even more important 
+as we navigate the COVID-19 pandemic. 
+
+and return to profitability, we must become a smaller airline  
+
+F or our company to emerge from this crisis on sound footing 
+
+our staffing to reflect the current demand environment. See  
+
+in the near term — and that means taking steps to adjust  
+
+p. 45 for a discussion of how we are going about this.
+
+Even amid one of the most difficult periods in our company’s history, 
+
+we recognize that our country is facing another significant challenge: 
+
+the systemic racism that for far too long has harmed Black Americans 
+
+and other Americans of color. We remain committed to fostering a 
+
+more diverse, equitable and inclusive workplace that helps all of our 
+
+team members build successful and rewarding careers. We also 
+
+recognize that we must do more to use our corporate voice to help 
+
+eliminate systemic racism in America.
+
+Diversity, Equity and Inclusion 
+
+Cultivating an environment that celebrates diversity, equity and 
+
+inclusion is a top priority at American, and we seek to create 
+
+a workplace where diverse perspectives and experiences are 
+
+welcomed and encouraged, where team members feel comfortable  
+
+to be their authentic selves and where we are always learning  
+
+from one another.
+
+We have heard from team members and customers that we need 
+
+to improve in this area. In response, we established the role of Chief 
+
+Our Goals
+
+Listen more intentionally to team member 
+concerns and address those concerns in our 
+learning, development, advancement and 
+recruitment programs and processes
+
+Provide additional learning opportunities beyond  
+implicit bias to generate further education and 
+awareness of diversity and inclusion issues
+
+Launch an external Community Council 
+composed of executives and a cross-section  
+of Black community leaders to provide  
+feedback on company initiatives
+
+Support our team members with emotional,  
+physical and financial well-being resources
+
+38
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Inclusion and Diversity Officer; created an Office of Diversity, Equity 
+
+lenges our Black customers face. In addition, we are hosting numerous 
+
+expanding access to well-paying careers as part of our overall 
+
+and Inclusion (DEI); and moved DEI into our talent function so we 
+
+gatherings and listening sessions about race with our team members. 
+
+strategy to increase opportunities in Dallas/Fort Worth, in our nine 
+
+We recognize that the representation of Black professionals in our 
+
+senior leadership is insufficient. We are redoubling our commitment 
+
+to diversifying our leadership team. We will establish specific objec-
+
+tives and lay out a plan to achieve them, including by enhancing our 
+
+recruiting, development and mentorship programs.
+
+We also pledge to assist Black youth in developing job skills and 
+
+other hub cities and in Tulsa, Oklahoma, where our maintenance 
+
+facility is based. As we return to growing our airline and hiring again, 
+
+we will do all we can to ensure that young people in historically 
+
+underserved communities have opportunities to join our team. 
+
+can view all hiring and development through the lens of equity and 
+
+inclusion. We also formed a Team Member Experience organization  
+
+to review any concerns from team members. We created an industry- 
+
+leading implicit bias training program — delivering it to approximately 
+
+105,000 team members as of March 2020 — and formed a specialized 
+
+Customer Relations team to listen to, resolve and learn from customer 
+
+complaints of discrimination (learn more on p. 50).
+
+Recent events in the United States — which have highlighted the 
+
+pervasive and far-reaching impacts of systemic racism — have 
+
+prompted us to think even more deeply about how we can do more 
+
+within our company to advance diversity, equity and inclusion, as  
+
+well as use our corporate voice to be a positive force for change.
+
+Deepening Our Commitment to  
+Our Black Colleagues and Customers
+
+The widespread protests for racial justice in 2020 in response to the 
+
+violence and social injustices faced by Black people in the United 
+
+States underscore the urgent need for systemic change. It also under-
+
+scores the work we must do within our own company to strengthen 
+
+our existing DEI efforts and address the needs of our Black team 
+
+members and customers. 
+
+In the weeks following the first demonstrations, we spoke openly 
+
+with our Black team members, leading to important suggestions 
+
+and recommendations focused on relationship building, continued 
+
+learning and intentional recruitment and advancement. These 
+
+conversations are ongoing.
+
+We are establishing a Community Council, sponsored by American 
+
+Airlines President Robert Isom and composed of senior company  
+
+executives and a cross-section of Black community leaders. The  
+
+council will provide feedback on company initiatives, focusing on  
+
+issues affecting the customer travel experience. We will look to the 
+
+external members of the council for their perspectives on the chal-
+
+39
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Creating an Inclusive Workplace for  
+All of Our Team Members
+
+We know the importance of creating an inclusive workplace for 
+
+current and future team members, and we are redoubling our 
+
+commitment to supporting a culture in which everyone is valued  
+
+Listening Sessions
+
+At American, we aim to translate the energy and awareness 
+sparked by Black Lives Matter protests into meaningful change. 
+But to help create a more inclusive culture, our leaders must first 
+listen and learn from the experiences of our Black team members.
+
+Between June and September, company leaders hosted nearly 
+40 listening sessions involving more than 1,200 team members 
+across our network. Additionally, senior executives visited our 
+hubs in Philadelphia and Charlotte to better understand the 
+experiences of our Black team members and learn what we  
+can do to make our company stronger and more inclusive.
+
+In Philadelphia — our hub with the highest concentration of 
+Black team members — President Robert Isom and other senior 
+leaders heard the need for greater representation at the executive 
+level and for a more equitable process for career advancement. 
+In Charlotte, team members expressed the desire for improved 
+management trust and support.
+
+Following the listening sessions, participants were asked about 
+their hopes and how American can use the stories shared during 
+the sessions to create a more inclusive environment for team 
+members and customers. Only through continued dialogue can 
+we break down barriers, improve our shared understanding and 
+build a better company.
+
+and respected. Any incident of conscious or unconscious bias toward 
+
+our customers or team members is unacceptable and will be addressed 
+
+appropriately. Each one of us is accountable for ensuring that our 
+
+actions and those of our fellow team members support a culture of 
+
+inclusion and respect.
+
+To create a truly diverse workplace — one that provides every person 
+
+with equal opportunities — we must fight unconscious bias. We 
+
+require all team members to participate in a leading, multipronged 
+
+implicit bias training program, which examines ways to recognize and 
+
+mitigate implicit bias and establishes cultural expectations. Launched 
+
+in 2018, the training uses the PAUSE model developed by Howard 
+
+Ross, a leader in creating inclusive leadership and cultures. 
+
+The program includes workplace-specific scenarios that enable 
+
+participants to understand how implicit bias may manifest itself at 
+
+American. More than 105,000 team members completed both the 
+
+in-person and online components of the training as of March 2020. 
+
+Even in our constrained budgetary environment, we committed to 
+
+implementing the second phase of the program in 2020 and beyond 
+
+through online and in-person training.
+
+One of the other important ways we cultivate support is through 
+
+our Employee Business Resource Groups, which are dedicated to 
+
+promoting cultural enrichment, supporting business success and 
+
+engaging team members in community service. 
+
+To create a supportive and inclusive environment, we must have 
+
+policies that make clear how we expect our team members to act, 
+
+uphold our values and treat one another. We are updating our policies 
+
+— including our social media policies — to provide clear guidance 
+
+on conduct and consequences for discriminatory and racially biased 
+
+behavior in the workplace and online. The policies will provide guidance 
+
+on consequences for customers who are verbally abusive or use 
+
+discriminatory language while traveling with us.
+
+Anti-Racism Learning Pathway
+
+Engagement, advocacy and solidarity with our Black team 
+members and customers are more essential than ever. In July, 
+we rolled out an anti-racism learning pathway through Degreed, 
+our online learning platform, which is available to all of our team 
+members. Being an ally requires education and action. The path-
+way offers a collection of articles, books, movies and podcasts 
+about bias and what team members can do to combat it.
+
+“ The first thing we need to do as busi-
+
+ness leaders is to get our own houses  
+
+in order. It’s incumbent upon the  
+
+business sector to make social justice 
+
+a collective priority and to lobby for 
+
+change, which will require legislation 
+
+and community action on things like 
+
+criminal justice, education and eco-
+
+nomic equality. That’s going to require 
+
+sustained engagement and support — 
+
+and we at American are looking  
+
+forward to tackling this aggressively.”
+
+— Doug Parker, Chairman and CEO
+
+40
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Recruiting and Developing Diverse Talent
+
+We have been working to build a strong and diverse pipeline of talent 
+
+through multiple community partnerships dedicated to encouraging 
+
+and mentoring people of color and women who are traditionally 
+
+underrepresented in the aviation and aerospace industries. We also 
+
+partner with Historically Black Colleges and Universities and Hispanic 
+
+Serving Institutions.
+
+To develop and retain Black leadership talent, we are piloting a 
+
+sponsorship program to foster relationship-building opportunities 
+
+for our Black directors and managing directors. Applicants to this 
+
+program, which is voluntary, will be matched with a member of the 
+
+senior team or one of our senior vice presidents. The objectives of the 
+
+program are to enable Black leaders to benefit from the perspective 
+
+and experience of senior leaders; give senior leaders exposure to 
+
+issues Black professionals experience in their day-to-day work lives 
+
+that these leaders may not have encountered personally; and nurture 
+
+mutual understanding that will help facilitate the advancement of 
+
+greater numbers of Black professionals into senior leadership roles in 
+
+our company. As of August 2020, we are testing this approach with a 
+
+small group of Black leaders and will refine it as we receive feedback 
+
+from participants.
+
+Fighting for LGBTQ Inclusion  
+and Equality
+
+American has been a longtime leader and ally in the struggle 
+for equal rights and protections for our lesbian, gay, bisexual, 
+transgender and queer (LGBTQ) team members, customers and 
+community members. We offer medical coverage to same-sex 
+domestic partners and provide benefits for gender reassignment 
+coverage. And we were the first major U.S. airline to protect 
+LGBTQ team members by including gender identity and sexual 
+orientation in workplace nondiscrimination policies. 
+
+In 2019, we joined an amicus brief supporting LGBTQ workplace 
+protections under the Civil Rights Act, which the U.S. Supreme 
+Court upheld in 2020. And in 2020, we joined an amicus brief 
+supporting the application of nondiscrimination laws in the public 
+sphere to protect the rights of same-sex couples, in Fulton vs. 
+The City of Philadelphia. We also have been advocating for the 
+passage of hate crime laws in states where we conduct business. 
+While federal laws exist to penalize hate crimes, we believe every 
+state should affirm that crimes committed as acts of hate have 
+no place in any community in our country. American supported 
+the successful effort to enact a hate crimes law in Georgia, and 
+we have joined with other companies to urge the states of South 
+Carolina and Wyoming to pass similar legislation.
+
+In late 2019, we began offering a nonbinary gender option during 
+the booking process. To implement that enhancement, we are 
+training team members to help raise awareness and sensitivity 
+about issues facing our nonbinary colleagues and customers.  
+The training offers tips and potential language alternatives, such 
+as using “they/them” or names in place of gendered pronouns.
+
+41
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+years with a perfect ranking from the Human  
+Rights Campaign’s Corporate Equality Index
+
+Ethnic Composition of  
+U.S. Employees*
+
+Gender Composition of 
+Total U.S. Employees
+
+2019 Team Member Diversity
+
+16.6% Black
+
+5.6% Asian
+
+0.7% American Indian/Alaskan 
+Native
+
+14.5% Hispanic/Latino
+
+0.8% Native Hawaiian/Other 
+Pacific Islander
+
+2.1% Two or More Races
+
+54.3% White
+
+5.4% Not Specified
+
+Gender Composition by Employee Category
+
+60% MALE
+
+40% FEMALE
+
+(cid:31)(cid:30)(cid:29)(cid:28)(cid:27)(cid:30)
+
+MALE
+
+FEMALE
+
+18 
+
+Top score of 
+
+100 
+
+on the 2020 Disability Equality Index® 
+for the 5th year in a row 
+
+Named to the
+Diversity Best Practices  
+2020 Inclusion Index
+
+certified diverse suppliers
+
+350+
+$449M 
+
+$628M 
+
+spend with diverse suppliers (Tier 1 and Tier 2) in 2019
+
+spend with 1,500+ small business suppliers*
+
+Employee Business Resource Group chapters worldwide
+
+174 
+105,000 
+
+team members completed implicit  
+bias training as of March 2020
+
+(cid:25)(cid:31)(cid:31)(cid:30)
+
+(cid:26)(cid:31)(cid:30)
+
+(cid:27)(cid:31)(cid:30)
+
+(cid:28)(cid:31)(cid:30)
+
+(cid:29)(cid:31)(cid:30)
+
+(cid:31)(cid:30)
+
+* Data are for the Small Business Administration fiscal year ending September 2019.
+
+  See p. 58 and our website for more diversity data. 
+
+* Diversity data are for our U.S. workforce only since diversity tracking is prohibited by law in some other countries. 
+
+(cid:6)(cid:25)(cid:27)(cid:28)(cid:18)(cid:29)(cid:24)(cid:27)(cid:21)
+(cid:26)(cid:30)(cid:15)(cid:21)(cid:9)(cid:5)(cid:24)(cid:19)(cid:28)
+
+(cid:17)(cid:11)(cid:8)(cid:29)(cid:21)
+(cid:26)(cid:30)(cid:15)(cid:21)(cid:12)(cid:27)(cid:24)(cid:7)(cid:16)
+
+(cid:9)(cid:15)(cid:8)(cid:25)(cid:30)(cid:16)
+
+(cid:12)(cid:25)(cid:23)(cid:24)(cid:29)(cid:13)
+
+(cid:22)(cid:23)(cid:25)(cid:11)(cid:10)(cid:29)(cid:21)
+(cid:9)(cid:29)(cid:29)(cid:28)(cid:30)(cid:15)(cid:26)(cid:30)(cid:29)(cid:13)
+
+(cid:12)(cid:26)(cid:13)(cid:13)(cid:28)(cid:30)(cid:11)(cid:28)(cid:27)(cid:21)
+(cid:20)(cid:28)(cid:27)(cid:19)(cid:25)(cid:18)(cid:28)
+
+(cid:14)(cid:28)(cid:13)(cid:28)(cid:27)(cid:19)(cid:26)(cid:29)(cid:25)(cid:24)(cid:30)(cid:13)
+
+(cid:17)(cid:26)(cid:25)(cid:30)(cid:29)(cid:16)(cid:21)
+(cid:26)(cid:30)(cid:15)(cid:21)(cid:14)(cid:28)(cid:23)(cid:26)(cid:29)(cid:28)(cid:15)
+
+(cid:22)(cid:23)(cid:28)(cid:28)(cid:29)(cid:21)
+(cid:20)(cid:28)(cid:27)(cid:19)(cid:25)(cid:18)(cid:28)
+
+(cid:31)(cid:30)(cid:29)(cid:28)(cid:27)(cid:30)(cid:26)(cid:29)(cid:25)(cid:24)(cid:30)(cid:26)(cid:23)
+
+42
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Talent Development
+
+We give our team members the tools, training and resources they 
+
+need to do their best work and stay true to our purpose — caring 
+
+for people on life’s journey. In the years since our merger with US 
+
+Airways, we have created a suite of programs aimed at helping our 
+
+people develop the skills and experience to succeed in their roles  
+
+and build rewarding, long-term careers within our company.
+
+The COVID-19 pandemic has forced us to make difficult decisions 
+
+as we adjust to the new reality. Even though we have had to reduce 
+
+our workforce (see p. 45), we must continue to invest in our people 
+
+to develop and retain the talent we need to succeed in a highly 
+
+competitive and fast-changing industry.
+
+In 2019, we began analyzing the skills that our team members had, 
+
+identifying where there were gaps in connection with our business 
+
+needs and determining how we could help team members build these 
+
+skills we lacked. As part of this process, we partnered with a leading 
+
+online skills development platform called Degreed, which connects 
+
+members. As of July 31, 2020, more than 12,000 team members had 
+
+team members to millions of courses, videos, articles, books, podcasts 
+
+accessed Degreed and consumed more than 670,000 pieces of 
+
+and experts from thousands of internal and external sources. In 2019, 
+
+learning content.
+
+more than 5,000 team members piloted the platform, which has since 
+
+been made available to all team members to develop their profes-
+
+sional and personal skills on their own time and at their own pace.
+
+We also have a partnership with Harvard Business School Publishing to 
+
+provide mainline team members with access to Harvard ManageMentor 
+
+(HMM). One of the most trusted, on-demand professional development 
+
+Degreed lets team members take charge of their professional develop-
+
+resources, HMM covers 41 essential business topics — everything from 
+
+ment, helping them assess and advance their skills, making them more 
+
+managing change to leading people to handling difficult interactions. 
+
+versatile for their current roles and preparing them for new positions. 
+
+Each topic features a collection of concise lessons, videos and tools 
+
+The platform also helps us better understand what skills our team 
+
+for fast and effective learning. We also mapped the HMM topics to our 
+
+members have so we can align the right talent with the right roles in  
+
+company’s leadership attributes and strategic objectives to help our 
+
+the company.
+
+team members understand how their own development can align with 
+
+When it became clear that COVID-19 would have a tremendous 
+
+what’s important at American.
+
+impact on our company — and recognizing the need to continue to 
+
+By offering robust development opportunities, we’re building a more 
+
+invest in our team — we moved quickly to an all-digital professional 
+
+engaged and flexible team while strengthening our overall business.
+
+development platform to facilitate on-demand access for our team 
+
+At year-end 2019:
+
+24 years 
+
+average team member tenure  
+at American
+
+60% 
+
+of open positions filled with  
+internal candidates
+
+43
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Comprehensive Benefits
+
+members — and their covered dependents age 18 and older — make 
+
+(See p. 36 to learn about the pandemic-related leave benefits we 
+
+lasting changes in four key areas of well-being: physical, emotional, 
+
+have offered.)
+
+financial and work. Activities include biometric screenings, online 
+
+well-being assessments, daily step tracking, developing financial 
+
+plans and more. Human performance coaching and stress resilience 
+
+training are also part of the Journey to Well-Being offerings. 
+
+Other benefits include the following:
+
+ • Up to 10 weeks of paid leave through our maternity disability plan
+
+ • Up to $4,000 in financial support for adoption-related expenses
+
+To help further support our team members during the COVID-19 
+
+ • Optum Employee Assistance Program (EAP) to provide coun-
+
+pandemic, we launched free access to online fitness courses, 
+
+seling services for team members and their households; on-site 
+
+including both live-streamed sessions and 1,000 video-on-demand 
+
+support is available at 10 locations 
+
+ • Optum WorkLife Services to help team members find resources 
+
+for child care, elder care, home repairs, legal services and other 
+
+solutions to assist with everyday challenges
+
+We work to provide comprehensive benefits that support the physical, 
+
+emotional and financial well-being of our team members so they can 
+
+live their best lives and enjoy a healthy work-life balance.
+
+Medical coverage. We’re committed to providing medical coverage 
+
+that’s both affordable and flexible. At our headquarters and largest 
+
+hub in Dallas/Fort Worth, we recently launched a new health care 
+
+option called DFW ConnectedCare, which offers lower monthly 
+
+premiums and reduced copays through a direct relationship with an 
+
+accountable care organization affiliated with Baylor Scott & White 
+
+Health. This plan is available to approximately 25,000 team members.
+
+Health care navigation and support. To help team members 
+
+manage and understand their health and well-being benefits, we have 
+
+partnered with Accolade, an independent health benefits navigator. 
+
+Accolade’s personal health assistants help U.S.-based mainline team 
+
+members navigate the health care system and take full advantage 
+
+of their insurance coverage, so they can make the most of all the 
+
+health-related programs and resources American offers. As of July 
+
+2020, more than 40% of unique eligible families had taken advantage 
+
+of this service — an increase from last year — demonstrating the value 
+
+of this program to team members. A similar service is available for 
+
+team members enrolled in DFW ConnectedCare. 
+
+Among the health care resources available for team members are 
+
+telemedicine and discount prescription services. Thousands of team 
+
+members have taken advantage of Doctor On Demand, which offers 
+
+physician consultations via telemedicine 24 hours a day, seven days a 
+
+week. For our round-the-clock workforce, this service offers conve-
+
+nient care when team members need it most. In addition, StayWell 
+
+Rx supports team members with high blood pressure, diabetes and 
+
+asthma by providing discounted medications and supplies. 
+
+Well-being resources. Our new well-being program, Journey to 
+
+Well-Being, launched in 2020 to help all U.S.-based mainline team 
+
+workouts. We also began offering two new digital resources to help 
+
+users reduce anxiety and stress and improve their sleep habits. 
+
+Financial wellness resources. In addition to the financial well-
+
+being track in the Journey to Well-Being platform, this year we 
+
+launched two new tools from Fidelity to support team members in 
+
+their financial planning efforts. The first is the Financial Wellness 
+
+Checkup, a financial wellness portal that addresses broad financial 
+
+needs all in one place. The Financial Wellness Checkup offers a 
+
+score across four key categories — budgeting, debt management, 
+
+savings and protection — so team members know where they stand 
+
+financially at any given point in time.
+
+Second, we updated our Fidelity NetBenefits home page to allow 
+
+those with an American Airlines pension to see their pension benefit 
+
+next to their 401(k) balance. The estimated monthly pension benefit  
+
+is also integrated into Fidelity’s retirement planning software. 
+
+COVID-19 testing. American worked with local health care providers 
+
+in 10 metropolitan areas to make priority COVID-19 testing available to 
+
+covered U.S.-based mainline team members and, in some cases, their 
+
+dependents. For example, we performed more than 1,000 diagnostic 
+
+tests at our headquarters in Dallas/Fort Worth. Nationwide, team 
+
+members were able to be screened for COVID-19 via telemedicine  
+
+as well as receive referrals to local testing sites for both diagnostic 
+
+and antibody testing.
+
+Appreciating Team Members
+
+Our internal recognition programs give team members and 
+customers the opportunity to show their appreciation for a 
+job well done. In 2019, our team members were recognized by 
+customers, peers and company leaders more than 2.5 million 
+times. Last year, American launched a new Nonstop Thanks 
+program through which team members award each other points 
+for stellar work or as an expression of gratitude. Those points  
+can be redeemed for items in an online catalog. 
+
+Every quarter, hundreds of team members are nominated for  
+the Chairman’s Award, the highest honor that American bestows 
+upon team members. The 365 quarterly winners honored in 2019 
+each received $2,500 and were eligible to be named one of the 
+100 Annual Chairman’s recipients, who are awarded $10,000.
+
+44
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Creating an Airline to Fit the New Reality
+
+The COVID-19 pandemic has disrupted our world, our industry and 
+the company to an extraordinary and unprecedented extent. Since 
+the start of the crisis, we have focused on our continued ability to 
+provide livelihoods for our team members and maintain as much 
+air service as possible, notwithstanding the impact of COVID-19 on 
+demand. We know that we must be prepared to expand capacity 
+quickly and efficiently when the crisis subsides and help lead the 
+economy back to stability and growth.
+
+To support these goals, we joined with union leaders and other 
+airlines in a joint request to federal government leaders for financial 
+support to stabilize the passenger airline industry and protect its 
+outstanding workforce. In March, Congress and the Administration 
+responded with the Coronavirus Aid, Relief and Economic Security 
+(CARES) Act, an economic stabilization package to help U.S. workers 
+and businesses devastated by the drastic economic downturn. The 
+Payroll Support Program (PSP) of the CARES Act allowed us to keep 
+our frontline workforce in place through the first phase of the crisis, 
+providing us with approximately $5.8 billion to be used exclusively 
+for the continued payment of team member wages, salaries and 
+benefits. By providing airlines with the funds to pay much of our 
+team members’ salaries and benefits, the CARES Act ensured that 
+the commercial airline industry kept serving customers who needed 
+to fly, kept providing vital air service to U.S. communities and kept 
+our country moving in the midst of economic turmoil. 
+
+When we do emerge from the COVID-19 crisis, we know that we will 
+need to be a smaller airline for at least a period of time. We have 
+reduced operating expenses, in part through voluntary leave and 
+early out programs. Across our mainline and wholly owned regional 
+carriers, more than 12,500 of our colleagues have made the difficult 
+decision to leave the company permanently through early out 
+programs or retirement. Another 11,000 team members have offered 
+
+to take leaves of absence. We have also reduced our management 
+and support staff (MSS) team by about 30% to reach the size of the 
+team we will need for a smaller airline moving forward. The MSS team 
+members who were involuntarily separated earlier this year remained 
+on payroll and received full benefits through September 30, 2020, 
+consistent with the CARES Act.
+
+From the start of the crisis, we set a goal for ourselves to properly 
+size our frontline team for the future without having to implement 
+involuntary furloughs. The PSP worked as intended to protect our 
+team against involuntary separations for the six months that ended 
+on September 30. But the virus has outlasted our assumptions about 
+when demand for air travel would return. Based on current demand 
+levels, we expect to fly less than 50% of our airline in the fourth 
+quarter, with long-haul international capacity reduced to only 25% 
+of 2019 levels. At the time of publication of this report — and despite 
+enormous bipartisan support for an extension of the PSP — Congress 
+had not yet extended the program, and we had begun the difficult 
+process of furloughing 19,000 of our hardworking and dedicated 
+colleagues. However, if efforts to extend the PSP are successful in 
+the near term, we will reverse our furlough processes and recall any 
+impacted team members.
+
+This has been a painful time for all of us at our company, but 
+especially for our departing colleagues who gave American their  
+all and left through no fault of their own. They deserve our respect 
+and gratitude — and we owe them a commitment to return American 
+to profitability and growth as quickly as possible.
+
+Labor Relations
+
+American respects our team members’ rights to free association and 
+
+collective bargaining, and we strive to work collaboratively with our 
+
+union partners to negotiate industry-leading contracts. Approximately 
+85% of our workforce is represented by labor unions8 — the highest 
+percentage of represented workers of any U.S. airline. 
+
+Since 2005, we have completed more than 30 collective bargaining 
+
+agreements, significantly more than any other airline. Our goal is to 
+
+offer industry-leading total compensation and benefits packages, 
+
+including profit sharing, to all of our team members. Following 
+
+the merger of American and US Airways in 2013, we completed 
+
+joint collective bargaining agreements combining our workforces 
+
+in a record period of time, with the exception of one agreement. 
+
+These agreements increased average pay for our represented team 
+
+members by 63%.
+
+In the first quarter of 2020, we reached an agreement with the 
+
+Transport Workers Union–International Association of Machinists 
+
+(TWU–IAM) Association on a new, five-year contract for our 
+
+maintenance and fleet service team members.
+
+During the COVID-19 crisis, we have worked with our union leaders to 
+
+develop voluntary leave and early out programs to prioritize the most 
+
+immediate needs of our team members. We also continue to work in 
+
+partnership with our unions to protect jobs and the important role our 
+
+industry will play in the recovery from the pandemic.
+
+8. As of April 30, 2020; SASB metric.
+
+45
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Human Rights
+
+Our business is all about people — connecting people, cultures and 
+
+commerce worldwide. Respect for human rights is embedded in all 
+
+aspects of our business and in all geographies where we operate.
+
+Our Statement complements our annual team member training  
+
+on the Standards of Business Conduct. We also provide a  
+
+dedicated 24/7 hotline for team members, suppliers and partners  
+
+to anonymously report human rights concerns. We do not tolerate 
+
+any retribution or retaliation taken against any individual who has,  
+
+in good faith, sought advice or reported questionable behavior or  
+
+Our core values include integrity, respect for the individual and the 
+
+a possible violation.
+
+unique customs and cultures in the communities where we operate, 
+
+respect for human rights as embodied in the principles of the  
+
+United Nations (U.N.) Universal Declaration of Human Rights,  
+
+and compliance with the law.
+
+Although governments are primarily responsible for safeguarding 
+
+Our full Human Rights Statement can be found on our website.
+
+Combating Human Trafficking
+
+human rights, we endeavor to conduct our business in a socially 
+
+American is committed to combating human trafficking and child 
+
+responsible and ethical manner consistent with human rights 
+
+exploitation. As a prominent participant in the worldwide travel 
+
+principles. Our approach to human rights is guided by international 
+
+industry, we can help fight these terrible crimes.
+
+50,000 
+
+frontline team members trained in  
+human trafficking awareness in 2019
+
+In 2020, we teamed up with New Friends New Life (NFNL), a Dallas-
+
+based organization working to restore and empower formerly traf-
+
+ficked teenage girls and sexually exploited women and their children. 
+
+Texas ranks second in the country for trafficking prevalence, with 
+
+standards. We respect and support the U.N.’s Guiding Principles 
+
+on Business and Human Rights, the Organisation for Economic 
+
+Co-operation and Development’s Guidelines for Multinational 
+
+Enterprises, the core Conventions of the International Labour 
+
+Organization (ILO), the ILO’s Declaration on Fundamental Princi-
+
+ples and Rights at Work, and the U.N.’s Universal Declaration of 
+
+Human Rights.
+
+Through training, we empower our team members to follow their 
+
+more than 300,000 victims annually statewide.9 By providing access 
+
+instincts and take care of customers who may find themselves in 
+
+to education, job training, financial assistance, mental health and 
+
+unsafe or dangerous situations. We have mandatory human traf-
+
+spiritual support, NFNL helps women and their children overcome 
+
+ficking awareness training for our frontline, customer-facing team 
+
+backgrounds of abuse, addiction, poverty and limited opportunities. 
+
+members, including flight attendants, pilots and airport customer 
+
+In the first months of the partnership, NFNL held training sessions for 
+
+service representatives, as well as for team members with interna-
+
+more than 100 American team members at our headquarters in Fort 
+
+tional purchasing responsibilities. This training is required for new 
+
+Worth, Texas, and another 120 at Miami International Airport. Our legal 
+
+Our American Airlines Human Rights Statement, which was 
+
+employees and as part of our recurrent training programs. We know 
+
+team is also providing pro bono services to NFNL, such as helping 
+
+formally approved by our Board of Directors in 2020, applies to all 
+
+that vigilance is key in fighting the scourge of human trafficking,  
+
+the organization’s clients expunge criminal records resulting from their 
+
+team members and contractors, employees of our wholly owned 
+
+and we stand ready to help.
+
+time being trafficked.
+
+subsidiaries, and our suppliers and other business relationships. 
+
+For many years, we addressed expectations about our commitment 
+
+to human rights in our Standards of Business Conduct for 
+
+team members and suppliers; in 2020 we strengthened those 
+
+expectations by aligning them formally with global standards,  
+
+such as the U.N.’s Guiding Principles on Business and Human 
+
+Rights. We continuously evaluate our operations and value  
+
+chain to identify, assess and address human rights risks and  
+
+to engage key stakeholders.
+
+national public awareness effort that aims to educate the public, law 
+
+enforcement and industry partners to recognize the indicators of 
+
+human trafficking. We also are a signatory to ECPAT-USA’s Tourism 
+
+Child-Protection Code of Conduct, a voluntary set of business 
+
+principles to prevent child sex tourism and the trafficking of children. 
+
+Ending human trafficking requires a coordinated approach, and 
+
+In addition, American is a partner member of Texas Businesses Against 
+
+we seek partners to amplify our efforts. In January 2020, we joined 
+
+Trafficking, a public–private awareness and prevention initiative led by 
+
+the U.S. Department of Homeland Security’s Blue Campaign, a 
+
+the Texas Secretary of State.
+
+9. https://www.newfriendsnewlife.org/
+
+46
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Serving Our 
+Customers
+
+47
+
+CEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Providing our customers with exceptional service is crucial to our success. Our 
+overarching goal is to provide a world-class customer experience, including safe 
+and reliable service tailored to customers’ preferences. We constantly look for 
+ways to improve our operations and the services we provide and seek feedback 
+from our customers to understand how we can make our company even better.
+
+customer experience, including rolling out new aircraft 
+
+W e have made significant investments to enhance the 
+
+lounges and improving communications. Many of these changes 
+
+with enhanced amenities, increasing overhead bin 
+
+space, boosting onboard Wi-Fi speed, upgrading airport 
+
+were in direct response to specific customer feedback. And, in 
+
+response to the COVID-19 pandemic, we have taken other actions 
+
+to help our customers feel safe and cared for when flying with us. 
+
+(Learn more on p. 35.) 
+
+While comfort and convenience are essential aspects of our service 
+
+offerings, we know that dependability and reliability are what customers 
+
+expect and care about the most. Our chief priority is getting passengers 
+
+to their destinations safely, on schedule and with their baggage in 
+
+tow, and we closely track our performance on these metrics. We also 
+
+rigorously measure and track customer satisfaction through passenger 
+
+surveys. In those surveys, we ask our customers about their likelihood 
+
+to recommend American to others, which is driven by several critical 
+
+factors: service delivery, check-in and boarding, onboard products and 
+
+operational performance. 
+
+Operational Performance
+
+Our customers expect that we will get them to their destinations 
+
+Our Goals 
+
+Improve systemwide metrics for:
+
+On-time performance 
+Flight completion 
+Baggage handling 
+
+Improve Likelihood to  
+Recommend scores
+
+related operational metrics to measure how well we are doing on 
+
+these fronts: on-time performance, completion factor (i.e., percentage 
+
+of flights arriving at their destinations without cancellations) and 
+
+mishandled baggage. 
+
+on time, with limited or minimal cancellations or disruptions. They 
+
+In 2019, our progress in improving operational performance was mixed. 
+
+also rightly expect their baggage to arrive with them. We track three 
+
+While we improved both on-time performance and completion factor in 
+
+48
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+our regional operations, performance on those metrics in our mainline 
+
+operations declined slightly. Beginning in 2019, the U.S. Department 
+
+of Transportation developed a new way to measure the mishandled 
+
+Operational Performance
+
+baggage rate (MBR), which made comparisons with prior years inap-
+
+On-time performance*
+
+Completion factor **
+
+By year
+
+ 
+
+ 
+
+ 
+
+Mishandled Baggage Rate (MBR)***
+
+2019 
+
+77.7%
+
+97.6%
+
+2019
+
+8.48
+
+2018
+
+77.6%
+
+97.4%
+
+2018
+
+—
+
+2017
+
+78.9%
+
+97.9%
+
+2017
+
+—
+
+By quarter
+
+4.22
+
+7.11
+
+7.51
+
+8.56
+
+10.05
+
+7.75
+
+Q2 2020
+
+Q1 2020
+
+Q4 2019
+
+Q3 2019
+
+Q2 2019
+
+Q1 2019
+
+mobile devices. (Customers previously had to call our reservations 
+
+*  Percentage of reported flight operations arriving less than 15 minutes after the scheduled arrival time.
+
+phone line to change a booking affected by a schedule change.) We 
+
+**  Percentage of scheduled flight operations completed.
+
+***  The U.S. Department of Transportation changed the way it measures mishandled baggage on domestic flights as of January 1, 2019. The new MBR captures total lost, delayed or damaged baggage 
+
+reports, divided by 1,000 checked bags; the previous rate was calculated per 1,000 passengers. We cannot recalculate prior years using the new methodology and thus are reporting 2019 data only, which 
+is combined for mainline and regional domestic flights. 
+
+plicable. Looking at 2019 only, we saw our MBR increase in the second 
+
+quarter after the Transport Workers Union–International Association of 
+
+Machinists engaged in an illegal work slowdown to influence contract 
+
+negotiations. The MBR started to slowly improve again in the third 
+
+quarter, with continued improvement in subsequent quarters, as 
+
+shown in the table at right. 
+
+In parallel with our focus on improving operational performance 
+
+in 2020 and beyond, we are working to provide more options for 
+
+our customers when flight schedules are disrupted. We now give 
+
+customers the ability to rebook delayed or cancelled flights on their 
+
+also deliver digital meal and hotel vouchers to customers whose 
+
+flights are disrupted, allowing them to electronically choose a hotel 
+
+and redeem meal vouchers, also on their mobile devices. And we 
+
+have improved our ability to keep customers and their checked bags 
+
+together by expanding the use of baggage reconciliation tools to  
+
+all of our ramp team members.
+
+100+ days 
+
+of perfect mainline completion  
+performance in 2020
+
+Customer Satisfaction Surveys
+
+their check-in and boarding experiences. LTR also strongly correlates 
+
+with on-time performance. Our customers want to depart and arrive as 
+
+We regularly survey our passengers to measure and improve the 
+
+customer experience. Every month, approximately 180,000 travelers 
+
+complete an electronic survey that asks questions about their experience 
+
+with American on a specific segment of travel, including booking, check 
+
+in, boarding, airline personnel and onboard comforts such as food, seats 
+
+and connectivity. The surveys are sent to a random sampling of our cus-
+
+tomers within 48 hours of a flight, with a five-day window for completion.
+
+When we survey our customers, the first and most important question 
+
+we ask is their Likelihood to Recommend (LTR), which measures a 
+
+combination of satisfaction, customer loyalty and customer engage-
+
+ment. We know that our LTR scores improve when customers are 
+
+satisfied with the service they receive from our team members and with 
+
+scheduled, and if a delay occurs, they want it handled well. 
+
+Since we conducted our first online surveys in 1999, we have been 
+
+using the responses to learn more about what customers want, where 
+
+we are falling short and where we can improve. Typically, the biggest 
+
+areas mentioned for improvement are the check-in and boarding 
+
+processes. We’ve learned that customers enjoy the speed and flexi-
+
+bility of checking in online, which is why we’re looking at more ways 
+
+to streamline the check-in process for an improved experience. 
+
+In 2020, we created a separate COVID-19 survey to understand what addi-
+
+tional steps we could take to make our customers feel more comfortable  
+
+with air travel. In response to survey feedback, we are offering more 
+
+touchless experiences at the airport and are allowing customers to scan 
+
+49
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+their own boarding passes for lounge entry and at the gate. We also have 
+
+While we take all issues raised by our customers seriously, we are 
+
+systems involved in processing personal data to identify and 
+
+launched touchless kiosks for check-in, available to select U.S. travelers 
+
+especially focused on those that allege discriminatory behavior.  
+
+remediate associated privacy risks. Information obtained from  
+
+who scan their boarding passes at a kiosk to automatically print bag 
+
+In 2018, we created a special Customer Relations group to elevate 
+
+these assessments is used to populate our personal data inventory 
+
+tags. Learn more about our response to the pandemic on p. 35.
+
+sensitive discrimination complaints and to increase awareness 
+
+detailing what personal data our company stores, how it is used, 
+
+Being Responsive to Customers
+
+On a typical day, American receives approximately 4,500 customer 
+
+comments, which range from frustrations with flight delays or fees to 
+
+compliments for our team members.10 Our goal is to respond to the 
+
+vast majority of these comments within 24 hours. 
+
+among customer-facing team members of discriminatory behaviors. 
+
+where it is stored, with whom it is shared and for how long it is 
+
+Each allegation is investigated, and disciplinary action, up to and 
+
+retained. We supplement these efforts by coordinating with our 
+
+including termination, will result if we determine that unacceptable 
+
+IT department to implement privacy design requirements into the 
+
+behavior occurred. 
+
+In 2019, as part of our implicit bias training program, this special 
+
+Customer Relations group partnered with the Human Resources 
+
+department to provide real-world examples of correspondence 
+
+received from customers who complained about discriminatory 
+
+architecture and operation of our systems that store and process 
+
+personal data. We also use these processes to fulfill our legal 
+
+requirements for handling data rights requests and data disclosures 
+
+via our internal and external privacy policies and statements.
+
+Our customers share feedback with us through several channels, 
+
+behavior or treatment. We incorporated these examples into our 
+
+including our website, social media and emails, and we are currently 
+
+training materials. (Learn more about our implicit bias training 
+
+testing a live chat function on our app. With live chat, our customer 
+
+program on p. 40.) 
+
+service agents are able to resolve most customer queries as they 
+
+come in. For the other channels, we code each customer’s comment 
+
+according to the concern they raise and assign responsibility for 
+
+responding to one of our 12 specialty Customer Relations teams, 
+
+each of which focuses on a particular type of service issue. These 
+
+teams’ primary task is rebuilding customer trust. Coding also  
+
+allows leadership to see trends across the company for feedback  
+
+and coaching.
+
+We aspire to learn from customer feedback to improve our processes 
+
+for all passengers. For example, we have used customer comments to 
+
+improve our services for unaccompanied minors, identifying specific 
+
+seating zones where flight crews can better monitor unaccompanied 
+
+youth during the duration of the flight. Customer comments also 
+
+prompted us to change digital signage at gate check-ins to display 
+
+upgrades by cabin and seat assignments.
+
+Before the COVID crisis, the most common service issue centered on 
+
+delays and cancellations. We know that schedule changes that we handle 
+
+well almost always result in fewer concerns raised by our customers.
+
+Data Privacy
+
+We share reports of customer concerns quarterly with senior executives 
+
+and our Board of Directors. Particularly strong comments regarding 
+
+our service are shared verbatim with senior executives, and our Chief 
+
+Customer Officer receives information about customer correspondence 
+
+daily, including examples of how problems are resolved. 
+
+American’s privacy program, which is audited annually, is led by our 
+
+Chief Privacy and Data Protection Officer and staffed with certified 
+
+privacy professionals. We also have a Privacy Council, composed of 
+
+more than 20 senior leaders who meet quarterly to discuss privacy 
+
+issues, challenges and proposed solutions. The council is supported 
+
+by approximately 75 privacy liaisons across the business.
+
+10.  The 4,500 figure refers to customer inquiries before the COVID-19 pandemic. In June 2020, 
+
+customer complaints averaged around 3,000 per day. 
+
+Our Privacy Office regularly conducts privacy impact assessments 
+
+of business processes and supporting information technology (IT)  
+
+50
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Task Force on Climate-related Financial Disclosures (TCFD) Index
+
+TCFD Recommended Disclosure
+
+Disclosure Location in this Report
+
+GOVERNANCE
+
+STRATEGY
+
+Disclose the organization’s governance around climate-related risks and 
+opportunities.
+
+opportunities.
+
+ • Describe the board’s oversight of climate-related risks and 
+
+ • Addressing Climate Change — Governance and Management  
+
+(p. 28)
+
+ • Describe management’s role in assessing and managing climate-
+
+related risks and opportunities.
+
+Disclose the actual and potential impacts of climate-related risks and 
+opportunities on the organization’s businesses, strategy and financial 
+planning where such information is material.
+
+ • Describe the climate-related risks and opportunities the 
+
+ • Addressing Climate Change — (p. 8)
+
+organization has identified over the short, medium and long term.
+
+ • Addressing Climate Change — Climate-Related Risks and 
+
+ • Describe the impact of climate-related risks and opportunities on 
+the organization’s businesses, strategy and financial planning.
+
+Opportunities (p. 22)
+
+ • Addressing Climate Change — Our Strategy (p. 14)
+
+RISK MANAGEMENT
+
+Disclose how the organization identifies, assesses and manages 
+climate-related risks.
+
+ • Describe the organization’s processes for identifying and assessing 
+
+ • Addressing Climate Change — Identifying and Assessing Climate-
+
+Related Risks (p. 20)
+
+METRICS AND TARGETS
+
+Disclose the metrics and targets used to assess and manage relevant 
+climate-related risks and opportunities where such information is 
+material.
+
+ • Disclose the metrics used by the organization to assess climate-
+related risks and opportunities in line with its strategy and risk 
+management process.
+
+ • Data Tables (p. 54)
+
+ • Addressing Climate Change — Our Carbon Footprint (p. 11)
+
+ • Describe the resilience of the organization’s strategy, taking into 
+
+consideration different climate-related scenarios, including a 2°C or 
+lower scenario.
+
+climate-related risks.
+
+related risks.
+
+ • Describe the organization’s processes for managing climate-
+
+ • Describe how processes for identifying, assessing and managing 
+climate-related risks are integrated into the organization’s overall 
+risk management.
+
+ • Disclose Scope 1, Scope 2 and, if appropriate, Scope 3 greenhouse 
+
+gas emissions, and the related risks.
+
+ • Describe the targets used by the organization to manage climate-
+related risks and opportunities and performance against targets.
+
+51
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Sustainability Accounting Standards Board (SASB) Index (Airline Industry Standard)
+
+Disclosure Location or Response
+
+SASB Code
+
+SASB Metric
+
+GREENHOUSE GAS EMISSIONS
+
+TR-AL-110a.1
+
+Gross global Scope 1 emissions
+
+ • Addressing Climate Change — Our Carbon Footprint (p. 11)
+ • Data Tables (p. 54)
+
+TR-AL-110a.2
+
+Discussion of long-term and short-term strategy 
+or plan to manage Scope 1 emissions, emissions 
+reduction targets, and an analysis of performance 
+against those targets
+
+ • Addressing Climate Change (p. 8)
+ • Addressing Climate Change — Our Carbon Footprint (p. 11)
+ • Addressing Climate Change — Our Strategy (p. 14)
+ • Data Tables (p. 54)
+
+TR-AL-110a.3
+
+(1) Total fuel consumed, (2) percentage alternative, 
+(3) percentage sustainable
+
+ • Data Tables (p. 55)
+
+LABOR PRACTICES
+
+TR-AL-310a.1
+
+Percentage of active workforce covered under 
+collective bargaining agreements
+
+ • Supporting Our Team Members — Labor Relations (p. 45)
+
+TR-AL-310a.2
+
+(1) Number of work stoppages and (2) total days idle
+
+American Airlines has not had any union work stoppages or idle days since our merger with US Airways in December 2013; however, 
+in 2019, the Transport Workers Union–International Association of Machinists (TWU–IAM) engaged in an illegal work slowdown to 
+influence contract negotiations. 
+
+In 2019, we had zero monetary losses as a result of legal proceedings associated with anti-competitive behavior regulations.
+
+COMPETITIVE BEHAVIOR
+
+TR-AL-520a.1
+
+Total amount of monetary losses as a result of 
+legal proceedings associated with anticompetitive 
+behavior regulations 
+
+ACCIDENT AND SAFETY MANAGEMENT
+
+TR-AL-540a.1
+
+Description of implementation and outcomes of a 
+Safety Management System
+
+TR-AL-540a.2
+
+Number of aviation accidents
+
+ • Operating Safely — Safety Governance and Management (p. 31)
+ • Operating Safely — Safety Performance (p. 34)
+ • Data Tables (p. 56)
+
+ • Operating Safely — Safety Performance (p. 34)
+ • Data Tables (p. 56)
+
+TR-AL-540a.3
+
+Number of governmental enforcement actions of 
+aviation safety regulations
+
+ • Operating Safely — Safety Performance (p. 34)
+ • Data Tables (p. 56)
+
+52
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Financial Performance*
+
+2019
+
+2018
+
+2017
+
+Operational Performance
+
+Data Tables
+
+REVENUE
+
+Passenger
+
+Cargo
+
+Other
+
+Total operating revenue
+
+Total operating expenses
+
+Operating income
+
+Income tax provision
+
+Net income
+
+Basic earnings per common share
+
+Cash dividends declared per common share
+
+* In millions of U.S. dollars, except per-share amounts. 
+
+$42,010
+
+$40,676
+
+On-time performance*
+
+Completion factor **
+
+863
+
+2,895
+
+45,768
+
+42,703
+
+3,065
+
+570
+
+1,686
+
+3.80 
+
+0.40 
+
+1,013
+
+2,852
+
+44,541
+
+41,885
+
+2,656
+
+472
+
+1,412
+
+3.04 
+
+0.40
+
+$39,131
+
+890
+
+2,601
+
+42,622
+
+38,391
+
+4,231
+
+2,113
+
+1,282
+
+2.62 
+
+0.40 
+
+2019 
+
+77.7%
+
+97.6%
+
+2019
+
+8.48
+
+2018
+
+77.6%
+
+97.4%
+
+2018
+
+—
+
+2017
+
+78.9%
+
+97.9%
+
+2017
+
+—
+
+Mishandled Baggage Rate (MBR)***
+
+By year
+
+ 
+
+ 
+
+ 
+
+By quarter
+
+4.22
+
+7.11
+
+7.51
+
+8.56
+
+10.05
+
+7.75
+
+Q2 2020
+
+Q1 2020
+
+Q4 2019
+
+Q3 2019
+
+Q2 2019
+
+Q1 2019
+
+*  Percentage of reported flight operations arriving less than 15 minutes after the scheduled arrival time.
+
+**  Percentage of scheduled flight operations completed.
+
+***  The U.S. Department of Transportation changed the way it measures mishandled baggage on domestic flights as of January 1, 2019. The new 
+MBR captures total lost, delayed or damaged baggage reports, divided by 1,000 checked bags; the previous rate was calculated per 1,000 
+passengers. We cannot recalculate prior years using the new methodology and thus are reporting 2019 data only, which is combined for mainline 
+and regional domestic flights.
+
+Operational Data
+
+SASB Code
+
+2019
+
+2018
+
+2017
+
+MAINLINE AND REGIONAL (OWNED AND CONTRACTED)
+
+*
+
+s
+c
+i
+r
+t
+e
+M
+B
+S
+A
+S
+
+ 
+
+Revenue passenger miles (millions)
+
+TR-AL-000.C
+
+241,252
+
+231,160
+
+226,346
+
+Available seat miles (millions)
+
+TR-AL-000.A
+
+285,088
+
+282,054
+
+276,493
+
+Passenger load factor (percent)
+
+TR-AL-000.B
+
+84.6
+
+Revenue ton miles (millions)
+
+TR-AL-000.D
+
+26,633
+
+82.0
+
+26,039
+
+81.9
+
+25,439
+
+* American uses miles for our operational data reporting, rather than kilometers as in the SASB metrics.
+
+53
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Environmental Performance 
+
+2019
+
+2018
+
+2017
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Data Tables (continued)
+
+GREENHOUSE GAS (GHG) EMISSIONS
+
+Total absolute emissions (thousands of metric tons of CO2e)
+
+ 
+
+B
+S
+A
+S
+
+c
+i
+r
+t
+e
+M
+
+Scope 1 (jet fuel, natural gas, diesel, gasoline, propane,  
+refrigerants)
+
+Scope 2 location-based (purchased electricity)
+
+Scope 2 market-based (purchased electricity)
+
+Scope 3 (categories 1, 2, 3, 5, 6, 7, 8, 9 and 15)
+
+Emissions intensity
+
+GHG intensity (Scope 1 emissions from jet fuel per 1,000 revenue ton miles)
+
+1.52
+
+GHG intensity (Scope 1 emissions from jet fuel per million dollars of revenue)
+
+893
+
+OTHER AIR EMISSIONS
+
+Aircraft emissions (metric tons from landing/take-off cycle)
+
+Nitrogen oxides (NOx)
+
+Hydrocarbons (HC) 
+
+Carbon monoxide (CO) 
+
+Sulfur content of jet fuel
+
+Ozone-depleting substances (metric tons)
+
+Ground emissions (metric tons)*
+
+Carbon monoxide (CO) 
+
+Nitrogen oxides (NOx) 
+
+Sulfur oxides (SOx)
+
+Volatile organic compounds (VOCs) 
+
+Particulate matter (PM)
+
+19,883
+
+1,099
+
+11,534
+
+1,132
+
+1.2
+
+40.7
+
+65.5
+
+1.9
+
+91.7
+
+6.7 
+
+36,280
+
+278
+
+259
+
+14,243
+
+4,863
+
+18
+
+15
+
+7,799
+
+3.21
+
+36,037
+
+306
+
+306
+
+15,569
+
+1.53
+
+4,239
+
+22
+
+22
+
+9,212
+
+3.28
+
+35,391
+
+3,671
+
+310
+
+310
+
+—
+
+1.49
+
+16
+
+16
+
+—
+
+2.93
+
+899
+
+19,254
+
+1,087
+
+11,146
+
+1,108
+
+14.5
+
+39.5
+
+58.9
+
+1.5
+
+91.3
+
+11.5
+
+911
+
+18,965
+
+1,073
+
+10,898
+
+1,075
+
+7.4
+
+—
+
+—
+
+—
+
+—
+
+—
+
+54
+
+* From facilities where American must file routine emissions inventory reports. These include: Charlotte (CLT), Dallas/Forth Worth (DFW), Los Angeles (LAX), Chicago (ORD), Phoenix (PHX), Pittsburgh (PIT) and Tulsa (TUL).
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Environmental Performance 
+
+2019
+
+2018
+
+2017
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Data Tables (continued)
+
+ENERGY
+
+ 
+
+B
+S
+A
+S
+
+s
+c
+i
+r
+t
+e
+M
+
+Jet fuel consumption (millions of gallons)*
+
+Electricity consumption (megawatt hours (MWhs))
+
+Percent of energy from renewable sources**
+
+Direct energy from jet fuel (millions of gigajoules (GJs))
+
+Energy from electricity (million GJs)
+
+Direct purchase of renewable electricity (million GJs)***
+
+Direct + indirect purchase of renewable electricity (million GJs)†
+
+Direct purchase of renewable electricity (MWhs)
+
+Direct + indirect purchase of renewable electricity (MWhs)†
+
+Energy intensity
+
+Energy intensity — jet fuel (GJs per thousand ton miles)
+
+Energy intensity — electricity (GJs per ton miles)
+
+Hazardous waste (U.S. tons)
+
+WASTE
+
+WATER
+
+Water use for major facilities, excluding airports (millions of gallons)‡
+
+3,666
+
+663,123
+
+0.03%
+
+521.4
+
+2.4
+
+0.16
+
+0.77
+
+44,777
+
+216,727
+
+22.0
+
+0.10
+
+849
+
+495
+
+*   Regional jet fuel consumption represents jet fuel from owned regional airlines Envoy, PSA and Piedmont.
+
+**  2018 and 2017 data are restated to reflect when the renewable energy credits (RECs) were retired, rather than when the electricity was used, as reported previously.
+
+*** Amounts from 2016 to 2018 were restated to reflect the year in which RECs were retired rather than when electricity was purchased.
+
+†  Indirect purchases represent electricity purchased for American’s facilities indirectly through airport authorities.
+
+‡  From municipal water supplies.
+
+491
+
+39,526
+
+0.03%
+
+69.8
+
+0.1
+
+0.02
+
+0.04
+
+6,780
+
+10,646
+
+46.5
+
+0.09
+
+52
+
+—
+
+3,644
+
+638,424
+
+0.02%
+
+518.2
+
+2.3
+
+0.09
+
+0.63
+
+24,530
+
+152,604
+
+22.2
+
+0.10
+
+742
+
+457
+
+428
+
+40,222
+
+0.02%
+
+60.8
+
+0.1
+
+0.01
+
+0.02
+
+3,606
+
+1,442
+
+47.5
+
+0.11
+
+41
+
+—
+
+3,579
+
+658,916
+
+0.01%
+
+509.0
+
+2.4
+
+0.07
+
+0.35
+
+18,790
+
+78,701
+
+22.3
+
+0.10
+
+732
+
+430
+
+371
+
+29,777
+
+0.02%
+
+52.7
+
+0.1
+
+0.01
+
+0.01
+
+3,369
+
+79
+
+45.8
+
+0.09
+
+44
+
+—
+
+55
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Data Tables (continued)
+
+Environmental Performance 
+
+2019
+
+2018
+
+2017
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+NOISE
+
+Percent of aircraft certified as, or meeting, Chapter 3 noise limits
+
+Percent of aircraft certified as, or meeting, Chapter 4 noise limits
+
+Percent of aircraft certified as, or meeting, Chapter 5 noise limits
+
+ENVIRONMENTAL COMPLIANCE
+
+Number of environmental notices of violation
+
+Amount of environmental fines and penalties (thousands of dollars)
+
+Number of spills recorded (1 gallon or greater) 
+
+100%
+
+100%
+
+12%
+
+5
+
+$6.5 
+
+357
+
+100%
+
+100%
+
+46%
+
+0
+
+0
+
+72
+
+100%
+
+97%
+
+10%
+
+9
+
+$4.8 
+
+341
+
+100%
+
+100%
+
+53%
+
+0
+
+0
+
+77
+
+100%
+
+95%
+
+8%
+
+7
+
+$4.8
+
+370
+
+100%
+
+100%
+
+50%
+
+0
+
+0
+
+74
+
+Community Impact
+
+GLOBAL GIVING
+
+Cash* donations and in-kind (miles) donations (millions of U.S. dollars)
+
+VOLUNTEER SUPPORT
+
+Total volunteer hours (thousand hours)
+
+2019
+
+$33.0
+
+157
+
+* Cash includes cash contributions and the value of mile donations from American and our customers, as well as proceeds from American’s charity events.
+
+2018
+
+$35.0
+
+186
+
+2017
+
+$34.8
+
+155
+
+56
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Data Tables (continued)
+
+Flight Safety Performance
+
+Number of flights*
+
+s Number of aviation accidents**
+
+c
+i
+r
+t
+e
+M
+B
+S
+A
+S
+
+ 
+
+Number of enforcement actions from government agencies***
+
+Number of safety risks and hazardous situations identified†
+
+Percentage of safety risks and hazardous situations identified that were mitigated‡
+
+Aircraft ground damages (rate per 10,000 departures)§
+
+ASAP reports
+
+*  Mainline and owned regional
+
+ 
+
+Mainline 
+
+Regional
+
+2019
+
+1.9 million
+
+3
+
+0
+
+372
+
+97%
+
+0.72
+
+10,349
+
+4
+
+0
+
+81
+
+97%
+
+2.43
+
+11,952
+
+**   Defined according to the International Civil Aviation Organization (Annex 13) and the National Transportation Safety Board (Part 830). Of the four mainline accidents in 2019, three involved crew member injuries due to turbulence and the fourth involved aircraft damage to a wingtip. Of the three regional 
+
+accidents in 2019, one involved a crew member injury due to turbulence, a second involved a crew member injury when one aircraft touched another while taxiing and a third involved a skid off a runway under icy conditions (with no injuries). No customer was injured in these accidents.
+
+*** Defined to include enforcement actions by the FAA, the European Aviation Safety Agency or equivalent national authorities related to the regulation of aviation safety.
+
+†   The majority of our risk assessments are performed proactively prior to implementing or revising systems/procedures. American’s comprehensive SMS covers safety risks and hazardous situations related to six areas: flight safety, flight service, ground operations, technical operations (maintenance), security 
+
+and environmental. The figures reported here include all such risks identified by our SMS. Regional data combines all risks from Piedmont, PSA and Envoy airlines.
+
+‡   Our SMS requires that we mitigate identified risks, particularly high risks, to as low as reasonably practicable (ALARP). 3% of our 2019 identified risks were already ALARP. These systemic and residual risks are monitored, measured and tracked.
+
+§   We use guidance from Airlines for America to determine aircraft ground damages.
+
+Team Member Safety Performance
+
+2019
+
+2018
+
+2017
+
+ 
+
+Mainline 
+
+Regional
+
+Mainline
+
+Regional
+
+Mainline
+
+Regional
+
+Injury rate*
+
+Lost day rate**
+
+Work-related fatalities
+
+*  Total recordable cases per 200,000 manhours
+
+9.57
+
+6.14
+
+0
+
+7.11
+
+3.74
+
+1
+
+9.21
+
+5.43
+
+0
+
+7.55
+
+3.88
+
+0
+
+8.43
+
+4.89
+
+0
+
+8.13
+
+3.88
+
+0
+
+** The lost day rate, which OSHA calls the Days Away from Work Injury and Illness rate, is calculated as the number of cases multiplied by 200,000 work hours divided by total hours worked.
+
+57
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Data Tables (continued)
+
+Gender Diversity
+
+Permanent employees
+
+EMPLOYMENT TYPE
+
+Full-time
+
+Part-time
+
+U.S.
+
+Canada
+
+EMPLOYEES BY REGION
+
+Mexico, Caribbean, Latin America
+
+Europe and Asia
+
+EMPLOYEE CATEGORY
+
+Director and above
+
+Management and professional
+
+Administrative
+
+Passenger service
+
+Reservations
+
+Maintenance and related
+
+Fleet service
+
+Pilots
+
+Flight attendants
+
+International
+
+BOARD OF DIRECTORS
+
+Board of Directors
+
+Total
+
+145,070
+
+123,756
+
+21,314
+
+138,792
+
+431
+
+4,221
+
+1,626
+
+569
+
+16,136
+
+3,803
+
+22,219
+
+4,385
+
+18,847
+
+22,385
+
+19,957
+
+30,491
+
+6,278
+
+10
+
+Female
+
+41%
+
+39%
+
+50%
+
+40%
+
+48%
+
+60%
+
+56%
+
+33%
+
+43%
+
+71%
+
+62%
+
+83%
+
+6%
+
+16%
+
+5%
+
+76%
+
+58%
+
+20%
+
+Male
+
+59%
+
+61%
+
+50%
+
+60%
+
+52%
+
+40%
+
+44%
+
+67%
+
+57%
+
+29%
+
+38%
+
+17%
+
+94%
+
+84%
+
+95%
+
+24%
+
+42%
+
+80%
+
+58
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+Data Tables (continued)
+
+Ethnic Composition of U.S. Employees and  
+Board of Directors*
+
+Employee Category
+
+Director and above
+
+Management and professional 
+
+Administrative
+
+Passenger service
+
+Reservations
+
+Maintenance and related
+
+Fleet service
+
+Pilots
+
+Flight attendants
+
+BOARD OF DIRECTORS
+
+Board of Directors
+
+Self-Identified Minority
+
+Self-Identified Nonminority
+
+Not Reported/Identified
+
+21.6%
+
+42.1%
+
+50.8%
+
+58.3%
+
+55.5%
+
+31.0%
+
+60.8%
+
+10.6%
+
+33.1%
+
+20.0%
+
+76.4%
+
+55.8%
+
+41.2%
+
+32.4%
+
+43.4%
+
+65.9%
+
+31.9%
+
+82.6%
+
+62.9%
+
+80.0%
+
+1.9%
+
+2.2%
+
+8.0%
+
+9.3%
+
+1.2%
+
+3.1%
+
+7.3%
+
+6.7%
+
+4.0%
+
+0.0%
+
+* Diversity data are for U.S. workforce only since diversity tracking is prohibited by law in some other countries.
+
+Ethnic Composition  
+of U.S. Employees*
+
+African- 
+American
+
+Employee Category
+
+Total 
+
+Male
+
+Female
+
+ 23,087 
+
+51%
+
+49%
+
+Asian
+
+ 7,767 
+
+58%
+
+42%
+
+* Diversity data are for U.S. workforce only since diversity tracking is prohibited by law in some other countries.
+
+American Indian/
+Alaskan Native
+
+Hispanic/Latino
+
+Native Hawaiian/
+Other Pacific 
+Islander
+
+Two or More 
+Races
+
+White
+
+Not Specified
+
+ 977 
+
+65%
+
+35%
+
+ 20,126 
+
+62%
+
+38%
+
+ 1,088 
+
+53%
+
+47%
+
+ 2,857 
+
+50%
+
+50%
+
+ 75,340 
+
+62%
+
+38%
+
+ 7,550 
+
+62%
+
+38%
+
+59
+
+American Airlines 2019–2020 ESG ReportCEO Message
+
+Strategy
+
+Climate
+
+Safety
+
+Team Members
+
+Customers
+
+TCFD/SASB
+
+Data
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+Verification Criteria 
+
+Verification Scope 
+
+• 
+
+• 
+
+• 
+• 
+• 
+
+ 
+
+ 
+
+Verified Emissions 
+ 
+
+ 
+
+GHG Verification Statement 
+
+The  SCS  Greenhouse  Gas  Footprint  Verification  Program  has  conducted  a  verification  of  GHG  emissions  based  upon  the  following 
+objectives, criteria, and scope: 
+ 
+Verification Objectives 
+
+Evaluate the organization’s GHG inventory based per the level of assurance and materiality specified, including assessment of any 
+significant changes and the organization’s GHG-related controls 
+Evaluate conformance with specified verification criteria 
+
+The Climate Registry General Reporting Protocol v2.1, January 2016 
+The Investor CDP 2020 Information Request 
+ISO 14064-3: 2006 Specification with guidance for the validation and verification of GHG assertions 
+
+•  Company: American Airlines Group, Inc. 
+• 
+•  Geographic Boundary: Worldwide operations under operational control (includes flight from American Airlines, Envoy, Piedmont, PSA and domestic and international 
+
+Emissions Year: EY2019 
+
+terminals, cargo facilities, vehicle shops, reservation offices, main headquarters and credit unions) 
+Level of Assurance: Limited 
+
+• 
+•  Materiality: +/-5% quantitative threshold for direct and indirect emissions, qualitative based upon requirements specified within referenced criteria 
+
+Verification Opinion 
+This Verification Statement documents that SCS Global Services has conducted verification activities in compliance with ISO 14064-3: Specification with guidance for the 
+validation and verification of greenhouse gas assertions. Based upon the reporting scope, criteria, objectives, and agreed upon level of assurance, SCS has issued the following 
+verification opinion: 
+
+  Positive Verification – GHG assertion prepared in all material respects with the reporting criteria 
+  Negative Verification – GHG assertion was NOT prepared in all material respects with the reporting criteria 
+
+EMISSIONS SUMMARY (tonnes CO2e)
+
+SCOPE
+
+CO2
+
+CH4
+
+N2O
+
+TOTAL
+(tCO2e)
+
+SCOPE 1
+
+              40,811,050                787 
+
+            331,649                41,143,487 
+
+SCOPE 2 (Location)
+
+                   294,394                648 
+
+                1,087                     296,129 
+
+SCOPE 2 (Market)
+
+                   272,600                646 
+
+                1,087                     274,333 
+
+SCOPE 3 - Category 3a (Fuel & 
+Energy Related Activities - 
+Upstream  em issions of 
+purchased fuels)
+
+SCOPE 3 - Category 3b (Fuel & 
+Energy Related Activities - 
+Transm ission and Distribution 
+Losses)
+
+Version 1-0 (October 2019) | © SCS Global Services 
+
+ Reported as total only 
+
+              12,347,696 
+
+ Reported as total only 
+
+                     16,428 
+
+Signature:   
+Lead Verifier:  
+Date:  
+ 
+ 
+
+ 
+
+Tavio Benetti 
+7/14/2020 
+
+ 
+
+ 
+
+Signature:  
+Independent Reviewer:   Nicole Munoz 
+Date:  
+
+7/23/2020 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+60
+
+American Airlines 2019–2020 ESG ReportLearn more about how American Airlines  
+manages ESG issues at www.aa.com/ESG
+
+Cautionary Statement Regarding Forward-Looking Statements
+
+Certain of the statements contained in this report should be considered forward-looking statements within the meaning of the Securities Act, the Exchange Act, and the Private Securities Litigation Reform Act of 1995. These forward-looking 
+statements may be identified by words such as “may,” “will,” “expect,” “intend,” “anticipate,” “believe,” “estimate,” “plan,” “project,” “could,” “should,” “would,” “continue,” “seek,” “target,” “guidance,” “outlook,” “if current trends continue,” “optimistic,” 
+“forecast” and other similar words. Such statements include, but are not limited to, statements about the Company’s plans, objectives, expectations, intentions, estimates and strategies for the future, and other statements that are not historical 
+facts. These forward-looking statements are based on the Company’s current objectives, beliefs and expectations, and they are subject to significant risks and uncertainties that may cause actual results and financial position and timing of certain 
+events to differ materially from the information in the forward-looking statements. These risks and uncertainties include, but are not limited to, those set forth in the Company’s Quarterly Report on Form 10-Q for the six months ended June 30, 2020 
+(especially in Part I, Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations and Part II, Item 1A. Risk Factors), and other risks and uncertainties listed from time to time in the Company’s other filings with the 
+Securities and Exchange Commission. There may be other factors of which the Company is not currently aware that may affect matters discussed in the forward-looking statements and may also cause actual results to differ materially from those 
+discussed. In particular, the consequences of the coronavirus outbreak to economic conditions and the travel industry in general and the financial position and operating results of the Company in particular have been material, are changing rapidly, 
+and cannot be predicted. The Company does not assume any obligation to publicly update or supplement any forward-looking statement to reflect actual results, changes in assumptions or changes in other factors affecting these forward-looking 
+statements other than as required by law. Any forward-looking statements speak only as of the date hereof or as of the dates indicated in the statement.
+
+
