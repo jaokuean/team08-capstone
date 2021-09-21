@@ -3,3 +3,8 @@ __pycache__
 cache_dir
 .DS_Store
 .ipynb_checkpoints
+
+
+# esg bert
+esgbert/bert_model/pytorch_model.bin
+esgbert/bert.mar
