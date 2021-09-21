@@ -1,0 +1,2188 @@
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+33
+
+Ac hiev ing   a De carb oni zed  Soc i e ty
+
+Efforts to Achieve a Decarbonized Society
+
+Approach
+
+Objectives for CO 2 Emissions per Unit from Products and 
+Services in Use and Approach to Avoided Emissions 
+
+Approach
+
+GHG Emissions Throughout the Value Chain 
+
+Hitachi Environmental Innovation 2050 contains long-term reduction targets for CO 2 emissions per 
+
+unit of 50% by fiscal 2030 and 80% by fiscal 2050 (compared to fiscal 2010 levels) throughout 
+
+Hitachi’s value chain.
+
+The value chain for our products and services encompasses all stages from the procurement of 
+
+raw materials and parts to production, transportation, use, disposal, and recycling. In May 2020 we 
+
+announced an even more ambitious CO 2 reduction target of achieving carbon neutrality, which will 
+
+mean net zero emissions, at our business sites (factories and offices) by fiscal 2030.
+
+Approximately 90% of our value-chain emissions result from the use of our products and services 
+
+after they are sold, and reducing these emissions will be crucial to reducing CO 2 emissions across 
+
+the value chain. However, CO 2 emissions from the use of sold products and services are greatly 
+
+influenced by changes in product sale price and business portfolios. We have established an 
+
+indicator for providing products and services that produce less CO 2 from among products and 
+
+services offering equivalent value, and, recognizing the importance of this matter, have set and 
+
+continue to manage reductions goals for our main products and services on the basis of CO 2 
+
+emissions per unit. Specifically, by fiscal 2030, we aim to reduce CO 2 emissions per unit by 50% for 
+
+products and services at the usage stage and contribute to reducing global CO 2 emissions through 
+
+energy systems that do not emit CO 2 at the operational stage and expanding our new 
+
+decarbonization business using digital technology such as OT and IT.
+
+Additionally, in response to growing investor interest in the long-term impact of climate change on 
+
+financial performance and corporate operations, we actively disclose climate-related information in 
+
+accordance with the recommendations of the Task Force on Climate-related Financial Disclosures 
+
+(TCFD) and also engage in dialogue with investors.
+
+ Ratio of CO2 Emissions at Each Stage of Hitachi Value Chain in Fiscal 2019
+
+Production 4.0%
+
+Transportation 0.1%
+
+Use 86.3%
+
+To reduce CO 2 emissions from the use of our products and services, which make up the largest 
+
+proportion of emissions in our value chain, we have established target reduction rates of CO 2 
+
+emissions per unit from products and services while in use. These rates are based on fiscal 2010. 
+
+Given the unique qualities of the wide range of businesses we engage in, for each product or service 
+
+subject to this initiative, we calculate the reduction rate of CO 2 emissions per unit with CO 2 emissions 
+
+as the numerator and function size*1 as the denominator, and work toward overall reduction.
+
+We also have high expectations for specific long-term CO 2 reduction countermeasures such as 
+
+sales of renewable energy systems with zero emissions while in use and the use of technological 
+
+innovation to replace existing products or services with new versions that provide the same value 
+
+but emit less CO 2 while in use.
+
+The Guidelines on Calculating CO 2 Emission Reductions for Hitachi Group Products and 
+
+Services*2 specify the following three methods for calculating different types of CO 2 emission 
+
+reductions. Figures considered reductions for products and services while in use under the GHG 
+
+Protocol, a global standard for CO 2 emission reduction disclosure, are calculated using method (1). 
+
+Methods (2) and (3) are for avoided emissions.
+
+(1)  Energy-saving feature enhancements
+
+Set a reduction rate of CO 2 emissions per unit (compared to fiscal 2010) based on efficiency 
+
+enhancements such as energy-saving feature enhancement in products and services. Every year, 
+
+calculate reductions in CO 2 emissions considering the production volume of the relevant year. 
+
+(2) Reduction through new systems and solutions based on technological innovation
+
+Calculate avoided emissions as reductions in CO2 emissions due to the adoption of new systems and 
+
+solutions that emit less CO2 while providing equivalent value to existing products, services, and solutions.
+
+(3) Reduction through the deployment of non-fossil energy systems
+
+renewable and other non-fossil energy systems, as compared to grid-supplied electricity (using 
+
+the average emissions factor of the base year, fiscal 2010).
+
+*1  Major functions of products correlated with CO2 emissions.
+
+*2 The Guidelines are based on various standards, including the Guidance on Quantifying Greenhouse Gas Emission Reductions from the Baseline 
+
+Disposal/recycling 0.4%
+
+Calculate avoided emissions as reductions in CO 2 emissions due to the introduction of 
+
+Procurement of raw materials/parts 7.5%
+
+Other (capital goods, etc.) 1.7%
+
+for Electrical and Electronic Products and Systems (IEC TR62726) issued by the International Electrotechnical Commission (IEC), and calculation 
+
+methods established by the government or industrial associations.
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+34
+
+Achieving a Decarbonized Society
+
+Contributing to a Decarbonized Society Through the Decarbonization Business
+
+Expanding the Decarbonization Business 
+
+Activities
+
+To achieve a decarbonized society set out in its Environmental Vision, Hitachi is pursuing 
+
+individual employees. In the energy sector, we will promote wider use of renewable energy through 
+
+decarbonization business that contributes to reducing CO2 emissions, including business to provide 
+
+increased efficiency of power transmission and distribution. In the industry sector, we will improve 
+
+products and services with enhanced energy-saving features, business to introduce renewable 
+
+efficiency of industrial equipment like compressors and transformers used at production sites. In the 
+
+energy, and business to offer solutions to improve efficiency and reduce CO2 emissions through 
+
+mobility sector, we will not only work to enhance the efficiency of elevators for buildings and their 
+
+digitalization, such as the use of Lumada. We will expand the decarbonization business by 
+
+security and safety functions through remote monitoring but also to improve the ease of their 
+
+supplying solutions in the five business areas of IT, energy, industry, mobility, and smart life, and 
+
+maintenance. Finally, in the smart life sector, we will contribute to energy management in smart 
+
+help the world mitigate and adapt to climate change. In the IT sector, we will develop work style 
+
+cities and developing, producing, and providing electrification parts for automobiles.
+
+innovation solutions and other digital technologies to help improve the working environment for 
+
+ Decarbonization Business: A Hitachi Focus
+
+IT solutions
+
+Energy solutions
+
+Industry solutions
+
+Mobility solutions
+
+Smart life solutions
+
+  Finance and public-oriented solutions
+
+  Power grid solutions
+
+  Smart logistics
+
+  Promoting digital solutions
+
+  Data center
+
+  Developing smart data centers
+
+  Servers/storage
+
+  Enhancing energy-saving features of 
+
+servers and storage
+
+  Enhancing efficiency of power 
+
+transmission/distribution
+
+  Improving energy-saving features 
+through fully IT-enhanced logistics
+
+  Energy management
+
+  Factory automation
+
+  Advancing smart energy management 
+
+  Enhancing energy efficiency through 
+
+  Promoting power generation systems 
+
+  Enhancing efficiency of water and 
+
+to reduce peak electricity demand
+
+  Power generation
+
+using wind and other non-fossil  
+energy sources
+
+shorter lead times
+
+  Water business
+
+sewage systems
+
+  Industrial products
+
+  Enhancing efficiency of industrial 
+
+products
+
+  Railways
+
+rolling stock
+
+  Enhancing energy-saving features of 
+
+  Developing smart operating systems
+  Enhancing maintenance service 
+efficiency through rolling stock 
+monitoring
+
+  Elevators
+
+  Enhancing energy-saving features of 
+elevators and escalators through 
+replacement
+
+  Enhancing energy efficiency through 
+
+total building solutions
+
+  Smart cities
+
+  Reducing CO2 through comprehensive 
+urban energy management solutions
+
+  Vehicle electrification
+
+  Promoting electrification through electric 
+
+powertrain systems
+
+  Home appliances
+
+  Enhancing energy efficiency of home 
+
+appliances
+
+  Promoting connected home appliances
+
+  Enhancing energy-saving features of 
+
+  Smart therapies
+
+medical devices
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+35
+
+Achieving a Decarbonized Society
+
+Achieving CO 2 Emission Reductions During the Use of 
+Products and Services 
+
+Initiatives for Improving Environmental Performance of Products and Services 
+
+Goals
+
+Activities
+
+  Promoting environmentally conscious process: In accordance with the IEC 62430*1 criteria, promote 
+environmentally conscious process in designing and developing products and services including by 
+
+302-5
+
+305-4
+
+305-5
+
+meeting environmental regulatory requirements and ascertaining the environment-related needs of our 
+
+ 
+Hitachi set a target for fiscal 2019 of 19% reduction in CO2 emissions per unit from products and 
+
+services compared to the base year of fiscal 2010, and our actual rate of reduction in fiscal 2019 
+
+was 19%. This is due to an increase in sales of high energy-saving products, including industrial 
+
+equipment and equipment used for social infrastructure.
+
+stakeholders within our existing management system.
+  Implementing Life Cycle Assessments (LCAs): For our main, priority products, quantitatively evaluate 
+their burden on the global environment in such areas as the consumption of mineral resources, fossil 
+
+fuels, and water resources, as well as their impact on climate change and air pollution, disclose the 
+
+results to our stakeholders, and utilize them in improving the design of next-generation products.
+
+Environmental Action Plan for 2021 Management Values 
+
+*1 The standard developed by the International Electrotechnical Commission concerning environmentally conscious design for electrical and 
+
+electronic products.
+
+ Reduction in CO2 Emissions per Unit (Hitachi Group)
+
+ FY 2010 (base year)
+
+CO2 emissions from 
+use of products
+
+Function size*1
+
+100 %
+
+From base year
+
+19% reduction
+
+FY 2019 reduction target: 19%
+
+ FY 2019
+
+CO2 emissions from 
+use of products
+
+Function size
+
+81%
+
+Reducing CO2 Emissions Throughout the Value Chain 
+
+Case Study
+
+Project
+
+Department, Group company
+
+Activity
+
+*1 Major functions of products correlated to CO2 emissions.
+
+Reducing CO2 
+emissions using IT
+
+Systems & Services 
+Business, Hitachi, Ltd.
+
+Reducing CO2 emissions by 42% through JP1/
+Client Process Automation IT products
+
+https://www.hitachi.com/environment/
+casestudy/2019/case01.html
+
+Improving Environmental Performance of Products and Services 
+Through Environmentally Conscious Design Assessments 
+
+System
+
+We conduct independently developed Environmentally Conscious Design Assessments for all products 
+
+and services involving a design process to steadily improve environmental performance throughout the 
+
+Group. We identify 30 environmental impact items that may cause climate change, resource depletion, 
+
+and ecosystem degradation across the entire life cycle of products and services, assess the 
+
+environmental burden reduced through our business activities in multifaceted ways, and strive for 
+
+further reductions.
+
+New G-Series air 
+compressors
+
+Hitachi Industrial 
+Equipment Systems
+
+Reducing CO2 emissions by about 6% through 
+improvement in air compressor efficiency
+
+https://www.hitachi.com/environment/
+casestudy/2019/case02.html
+
+Participation in the 
+Carbon Footprint 
+Communication 
+Program
+
+Services & Platforms 
+Business Unit, Hitachi, 
+Ltd.
+
+New verification and approval of Hitachi Virtual 
+Storage Platform 5000 Series enterprise storage 
+(four models in series) 
+
+https://www.hitachi.com/environment/
+casestudy/2019/case03.html
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+36
+
+Achieving a Decarbonized Society
+
+Contributing to a Decarbonized Society at Business Sites (Factories and Offices) 
+
+CO 2 Emission Reductions at Business Sites (Factories and Offices) 
+and Hitachi Carbon Neutrality 2030 
+
+Policy
+
+Hitachi is working toward achieving its target of reducing CO2 emissions from our business sites 
+
+(factories and offices) by 50% compared to fiscal 2010 by fiscal 2030, as set out in Hitachi 
+
+Environmental Innovation 2050, our long-term environmental targets.
+
+To accelerate these efforts, in 2020 we announced an additional goal of realizing carbon neutrality 
+
+by fiscal 2030 at all business sites (factories and offices). We call this goal “Hitachi Carbon Neutrality 
+
+Under Hitachi Carbon Neutrality 2030, we aim to be carbon neutral by effectively reducing 
+
+emissions by 100% by fiscal 2030 compared to fiscal 2010, instead of the original 50% reduction 
+
+target. The following initiatives will help us achieve the new target.
+
+Major Initiatives for Reducing CO2 Emissions at Business Sites (Factories and Offices)
+
+  Improve equipment efficiency by introducing and upgrading to high-efficiency equipment
+  Reduce energy use during production by raising efficiency through the use of Lumada and 
+production technologies cultivated over long years of experience
+  Optimize equipment operation and stop energy waste by installing smart meters
+  Review product designs and processes
+
+  Build new facilities with high energy efficiency
+  Combine and integrate existing facilities
+  Install energy-saving equipment and optimize equipment operation in collaboration with 
+building owners
+
+  Install renewable energy systems
+  Use electricity from renewable sources
+  Adopt the non-fossil fuel energy certificate*1 system
+  Introduce off-balance-sheet solar power generation for self-consumption
+  Promote investment in carbon-reduction equipment through adoption of the Hitachi Internal 
+Carbon Pricing (HICP) framework
+
+2030.”
+
+Factories
+
+Offices
+
+Factories and offices
+
+Introducing the Hitachi Internal Carbon Pricing Framework 
+
+System
+
+To promote CO2 reduction at our business sites (factories and offices), in fiscal 2019 we started 
+
+operating the Hitachi Internal Carbon Pricing*1 (HICP) framework, which provides sites with 
+
+incentives to invest in necessary new equipment.
+
+The HICP framework is an internal system that aims to achieve CO2 reduction effectively. It helps 
+
+visualize CO2 reduction from investment in equipment at factories and offices and encourage 
+
+investment in new equipment that drives decarbonization through energy-saving and other 
+
+measures as an extension of the established decision-making process on investment.
+
+Specifically, with reference to emissions trading and carbon taxes globally, we establish 
+
+company-internal carbon prices, convert into monetary value the effect of CO2 reduction due to 
+
+investment in equipment that contributes to decarbonization, add this to the value of energy 
+
+reduction effects, and use the result to evaluate the effect of our investment. By applying incentives 
+
+like these, we aim to further expand our investment in equipment that contributes to 
+
+decarbonization.
+
+As the climate change issue deepens, we anticipate risks like increased burdens from carbon 
+
+taxes and new emissions trading frameworks to emerge. By incorporating those risks into our 
+
+equipment investment decisions, we can not only make investment in equipment that contributes to 
+
+decarbonization a higher priority, but also minimize the future risks of climate change and make 
+
+ourselves more resilient. The introduction of the HICP framework is a key part of this process.
+
+Achievements in FY 2019
+
+Establishing and implementing the HICP framework resulted in additional investment in energy-
+
+saving equipment. Such equipment did not receive investment before due to low returns, but it 
+
+qualified under the HICP framework as it is expected to help reduce CO2 emissions. Fiscal 
+
+2019 saw 35 cases of investment in energy-saving equipment with a total investment of ¥260 
+
+*1 Credits assigned to energy certified as having been produced from renewable sources. Purchasers of such credits can offset their 
+
+million, contributing to an annual reduction of 1,356 tons of CO2 emissions. The annual amount 
+
+conventional energy use instead of implementing their own reduction measures.
+
+of CO2 emission reductions from our business sites improved 2% compared to the previous 
+
+Toward the goal of Hitachi Carbon Neutrality 2030, we have formulated a plan to make three 
+
+existing factories in fiscal 2020 and a total of more than seven factories in fiscal 2021 carbon neutral. 
+
+We believe that the technologies and experiences developed through efforts to achieve our carbon 
+
+neutrality targets will help us offer business proposals accurately responding to our customers’ 
+
+decarbonization needs, thereby greatly contributing to expanding our new business opportunities.
+
+fiscal year.
+
+*1 Internal carbon pricing: An in-house tool to assess in monetary terms the amount of carbon generated or reduced in order to voluntarily 
+
+make investment decision and conduct risk management.
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+37
+
+Achieving a Decarbonized Society
+
+ Hitachi Internal Carbon Pricing (HICP) Framework
+
+CO2 reduction effects
+
+CO2 reduction effects  
+(in monetary terms)
+
+ 
+At Hitachi, the achievement of environmental targets for individual business sites (factories and offices) set 
+
+302-1
+
+302-4
+
+305-4
+
+305-5
+
+Actions and Achievements 
+
+Activities 
+
+s
+m
+r
+e
+t
+ 
+y
+r
+a
+t
+e
+n
+o
+m
+ 
+n
+i
+ 
+t
+c
+e
+f
+f
+e
+ 
+t
+n
+e
+m
+t
+s
+e
+v
+n
+
+I
+
+Energy  
+reduction effect
+
+Energy  
+reduction effect
+
+Before introducing HICP 
+framework
+
+After introducing HICP 
+framework
+
+Set internal carbon prices based on future risks like increased burden from 
+carbon taxes and emissions trading
+Convert effects of CO2 reduction from investment in equipment that 
+contributes to decarbonization into monetary value
+
+Evaluate effect of investment by adding monetary effect of CO2 reduction to 
+previously calculated monetary value of effects of energy reduction through 
+investment
+
+Increase priority of investment in equipment that contributes to 
+decarbonization
+
+Encourage investment in equipment 
+that contributes to decarbonization
+
+Renewable energy
+
+High-efficiency equipment
+
+by the Environmental Action Plan for 2021 is measured by CO2 emissions per unit. Because we conduct 
+
+business in various sectors, the KPI of CO2 emissions per unit for each business site is calculated using the 
+
+site’s CO2 emissions as the numerator and its activity amount*1 as the denominator.
+
+In fiscal 2019, the reduction rate of CO2 emissions per unit was 5% against a target of 7% 
+
+(compared to the base year of fiscal 2010). Part of the reason for not hitting the target was a lower 
+
+efficiency of facility use due to a decrease in sales. There were also some business divisions that 
+
+could not achieve expected reductions in CO2 emissions per unit due to a failure to appropriately 
+
+respond to a reduction in the fixed power allocation linked to sales.
+
+We report the total CO2 emissions from our entire Group, including CO2 emissions from power 
+
+plants selling electricity. Total CO2 emissions in fiscal 2019 decreased by approximately 599 kt-CO2 
+
+compared to fiscal 2018*2 due to the sale of our power plants and a drop in sales. CO2 emissions by 
+
+region, excluding those from power plants, fell as a result of reorganization of business sites and a 
+
+decline in sales in Japan. In the Americas, a materials company that became a reporting company in 
+
+fiscal 2016 accounts for a large portion of CO2 emissions, and we will look into ways to promote the 
+
+use of inexpensive renewable energies.
+
+*1 A value closely related to CO2 emissions at each business site (for example, production quantity, output, building floor space, and number of employees).
+
+*2 The CO2 electrical power conversion factor for total CO2 emissions is market-based.
+
+Environmental Action Plan for 2021 Management Values 
+
+ Reduction in CO2 Emissions per Unit (Hitachi Group) 
+
+ FY 2010 (base year)
+
+CO2 emissions*1
+4,703 kt-CO2
+
+Activity amount
+
+100 %
+
+From base year
+
+5% reduction
+
+FY 2019 reduction target: 7%
+
+ FY 2019
+
+CO2 emissions
+4,441 kt-CO2 
+
+Activity amount
+
+95%
+
+*1 CO2 emitted within the organization (Scopes 1 and 2).
+
+applied across the entire Hitachi Group.
+
+Notes:  •  As the CO2 electrical power conversion factor in calculations of CO2 emissions per unit, a unified factor of 0.530 kgCO2/kWh is 
+
+• The Environmental Action Plan’s management values do not include amounts for our power plants in fiscal 2010 (base year) or fiscal 2019. 
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+38
+
+Achieving a Decarbonized Society
+
+ CO2 Emissions (Hitachi Group’s factories, offices, and power plants) 
+
+(kt-CO2/year)
+
+6,000
+
+4,500
+
+3,000
+
+1,500
+
+0
+
+5,322
+
+10
+
+5,433
+
+16
+
+4,346
+
+7
+375
+211
+402
+
+1,454*1
+
+1,519*1
+
+265
+470
+
+283
+499
+
+4,973
+
+15
+
+4,374
+
+30
+
+2,541
+
+2,392
+
+2,377
+
+810
+
+732
+
+739
+
+1,343*1
+
+236
+540
+
+2,285
+
+554
+
+1,228*1
+286
+572
+
+2,030
+
+228
+
+2015
+
+2016
+
+2017
+
+2018
+
+2019
+
+(FY)
+
+ Power plants*2 
+
+ Japan 
+
+ Rest of Asia (excluding China and Japan) 
+
+ China 
+
+ Americas 
+
+ Europe
+
+*1 Includes 1,070 kt-CO2 (fiscal 2016), 1,163 kt-CO2 (fiscal 2017), 1,112 kt-CO2 (fiscal 2018), and 950 kt-CO2 (fiscal 2019) emitted by 
+
+a materials company that became a reporting company in fiscal 2016.
+
+*2 Emissions from power plants selling electricity in Japan are included in the CO2 emissions data for fiscal 2017 and onward.
+
+Notes:  •  Starting from fiscal 2019’s calculations, Scope 2 emissions were changed from a calculation method using a unified Group-wide 
+
+distance transportation.
+
+electrical power conversion factor to a market-based calculation method, and past data was recalculated based on this. 
+
+Regarding CO2 electrical power conversion factors: in Japan (including power plants), adjusted conversion factors for individual 
+
+power businesses based on the Act on Promotion of Global Warming Countermeasures are used; overseas, the latest values 
+
+for each fiscal year supplied by the International Energy Agency (IEA) as conversion factors for individual countries are used.
+
+ 
+
+ 
+
+• Energy-related CO2 emissions in fiscal 2019 were 1,489 kt-CO2 (Scope 1) and 2,885 kt-CO2 (Scope 2).
+
+Reducing Transportation Energy Consumption 
+
+Activities 
+
+As part of our efforts to reduce energy output during transportation as well as at our business sites 
+
+(factories and offices), we have established targets for the reduction of transportation energy use per 
+
+unit for each business unit and Group company in Japan. Outside Japan, these targets are voluntary. 
+
+Our business sites are promoting a modal shift to highly efficient transportation methods, improving 
+
+truck loading ratios and taking other measures to reduce transportation energy consumption, and 
+
+switching to the use of eco-cars for in-house operation. Considering a modal shift from truck to rail 
+
+transportation a high priority, we are working toward “Eco Rail Mark company” and “Eco Rail 
+
+certified product” certifications from the Ministry of Land, Infrastructure, Transport, and Tourism. 
+
+Transitioning from truck to railway transportation is expected to reduce CO2  emissions per unit to 
+
+one-eleventh of its current level, and we plan to continue expanding our use of railways for long-
+
+Achievements in FY 2019
+In fiscal 2019, CO2  emissions from transportation within Japan for the Hitachi Group were 88.4 
+
+kt-CO2,
+
+ 14.4 kt-CO2  less than the previous fiscal year. To reduce CO2  emissions, we actively 
+
+worked to improve efficiency when loading products for transportation and increase our use of 
+
+coordinated transportation, reducing CO2  emissions by more than 10% compared to fiscal 2018.
+
+Introducing Renewable Energy 
+
+Activities 
+
+Eco Rail Mark Initiatives
+
+We are promoting the use of solar, wind, and other forms of renewable energy at our business sites. 
+
+Going forward, we will accelerate these efforts, aiming to raise the share of renewable energy in our 
+
+total electricity consumption to 2% by fiscal 2030.
+
+Achievements in FY 2019
+
+Company
+
+Certification
+
+Hitachi, Ltd.
+
+Eco Rail Mark company*1
+Eco Rail certified product*2
+
+Hitachi-Omron Terminal Solutions
+
+Eco Rail Mark company*1
+
+In fiscal 2019, Hitachi generated a total of 18,022 MWh of renewable energy for its own use, 
+
+Hitachi Industrial Equipment Systems
+
+Eco Rail certified product*2
+
+which is 2.6 times the amount generated in the previous fiscal year. Renewable energy 
+
+*1 A mark conferred on companies using railways for more than 15% of freight land transportation covering 500 km or more; for 15,000 tons 
+
+generated by equipment installed at business sites (factories and offices) accounted for 0.3% of 
+
+or more in volume per year; or for more than 15 million ton-kilometers in volume × distance per year.
+
+*2 A mark conferred on products using railways for more than 30% of freight land transportation covering 500 km or more in terms of volume × distance.
+
+the electricity consumed by the entire Hitachi Group.
+
+About the Eco Rail Mark 
+http://www.mlit.go.jp/tetudo/ecorailmark/
+ecorailmark-english.html
+
+Major Business Sites Using Renewable Energy
+
+Hitachi Computer Products (America) 
+
+11,325 MWh/year of wind power used
+
+Tata Hitachi Construction Machinery (India)  12,629 MWh/year of solar power generated
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+39
+
+Achieving a Decarbonized Society
+
+Energy Savings in Eco-Factories & Offices 
+
+Case Study
+
+Project
+
+Department, Group company
+
+Activity
+
+Promoting measures for carbon neutrality
+Increasing use of renewable energy with off-balance-sheet 
+solar power generation systems for self-consumption
+
+Hitachi Automotive Systems, Hitachi High-Tech 
+Manufacturing & Service
+
+Reduction in CO2 emissions of about 820 t-CO2 by increasing use of renewable energy
+
+https://www.hitachi.com/environment/
+casestudy/2019/case04.html
+
+Reducing CO2 by increasing efficiency of cupola furnaces 
+and utilizing unused energy through heat recovery
+
+Hitachi Metals
+
+Reduction in CO2 emissions by 15% compared to previous fiscal year through initiatives 
+including increased efficiency of cupola furnaces and heat recovery
+
+https://www.hitachi.com/environment/
+casestudy/2019/case05.html
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+40
+
+Achieving a Decarbonized Society
+
+Climate-related Financial Information Disclosure (Based on TCFD Recommendations)
+
+In June 2018, Hitachi announced its endorsement of the recommendations by the Financial Stability 
+
+Board (FSB)’s Task Force on Climate-related Financial Disclosures (TCFD). The following contains key 
+
+Strategy 
+
+102-11 102-15 102-29
+
+201-2
+
+Policy 
+
+The Environmental Vision and Hitachi 
+Environmental Innovation 2050  
+
+Efforts to Achieve a Decarbonized Society 
+
+climate-related financial information in line with the TCFD’s recommendations.
+
+We are responding to climate change by fulfilling our responsibilities as a global company in 
+
+Governance 
+
+achieving a decarbonized society. Taking note of the total CO2 reductions required globally under the 
+
+RCP 2.6*1 and RCP 8.5*2 scenarios of the Fifth Assessment Report of the Intergovernmental Panel 
+
+Structure 
+
+on Climate Change (IPCC), we have established long-term environmental targets called Hitachi 
+
+Environmental Innovation 2050 based on our Environmental Vision calling for CO2 reductions 
+
+Hitachi sees climate change and other environmental issues as important management issues. A report 
+
+throughout our value chain of 50% by fiscal 2030 and 80% by fiscal 2050, compared to fiscal 2010.
+
+to the Board of Directors in 2016 was followed by the establishment and announcement of long-
+
+In May 2020 we announced an even more ambitious CO2 reduction target of achieving carbon 
+
+term environmental targets called Hitachi Environmental Innovation 2050 containing CO2 reduction 
+
+neutrality, which will mean net zero emissions, at our business sites (factories and offices) by fiscal 2030.
+
+targets for fiscal 2030 and fiscal 2050.
+
+The Board of Directors discusses the Group’s sustainability strategy, including climate change 
+
+from preindustrial levels is kept below 2°C.
+
+measures, as a key component of management strategy. The Executive Sustainability Committee, 
+
+chaired by the president and CEO and staffed by heads of corporate divisions and business units, 
+
+to preindustrial levels.
+
+*1 A Representative Concentration Pathway (RCP) scenario under which, at the end of the 21st century, the increase in global temperatures
+
+*2 An RCP scenario that assumes that emissions will continue to rise, resulting in an approximately 4°C rise in global temperatures compared
+
+meets twice a year to discuss and reach decisions on material environment-related policies and 
+
+measures, including those in response to climate change, and to set the stage for implementation. 
+
+In addition, the Audit Committee of independent directors conducts an audit of sustainability-
+
+related operations once a year, and Hitachi executive officers report on climate-related material 
+
+issues to the committee during the audit.
+
+As for activities outside the company, in 2019 an executive officer in charge participated in the 
+
+TCFD Study Group on Implementing TCFD Recommendations for Mobilizing Green Finance 
+
+Through Proactive Corporate Disclosures, launched by the Ministry of Economy, Trade, and 
+
+Identification and Assessment of Climate-related Risks and Opportunities 
+
+The Hitachi Group operates a broad array of businesses around the world, with each business 
+
+having its own set of risks and opportunities. We are responding to the impact of climate change by 
+
+assessing climate-related risks and opportunities in accordance with TCFD classifications. We make 
+
+sector-specific assessments of risks and opportunities for important business sectors that have a 
+
+relatively high likelihood of being affected by climate change. Our assessments are also categorized 
+
+according to time span, namely, short term, medium term, and long term, as defined below.
+
+Industry, and helped compile its report. Hitachi also participates in an industry-government-
+
+Time Spans for Assessing Climate-related Risks and Opportunities
+
+academia initiative called the TCFD Consortium—comprising 164 companies and other 
+
+organizations—as a member of its Steering Committee and contributed to the formulation of TCFD 
+
+Guidance 2.0, announced in July 2020.
+
+Time span
+
+Reason for adoption
+
+Short term
+
+Over the next three years 
+from fiscal 2019 to 2021
+
+Corresponds to the three-year management period covered by the 
+Environmental Action Plan for 2021, established in line with the 2021 
+Mid-term Management Plan
+
+Medium term Through fiscal 2030
+
+Time span of our fiscal 2030 long-term environmental targets
+
+Long term
+
+Through fiscal 2050
+
+Time span of our fiscal 2050 long-term environmental targets
+
+Hitachi’s Corporate Governance Framework and 
+Its Features 
+
+Sustainability Strategy Promotion Structure 
+
+Framework for Promoting Environmental 
+Governance 
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+41
+
+Achieving a Decarbonized Society
+
+Climate-related Risks 
+
+Climate-related Opportunities 
+
+Contributing to a Decarbonized Society Through 
+the Decarbonization Business 
+
+As for climate-related business risks, we have followed the TCFD’s classification in considering 
+
+CO2 emissions during the use of our products and services by our customers account for 
+
+(1) risks related to the transition to a low-carbon economy in the 2°C scenario and (2) risks related 
+
+approximately 90% of total emissions in our value chain. To achieve the CO2 reduction targets set 
+
+to the physical impacts of climate change in the 4°C scenario, which assumes that efforts to reduce 
+
+forth in our long-term environmental targets and 2021 Mid-term Management Plan, Management 
+
+global CO2 emissions have failed.
+
+Plan, it is essential that we reduce emissions during use. Developing and providing products and 
+
+services that emit zero or very little CO2 during their use will not only satisfy customer needs but 
+
+also help meet society’s demands for reduced emissions. This represents a business opportunity for 
+
+us in the short, medium, and long term and constitutes a major pillar of the Social Innovation 
+
+Business that we are promoting as a management strategy.
+
+Climate-related opportunities
+
+Category
+
+Major opportunities
+
+Main initiatives
+
+Products/
+services and 
+markets
+
+Increased corporate 
+value and revenue from 
+expanded sales of 
+products and services 
+with innovative 
+technology that can 
+contribute to the 
+mitigation and 
+adaptation of climate 
+change
+
+  Develop and market products and services that contribute to a 
+decarbonized society, expand the decarbonization business, and promote 
+the development of innovative devices and materials that contribute to 
+reducing the environmental burden
+  Create solutions that leverage Hitachi’s strengths in operational technology 
+(OT), IT, and products, as well as expertise in R&D (high-efficiency, energy-
+saving products; high-efficiency production systems using digital 
+technology; power generation systems using non-fossil energy that do not 
+emit CO2; environment-friendly mobility; and building of smart, 
+environmental cities)
+
+Resilience
+
+Provision of solutions to 
+address climate-related 
+natural disasters
+
+  Provide disaster-mitigation solutions, such as high-performance fire-fighting 
+command systems
+  Provide construction machinery that enables speedy recovery efforts
+
+(1) Risks related to the transition to a low-carbon economy (applying mostly to the 2°C scenario)
+
+Category
+
+Major risks
+
+Time span
+
+Main initiatives
+
+Policy and 
+legal
+
+Technology
+
+Increased business costs from 
+the introduction of carbon 
+taxes, fuel/energy consumption 
+taxes, emissions trading 
+systems, and other measures
+
+Short to 
+long term
+
+Loss of sales opportunities 
+due to delays in technology 
+development for products and 
+services
+
+Medium to 
+long term
+
+Market and 
+reputation
+
+Impact on sales due to 
+changes in market values or 
+assessment of our approach to 
+climate issues
+
+Medium to 
+long term
+
+  Avoid or mitigate increases in business costs, such 
+as from carbon taxes, by further enhancing 
+production and transport efficiency and promoting 
+the use of non- or low-carbon energy sources
+
+  Contribute to reducing CO2 emissions by developing 
+and marketing innovative products and services that 
+lead to the achievement of long-term environmental 
+targets and expanding the decarbonization business
+  Promote the development of low-carbon products by 
+implementing Environmentally Conscious Design 
+Assessments when designing products and services
+
+  In the light of rising investor and market interest in 
+climate change and growing expectations of the 
+business sector, clearly identify the reduction of 
+CO2 emissions in our management and business 
+strategy by incorporating reduction targets for fiscal 
+2021 in the 2021 Mid-term Management Plan in 
+line with our long-term environmental targets
+
+(2) Risks related to the physical impacts of climate change (4°C scenario)
+
+Category
+
+Major risks
+
+Time span
+
+Main initiatives
+
+Acute and 
+chronic 
+physical 
+risks
+
+Climate-related risks to 
+business continuity, including 
+increased severity of typhoons, 
+floods, and droughts (acute 
+risks) as well as rising sea level 
+and chronic heat waves 
+(chronic risks) 
+
+Short to 
+long term
+
+  Take into account the possibility of flood damage 
+when deciding on the location or equipment layout 
+of a new plant. Measures tailored to the water risks 
+of each manufacturing site will be strengthened in 
+the future based on the results of a water risk 
+assessment now being conducted
+
+Hitachi's Approach to Water Risks 
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+42
+
+Achieving a Decarbonized Society
+
+Responding to Climate Scenario Risks and Opportunities for Each Business 
+
+Hitachi operates a broad array of businesses, with each business having its own set of risks and 
+
+In selecting the businesses that have a relatively high likelihood of being affected by climate 
+
+opportunities. We therefore selected businesses that have a relatively high likelihood of being 
+
+change, we took many different factors into account and chose those with (1) relatively high CO2 
+
+affected by climate change and examined the business impact of and responses to the 2°C and 4°C 
+
+emissions from the use of products and services, (2) a relatively high need for fossil fuels during the 
+
+scenarios. Under the former, our assessments were premised on there being stronger measures and 
+
+use of products and services, and (3) high sales volume within the Group. The businesses we 
+
+regulations for decarbonization envisioned by the IPCC’s RCP 2.6 scenario. By assuming somewhat 
+
+selected using these criteria were railway systems, power generation and power grids, IT systems, 
+
+tighter regulations and an earlier target date for CO2 reductions, we can prepare ourselves for the 
+
+industrial equipment, automotive systems, and construction machinery. Our assessment of the major 
+
+1.5°C scenario. Under the latter, we focused on there being increased climate-induced natural 
+
+climate-related risks and opportunities for these businesses are outlined in the following table:
+
+disasters as a result of lax regulations, as projected by the RCP 8.5 scenario.
+
+The Business Environment, Major Risks and Opportunities, and Strategies under the 2°C and 4°C Scenarios
+
+Target businesses
+
+Railway systems
+
+Power generation and power grids
+
+IT systems
+
+Industrial equipment
+
+Automotive systems
+
+Construction machinery
+
+Business environment: Global demand for 
+transport systems that emit less CO2 per 
+distance covered will grow with tighter CO2 
+emission regulations in each country and 
+region
+
+Business environment: Global demand for 
+electricity generated from renewable energy, 
+nuclear power, and other non-fossil sources 
+will grow with tighter CO2 emission 
+regulations in each country and region. 
+Power networks will increasingly 
+accommodate natural energy produced 
+through distributed generation.
+
+The business 
+environment and 
+major risks and 
+opportunities under 
+the 2°C scenario
+
+Risks: Competitiveness will decline if there 
+are delays in the development of innovative 
+emission-reducing technologies, including 
+those to improve the efficiency of railway 
+services through digital utilization, such as 
+dynamic headway (flexible operation in 
+response to passenger demand)  as well as 
+new mobility services like MaaS
+
+Risks: Delays in the construction of power 
+networks enabling the mass introduction of 
+renewable energy with large output 
+fluctuations
+
+Business environment: Demand for 
+energy-saving, high-efficiency IT solutions 
+will grow with tighter CO2 emission 
+regulations in each country and region. 
+There will also be a jump in demand for data 
+centers and data analysis systems to 
+accommodate the expansion of such 
+financial services as investments and loans 
+for decarbonization businesses and green 
+bond issues, as well as of data utilization 
+businesses.
+
+Risks: Competitiveness will decline if there 
+are delays in the development of 
+technologies and human capital to offer 
+energy-saving, high-efficiency IT solutions; 
+shortages in human capital; and slow 
+implementation of decarbonization 
+measures for energy-consuming data 
+centers
+
+Business environment: Global demand for 
+energy-saving industrial equipment will grow 
+with tighter CO2 emission regulations in 
+each country and region
+
+Business environment: Electric vehicles 
+will rapidly spread with tighter laws and 
+regulations on fuel efficiency and 
+environmental standards, and increases in 
+fossil fuel prices. Markets for alternative, 
+non-fossil technologies like hydrogen and 
+biofuel vehicles will expand. The number of 
+countries and regions with near zero sales 
+of internal combustion engine vehicles will 
+increase.
+
+Business environment: Demand for 
+electric and low/no carbon-fuel construction 
+machinery will grow with tighter laws and 
+regulations on the use of fossil fuels. 
+Environmental regulations for items other 
+than CO2 emissions (air and noise pollution, 
+etc.) will grow tighter in urban areas.
+
+Risks: Competitiveness will decline if there 
+are delays in the development of high-
+efficiency, low-loss products
+
+Risks: Failure to transition to a new 
+business environment of rapidly declining 
+sales of internal combustion engine vehicles
+
+Opportunities:  Demand will grow for 
+railways, which emit less CO2 per distance 
+covered. There will be a shift to energy-
+saving railcars from conventional models, 
+and the efficiency of railway services will be 
+improved through digital utilization. Data 
+usage will also boost demand for new 
+mobility services.
+
+Business environment: Demand for 
+electric-powered transport will gradually 
+increase even without tighter energy 
+regulations. Damage from typhoons, floods, 
+and other natural disasters caused by 
+climate change will rise sharply.
+
+Opportunities: Business opportunities will 
+grow with rising demand for renewable 
+energy—the key to a decarbonized future—
+and with the provision of grid solutions, 
+digital service solutions, and energy 
+platforms that can accommodate the 
+diversification of energy suppliers
+
+Business environment: The cost 
+competitiveness of non-fossil energy will 
+increase, and demand for renewable, 
+nuclear, and other non-fossil energy will 
+increase as the expansion of energy 
+consumption pushes up the price of fossil 
+fuels. Natural disasters caused by climate 
+change will rise sharply.
+
+Opportunities: Demand will grow for 
+energy-saving and high-efficiency 
+information systems that contribute to 
+zero-emissions. There will also be increased 
+demand for platforms to offer such 
+environment-related financial services as 
+investments and loans for decarbonization 
+businesses and green bond issues.
+
+Business environment: Demand for new, 
+high-efficiency technology will expand as 
+multiplex IT systems in response to natural 
+disaster BCPs will result in increased energy 
+consumption. Demand will also grow for 
+social and public systems to reduce 
+damage from natural disasters.
+
+Opportunities: Utilization of IoT, 
+digitalization, and connected systems to 
+develop innovative products and solutions 
+that contribute to CO2 emission reductions 
+without relying on the energy-saving 
+features of individual products
+
+Business environment: Typhoons, floods, 
+and other natural disasters caused by 
+climate change will rise sharply
+
+Opportunities: Markets for alternative, 
+non-fossil technologies like electric, 
+hydrogen, and biofuel vehicles will expand
+
+Business environment: Fuel efficiency laws 
+and regulations will remain lax globally, and 
+internal combustion engine vehicles will 
+remain a major mode of transport. The 
+modal shift will be slow, as conventional 
+automobiles and motorcycles will remain 
+predominant. Typhoons, floods, and other 
+natural disasters caused by climate change 
+will rise sharply.
+
+The business 
+environment and 
+major risks and 
+opportunities under 
+the 4°C scenario
+
+Risks: Higher development costs, lost 
+markets due to slow response, and higher 
+costs in building customer support for the 
+use of electric and low/no carbon fuel 
+machinery. Loss of customers due to the 
+short range of electric machinery and lack 
+of fueling and power-storage infrastructure 
+for low/no carbon fuel machinery. Declining 
+demand due to divestment of major coal 
+companies.
+
+Opportunities: Sales and sale opportunities 
+for electric machinery, a broader diversity of 
+fuel types, and digital applications will 
+increase as companies turn to new 
+technologies and adapt to new site 
+environments
+
+Business environment: Natural disasters 
+caused by climate change will rise sharply, 
+boosting demand for construction 
+machinery to support speedy and safe 
+recovery efforts
+
+Continued on next page
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+43
+
+Achieving a Decarbonized Society
+
+Target businesses
+
+Railway systems
+
+Power generation and power grids
+
+IT systems
+
+Industrial equipment
+
+Automotive systems
+
+Construction machinery
+
+The business 
+environment and 
+major risks and 
+opportunities under 
+the 4°C scenario
+
+Risks: The high frequency of natural 
+disasters will exacerbate damage to 
+production facilities, worsen working 
+environments, and disrupt supply chains, 
+leading to delays in deliveries and the 
+procurement of parts
+
+Risks: The high frequency of natural disasters 
+will increase damage to power generation and 
+transmission/distribution facilities, hamper efforts 
+to restore power transmission/distribution, and 
+disrupt supply chains, leading to delays in 
+deliveries and the procurement of parts
+
+Opportunities: Transport systems more 
+resilient to natural disasters can be developed. 
+Competitiveness can be enhanced by providing 
+added value in such forms as energy-saving 
+railcars and adaptability to new technologies.
+
+Opportunities: Energy demand will grow as 
+warmer weather leads to increased use of 
+air conditioning. Demand will increase for 
+disaster-resilient power generation and 
+transmission/distribution technologies.
+
+Risks: Natural disasters will exacerbate 
+damage to production facilities, worsen 
+working environments, and disrupt supply 
+chains, leading to delays in deliveries and 
+the procurement of parts
+
+Risks: Natural disasters will exacerbate 
+damage to production facilities, worsen 
+working environments, and disrupt supply 
+chains, leading to delays in deliveries and 
+the procurement of parts
+
+Opportunities: Demand will increase for 
+social and public systems that help reduce 
+damage from natural disasters and for IT 
+systems required as part of a BCP
+
+Opportunities: Efforts to accommodate IoT 
+products will lead to higher demand for 
+remote control and remote maintenance 
+during natural disasters
+
+Risks: Natural disasters will exacerbate damage 
+to production facilities and disrupt supply chains, 
+leading to delays in deliveries and the 
+procurement of parts. A breakdown in one link 
+of the supply chain will have an increasingly 
+severe impact on production overall.
+
+Risks: Natural disasters will exacerbate 
+damage to production facilities, worsen 
+working environments, and disrupt supply 
+chains, leading to delays in deliveries and 
+the procurement of parts
+
+Opportunities: Demand will grow for 
+technologies to enhance the efficiency of 
+internal combustion engines
+
+Opportunities: Infrastructure projects to 
+prevent and mitigate disasters and support 
+recovery efforts will increase
+
+Non-environmental 
+market factors 
+(neither the 2°C nor 
+4°C scenario) 
+
+Responses to future 
+business risks 
+(business 
+opportunities)
+
+  Economic growth will lead to urbanization 
+and population growth around the world, 
+driving the railway business globally as an 
+efficient form of public transport for large 
+numbers of passengers, regardless of 
+climate conditions. Market size in Japan 
+will remain flat, but the Asian market 
+overall will see substantial growth.
+
+  Long-distance transport will decline going 
+forward as the global pandemic restricts 
+travel and encourages remote work. The 
+decline in demand, though, will not be as 
+severe as that for air transport.
+
+  Competition will grow as major railway 
+manufacturers in various countries will 
+expand their business to meet global 
+demand
+
+Response to business risks under 2°C or 
+4°C scenario
+  Continue to strengthen the railway 
+
+business, as global demand for railways 
+will increase under either scenario
+
+  Specifically, develop and market more 
+energy-saving railcars and battery-
+powered railcars for non-electrified 
+sections. Strengthen railway services 
+through digital utilization, such as dynamic 
+headway (flexible operation in response to 
+passenger demand), and new mobility 
+services like MaaS.
+
+  Given the increasing frequency of natural 
+disasters, take risk aversion into account 
+when deciding the location and equipment 
+layout of a new plant. Keep an eye on the 
+supply chain in strengthening our ability to 
+respond to business disruption risks in 
+accordance with our BCPs.
+
+  Economic growth, urbanization, and 
+
+  Further digitization globally will 
+
+population growth will push up demand for 
+energy, especially electricity, mainly in 
+developing countries
+
+  Energy supply and demand will diversify 
+
+due to various factors, such as CO2 
+emissions, environmental burden, 
+economic performance, safety, and supply 
+stability
+
+  Digital technology will be further applied to 
+enhance the stability and efficiency of the 
+power supply
+
+exponentially increase the volume of data 
+circulated, accumulated, and analyzed. 
+Experience with the global pandemic will 
+prompt a shift to remote, noncontact, and 
+online formats, both in our life and work, 
+and boost demand for solutions that 
+facilitate such a shift.
+
+  Digitalization, infrastructure renewal, 
+
+population decline, and worker shortages 
+will expand the automation market in 
+industrial countries
+
+  As the global pandemic forces people to 
+stay at or work from home, demand will 
+grow for factory automation enabling a 
+handful of workers to operate a factory
+
+  New services and businesses utilizing big 
+data, IoT, AI, and other digital technology 
+will expand rapidly
+
+  The industrial market in emerging 
+
+economies will grow due to a rise in 
+production plants
+
+Response to business risks under 2°C or 
+4°C scenario
+  Continue to enhance response to relevant 
+
+markets in view of expected higher demand 
+for non-fossil energy under either scenario
+  Strengthen the provision of grid solutions, 
+
+digital service solutions, and energy 
+platforms that can accommodate the 
+increased use of renewable energy and 
+diversification of energy supply and demand 
+management 
+
+  Given the increasing frequency of natural 
+
+disasters, develop technologies for disaster-
+resilient renewable energy systems and 
+disruption-resistant power transmission/
+distribution systems. Take risk aversion into 
+account when deciding the location and 
+equipment layout of a new production plant. 
+Keep an eye on the supply chain in 
+strengthening our ability to respond to 
+business disruption risks in accordance with 
+our BCPs.
+
+Response to business risks under 2°C or 
+4°C scenario
+  Continue to develop innovative digital 
+
+technologies, nurture necessary human 
+capital, and enhance digital service 
+solutions that generate new value in view 
+of expected growth in society’s demand 
+and markets for digital services under 
+either scenario
+
+  Specifically, enhance competitiveness by 
+
+providing energy-saving and high-
+efficiency IT solutions that contribute to 
+zero-emissions; platforms for expanded 
+environment-related financial services for 
+decarbonization businesses; social and 
+public systems to prevent natural 
+disasters, reduce damage, and enhance 
+resilience; and IT systems for BCPs
+
+  Given the increasing frequency of natural 
+
+disasters, strengthen our ability to respond 
+to business disruption risks in accordance 
+with our BCPs
+
+Response to business risks under 2°C or 
+4°C scenario
+  Under either scenario, continue developing 
+energy-saving, high-efficiency products 
+that use IoT technology. Focus particularly 
+on connected products with 
+communication features. Miniaturized, 
+high-efficiency, low-loss products can also 
+help reduce CO2 emissions.
+
+  Given the increasing frequency of natural 
+disasters, take risk aversion into account 
+when deciding the location and equipment 
+layout of a new plant. Keep an eye on the 
+supply chain in strengthening our ability to 
+respond to business disruption risks in 
+accordance with our BCPs.
+
+  Economic growth, urbanization, population 
+growth, and infrastructure development 
+like road construction will expand the 
+global market for automobiles as a flexible 
+and personal means of transport
+
+  The global pandemic may temporarily 
+
+dampen passenger vehicle sales due to 
+restrictions on people’s movement, but 
+commercial vehicle sales appear to be 
+rising as need for goods delivery increases
+
+  Non-environmental functions like 
+
+autonomous driving and advanced safety 
+features that promote safety, security, and 
+comfort will drive competitiveness
+
+  Worker shortages will be addressed through 
+further labor savings, automation, remote 
+work, and the development of safety-related 
+products and solutions
+
+  Products, services, and solutions (such as 
+CO2-free machines/attachments suited for 
+work at dismantling sites, in narrow spaces, 
+and underground) will be further developed 
+to meet the needs of smart infrastructure 
+building amid rapid urbanization
+
+  Emerging economies with expanding 
+markets represent both increased sale 
+opportunities and intensifying competition 
+with emerging manufacturers
+
+  There is a need for stronger total supply 
+chain management to accommodate 
+shifting demand and for enhanced 
+resilience of the business portfolio
+
+Response to business risks under 2°C 
+scenario
+  Promote R&D of electrification technology 
+
+Response to business risks under 2°C 
+scenario
+  Advance product development with an 
+
+and other alternative technologies to 
+enhance response to new markets, such 
+as for electric vehicles
+
+Response to business risks under 4°C scenario
+  Promote R&D and product development in 
+existing technologies, including internal 
+combustion engines, to not only improve 
+energy efficiency but increase such 
+non-environmental value as safety, security, 
+and comfort
+
+  Given the increasing frequency of natural 
+disasters, take risk aversion into account 
+when deciding the location and equipment 
+layout of a new plant. Keep an eye on the 
+supply chain in strengthening our ability to 
+respond to business disruption risks in 
+accordance with our BCPs.
+
+eye on trends in electrification and low/no 
+carbon fuel to minimize development and 
+product costs
+
+  Build a system covering the entire value 
+
+chain to work with and support the 
+education of maintenance staff engaged in 
+new technologies to accommodate 
+customer requests for servicing and rentals
+
+Response to business risks under 4°C scenario
+  Promote the development and manufacture 
+of innovative products and solutions that 
+enable a speedy recovery from disasters
+  Given the increasing frequency of natural 
+disasters, take risk aversion into account 
+when deciding the location and equipment 
+layout of a new plant. Keep an eye on the 
+supply chain in strengthening our ability to 
+respond to business disruption risks in 
+accordance with our BCPs.
+
+Financial information
+(sales volume of 
+each target sector)
+
+Impact on part of ¥580.3 billion in railway 
+systems business sales (FY 2019)
+
+Impact on part of ¥399.2 billion in Energy 
+Sector sales (FY 2019)
+
+Impact on part of ¥2,099.4 billion in IT 
+Sector sales (FY 2019)
+
+Impact on part of ¥424 billion in Industry 
+Sector’s industrial products business sales 
+(FY 2019)
+
+Impact on part of ¥811.6 billion in 
+automotive business (Hitachi Automotive 
+Systems) sales (FY 2019)
+
+Impact on part of ¥931.3 billion in 
+construction machinery business (Hitachi 
+Construction Machinery) sales (FY 2019)
+
+We believe that by paying close attention to market trends and developing our business flexibly and strategically, we have high climate resilience in the medium to long term under either the 2°C or 4°C scenario
+
+Note: The above scenario analyses are not future projections but attempts to examine our resilience to climate change. How the future unfolds may be quite different from any of these scenarios.
+
+Contents
+
+Introduction
+
+Management
+
+Environmental
+
+Social
+
+Governance
+
+Assurance
+
+Hitachi Sustainability Report 2020
+
+44
+
+Achieving a Decarbonized Society
+
+Risk Management 
+
+Structure 
+
+The Hitachi Group evaluates and monitors climate-related risks for each business unit and Group 
+
+company as part of a process of assessing risks and opportunities in accordance with the 
+
+Environmental Action Plan, updated every three years. The results are tabulated by the 
+
+Sustainability Promotion Division of Hitachi, Ltd., and their importance is checked at Sustainability 
+
+Promotion Meetings. Those risks and opportunities perceived as being particularly important for the 
+
+Group as a whole are deliberated by the Executive Sustainability Committee, chaired by the 
+
+president and CEO of Hitachi, Ltd. 
+
+Metrics and Targets 
+
+Goals
+
+Our environmental activities are managed through the Environmental Action Plan, whose metrics and 
+
+targets are updated every three years, including those to measure and manage climate-related risks 
+
+and opportunities.
+
+We use the reduction rate of CO2 emissions per unit compared to fiscal 2010 to set targets and 
+
+monitor progress across our many Group products and services in the value chain. Under the current 
+
+Environmental Action Plan for 2021 (covering fiscal 2019–2021) as well, we have established annual 
+
+targets and monitor progress for each business unit and Group company.
+
+Total greenhouse gas emissions (Scope 1, Scope 2, and Scope 3) across our value chain are 
+
+calculated based on GHG Protocol standards, and we have published annual figures since fiscal 
+
+2012. Given the nature of our business, some 90% of our total CO2 emissions come from the use of 
+
+sold products in Scope 3. CO2 emissions can fluctuate greatly, though, due to changes in sales 
+
+volume and our business portfolio. To advance CO2 reductions during the use of sold products and 
+
+services, therefore, we set targets and monitor progress for the reduction rate of CO2 emissions per 
+
+unit. In other words, for products and services featuring equivalent value, we focus on metrics to 
+
+provide customers and society with those that emit less CO2. At the same time, we will make an 
+
+exerted effort to not only reduce per unit but also total CO2 emissions from our business sites 
+
+(factories and offices).
+
+Environmental Action Plan for 2021 
+(Fiscal 2019–2021) 
+
+GHG Emissions Throughout the Value Chain 
+
+
