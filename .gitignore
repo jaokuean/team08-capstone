@@ -4,6 +4,8 @@ cache_dir
 .DS_Store
 .ipynb_checkpoints
 .vscode
+.venv
+source
 
 
 # esg bert
