@@ -8,3 +8,6 @@ cache_dir
 # esg bert
 esgbert/bert_model/pytorch_model.bin
 esgbert/bert.mar
+
+#bert
+bert
