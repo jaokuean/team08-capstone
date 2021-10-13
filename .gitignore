@@ -7,6 +7,7 @@ cache_dir
 .venv
 source
 
+relevance-prediction/model_results
 
 # esg bert
 deprecated/esgbert/bert_model/pytorch_model.bin
