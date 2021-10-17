@@ -25,4 +25,3 @@ def clean_sentence(sentence,remove_stopwords=True, remove_punctuation=True, remo
     sentence = " ".join(sentence.split())
     return sentence.lower()
 
-print(clean_sentence("Hello!242"))
