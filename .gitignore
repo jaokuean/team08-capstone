@@ -3,5 +3,15 @@ __pycache__
 cache_dir
 .DS_Store
 .ipynb_checkpoints
+.vscode
 .venv
 source
+
+relevance-prediction/model_results
+
+# esg bert
+deprecated/esgbert/bert_model/pytorch_model.bin
+deprecated/esgbert/bert.mar
+
+#bert
+bert
