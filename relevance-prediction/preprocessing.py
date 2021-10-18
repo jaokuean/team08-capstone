@@ -11,7 +11,6 @@ WORD_TOKENIZER = nltk.WordPunctTokenizer()
 LEMMATIZER = WordNetLemmatizer()
 PUNCTUATION_TABLE = str.maketrans(dict.fromkeys(string.punctuation))
 
-
 def clean_sentence(sentence,remove_stopwords=True, remove_punctuation=True, remove_numbers=True, lemmatize=True):
 
     if remove_stopwords:
