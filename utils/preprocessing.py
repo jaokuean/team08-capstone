@@ -4,6 +4,7 @@ nltk.download('wordnet')
 from nltk.corpus import stopwords
 from gensim.parsing.preprocessing import STOPWORDS
 from nltk.stem import WordNetLemmatizer
+import string 
 
 STOPWORD_SET = list(STOPWORDS.union(set(stopwords.words("english"))))
 WORD_TOKENIZER = nltk.WordPunctTokenizer()
