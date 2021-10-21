@@ -8,6 +8,7 @@ cache_dir
 source
 
 relevance-prediction/model_results
+text_classification/model_results 
 
 # esg bert
 deprecated/esgbert/bert_model/pytorch_model.bin
