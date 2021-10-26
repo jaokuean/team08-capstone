@@ -3,13 +3,13 @@
     }
     
     .logo {
-        height: 250px;
-        width: 250px;
+        height: 190px;
+        width: 190px;
         text-align: center;
     }
     
     .sidebar {
-        width: 250px;
+        width: 200px;
         position: fixed;
         top: 0;
         left: 0;
@@ -29,33 +29,33 @@
     
     .section-main {
         background: #EAEAEA;
-        height: 85px;
-        min-width: 1920px;
+        height: 55px;
+        min-width: 1240px;
         position: relative;
         top: 0;
-        left: 249px;
+        left: 200px;
         border-bottom: 5px solid #793AF6;
     }
     
     .section-header {
-        width: 240px;
+        width: 200px;
         height: 100%;
         background-color: #F5F8FB;
         border-right: 3px solid #CCCCCC;
         text-align: center;
-        padding-top: 25px;
+        padding-top: 16px;
     }
     
     .nav-Link {
         color: white;
-        padding: 15px 0px 15px 35px;
+        padding: 10px 0px 10px 30px;
         border-radius: 0px;
     }
     
     .nav-Link:hover {
         background-color: #7D55C7;
         color: white;
-        padding: 15px 0px 15px 35px;
+        padding: 10px 0px 10px 30px;
         border-radius: 0px;
     }
     
@@ -66,7 +66,7 @@
     
     .doc-nav-Link {
         color: white;
-        padding: 15px 0px 15px 35px;
+        padding: 10px 0px 10px 30px;
         border-radius: 0px;
         position: fixed;
         bottom: 20px;
@@ -75,18 +75,18 @@
     .doc-nav-Link:hover {
         background-color: #7D55C7;
         color: white;
-        padding-right: 49px;
+        padding-right: 72px;
         border-radius: 0px;
     }
     
     .icon-nav-link {
-        height: 40px;
-        width: 40px;
-        margin-right: 18px;
+        height: 33px;
+        width: 33px;
+        margin-right: 15px;
         border: 0px solid #7D55C7;
         border-radius: 25px;
         background-color: white;
-        padding: 4px;
+        padding: 3px;
     }
     
     .upload-main-container {
@@ -94,11 +94,11 @@
     }
     
     .upload-sidebar {
-        width: 20%;
+        width: 250px;
         height: 100vh;
         float: left;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-        padding: 50px;
+        padding: 30px;
     }
     
     .upload-right-container {
@@ -109,12 +109,12 @@
     
     .upload-sub-header {
         text-align: left;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .upload-sub-divider {
         text-align: left;
-        margin: 100px 0;
+        margin: 40px 0;
     }
     
     .upload-sub-divider::before,
@@ -129,7 +129,7 @@
     
     .upload-right-inputs {
         width: 100%;
-        height: 45px;
+        height: 35px;
     }
     
     .upload-right-inputs[type=text],
@@ -158,6 +158,8 @@
     .file-list-li {
         margin: 0;
         padding: 0;
+        margin-left: -20px;
+        font-size: 0.8em;
     }
     
     .err-list-ol {
@@ -166,7 +168,7 @@
     }
     
     .upload-right-button {
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 5px;
         height: 45px;
         width: 250px;
@@ -178,7 +180,7 @@
     }
     
     .upload-right-button:hover {
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 5px;
         height: 45px;
         width: 250px;
@@ -263,4 +265,73 @@
         to {
             transform: rotate(360deg);
         }
+    }
+    
+    .section-dashboard_bar_chart {
+        height: 360px;
+        width: 360px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid black;
+    }
+    
+    .section-dashboard_wordcloud {
+        height: 360px;
+        width: 360px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid black;
+    }
+    
+    .section-dashboard_relevant_tables {
+        height: 280px;
+        width: 740px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    
+    .section-dashboard_cleaned_tables {
+        height: 340px;
+        width: 420px;
+        margin: 25px 0px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    
+    .section-dashboard_selected_images {
+        height: 340px;
+        width: 420px;
+        margin: 25px 0;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    
+    .section-dashboard_left_content {
+        width: 65%;
+        display: inline-block;
+    }
+    
+    .section-dashboard_right_content {
+        width: 35%;
+        display: inline-block;
+        position: fixed;
+    }
+    
+    .section-dashboard_left_content_upper {
+        width: 760px;
+        height: 380px;
+        margin: 25px;
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    
+    .section-dashboard_left_content_lower {
+        width: 760px;
+        height: 300px;
+        margin: 25px;
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        overflow: scroll;
     }
