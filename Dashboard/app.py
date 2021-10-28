@@ -40,39 +40,60 @@ json_input = [
         "company": "ASAHI",
         "year": "2020",
         "pdf_url": "https://www.asahi-life.co.jp/english/annual_report/AnnualReport2020.pdf ",
-        "wordcloud_img_path": "wordcloud_images/ASAHI_2020.png",
+        "wordcloud_img_path": "wordcloud_images/AIIB_2020.png",
         "table_images": {1: ['output/ASAHI_2020/1.png', 'output/ASAHI_2020/2.png'], 2:['output/ASAHI_2020/2.png']},
         "table_keywords": {},
         "chart_images": {1: ['output/ASAHI_2020/3.png', 'output/ASAHI_2020/4.png'], 2:['output/ASAHI_2020/5.png']},
-        "sentiment_score": {},
-        "text_output": {}
+        "sentiment_score": [0.85, 0.5, 0.3, 0.9, 0.76],
+        "text_output": {
+            "page": [4, 4, 5, 6],
+            "sentence": ["sentence1", "sentence2", "sentence3", "sentence4"],
+            "relevance_prob": [97, 93, 73, 64],
+            "carbon_class": ["Emissions", "Renewables", "Sustainable Investing", "Renewables"],
+            "mined_text": ["text1", "text2", "text3", "text4"]
+        }
     },
     {
         "company": "UOB",
         "year": "2020",
         "pdf_url": "https://www.uobgroup.com/AR2020/documents/UOB-Sustainability-Report-2020.pdf",
-        "wordcloud_img_path": "wordcloud_images/UOB_2020.png",
+        "wordcloud_img_path": "wordcloud_images/OCBC Bank_2020.png",
         "table_images": {1: ['output/UOB_2020/1.png', 'output/UOB_2020/2.png'], 2:['output/UOB_2020/2.png']},
         "table_keywords": {},
         "chart_images": {1: ['output/UOB_2020/3.png', 'output/UOB_2020/4.png'], 2:['output/UOB_2020/5.png']},
-        "sentiment_score": {},
-        "text_output": {}
+        "sentiment_score": [0.65, 1, 0.8, 0.9, 0.92],
+        "text_output": {
+            "page": [4, 4, 5, 6],
+            "sentence": ["At the end of 2019, we had reduced our GHG emissions by 71% compared to baseline year 2004.", 
+                         "These efforts reduced energy consumption by more than 2,100 metric tons (mt) of carbon dioxide equivalents (CO2e) during the one-year challenge.",
+                         "For public and private assets, excluding cash and non-equity derivatives as they were not reported in 2019, our year-over-year portfolio weighted average carbon intensity was reduced by approximately 23%.",
+                         "sentence4"],
+            "relevance_prob": [97, 93, 73, 64],
+            "carbon_class": ["Emissions", "Renewables", "Sustainable Investing", "Renewables"],
+            "mined_text": ["text1", "text2", "text3", "text4"]
+        }
     },
 ]
 report_selected = "/"
+report_obj = {}
 
 
 def getCurrReport():
     print(f"GET: ===> {report_selected}")
     return report_selected
 
+def getCurrReportObj():
+    return report_obj
 
 def setCurrReport(report_name):
     global report_selected
+    global report_obj
     print(f"SET: ===> {report_selected}")
     report_selected = report_name
     print(f"SET: ===> {report_selected}")
-
+    for obj in json_input:
+        if obj['company'] == report_selected.replace(".pdf","") and obj['year'] == "2020": #to change year to a fn
+            report_obj = obj
 
 def getCurrentYear():
     now = datetime.datetime.now()
@@ -90,6 +111,12 @@ def uploaded_files():
     #    if os.path.isfile(path):
     #      files.append(filename)
     return files
+
+def find_report_dict():
+    for obj in json_input:
+        if obj['company'] == getCurrReport().replace(".pdf","") and obj['year'] == "2020": #to change year to a fn
+            return obj
+    return None
 
 
 files = uploaded_files()  # For all files dir
@@ -217,7 +244,6 @@ left_content = html.Div(
 # ========================= Main Pages ===========================
 # Dashboard Components
 
-
 def generate_dashboard(report_name):
     dashboard_header = html.Div(
         className="section-header",
@@ -229,21 +255,70 @@ def generate_dashboard(report_name):
     dashboard_bar_chart = html.Div(
         className="section-dashboard_bar_chart",
         children=[
-            html.H6("BAR CHART ")
+            html.H6("Average Sentiment Scores Across Categories"),
+            dcc.Graph(
+            figure={
+                'data': [
+                    {'x': ["Emissions", "Renewables", "Waste", "Sustainable Investing", "Others"], 
+                     'y': report_obj["sentiment_score"], 
+                     'type': 'bar', 'name': 'Category'}
+                ],
+                'layout': {
+                    'margin': {'t': 10},
+                    "autosize": True, 
+                }
+            }, style={'height': '330px'}
+            )
         ])
 
     # TODO: Jermaine
     dashboard_wordcloud = html.Div(
         className="section-dashboard_wordcloud",
         children=[
-            html.H6("WORDCLOUD ")
+            html.H6("Word Cloud of Top 10 Keywords Per Topic"),
+            html.Img(src = app.get_asset_url(report_obj["wordcloud_img_path"]))
         ])
 
     # TODO: Aifen/Jermainem whomever have more bandwidth
     dashboard_relevant_tables = html.Div(
         className="section-dashboard_relevant_tables",
         children=[
-            html.H6("RELEVANT SENTENCES TABLE")
+            html.H6("Decarbonisation-Related Information", style={'display': 'inline-block'}),
+            html.Div(
+                className="section-dashboard_filter_class",
+                children=[
+                    "Select Carbon Category",
+                    dcc.Dropdown(
+                        id='filter_dropdown',
+                        options=[{'label': 'All', 'value': 'All'},
+                                 {'label': 'Emissions', 'value': 'Emissions'},
+                                 {'label': 'Renewables', 'value': 'Renewables'},
+                                 {'label': 'Sustainable Investing', 'value': 'Sustainable Investing'},
+                                 {'label': 'Others', 'value': 'Others'}
+                                ],
+                        value = 'All'
+                    ),
+                ]
+            ),
+            dash_table.DataTable(
+                id='table-container',
+                columns=[{'name': 'Page No.', 'id': 'page'}, 
+                         {'name': 'Sentence', 'id': 'sentence'}, 
+                         {'name': 'Relevance (%)', 'id': 'relevance_prob'}, 
+                         {'name': 'Carbon Category', 'id': 'carbon_class'}
+                        ],
+                style_data={
+                    'whiteSpace': 'normal',
+                    'height': 'auto',
+                },
+                style_header={
+                    'backgroundColor': '#D71C2B',
+                    'color': 'white'
+                },
+                filter_action="native",
+                sort_action="native",
+                sort_mode="multi",
+            )
         ])
 
     # TODO: Aifen
@@ -479,7 +554,20 @@ def render_page_content(pathname):
         ]
     )
 
-
+# Callback for filtering of carbon class
+@app.callback(
+    Output('table-container', 'data'),
+    [Input('filter_dropdown', 'value')])
+def display_table(state):
+    df = pd.DataFrame.from_dict({
+                x: report_obj['text_output'][x] for x in report_obj['text_output'] if x != "mined_text"
+            })
+    if state == 'All':
+        return df.to_dict('records')
+    else:
+        dff = df[df.carbon_class==state]
+        return dff.to_dict('records')
+    
 # Validation for URL link
 # Test Link:
 # https://www.uobgroup.com/AR2020/documents/UOB-Sustainability-Report-2020.pdf
@@ -594,7 +682,6 @@ def input_render(n_clicks, inputUrl, inputCompany, inputYear):
 def update_output(n_clicks, inputCompany):
     # files.append(inputCompany)
     return [html.Ol(className="file-list-li", children=[file_download_link(filename)]) for filename in files]
-
 
 if __name__ == "__main__":
     app.run_server(debug=True)
