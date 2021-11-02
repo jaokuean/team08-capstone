@@ -500,6 +500,7 @@ def bert_filtering(file_path,output_name):
             fi_indirect_dict[page] =  list(map(lambda x : remove_punc(x) ,fi["report_sentences"][page-1]))      
         fi_dict["company"] = fi["company"] #identifier
         fi_dict["year"] = fi["year"] #identifier
+        fi_dict["url"] = fi["url"]
         fi_dict["filtered_report_pages_direct_bert"]  = fi_direct_dict
         fi_dict["filtered_report_pages_indirect_bert"]  = fi_indirect_dict
         fi_list.append(fi_dict)
@@ -528,13 +529,14 @@ def bert_filtering(file_path,output_name):
                 'quantitative target for ESG-themed investments and finance of ¥700 billion ',
                 'Commit to reduce investment carbon footprint by',
                 'esg investing', 'green bonds', 'Green Investment target', 'Achieve 100% renewable electricity by 2025']
-    
     relevant_sentences_embeddings = bc.encode(relevant_sentences)
 
     #step 2
     json_list = fi_list
+    print(len(json_list))
     for fi_index in range(len(json_list)): #remove
         fi = json_list[fi_index]
+        print(fi)
         page_relevant_sentences = {}
         page_relevant_sentences_original = {}
         for page_number, page in fi["filtered_report_pages_direct_bert"].items():
@@ -550,10 +552,11 @@ def bert_filtering(file_path,output_name):
                         relevant_sentences.append(sentence)
                         relevant_sentences_original.append(original_sentence)
                         break
-            if len(relevant_sentences) != 0.7357 :
+            if len(relevant_sentences) != 0 :
                 page_relevant_sentences[page_number] = relevant_sentences
                 page_relevant_sentences_original[page_number] = relevant_sentences_original
         #json_list[fi_index]["bert_relevant_sentences_direct"] = page_relevant_sentences
+                #print(len(relevant_sentences))
         json_list[fi_index]["bert_relevant_sentences_direct_original"] = page_relevant_sentences_original # sentences used to train
 
 
@@ -575,15 +578,19 @@ def bert_filtering(file_path,output_name):
             if len(relevant_sentences) != 0 :
                 page_relevant_sentences_indirect[page_number] = relevant_sentences
                 page_relevant_sentences_indirect_original[page_number] = relevant_sentences_original
+                #print(len(relevant_sentences))
         #json_list[fi_index]["bert_relevant_sentences_indirect"] = page_relevant_sentences_indirect
         json_list[fi_index]["bert_relevant_sentences_indirect_original"] = page_relevant_sentences_indirect_original # sentences used to train
         
         json_name = json_list
 
-        with open(output_name, "w") as outfile:  
-            json.dump(json_name, outfile)
+    with open(output_name, "w") as outfile:  
+        json.dump(json_name, outfile)
 
-        return json
+    return json
+
+
+
 
 
 
