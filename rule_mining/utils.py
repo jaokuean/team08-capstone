@@ -3,6 +3,7 @@ import re
 import spacy
 import en_core_web_sm
 import string
+SPECIAL_EXT_TOKENS = ['double', 'doubled', 'triple', 'tripled', 'half', 'quarter']
 
 def get_indices_filter_nondigits(data, filter_corpus):
     # this processed json file, flattens and store indices for preprocessed text for easier retrieval of original text later
@@ -88,8 +89,71 @@ def lemmatization(text_list, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
 
 def process_list(test_set_preproc):
     tags = []
-    for i,j,k in test_set_preproc: 
+    for i,j in test_set_preproc: 
         tk_org, pos_org, tag_org = pos_extraction(i)
         tk, pos, tag = pos_extraction(j)
-        tags.append([i, j, tk_org, pos, tag, k]) 
+        tags.append([i, j, tk_org, pos, tag]) 
     return tags
+
+def extract_text(tags, verb_exclude): 
+    tokens, pos_list, tag_list = tags[2], tags[3], tags[4]
+    results = []
+    for i in range(len(pos_list)):
+        pos = pos_list[i]
+        tag = tag_list[i]
+        tok = tokens[i]
+        if pos == 'NUM' and line_has_digits(tokens[i].text): #million recognised as a NUM
+            j,k = extract_text_numbers(pos_list, tag_list, verb_exclude, i)
+            results.append([tokens[i].text, generate_extracted_text(tokens, pos_list, j,k)])
+        if (pos == 'DET' and tag == 'PDT') or tok.text in SPECIAL_EXT_TOKENS:
+            j,k = extract_text_quant_words(pos_list, tag_list, i)
+            results.append([tokens[i].text, generate_extracted_text(tokens, pos_list, j,k)])
+    return results    
+
+def extract_text_numbers(pos_list, tag_list, verb_exclude, i):
+    j = max(i-1,0)
+    k = min(i+1, len(pos_list)-1)    
+    noun_flag_left, noun_flag_right = False, False
+    if j != 0:
+        while pos_list[j] != 'VERB' or noun_flag_left == False or tag_list[j] in verb_exclude:
+            if pos_list[j] == 'NOUN':
+                noun_flag_left = True
+            j -= 1
+            if j == 0:
+                break
+    if k != len(pos_list)-1:
+        while pos_list[k] != 'VERB' or noun_flag_right == False or tag_list[k] in verb_exclude:
+            if pos_list[k] == 'NOUN':
+                noun_flag_right = True
+            k += 1
+            if k == len(pos_list)-1:
+                break
+    return j,k
+
+def extract_text_quant_words(pos_list, i):
+    j = max(i-1,0)
+    k = min(i+1, len(pos_list)-1)    
+    adj_flag_left, adj_flag_right = False, False
+    if j != 0:
+        while pos_list[j] != 'NOUN' or adj_flag_left == False:
+            if pos_list[j] == 'ADJ':
+                adj_flag_left = True
+            j -= 1
+            if j == 0:
+                break
+    if k != len(pos_list)-1:
+        while pos_list[k] != 'NOUN' or adj_flag_right== False:
+            if pos_list[k] == 'ADJ':
+                adj_flag_right = True
+            k += 1
+            if k == len(pos_list)-1:
+                break
+    return j,k
+    
+def generate_extracted_text(tokens, pos_list, j, k): #need to write if not simply joining will give extra spaces
+    extracted_text = ''
+    for tk in range(j,k):
+        if pos_list[tk] != 'PUNCT' and pos_list[tk] != 'PART':
+            extracted_text += ' '
+        extracted_text += tokens[tk].text
+    return extracted_text.strip()
