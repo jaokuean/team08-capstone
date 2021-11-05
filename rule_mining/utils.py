@@ -1,22 +1,9 @@
 import os
 import re
 import spacy
-import en_core_web_sm
 import string
 SPECIAL_EXT_TOKENS = ['double', 'doubled', 'triple', 'tripled', 'half', 'quarter']
-
-def get_indices_filter_nondigits(data, filter_corpus):
-    # this processed json file, flattens and store indices for preprocessed text for easier retrieval of original text later
-    d = {}
-    for company in data:
-        d[company['url']] = []
-        for page_ind in range(len(company['report_sentences_preprocessed'])):
-            for sentence_ind in range(len(company['report_sentences_preprocessed'][page_ind])):
-                sentence = company['report_sentences_preprocessed'][page_ind][sentence_ind]
-                if line_has_digits(sentence) and line_has_decarbonisation(sentence, filter_corpus):
-                    text = preprocess(sentence, False)
-                    d[company['url']].append((sentence, text, (page_ind, sentence_ind)))
-    return d
+PUNC = [x for x in string.punctuation]
 
 def line_has_digits(sentence): 
     # this filters out those lines with possible metrics
@@ -46,6 +33,7 @@ def preprocess(text, lemmatization_bool):
                      'dummy dummy dummy', text)
     removed = re.sub(r'(\d{4})/(\d{4})', 'year_dummy', removed)
     removed = re.sub(r'[1-2][0-9]{3}', 'year_dummy', removed)
+    removed = re.sub(r'.?-.?', 'xx_', removed)
     if lemmatization_bool:
         removed = " ".join(lemmatization(removed.split(" ")))
     removed = removed.strip()
@@ -74,40 +62,42 @@ def tag_both_text(org_text, processed_text):
     tk_proc, pos_proc, tag_proc = pos_extraction(processed_text)
     return [org_text, processed_text, tk_org, pos_proc, tag_proc]
 
-# helper function to print output of pos tagging
-def pos_printer(token, pos, tag):
-    for i in range(len(token)):
-        print(str(token[i])+' -> ' + pos[i] +',' +tag[i])
-
-def lemmatization(text_list, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
+def lemmatization(text_list):
     """https://spacy.io/api/annotation"""
     nlp_lemma = spacy.load("en_core_web_sm", disable=['ner'])
     texts_out = []
     for texts in text_list:
-        texts_out.append(" ".join([token.lemma_ for token in nlp_lemma(texts)]))
+        texts_out.append(" ".join([token.lemma_ if token.lemma_ != '-PRON-' else token.text for token in nlp_lemma(texts)]))
     return texts_out
 
 def process_list(test_set_preproc):
-    tags = []
-    for i,j in test_set_preproc: 
-        tk_org, pos_org, tag_org = pos_extraction(i)
-        tk, pos, tag = pos_extraction(j)
-        tags.append([i, j, tk_org, pos, tag]) 
-    return tags
+    i,j = test_set_preproc[0], test_set_preproc[1]
+    tk_org, pos_org, tag_org = pos_extraction(i)
+    tk, pos, tag = pos_extraction(j)
+    return [i, j, tk_org, pos, tag]
 
 def extract_text(tags, verb_exclude): 
     tokens, pos_list, tag_list = tags[2], tags[3], tags[4]
-    results = []
-    for i in range(len(pos_list)):
+    results = ''
+    start,end = 0, min(len(tokens), len(pos_list))
+    for i in range(min(len(tokens), len(pos_list))):
         pos = pos_list[i]
         tag = tag_list[i]
         tok = tokens[i]
         if pos == 'NUM' and line_has_digits(tokens[i].text): #million recognised as a NUM
             j,k = extract_text_numbers(pos_list, tag_list, verb_exclude, i)
-            results.append([tokens[i].text, generate_extracted_text(tokens, pos_list, j,k)])
-        if (pos == 'DET' and tag == 'PDT') or tok.text in SPECIAL_EXT_TOKENS:
-            j,k = extract_text_quant_words(pos_list, tag_list, i)
-            results.append([tokens[i].text, generate_extracted_text(tokens, pos_list, j,k)])
+            start = max(start, j)
+            end = min(end, k)
+            results = generate_extracted_text(tokens, pos_list, j,k)
+            break
+        if tok.text in SPECIAL_EXT_TOKENS:
+            j,k = extract_text_quant_words(pos_list, i)
+            start = max(start, j)
+            end = min(end, k)
+            results = generate_extracted_text(tokens, pos_list, j,k)
+            break
+    if (end-start) >= int(0.9* len(tokens)):
+        results = format_extracted_text_toolong(tags[0])
     return results    
 
 def extract_text_numbers(pos_list, tag_list, verb_exclude, i):
@@ -149,11 +139,33 @@ def extract_text_quant_words(pos_list, i):
             if k == len(pos_list)-1:
                 break
     return j,k
-    
-def generate_extracted_text(tokens, pos_list, j, k): #need to write if not simply joining will give extra spaces
+
+# need to write if not simply joining will give extra spaces/not formatted properly  
+def generate_extracted_text(tokens, pos_list, j, k):
     extracted_text = ''
-    for tk in range(j,k):
-        if pos_list[tk] != 'PUNCT' and pos_list[tk] != 'PART':
+    for tk_ind in range(len(tokens)):
+        if tokens[tk_ind].text not in PUNC:
             extracted_text += ' '
-        extracted_text += tokens[tk].text
+        if tk_ind == j:
+            extracted_text += '**'
+        if tk_ind == k:
+            extracted_text += '**'
+        extracted_text += tokens[tk_ind].text  
     return extracted_text.strip()
+
+# case where we need to bold numbers only
+def format_extracted_text_toolong(org_sentence): 
+    org_tk, org_pos, org_tag = pos_extraction(org_sentence)
+    extracted_text = ''
+    pattern = re.compile("\d{4}")
+    for ind in range(len(org_tk)):
+        tk = org_tk[ind]
+        if tk.text not in PUNC:
+            extracted_text += ' '
+        if pattern.match(tk.text) or tk.pos_ != 'NUM': 
+            extracted_text += tk.text
+        else:
+            extracted_text += '**' + tk.text + '**'
+    return extracted_text.strip()
+
+
