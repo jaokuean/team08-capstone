@@ -21,9 +21,9 @@ def get_majority_pred_soft(df):
         max_value = max(lst)
         soft_pred = lst.index(max_value)
         if soft_pred == 0:
-            final_pred.append('Emissions')
+            final_pred.append('Carbon Emissions')
         elif soft_pred == 1:
-            final_pred.append('Renewables')
+            final_pred.append('Energy')
         elif soft_pred == 2:
             final_pred.append('Waste')
         elif soft_pred == 3:
