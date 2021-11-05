@@ -82,4 +82,3 @@ def text_classification_pipeline(df):
     model_pred  = get_majority_pred_soft(df)
 
     return model_pred
-

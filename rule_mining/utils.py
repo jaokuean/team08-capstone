@@ -167,5 +167,3 @@ def format_extracted_text_toolong(org_sentence):
         else:
             extracted_text += '**' + tk.text + '**'
     return extracted_text.strip()
-
-
