@@ -4,15 +4,17 @@ import ast
 
 # data collection, page and bert sentence filtering
 from text_filtering.data_collection_filtering_pipeline import *
-# relevance prediction
+# # relevance prediction
 from relevance_prediction.relevance_prediction_pipeline import *
-# carbon class prediction
+# # carbon class prediction
 from text_classification.text_classification_pipeline import *
 from rule_mining.rule_mining_pipeline import *
 from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
 # table detection
-#from table_extraction.table_pipeline import *
+from table_extraction.table_pipeline import *
+# chart detection
+from chart_extraction.chart_pipeline import *
 
 
 
@@ -79,31 +81,79 @@ def text_except_relevance(json_path):
     return output_path
 
 
+def combine_intermediate_json(all_json_paths): # input [text,table,chart]
+    all_json = []
+    # open files
+    for paths in all_json_paths:
+        with open(paths,'r') as infile:  
+            all_json.append(json.load(infile))
+    
+    
+    # append text data
+    final_json = all_json[0]
+    
+    # append table data
+    final_json["table_keywords"] = all_json[1]["table_keywords"]
+    final_json["table_image_keywords"] = all_json[1]["table_image_keywords"]
+    final_json["table_images"] = all_json[1]["table_images"]
 
+    # append  chart data
+    final_json["chart_images_keywords"] = all_json[2]["chart_images_keywords"]
+    final_json["chart_images"] = all_json[2]["chart_images"]
+    
+    output_path = all_json_paths[2][:-12] + "_FINAL.json"
+                                                      
+    with open(output_path, 'w') as output_file:
+        json.dump(final_json, output_file)   
+    
+    return output_path
+        
+def append_to_database(file_path):
+    pass
+
+    
 
 ################################### main function ################################### 
 def new_url_run(report_url,report_company,report_year,downloaded=False):
-#     # data collection
-#     ## new json generated in "data/sustainability_reports_new" -OK IF REPORT CONTENT IS EMPTY, none is returned
-#     report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
-        
-#     # text extraction
-#     ## new BERT_embeddings_json generated in "data/sustainability_reports_new" - OK 
-#     report_bert_output_file_path = bert_filtering(report_output_file_path)
-#     #report_bert_output_file_path = 'data/new_report/Canada Pension2017_BERT_embeddings.json'
     
-#     ## relevance prediction - OK
-#     text_output_path = relevance_prediction(report_bert_output_file_path)
-#     ## all other text predictions - OK 
-#     #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
-#     all_text_output_path = text_except_relevance(text_output_path)
+    # data collection
+    ## new json generated in "data/new_report" -OK IF REPORT CONTENT IS EMPTY, none is returned
+    report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
+        
+    # text extraction
+    ## new BERT_embeddings_json generated in "data/new_report" - OK 
+    report_bert_output_file_path = bert_filtering(report_output_file_path)
+    #report_bert_output_file_path = 'data/new_report/Canada Pension2017_BERT_embeddings.json'
+    
+    ## relevance prediction - OK
+    text_output_path = relevance_prediction(report_bert_output_file_path)
+    ## all other text predictions - OK 
+    #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
+    all_text_output_path = text_except_relevance(text_output_path)
     
    
     # table extraction
-    report_output_file_path = "data/sustainability_reports/new/Canada Pension2017.json"
+    report_output_file_path = "data/new_report/Canada Pension2017.json"
     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
-
+    # chart detection
+    chart_output_path = chart_pipeline(report_output_file_path)
+    
+    # combine all data into 1 json 
+    all_json = [all_text_output_path,table_output_path,chart_output_path]
+    final_output_path = combine_intermediate_json(all_json)
+    
+    # add data to databse
+    ## append the 1 json to database
+    append_to_database(final_output_path)
+    
+    ## append pickle file to database
+    
+    
+    ## move wordcloud images, chart images folder, table images folder to database
+    
+    
+        
     
     
     

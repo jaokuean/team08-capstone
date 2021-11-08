@@ -16,10 +16,13 @@ import pickle
 import torch, torchvision
 import pytesseract
 import detectron2
-import Multi_Type_TD_TSR.google_colab.deskew as deskew
-import Multi_Type_TD_TSR.google_colab.table_detection as table_detection
-import Multi_Type_TD_TSR.google_colab.table_xml as txml
-import Multi_Type_TD_TSR.google_colab.table_ocr as tocr
+
+# test
+import table_extraction.Multi_Type_TD_TSR.google_colab
+import table_extraction.Multi_Type_TD_TSR.google_colab.deskew as deskew
+import table_extraction.Multi_Type_TD_TSR.google_colab.table_detection as table_detection
+import table_extraction.Multi_Type_TD_TSR.google_colab.table_xml as txml
+import table_extraction.Multi_Type_TD_TSR.google_colab.table_ocr as tocr
 import pandas as pd
 import os
 import json
@@ -28,6 +31,7 @@ import random
 from detectron2.utils.logger import setup_logger
 
 # import common detectron2 utilities
+# error here
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
 from detectron2.config import get_cfg
@@ -542,7 +546,7 @@ def table_pipeline(file_path):
     pickle['year'] = year
     pickle['url'] = pdf_url
 
-    path = 'data/dashboard_data/table_images/' + company + '_' + year
+    path = 'data/new_report/table_images/' + company + '_' + year
     os.mkdir(path)
     print(f"Detection for Report: {company}_{year}")
 
