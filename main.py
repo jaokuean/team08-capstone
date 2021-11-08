@@ -11,6 +11,11 @@ from text_classification.text_classification_pipeline import *
 from rule_mining.rule_mining_pipeline import *
 from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
+# table detection
+from table_extraction.table_pipeline import *
+
+
+
 
 ################################### helper function ################################### 
 # for all carbon classes predictions
@@ -78,24 +83,30 @@ def text_except_relevance(json_path):
 
 ################################### main function ################################### 
 def new_url_run(report_url,report_company,report_year,downloaded=False):
-    # data collection
-    ## new json generated in "data/sustainability_reports_new" -OK
-    #report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
+#     # data collection
+#     ## new json generated in "data/sustainability_reports_new" -OK
+#     report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
         
-    # text
-    ## new BERT_embeddings_json generated in "data/sustainability_reports_new"
-    #report_bert_output_file_path = bert_filtering(report_output_file_path)
-    report_bert_output_file_path = 'data/sustainability_reports/new/Canada Pension2017_BERT_embeddings.json'
+#     # text extraction
+#     ## new BERT_embeddings_json generated in "data/sustainability_reports_new" - OK 
+#     report_bert_output_file_path = bert_filtering(report_output_file_path)
+#     #report_bert_output_file_path = 'data/sustainability_reports/new/Canada Pension2017_BERT_embeddings.json'
     
-    ## relevance prediction - OK
-    text_output_path = relevance_prediction(report_bert_output_file_path)
-    ## all other text predictions
-    all_text_output_path = text_except_relevance(text_output_path)
+#     ## relevance prediction - OK
+#     text_output_path = relevance_prediction(report_bert_output_file_path)
+#     ## all other text predictions - OK 
+#     all_text_output_path = text_except_relevance(text_output_path)
     
    
-    # tables
+    # table extraction
+    report_output_file_path = "data/sustainability_reports/new/Canada Pension2017.json"
+    table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
 
+    
+    
+    
+# TO DO : chnage paths for output, think of how dashboard can call this function
 
 
 

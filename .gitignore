@@ -9,6 +9,7 @@ source
 
 relevance-prediction/model_results
 text_classification/model_results 
+table_extraction/model_final.pth
 
 # esg bert
 deprecated/esgbert/bert_model/pytorch_model.bin
@@ -16,3 +17,4 @@ deprecated/esgbert/bert.mar
 
 #bert
 bert
+

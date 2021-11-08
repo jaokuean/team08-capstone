@@ -1,5 +1,4 @@
 from scipy import spatial
-import seaborn as sns
 import pandas as pd
 import os
 import json
@@ -19,9 +18,6 @@ import gensim.corpora as corpora
 from gensim.utils import simple_preprocess
 from gensim.models import CoherenceModel
 
-# Plotting tools
-import pyLDAvis
-import pyLDAvis.gensim  # don't skip this
 
 # PDF text extraction
 from pdfminer3.layout import LAParams, LTTextBox
@@ -60,12 +56,27 @@ from sklearn.feature_extraction import text
 stop_words = text.ENGLISH_STOP_WORDS.union(stop_words)
 
 DATA_FOLDER = "data/"
-########################################## DATA COLLECTION & PREPROCSSING ##########################
+
+########################################## DATA COLLECTION & PREPROCSSING #############################
 
 # Text extraction from pdf
 def extract_pdf(file, verbose=False):
+    """
+    Main table pipeline function.
 
-    
+    Parameters
+    ----------
+    file_path : str
+        String of path to a company's report details and preprocessed text.
+
+    Return
+    ------
+    pickle : dict of {str : str or dict}
+        Dictionary containing a company's name, year, PDF URL and cleaned dataframes.
+    report : dict of {str : str or dict}
+        Dictionary containing a company's report details, preprocessed text and table pipeline output.
+    """   
+        
     if verbose:
         print('Processing {}'.format(file))
 
@@ -453,6 +464,13 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
 
 
 ####################################### BERT AS A SERVICE FILTERING #################################
+# instantiate BERT
+
+print("INSTANTIATING BERT AS A SERVICE")
+from bert_serving.client import BertClient
+bc = BertClient(check_length=False)
+
+
 # helper functions
 def remove_punc(s):
     import string
@@ -464,26 +482,6 @@ def remove_punc(s):
 def cosine_distance(s1,s2):
     return 1 - spatial.distance.cosine(s1, s2)
 
-############ KIV ##########################
-# bert as a service
-# %tensorflow_version 1.x
-
-# !pip install bert-serving-client
-# !pip install -U bert-serving-server[http]
-
-# !wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
-# !unzip uncased_L-12_H-768_A-12.zip
-# !nohup bert-serving-start -model_dir=./uncased_L-12_H-768_A-12 > out.file 2>&1 &
-
-
-# !ls  # you should see uncased_something_.zip
-
-print("INSTANTIATING BERT AS A SERVICE")
-# instantiate BERT
-from bert_serving.client import BertClient
-bc = BertClient(check_length=False)
-
-############ KIV ##########################
 
 def create_bert_embeddings(jsonfile):
   print("CREATE BERT EMBEDDINGS FOR RELEVANT SENTENCES")
