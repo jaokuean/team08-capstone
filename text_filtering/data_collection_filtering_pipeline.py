@@ -478,10 +478,13 @@ def cosine_distance(s1,s2):
 
 # !ls  # you should see uncased_something_.zip
 
+print("INSTANTIATING BERT AS A SERVICE")
+# instantiate BERT
+from bert_serving.client import BertClient
+bc = BertClient(check_length=False)
 
 ############ KIV ##########################
 
-# instantiate bert as a service
 def create_bert_embeddings(jsonfile):
   print("CREATE BERT EMBEDDINGS FOR RELEVANT SENTENCES")
   if jsonfile["bert_relevant_sentences_direct_original"] != {}:
@@ -532,10 +535,6 @@ def bert_filtering(file_path):
         fi_dict["filtered_report_pages_indirect_bert"]  = fi_indirect_dict
         fi_list.append(fi_dict)
         
-    print("INSTANTIATING BERT AS A SERVICE")
-    # insttantiate BERT
-    from bert_serving.client import BertClient
-    bc = BertClient(check_length=False)
 
     relevant_sentences = ['In 2019, Citi financed $74 million of subordinate lien bonds that were certified green, given the projects environmental aspects.', 
                 'In addition, our cogeneration plant, fueled by natural gas, will produce heat and electricity on-site, reducing the building\'s carbon footprint by 34 percent.',

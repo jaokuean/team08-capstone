@@ -2,11 +2,14 @@ import pickle
 import pandas as pd
 from text_classification.preprocessing import clean_sentence
 from text_classification.utils import carbon_class_filter, get_sum_probs, get_majority_pred_soft
+import json
+import pandas as pd
+import ast
 
 
 
 # instantiate model paths
-DATA_FOLDER = "../data/"
+DATA_FOLDER = "data/"
 LOGREG_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_LR_vectorizer.pkl"
 LOGREG_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_LR.pkl"
 SVM_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_SVM_vectorizer.pkl"
