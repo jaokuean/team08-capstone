@@ -1,5 +1,6 @@
 import pandas as pd
 from .utils import *
+import os
 
 def word_cloud_pipeline(sentence, pred_class, company, year):
     # create a list to store 4 wordcloud image paths for 4 classes
@@ -28,8 +29,9 @@ def word_cloud_pipeline(sentence, pred_class, company, year):
                 data_ready.append(lst_of_words)
 
             path = 'data/dashboard_data/wordcloud_images/' + company + '_' + year + '_' + c_class + '.png'
+            output_path = 'data/new_report/wordcloud_images/' + company + '_' + year + '_' + c_class + '.png'
             # generate and save wordcloud image
-            generate_wordcloud(data_ready, path, c_class)
+            generate_wordcloud(data_ready, output_path, c_class)
             wordcloud_img_path.append(path)
             
         except Exception as e: # when there is no record in the carbon class

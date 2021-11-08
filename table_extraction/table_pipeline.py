@@ -573,7 +573,7 @@ def table_pipeline(file_path):
         json.dump(report, outfile)
     
     with open(output_path_pickle,"wb") as outpickle:
-        pickle.dump(pickle,outpickle)
+        pickle.dump(pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
         
     return output_path_json, output_path_pickle
 

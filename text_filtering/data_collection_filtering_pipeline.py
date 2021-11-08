@@ -1,8 +1,11 @@
+########################################## IMPORTING PACAKGES #############################
+
 from scipy import spatial
 import pandas as pd
 import os
 import json
 import numpy
+import string
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -10,6 +13,7 @@ warnings.filterwarnings("ignore")
 
 import sys  
 import os
+from dateutil.parser import parse
 
 
 # Gensim
@@ -62,19 +66,18 @@ DATA_FOLDER = "data/"
 # Text extraction from pdf
 def extract_pdf(file, verbose=False):
     """
-    Main table pipeline function.
+    Process raw PDF text to structured and processed PDF text to be worked on in Python.
 
     Parameters
     ----------
-    file_path : str
-        String of path to a company's report details and preprocessed text.
+    file : textfile
+        Textfile that contains raw PDF text.
 
     Return
     ------
-    pickle : dict of {str : str or dict}
-        Dictionary containing a company's name, year, PDF URL and cleaned dataframes.
-    report : dict of {str : str or dict}
-        Dictionary containing a company's report details, preprocessed text and table pipeline output.
+    text : str
+        processed PDF text if no error is throw
+
     """   
         
     if verbose:
@@ -130,9 +133,19 @@ def extract_pdf(file, verbose=False):
 # Text extraction from url
 def extract_content(url):
     """
-    A simple user define function that, given a url, download PDF text content
-    Parse PDF and return plain text version
-    """
+    Downloads PDF text content from a given URL and parse PDF to obtain processed text.
+
+    Parameters
+    ----------
+    url : str
+        String that contains url to desired PDF
+
+    Return
+    ------
+    text : str
+        processed PDF text if no error is throw
+
+    """   
     headers={"User-Agent":"Mozilla/5.0"}
 
     try:
@@ -151,7 +164,20 @@ def extract_content(url):
     
 # nlp preprocessing
 def preprocess_lines(line_input):
-    
+    """
+    Helper Function to preprocess and clean sentences from raw PDF text 
+
+    Parameters
+    ----------
+    line_input : str
+        String that contains a sentence to be cleaned
+
+    Return
+    ------
+    line : str
+        Cleaned sentence
+
+    """  
     # removing header number
     line = re.sub(r'^\s?\d+(.*)$', r'\1', line_input)
     # removing trailing spaces
@@ -177,18 +203,38 @@ def preprocess_lines(line_input):
         
 
 def remove_non_ascii(text):
+    """
+    Helper Function to remove non ascii characters from text
+    """
     printable = set(string.printable)
     return ''.join(filter(lambda x: x in printable, text))
 
 def not_header(line):
-    # as we're consolidating broken lines into paragraphs, we want to make sure not to include headers
+    """
+    Helper Function to remove headers
+    """
     return not line.isupper()
 
-def extract_pages_sentences(nlp, text):
+def extract_pages_sentences(nlp, text):    
     """
-    Extracting ESG statements from raw text by removing junk, URLs, etc.
-    We group consecutive lines into paragraphs and use spacy to parse sentences.
-    """
+    Extracting text from raw PDF text and store them by pages and senteces. Raw text is also cleand by removing junk, URLs, etc.
+    Consecutive lines are also grouped into paragraphs and spacy is used to parse sentences.
+    Parameters
+    ----------
+    nlp: spacy nlp model
+        NLP model to parse sentences
+    text : str
+        Raw PDF text
+
+    Return
+    ------
+    pages_content : list of str
+        A list containing text from each page of the PDF report. Page number is the index of list + 1
+    
+    pages_sentences : list of list
+        A list containing lists. Page number is the index of outer list + 1. Inner list contains sentences from each page
+ 
+    """  
     MIN_WORDS_PER_PAGE = 500
     
     pages = text.split('##PAGE_BREAK##')
@@ -244,36 +290,51 @@ def extract_pages_sentences(nlp, text):
         # Only interested in full sentences and sentences with 10 to 100 words. --> filter out first page/content page
         sentences = [s for s in sentences if re.match('^[A-Z][^?!.]*[?.!]$', s) is not None]
         sentences = [s.replace('\n', ' ') for s in sentences]
-#       sentences = [s for s in sentences if (len(s.split(' ')) > 10) & (len(s.split(' ')) < 100)]
         
         pages_sentences.append(sentences)
         
     return pages_content, pages_sentences #list, list of list where page is index of outer list
 
 
-# lowercase & lemmatisation
 def preprocessing(report):
+    """
+    Lemmatize,lowercase and remove stopwords for pages of a report
+    
+    Parameters
+    ----------
+    report: list of str
+        A list containing text from each page of the PDF report. Page number is the index of list + 1
+
+    Return
+    ------
+    report_pages : list of str
+        A list containing processed text from each page of the PDF report. Page number is the index of list + 1
+    
+    """  
+    
     report_pages = []
 
     def para_to_sent(para):
+        """
+        Helper function to split paragraphs into well defined sentences using spacy
+        """
         sentences = []
-        # split paragraphs into well defined sentences using spacy
         for part in list(nlp(para).sents):
             sentences.append(str(part).strip())
         return sentences
 
-    # Define functions for stopwords, bigrams, trigrams and lemmatization
     def remove_stopwords(texts):
+        """
+        Helper function to remove stopwords from sentence
+        """
         return [[word for word in simple_preprocess(str(doc)) if word not in stop_words] for doc in texts]
 
-    def make_bigrams(texts):
-        return [bigram_mod[doc] for doc in texts]
-
-    def make_trigrams(texts):
-        return [trigram_mod[bigram_mod[doc]] for doc in texts]
 
     def lemmatization(texts, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
         """https://spacy.io/api/annotation"""
+        """
+        Helper function to lemmatize text in sentence
+        """
         texts_out = []
         doc = nlp(texts) 
         texts_out.append(" ".join([token.lemma_ for token in doc]))
@@ -282,20 +343,6 @@ def preprocessing(report):
     for page in report:
 
         sentences = para_to_sent(page.lower())
-
-        # # Build the bigram and trigram models
-        # bigram = gensim.models.Phrases(data_words, min_count=5, threshold=100) # higher threshold fewer phrases.
-        # trigram = gensim.models.Phrases(bigram[data_words], threshold=100)  
-
-        # # Faster way to get a sentence clubbed as a trigram/bigram
-        # bigram_mod = gensim.models.phrases.Phraser(bigram)
-        # trigram_mod = gensim.models.phrases.Phraser(trigram)
-
-        # # Remove Stop Words
-        # data_words_nostops = remove_stopwords(data_words)
-
-        # # Form Bigrams
-        # data_words_bigrams = make_bigrams(data_words_nostops)
 
         # Do lemmatization keeping only noun, adj, vb, adv
         page_data = []
@@ -310,8 +357,8 @@ def preprocessing(report):
 
 
 
-# filtering report apges
 def lemmatization(text_list, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
+    # lemmatize text in sentence
     """https://spacy.io/api/annotation"""
     texts_out = []
     for texts in text_list:
@@ -321,7 +368,25 @@ def lemmatization(text_list, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
 
 
 def filter_report_highLevel(report):
+    """
+    Page filter to filter report for only relevant pages with decarbonisation related words.
+    Two types of word filters: direct and indirect. Direct contains words that are directly related to decarbonisation while indirect contains other relevant decarbonisation information.
     
+    Parameters
+    ----------
+    report: list of str
+        A list containing text from each page of the PDF report. Page number is the index of list + 1
+
+    Return
+    ------
+    filtered_report_direct : dict of {int : str}
+        A dictionary that contains relevant pages obtained using direct filter. The key is the page number and value is the text on the page. 
+    
+    filtered_report_indirect : dict of {int : str}
+        A dictionary that contains relevant pages obtained using indirect filter. The key is the page number and value is the text on the page.     
+    """  
+    
+    # list of words used to filter
     relevant_terms_directFilter = set(["carbon","co2","environment","GHG emissions","Greenhouse Gas","carbon footprint","carbon emissions","Scope 1","Scope 2",
                                "Scope 3", "WACI","Carbon Intensity","carbon pricing","net-zero","metrics and targets","TCFD",
                                 "sustainability goals","decarbonisation","climate",'energy', 'emission', 'emissions', 'renewable', 'carbon', 'fuel', 'power', 
@@ -330,7 +395,7 @@ def filter_report_highLevel(report):
                                 'cdp', 'global warming', 'business travel','climate solutions', 'decarbonization', 'cvar', 'climate value-at-risk','waste output'])
     relevant_terms_combinationA = ["emissions","exposure","carbon related","esg","sustainable","green","climate sensitive","impact investing", "investment framework", 'msci', 'ftse', 'responsible investing', 'responsible investment','transition']
     relevant_terms_combinationB = ["portfolio","assets","AUM","investment","financing","ratings","revenue","bond","goal","insurance", "equity", "swap", "option", "portfolio holdings", "risk management",'financial products']
-    relevant_terms_combinationC = ["net zero","carbon footprint","CO2","carbon","oil","coal", "gas", "fossil fuel","green"] # compare [CB or CA]  compare with ABC
+    relevant_terms_combinationC = ["net zero","carbon footprint","CO2","carbon","oil","coal", "gas", "fossil fuel","green"]
     relevant_terms_combination_directFilter_lem = lemmatization(relevant_terms_directFilter)
     relevant_terms_combinationA_lem = lemmatization(relevant_terms_combinationA)
     relevant_terms_combinationB_lem = lemmatization(relevant_terms_combinationB)
@@ -343,28 +408,51 @@ def filter_report_highLevel(report):
         page = report[i]
         page_number = i + 1
         no_words = len(page.split(" "))
+        
+        # filter for pages that contain at least 3 words from the relevant_terms_combination_directFilter_lem list
         if sum(map(page.__contains__, relevant_terms_combination_directFilter_lem)) > 2:
             filtered_report_direct[page_number] = page
+        
+        # filter for pages that contain at least 1 word (relevant_terms_combinationC_lem AND relevant_terms_combinationA_lem) OR (relevant_terms_combinationC_lem AND  relevant_terms_combinationB_lem)
         elif (any(map(page.__contains__, relevant_terms_combinationA_lem)) and any(map(page.__contains__, relevant_terms_combinationC_lem))) or (any(map(page.__contains__, relevant_terms_combinationB_lem)) and any(map(page.__contains__, relevant_terms_combinationC_lem))):
             filtered_report_indirect[page_number] = page
+    
     return filtered_report_direct,filtered_report_indirect
 
 
-# filter digits
 def is_number(string): 
+    """
+    Helper function that checks if a string contains numbers
+    """
     test_str = string
     # next() checking for each element, reaches end, if no element found as digit
     res = True if next((chr for chr in test_str if chr.isdigit()), None) else False
     return res
 
-#filter date --> "september"/"Monday at 12:01am"/1999 etc
-from dateutil.parser import parse
 def is_date(string):
+    """
+    Helper function that checks if a string contains dates such as "september"/"Monday at 12:01am"/1999 etc
+    """
     if re.match('.*([1-2][0-9]{3})', string) != None:
         return True
     return False
 
-def filter_report_numbers(filtered_report):
+def filter_report_numbers(filtered_report): 
+    """
+    Page filter to filter the filtered report for pages with numbers that are not dates as to track decarbonisation progress, we need numbers.
+    
+    Parameters
+    ----------
+    filtered_report: dict of {int : str}
+        A dictionary that contains relevant pages obtained using page filters. The key is the page number and value is the text on the page.
+        
+    Return
+    ------
+    filtered_report_numbers : dict of {int : str}
+        A dictionary that contains relevant pages with numbers. The key is the page number and value is the text on the page. 
+    
+    """ 
+        
     filtered_report_numbers = {}
     for page_number,page in filtered_report.items():
         # remove all dates from page first
@@ -376,7 +464,23 @@ def filter_report_numbers(filtered_report):
 
 
 
-def filter_tables(filtered_report): # if page contains at least 10 numbers + 1 units
+def filter_tables(filtered_report):    
+    """
+    Page filter to filter the filtered report for pages with tables to aid table detection in downstream tasks. This is done by checking if page contains at least 10 numbers + 1 units
+    
+    Parameters
+    ----------
+    filtered_report: dict of {int : str}
+        A dictionary that contains relevant pages with numbers. The key is the page number and value is the text on the page.
+        
+    Return
+    ------
+    filtered_report_numbers : dict of {int : str}
+        A dictionary that contains relevant pages with tables. The key is the page number and value is the text on the page. 
+    
+    """ 
+    
+    
     units = ['tonnes', 'tons', 'kwh', 'kg', 'kilogram', 'kilowatt hour', 'gigajoules', 'gj', 'litre', 'liter', 'co2e', 'tco2e', 'tco2', 'mwh', 'megawatt hour', 'gwh', 'gigawatt hour', '%', 'cubic metres', 'cm3', 'm3', 'per employee','co2']
     filtered_report_numbers = {}
     for page_number,page in filtered_report.items():
@@ -403,6 +507,32 @@ def filter_tables(filtered_report): # if page contains at least 10 numbers + 1 u
 # report_url can be either from internet : url downloaded=False OR local : path to pdf downloaded=True
 
 def upload_pdf(report_url,report_company,report_year,downloaded=False):
+    """
+    Main Function to run to obtain PDF and parse,clean and filter the raw PDF text.
+    
+    Parameters
+    ----------
+    report_url: str
+        If downloaded=False, report is from the internet and report_url is a URL string to the PDF.
+        If downloaded=True, report is from local machine and report_url is the file path to the PDF.
+    
+    report_company: str
+        Company name
+    
+    report_year: str
+        Year of report
+        
+    downloaded : bool
+        Whether report needs to be downloaded from Internet or not
+        
+    Return
+    ------
+    file_path : str
+        File path of the output file for subsequent downstream tasks.
+    
+    """ 
+    
+    # check if report is from Internet or Local Machine
     if downloaded == True:
         with open(report_url,"rb") as inputfile:
             report_content = extract_pdf(inputfile)
@@ -411,10 +541,12 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
         
     report = {'company':report_company, 'year':report_year,'url':report_url, 'content':report_content}
     
+    # check if report content is empty
     if report["content"] == "":
         print("Unable to get PDF")
         return
     
+    # if report content is not empty process and filter report
     else:
         print("PARSING PDF TO TEXT")
         report_pages, report_sentences = extract_pages_sentences(nlp, report['content'])
@@ -425,7 +557,7 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
         report["report_pages_preprocessed"] = report_pages_preprocessed 
         report["report_sentences_preprocessed"] = report_sentences_preprocessed 
         
-        # pages
+        # filter pages by words and numbers
         filtered_report_direct_highLevel,filtered_report_indirect_highLevel = filter_report_highLevel(report["report_pages_preprocessed"])
         filtered_report_pages_direct_numbers = filter_report_numbers(filtered_report_direct_highLevel)
         filtered_report_pages_indirect_numbers = filter_report_numbers(filtered_report_indirect_highLevel)
@@ -434,7 +566,7 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
         index_direct = [page_no-1 for page_no in filtered_report_pages_direct_numbers.keys()] 
         index_indirect = [page_no-1 for page_no in filtered_report_pages_indirect_numbers.keys()] 
 
-        # sentences
+        # filter sentences by words and numbers
         filtered_report_sentences_direct_numbers = {}
         for page in filtered_report_pages_direct_numbers.keys():
             filtered_report_sentences_direct_numbers[page] = report["report_sentences_preprocessed"][page-1]
@@ -444,11 +576,11 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
         report["filtered_report_sentences_direct"] = filtered_report_sentences_direct_numbers
         report["filtered_report_sentences_indirect"] = filtered_report_sentences_indirect_numbers
 
-        # tables
+        # filter pages for tables
         report["filtered_report_tables_direct"] = filter_tables(filtered_report_pages_direct_numbers)
         report["filtered_report_tables_indirect"] = filter_tables(filtered_report_pages_indirect_numbers)
         
-        file_path = DATA_FOLDER + "sustainability_reports/new/" + report_company + report_year+'.json'
+        file_path = DATA_FOLDER + "new_report/" + report_company + report_year+'.json'
         
         with open(file_path, "w") as outfile:  
             json.dump(report, outfile)
@@ -464,58 +596,95 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
 
 
 ####################################### BERT AS A SERVICE FILTERING #################################
-# instantiate BERT
-
+# instantiate BERT as a Service
 print("INSTANTIATING BERT AS A SERVICE")
-from bert_serving.client import BertClient
-bc = BertClient(check_length=False)
+# from bert_serving.client import BertClient
+# bc = BertClient(check_length=False)
 
 
 # helper functions
 def remove_punc(s):
-    import string
+    """
+    Helper function to remove all punctuations except "$&%" from sentence
+    """
     exclude = string.punctuation
     final_punc = ''.join(list(i for i in exclude if i not in ['%', '$', '&']))
     s = ''.join(ch for ch in s if ch not in list(final_punc))
     return s
 
 def cosine_distance(s1,s2):
+    """
+    Helper function to calculate cosine similarity of 2 sentence embeddings
+    """
     return 1 - spatial.distance.cosine(s1, s2)
 
-
+# indentation
 def create_bert_embeddings(jsonfile):
-  print("CREATE BERT EMBEDDINGS FOR RELEVANT SENTENCES")
-  if jsonfile["bert_relevant_sentences_direct_original"] != {}:
-    embeddings_dict = {}
-    for page,sentences in jsonfile["bert_relevant_sentences_direct_original"].items():
-      embeddings_dict[page] = []
-      for sentence in sentences:
-        sentence_encoding = list(bc.encode([sentence])[0])       
-        embeddings_dict[page].append(list(map(lambda x: numpy.float64(x),sentence_encoding)))
-    jsonfile["bert_relevant_sentences_direct_original_embeddings"] = embeddings_dict
-  else:
-    jsonfile["bert_relevant_sentences_direct_original_embeddings"] = {}
+    """
+    Create word embeddings for highly relevant sentences
+    
+    Parameters
+    ----------
+    jsonfile: dict of {str : list of str}
+        A dictionary that contains a company's report details, preprocessed text and relevant pages with highly relevant sentences. 
+        
+    Return
+    ------
+    jsonfile: dict of {str : list of str}
+        A dictionary that contains a company's report details, preprocessed text, relevant pages with highly relevant sentences and the sentence embeddings of the highly relevant sentences.  
+    
+    """ 
+    
+    print("CREATE BERT EMBEDDINGS FOR RELEVANT SENTENCES")
+    if jsonfile["bert_relevant_sentences_direct_original"] != {}:
+        embeddings_dict = {}
+        for page,sentences in jsonfile["bert_relevant_sentences_direct_original"].items():
+            embeddings_dict[page] = []
+            for sentence in sentences:
+                sentence_encoding = list(bc.encode([sentence])[0])
+                embeddings_dict[page].append(list(map(lambda x: numpy.float64(x),sentence_encoding)))
+            jsonfile["bert_relevant_sentences_direct_original_embeddings"] = embeddings_dict
+    else:
+        jsonfile["bert_relevant_sentences_direct_original_embeddings"] = {}
 
-  if jsonfile["bert_relevant_sentences_indirect_original"] != {}:
-    embeddings_dict = {}
-    for page,sentences in jsonfile["bert_relevant_sentences_indirect_original"].items():
-      embeddings_dict[page] = []
-      for sentence in sentences:
-        sentence_encoding = list(bc.encode([sentence])[0])       
-        embeddings_dict[page].append(list(map(lambda x: numpy.float64(x),sentence_encoding)))
-    jsonfile["bert_relevant_sentences_indirect_original_embeddings"] = embeddings_dict
-  else:
-    jsonfile["bert_relevant_sentences_indirect_original_embeddings"] = {}
-  return jsonfile
+    if jsonfile["bert_relevant_sentences_indirect_original"] != {}:
+        embeddings_dict = {}
+        for page,sentences in jsonfile["bert_relevant_sentences_indirect_original"].items():
+            embeddings_dict[page] = []
+            for sentence in sentences:
+                sentence_encoding = list(bc.encode([sentence])[0])       
+                embeddings_dict[page].append(list(map(lambda x: numpy.float64(x),sentence_encoding)))
+            jsonfile["bert_relevant_sentences_indirect_original_embeddings"] = embeddings_dict
+    else:
+        jsonfile["bert_relevant_sentences_indirect_original_embeddings"] = {}
+        
+    return jsonfile
 
 
 # to process 1 json
 def bert_filtering(file_path):
+    """
+    Main function to filter for highly relevant sentences by comparing cosine similarity of all sentences from filtered report with highly relevant sentences determined by us.
+    
+    Parameters
+    ----------
+    file_path: str
+        File path to the json that contains the filtered PDF report.
+        
+    Return
+    ------
+    output_path: str
+        File path to the output json that contains highly relevant sentences and their bert sentence embeddings. 
+    
+    """     
+    
+    
     with open(file_path,) as inputfile:
         json_file = json.load(inputfile)
         json_file = [json_file]
     fi_list = []
-    #step 1
+    
+    # step 1: obtain relevant fields from input json required for bert and text similarity
     for fi in json_file:
         fi_dict = {}
         fi_direct_dict = {}
@@ -533,7 +702,8 @@ def bert_filtering(file_path):
         fi_dict["filtered_report_pages_indirect_bert"]  = fi_indirect_dict
         fi_list.append(fi_dict)
         
-
+    
+    # list of highly relevant sentences determined by us
     relevant_sentences = ['In 2019, Citi financed $74 million of subordinate lien bonds that were certified green, given the projects environmental aspects.', 
                 'In addition, our cogeneration plant, fueled by natural gas, will produce heat and electricity on-site, reducing the building\'s carbon footprint by 34 percent.',
                 'These efforts reduced energy consumption by more than 2,100 metric tons (mt) of carbon dioxide equivalents (CO2e) during the one-year challenge.',
@@ -553,9 +723,11 @@ def bert_filtering(file_path):
                 'quantitative target for ESG-themed investments and finance of ¥700 billion ',
                 'Commit to reduce investment carbon footprint by',
                 'esg investing', 'green bonds', 'Green Investment target', 'Achieve 100% renewable electricity by 2025']
+    
+    # encode these sentences using BERT
     relevant_sentences_embeddings = bc.encode(relevant_sentences)
 
-    #step 2
+    # step 2: encode all sentences and compare cosine similarity. only keep sentences with a cosine similarity higher than 0.7357.
     json_list = fi_list
     for fi_index in range(len(json_list)): #remove
         fi = json_list[fi_index]
@@ -570,16 +742,15 @@ def bert_filtering(file_path):
                 sentence_encoding = bc.encode([sentence])[0]
                 for relevant_sentence in relevant_sentences_embeddings:
                     cosine_similarity = cosine_distance(sentence_encoding,relevant_sentence)
-                    if cosine_similarity >= 0.8 : # tentative
+                    if cosine_similarity >= 0.7357 : # tentative
                         relevant_sentences.append(sentence)
                         relevant_sentences_original.append(original_sentence)
                         break
             if len(relevant_sentences) != 0 :
                 page_relevant_sentences[page_number] = relevant_sentences
                 page_relevant_sentences_original[page_number] = relevant_sentences_original
-        #json_list[fi_index]["bert_relevant_sentences_direct"] = page_relevant_sentences
-                #print(len(relevant_sentences))
-        json_list[fi_index]["bert_relevant_sentences_direct_original"] = page_relevant_sentences_original # sentences used to train
+
+        json_list[fi_index]["bert_relevant_sentences_direct_original"] = page_relevant_sentences_original # sentences used for model train
 
 
         page_relevant_sentences_indirect = {}
@@ -600,12 +771,11 @@ def bert_filtering(file_path):
             if len(relevant_sentences) != 0 :
                 page_relevant_sentences_indirect[page_number] = relevant_sentences
                 page_relevant_sentences_indirect_original[page_number] = relevant_sentences_original
-                #print(len(relevant_sentences))
-        #json_list[fi_index]["bert_relevant_sentences_indirect"] = page_relevant_sentences_indirect
+
         json_list[fi_index]["bert_relevant_sentences_indirect_original"] = page_relevant_sentences_indirect_original # sentences used to train
         
 
-    #step 3 create embeddings
+    #step 3 create embeddings for highly relevant sentences
     final_json_embeddings = create_bert_embeddings(json_list[0])
     output_path = file_path[:-5] + "_BERT_embeddings.json"
     
@@ -628,6 +798,5 @@ def bert_filtering(file_path):
 #     report_bert_output_file_path = bert_filtering(report_output_file_path)
        
     
-# def mass_run():
     
 

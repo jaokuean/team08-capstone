@@ -5,7 +5,7 @@ from relevance_prediction.preprocessing import * # import clean function
 import json
 
 
-# instantiate models
+# load pretrained models and instantiate them
 DATA_FOLDER = "data/"
 LOGREG_VECT = DATA_FOLDER + "saved_models/relevance_models/model_LR_vectorizer.pkl"
 LOGREG_MODEL = DATA_FOLDER + "saved_models/relevance_models/model_LR.pkl"
