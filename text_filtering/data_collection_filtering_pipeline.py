@@ -3,16 +3,15 @@ import seaborn as sns
 import pandas as pd
 import os
 import json
+import numpy
 
 import warnings
 warnings.filterwarnings("ignore")
 
-import pandas as pd
-import numpy as np
+
 import sys  
 import os
-sys.path.append('src') 
-from edge import *
+
 
 # Gensim
 import gensim
@@ -38,13 +37,11 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 # Others
 import requests
-import io
 import string
 import re
 from pprint import pprint
 from tqdm.notebook import tqdm
 import io
-import json
 
 import nltk
 nltk.download('punkt')
@@ -62,11 +59,12 @@ stop_words = stopwords.words('english')
 from sklearn.feature_extraction import text
 stop_words = text.ENGLISH_STOP_WORDS.union(stop_words)
 
-DATA_FOLDER = "../data/"
+DATA_FOLDER = "data/"
 ########################################## DATA COLLECTION & PREPROCSSING ##########################
 
 # Text extraction from pdf
 def extract_pdf(file, verbose=False):
+
     
     if verbose:
         print('Processing {}'.format(file))
@@ -319,9 +317,9 @@ def filter_report_highLevel(report):
                                'green', 'gas', 'green energy', 'sustainable', 'climate', 'sustainability', 'environmental', 'environment', 'GHG', 
                                'decarbon', 'energy consumption', 'paper consumption','water consumption', 'carbon intensity', 'waste management', 'electricity consumption', 
                                 'cdp', 'global warming', 'business travel','climate solutions', 'decarbonization', 'cvar', 'climate value-at-risk','waste output'])
-relevant_terms_combinationA = ["emissions","exposure","carbon related","esg","sustainable","green","climate sensitive","impact investing", "investment framework", 'msci', 'ftse', 'responsible investing', 'responsible investment','transition']
-relevant_terms_combinationB = ["portfolio","assets","AUM","investment","financing","ratings","revenue","bond","goal","insurance", "equity", "swap", "option", "portfolio holdings", "risk management",'financial products']
-relevant_terms_combinationC = ["net zero","carbon footprint","CO2","carbon","oil","coal", "gas", "fossil fuel","green"] # compare [CB or CA]  compare with ABC
+    relevant_terms_combinationA = ["emissions","exposure","carbon related","esg","sustainable","green","climate sensitive","impact investing", "investment framework", 'msci', 'ftse', 'responsible investing', 'responsible investment','transition']
+    relevant_terms_combinationB = ["portfolio","assets","AUM","investment","financing","ratings","revenue","bond","goal","insurance", "equity", "swap", "option", "portfolio holdings", "risk management",'financial products']
+    relevant_terms_combinationC = ["net zero","carbon footprint","CO2","carbon","oil","coal", "gas", "fossil fuel","green"] # compare [CB or CA]  compare with ABC
     relevant_terms_combination_directFilter_lem = lemmatization(relevant_terms_directFilter)
     relevant_terms_combinationA_lem = lemmatization(relevant_terms_combinationA)
     relevant_terms_combinationB_lem = lemmatization(relevant_terms_combinationB)
@@ -368,9 +366,7 @@ def filter_report_numbers(filtered_report):
 
 
 def filter_tables(filtered_report): # if page contains at least 10 numbers + 1 units
-    units = ['tonnes', 'tons', 'kwh', 'kg', 'kilogram', 'kilowatt hour', 'gigajoules', 'gj', 'litre', 'liter', 
-              'co2e', 'tco2e', 'tco2', 'mwh', 'megawatt hour', 'gwh', 'gigawatt hour', '%', 'cubic metres', 
-              'cm3', 'm3', 'per employee','co2']
+    units = ['tonnes', 'tons', 'kwh', 'kg', 'kilogram', 'kilowatt hour', 'gigajoules', 'gj', 'litre', 'liter', 'co2e', 'tco2e', 'tco2', 'mwh', 'megawatt hour', 'gwh', 'gigawatt hour', '%', 'cubic metres', 'cm3', 'm3', 'per employee','co2']
     filtered_report_numbers = {}
     for page_number,page in filtered_report.items():
         no_numbers = 0
@@ -391,15 +387,16 @@ def filter_tables(filtered_report): # if page contains at least 10 numbers + 1 u
     return filtered_report_numbers
 
 
-# new pdf is saved in a new json file & also appended to existing file
-# report_url can be from local or internet
 
-def upload_pdf(downloaded=False,report_url,report_company,report_year):
+# new pdf is saved in a new json file & also appended to existing file
+# report_url can be either from internet : url downloaded=False OR local : path to pdf downloaded=True
+
+def upload_pdf(report_url,report_company,report_year,downloaded=False):
     if downloaded == True:
         with open(report_url,"rb") as inputfile:
             report_content = extract_pdf(inputfile)
     else:
-        report_content = extract_content(inputfile)
+        report_content = extract_content(report_url)
         
     report = {'company':report_company, 'year':report_year,'url':report_url, 'content':report_content}
     
@@ -408,6 +405,7 @@ def upload_pdf(downloaded=False,report_url,report_company,report_year):
         return
     
     else:
+        print("PARSING PDF TO TEXT")
         report_pages, report_sentences = extract_pages_sentences(nlp, report['content'])
         report["report_pages"] = report_pages
         report["report_sentences"] = report_sentences
@@ -440,12 +438,16 @@ def upload_pdf(downloaded=False,report_url,report_company,report_year):
         report["filtered_report_tables_indirect"] = filter_tables(filtered_report_pages_indirect_numbers)
         
         file_path = DATA_FOLDER + "sustainability_reports/new/" + report_company + report_year+'.json'
-        output_name = file_path[:-5] + "_BERT.json"
         
         with open(file_path, "w") as outfile:  
             json.dump(report, outfile)
         
-        return file_path , output_name
+        print("DONE PARSING PDF TO TEXT")
+        
+        return file_path
+
+
+
 
 
 
@@ -464,28 +466,53 @@ def cosine_distance(s1,s2):
 
 ############ KIV ##########################
 # bert as a service
-%tensorflow_version 1.x
+# %tensorflow_version 1.x
 
-!pip install bert-serving-client
-!pip install -U bert-serving-server[http]
+# !pip install bert-serving-client
+# !pip install -U bert-serving-server[http]
 
-!wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
-!unzip uncased_L-12_H-768_A-12.zip
-!nohup bert-serving-start -model_dir=./uncased_L-12_H-768_A-12 > out.file 2>&1 &
+# !wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+# !unzip uncased_L-12_H-768_A-12.zip
+# !nohup bert-serving-start -model_dir=./uncased_L-12_H-768_A-12 > out.file 2>&1 &
 
 
-!ls  # you should see uncased_something_.zip
+# !ls  # you should see uncased_something_.zip
+
 
 ############ KIV ##########################
 
 # instantiate bert as a service
+def create_bert_embeddings(jsonfile):
+  print("CREATE BERT EMBEDDINGS FOR RELEVANT SENTENCES")
+  if jsonfile["bert_relevant_sentences_direct_original"] != {}:
+    embeddings_dict = {}
+    for page,sentences in jsonfile["bert_relevant_sentences_direct_original"].items():
+      embeddings_dict[page] = []
+      for sentence in sentences:
+        sentence_encoding = list(bc.encode([sentence])[0])       
+        embeddings_dict[page].append(list(map(lambda x: numpy.float64(x),sentence_encoding)))
+    jsonfile["bert_relevant_sentences_direct_original_embeddings"] = embeddings_dict
+  else:
+    jsonfile["bert_relevant_sentences_direct_original_embeddings"] = {}
+
+  if jsonfile["bert_relevant_sentences_indirect_original"] != {}:
+    embeddings_dict = {}
+    for page,sentences in jsonfile["bert_relevant_sentences_indirect_original"].items():
+      embeddings_dict[page] = []
+      for sentence in sentences:
+        sentence_encoding = list(bc.encode([sentence])[0])       
+        embeddings_dict[page].append(list(map(lambda x: numpy.float64(x),sentence_encoding)))
+    jsonfile["bert_relevant_sentences_indirect_original_embeddings"] = embeddings_dict
+  else:
+    jsonfile["bert_relevant_sentences_indirect_original_embeddings"] = {}
+  return jsonfile
 
 
 # to process 1 json
-def bert_filtering(file_path,output_name):
+def bert_filtering(file_path):
     with open(file_path,) as inputfile:
         json_file = json.load(inputfile)
-    
+        json_file = [json_file]
     fi_list = []
     #step 1
     for fi in json_file:
@@ -505,7 +532,7 @@ def bert_filtering(file_path,output_name):
         fi_dict["filtered_report_pages_indirect_bert"]  = fi_indirect_dict
         fi_list.append(fi_dict)
         
-        
+    print("INSTANTIATING BERT AS A SERVICE")
     # insttantiate BERT
     from bert_serving.client import BertClient
     bc = BertClient(check_length=False)
@@ -533,10 +560,8 @@ def bert_filtering(file_path,output_name):
 
     #step 2
     json_list = fi_list
-    print(len(json_list))
     for fi_index in range(len(json_list)): #remove
         fi = json_list[fi_index]
-        print(fi)
         page_relevant_sentences = {}
         page_relevant_sentences_original = {}
         for page_number, page in fi["filtered_report_pages_direct_bert"].items():
@@ -582,28 +607,30 @@ def bert_filtering(file_path,output_name):
         #json_list[fi_index]["bert_relevant_sentences_indirect"] = page_relevant_sentences_indirect
         json_list[fi_index]["bert_relevant_sentences_indirect_original"] = page_relevant_sentences_indirect_original # sentences used to train
         
-        json_name = json_list
 
-    with open(output_name, "w") as outfile:  
-        json.dump(json_name, outfile)
+    #step 3 create embeddings
+    final_json_embeddings = create_bert_embeddings(json_list[0])
+    output_path = file_path[:-5] + "_BERT_embeddings.json"
+    
 
-    return json
+    with open(output_path, "w") as outfile:  
+        json.dump(final_json_embeddings, outfile)
+
+    return output_path
 
 
 
 
+# ##################### PIPELINE #######################################################
 
-
-##################### PIPELINE #######################################################
-
-# for new url
-def new_url_run(downloaded=False,report_url,report_company,report_year):
-    # new json generated in "../data/sustainability_reports_new"
-    file_path,output_name = upload_pdf(downloaded,report_url,report_company,report_year)
-    # new BERT_json generated in "../data/sustainability_reports_new"
-    bert_filtering(file_path,output_name)
+# # for new url
+# def new_url_run(report_url,report_company,report_year,downloaded=False):
+#     # new json generated in "../data/sustainability_reports_new"
+#     report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
+#     # new BERT_embeddings_json generated in "../data/sustainability_reports_new"
+#     report_bert_output_file_path = bert_filtering(report_output_file_path)
        
     
-def mass_run():
+# def mass_run():
     
 

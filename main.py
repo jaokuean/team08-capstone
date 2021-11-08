@@ -1,10 +1,56 @@
 import json
 import pandas as pd
 import ast
+
+# data collection, page and bert sentence filtering
+from text_filtering.data_collection_filtering_pipeline import *
+# relevance prediction
+from relevance_prediction.relevance_prediction_pipeline import *
+# carbon class prediction
 from text_classification.text_classification_pipeline import *
 from rule_mining.rule_mining_pipeline import *
 from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
+
+
+
+def new_url_run(report_url,report_company,report_year,downloaded=False):
+    # data collection
+    ## new json generated in "data/sustainability_reports_new" -OK
+    report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
+        
+    # text
+    ## new BERT_embeddings_json generated in "data/sustainability_reports_new"
+    report_bert_output_file_path = bert_filtering(report_output_file_path)
+    #report_bert_output_file_path = 'data/sustainability_reports/new/Canada Pension2017_BERT_embeddings.json'
+    
+    ## relevance prediction - OK
+    text_output_path = relevance_prediction(report_bert_output_file_path)
+    ## all other text predictions
+    #all_text_output_path = text_except_relevance_pipeline(text_output_path)
+    
+   
+    # tables
+    
+
+
+
+
+# test functiona call
+
+if __name__ == "__main__":
+    report_url = "https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf"
+    report_company = "Canada Pension"
+    report_year = "2017"
+    new_url_run(report_url,report_company,report_year,downloaded=False)
+
+    
+
+
+
+
+
+
 
 def text_pipeline(json_path):
     # Opening JSON file
@@ -63,5 +109,12 @@ def text_pipeline(json_path):
     # with open('data/test_fin.json', 'w') as fp:
     #     json.dump(data,fp)
 
-if __name__=='__main__':
-    text_pipeline('data/all_text_chart_output.json')
+
+ 
+    
+    
+    
+    
+    
+    
+    

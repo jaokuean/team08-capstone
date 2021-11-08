@@ -3,17 +3,20 @@ import pandas as pd
 from text_classification.preprocessing import clean_sentence
 from text_classification.utils import carbon_class_filter, get_sum_probs, get_majority_pred_soft
 
+
+
 # instantiate model paths
-LOGREG_VECT = "text_classification/saved_models/model_LR_vectorizer.pkl"
-LOGREG_MODEL = "text_classification/saved_models/model_LR.pkl"
-SVM_VECT = "text_classification/saved_models/model_SVM_vectorizer.pkl"
-SVM_MODEL = "text_classification/saved_models/model_SVM.pkl"
-NB_VECT = "text_classification/saved_models/model_NB_vectorizer.pkl"
-NB_MODEL = "text_classification/saved_models/model_NB.pkl"
-RF_VECT = "text_classification/saved_models/model_RF_vectorizer.pkl"
-RF_MODEL = "text_classification/saved_models/model_RF.pkl"
-CB_VECT = "text_classification/saved_models/model_CB_vectorizer.pkl"
-CB_MODEL = "text_classification/saved_models/model_CB.pkl"
+DATA_FOLDER = "../data/"
+LOGREG_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_LR_vectorizer.pkl"
+LOGREG_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_LR.pkl"
+SVM_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_SVM_vectorizer.pkl"
+SVM_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_SVM.pkl"
+NB_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_NB_vectorizer.pkl"
+NB_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_NB.pkl"
+RF_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_RF_vectorizer.pkl"
+RF_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_RF.pkl"
+CB_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_CB_vectorizer.pkl"
+CB_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_CB.pkl"
 
 def text_classification_pipeline(df):
     if len(df) == 0:
