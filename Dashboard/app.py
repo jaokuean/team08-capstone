@@ -12,6 +12,7 @@ from dash import dash_table
 from wordcloud import WordCloud, STOPWORDS
 from dash.exceptions import PreventUpdate
 from flask import request
+
 # Data handling prerequisite
 import pandas as pd
 import plotly.express as px
