@@ -16,7 +16,7 @@ from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
 
 # table detection
-from table_extraction.table_pipeline import *
+#from table_extraction.table_pipeline import *
 # chart detection 
 from chart_extraction.chart_extraction import *
 
@@ -197,22 +197,22 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
    
       # table extraction -  AIFEN & JERMAINE COMMENT THIS OUT
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
-    table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
+#     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
     # chart detection - JK COMMENT THIS OUT
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
     chart_output_path = chart_pipeline(report_output_file_path)
     
     # combine all data into database
-    print("APPENDING NEW REPORT TO DATABASE")
-    all_json = [all_text_output_path,table_output_path,chart_output_path]
-    final_output_path = combine_intermediate_json(all_json)
-    append_json_to_database(final_output_path)
-    append_pickle_to_database(table_output_pickle_path)
-    append_images_to_database() #word cloud, charts, tables
+#     print("APPENDING NEW REPORT TO DATABASE")
+#     all_json = [all_text_output_path,table_output_path,chart_output_path]
+#     final_output_path = combine_intermediate_json(all_json)
+#     append_json_to_database(final_output_path)
+#     append_pickle_to_database(table_output_pickle_path)
+#     append_images_to_database() #word cloud, charts, tables
     
-    # clear the new_report folder for new report next time
-    delete_intermediate_files() # delete all json files, keeping the empty wordcloud, chart, table folders
+#     # clear the new_report folder for new report next time
+#     delete_intermediate_files() # delete all json files, keeping the empty wordcloud, chart, table folders
     
     
         
