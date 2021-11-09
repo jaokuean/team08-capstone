@@ -11,7 +11,7 @@ def get_sum_probs(df, heu_preds):
     for i in range(len(heu_preds)):
         pred = heu_preds[i]
         to_increase = '{pred}_total'.format(pred=pred)
-        probs.at[i,to_increase] += 1
+        probs.at[i,to_increase] += 0.35
     return probs
 
 def get_majority_pred_soft(df):
