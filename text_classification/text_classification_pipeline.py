@@ -6,8 +6,6 @@ import json
 import pandas as pd
 import ast
 
-
-
 # instantiate model paths
 DATA_FOLDER = "data/"
 LOGREG_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_LR_vectorizer.pkl"

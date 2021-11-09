@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import ast
 
+
 # data collection, page and bert sentence filtering
 from text_filtering.data_collection_filtering_pipeline import *
 # relevance prediction
@@ -11,6 +12,7 @@ from text_classification.text_classification_pipeline import *
 from rule_mining.rule_mining_pipeline import *
 from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
+
 
 ################################### helper function ################################### 
 # for all carbon classes predictions
@@ -106,12 +108,3 @@ if __name__ == "__main__":
     report_company = "Canada Pension"
     report_year = "2017"
     new_url_run(report_url,report_company,report_year,downloaded=False)
-
-    
-
-
-
-
-
-
-
