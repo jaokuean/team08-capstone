@@ -184,13 +184,13 @@ def new_url_run(report_url, report_company, report_year, downloaded=False):
     #     #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
     #     all_text_output_path = text_except_relevance(text_output_path)
 
-    # table extraction -  AIFEN & JERMAINE COMMENT THIS OUT
+    #     table extraction -  AIFEN & JERMAINE COMMENT THIS OUT
     #     report_output_file_path = "data/new_report/Canada Pension2017.json"
     #     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
 
     #     # chart detection - JK COMMENT THIS OUT
     #     report_output_file_path = "data/new_report/Canada Pension2017.json"
-    #     chart_output_path = chart_extraction(report_output_file_path)
+    #     chart_output_path = chart_pipeline(report_output_file_path)
 
     #     # combine all data into database
     #     all_json = [all_text_output_path,table_output_path,chart_output_path]
