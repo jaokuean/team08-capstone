@@ -20,6 +20,21 @@ CB_VECT = DATA_FOLDER + "saved_models/carbonclass_models/model_CB_vectorizer.pkl
 CB_MODEL = DATA_FOLDER + "saved_models/carbonclass_models/model_CB.pkl"
 
 def text_classification_pipeline(df):
+    """
+    This predicts the text class of all the predicted relevant sentences
+
+    Parameters
+    ----------
+    df : DataFrame
+        Dataframe containing sentences we would like to predict text class
+
+    Return
+    ------
+    model_pred : list[Str]
+        This gives the corresponding class predictions for each sentence found in the input df
+
+    """   
+    # If no sentences, no need to run predictions
     if len(df) == 0:
         return []
     # LOG REG

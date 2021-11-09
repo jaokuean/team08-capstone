@@ -1,6 +1,23 @@
 from .utils import *
 
 def sentiment_analysis_pipeline(df, text_class_pred):
+    """
+    Calculates the average sentiment within each text classification class using VADER.
+
+    Parameters
+    ----------
+    df : dataframe
+        Dataframe representation of predicted relevant text
+    text_class_pred: list
+        Gives the corresponding predicted text class of each sentence found in df
+
+    Return
+    ------
+    final_results : list
+        Gives average sentiment within each carbon category (the label matches the list index). 
+        None if there are no records predicted for that particular class.
+
+    """   
     temp_results = [[0,0],[0,0],[0,0],[0,0],[0,0]]
     all_sentences = list(df.cleaned_sentence)
 
