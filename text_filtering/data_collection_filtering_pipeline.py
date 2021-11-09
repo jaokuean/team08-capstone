@@ -48,7 +48,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 import spacy
-#spacy.cli.download("en_core_web_sm")
+spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm", disable=['ner'])
 
 
@@ -528,7 +528,7 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
     Return
     ------
     file_path : str
-        File path of the output file for subsequent downstream tasks.
+        File path of the output file for subsequent downstream tasks if PDF could be obtained. Else return empty string
     
     """ 
     
@@ -544,7 +544,7 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
     # check if report content is empty
     if report["content"] == "":
         print("Unable to get PDF")
-        return
+        return ""
     
     # if report content is not empty process and filter report
     else:
@@ -598,8 +598,8 @@ def upload_pdf(report_url,report_company,report_year,downloaded=False):
 ####################################### BERT AS A SERVICE FILTERING #################################
 # instantiate BERT as a Service
 print("INSTANTIATING BERT AS A SERVICE")
-# from bert_serving.client import BertClient
-# bc = BertClient(check_length=False)
+from bert_serving.client import BertClient
+bc = BertClient(check_length=False)
 
 
 # helper functions

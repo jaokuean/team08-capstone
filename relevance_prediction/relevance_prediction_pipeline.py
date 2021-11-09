@@ -123,7 +123,8 @@ def modelling_pipeline(company):
     predictions_df = predictions_df.loc[predictions_df.relevance == 1]
     ensemble_predictions = pd.DataFrame(data=predictions_df,columns=["page", "sentence", "relevance_prob"]) 
 
-    print("ENSEMBLE PREDICTIONS COMPLETE")        
+    print("ENSEMBLE PREDICTIONS COMPLETE") 
+    
     
     # save ensemble predictions
     return ensemble_predictions
@@ -141,7 +142,7 @@ def relevance_prediction(file_path):
     Return
     ------
     output_path : str
-        String of path to output file containing "text_output" field which includes pages of relevance sentences, relevant sentences predicted by the model and probability scores.
+        String of path to output file containing "text_output" field which includes pages of relevance sentences, relevant sentences predicted by the model and probability scores. If no relevant sentences predicted, return empty string
     """  
     
     with open(file_path, 'r') as infile:
@@ -160,6 +161,10 @@ def relevance_prediction(file_path):
     if len(sentences) != 0:
         print("RUNNING RELEVANCE MODELLING PIPELINE")
         data = modelling_pipeline(company)
+        
+        # if not relevant sentences predicted
+        if data.shape[0] == 0:
+            return ""
         data_json = json.loads(data.reset_index().drop("index",axis=1).to_json())
         for k,v in data_json.items():
             data_json[k] = list(data_json[k].values())
@@ -174,6 +179,8 @@ def relevance_prediction(file_path):
         json.dump(company_details, outfile)
     
     print("DONE RUNNING RELEVANCE MODELLING PIPELINE")
+    
+    
     return output_path
 
 
