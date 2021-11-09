@@ -692,7 +692,8 @@ def run_extraction_main(json_data, out_folder):
     image_path_obj = {}
     image_keywords_path_obj = {}
     try:
-        image_keywords_path_obj, image_path_obj = chart_extraction(pdf_url, pages, path)
+        image_keywords_path_obj, image_path_obj = chart_extraction(
+            pdf_url, pages, path)
         json_data['chart_images_keywords'] = image_keywords_path_obj
         json_data['chart_images'] = image_path_obj
         return json_data
@@ -707,7 +708,7 @@ def run_extraction_main(json_data, out_folder):
         return json_data
 
 
-def chart_pipeline(data):
+def chart_pipeline(file_path):
     """
     Main chart/graph pipeline function.
     Parameters
@@ -720,14 +721,18 @@ def chart_pipeline(data):
     data : dict of {str : str or dict}
         Dictionary containing a company's report details, preprocessed text and table pipeline output.
     """
+    # open file
+    with open(file_path, 'r') as infile:
+        data = json.load(infile)
+
+    print("RUNNING CHART DETECTION")
     # TODO: place to store chart output
-    out_folder = "data/dashboard/ChartExtraction_Output/"
+    out_folder = "data/new_report/ChartExtraction_Output/"
 
     if not os.path.exists(out_folder):
         os.mkdir(out_folder)
-    
-    data = run_extraction_main(data, out_folder)
 
+    data = run_extraction_main(data, out_folder)
 
     # Delete processing folders
     # out_folder = "ChartExtraction_Output"
@@ -738,7 +743,12 @@ def chart_pipeline(data):
     except Exception as e:
         print(f"Fail to remove: {e}")
 
-    return data
+    output_path = file_path[:-5] + "_chart_output.json"
+
+    with open(output_path, "w") as outfile:
+        json.dump(data, outfile)
+
+    return output_path
 
 # FOR TESTING PURPOSES - can call the chart_pipeline(company_dict) function directly in the main pipeline
 # Estimated runtime per report = ~30 secs
