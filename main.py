@@ -249,7 +249,7 @@ def delete_intermediate_files():
 ################################### Main Function ################################### 
 def new_url_run(report_url,report_company,report_year,downloaded=False):   
     """
-    Main Function to run to whole information extraction pipeline for a new report. New report files are created in data/new_report/ and subsquently moved to data/dashboard_data/.
+    Main Function to run to whole information extraction pipeline for a new report. IntermediatenNew report files are created in data/new_report/ and subsquently moved to assets/data/dashboard_data/ and appended to assets/data/dashboard_data/final_database.json and tbl_ALL.pickle.
     
     Parameters
     ----------
