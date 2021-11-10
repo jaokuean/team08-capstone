@@ -9,7 +9,7 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks and Python Scripts. Upon cloning this repository into your local machine, run the following command to install all relevant packages.
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source pacakges that have to installed for the code to run. Upon cloning this repository into your local machine, run the following command to install most of the relevant packages.
 ```bash
 conda create -n newenv python=3.7.6
 conda activate newenv
