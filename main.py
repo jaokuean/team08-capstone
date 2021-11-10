@@ -300,6 +300,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
    
       # table extraction
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
+
     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
     # chart detection 
@@ -308,6 +309,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
     
     # combine all data into database
     print("APPENDING NEW REPORT TO DATABASE")
+
     all_json = [all_text_output_path,table_output_path,chart_output_path]
     final_output_path = combine_intermediate_json(all_json)
     append_json_to_database(final_output_path)
@@ -327,21 +329,14 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 
 # test functiona call
 
-# if __name__ == "__main__":
-    report_urls = ["https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf","https://www.gam.com/-/media/content/corporate-responsibility/gam-responsible-investment-policy.pdf"]
-    report_companys = ["Canada Pension","GAM"]
-    report_years = ["2017","2020"]
+if __name__ == "__main__":
+    report_urls = ["https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf",
+                   "https://www.gam.com/-/media/content/corporate-responsibility/gam-responsible-investment-policy.pdf"]
+    report_companys = ["Canada Pension", "GAM"]
+    report_years = ["2017", "2020"]
 
     for i in range(len(report_urls)):
         print(report_companys[i])
-        new_url_run(report_urls[i],report_companys[i],report_years[i],downloaded=False)
+        new_url_run(report_urls[i], report_companys[i],
+                    report_years[i], downloaded=False)
         print(f"DONE WITH {report_companys[i]}")
-
-    
-
-
-
-
-
-
-
