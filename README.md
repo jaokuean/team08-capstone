@@ -52,5 +52,5 @@ On our dashboard, users can search for a company name to obtain the relevant inf
 - Aw Xin Min - [Github](https://github.com/awxinmin)
 - Chia Ai Fen - [Github](https://github.com/chiaaifen)
 - Lim Jermaine - [Github](https://github.com/limjermaine88)
-- Wong Jao Kuean - [Github] (https://github.com/jaokuean)
+- Wong Jao Kuean - [Github](https://github.com/jaokuean)
 - Lee Jun Hui Sean - [Github](https://github.com/seansljh)
