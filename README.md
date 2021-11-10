@@ -3,7 +3,8 @@
 This project aims to utilise a hybrid machine learning approach involving the use of text mining techniques together with image processing techniques to extract information related to decarbonisation from companies’ reports. We will be extracting 3 main types of information: (1) text; (2) chart images; (3) tables. Our end product is a dashboard that will dislpay all extracted information.
 
 
-Our project pipeline is as follows: UPLOAD PHOTO
+Our project pipeline is as follows: 
+[![project-pipeline.png](https://ibb.co/J54tYGC)
 
 
 
