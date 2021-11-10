@@ -57,10 +57,9 @@ On our dashboard, users can search for a company name to obtain the relevant inf
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [Natural Language Toolkit](https://www.nltk.org/)
-- [Facebook fastText](https://fasttext.cc/)
-- [Google BERT](https://arxiv.org/abs/1810.04805)
-- [LIME](https://lime-ml.readthedocs.io/en/latest/)
 - [plotly | dash](https://dash.plotly.com/)
+- [BERT-as-Service](https://github.com/hanxiao/bert-as-service)
+- [spaCy](https://spacy.io/)
 
 ## Authors
 - Aw Xin Min - [Github](https://github.com/awxinmin)
