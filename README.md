@@ -4,7 +4,7 @@ This project aims to utilise a hybrid machine learning approach involving the us
 
 
 Our project pipeline is as follows: 
-[![project-pipeline.png](https://ibb.co/J54tYGC)
+![[project-pipeline.png](https://ibb.co/J54tYGC)
 
 
 
