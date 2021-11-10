@@ -232,7 +232,7 @@ def delete_intermediate_files():
     None
     """  
     directory = "data/new_report/"
-    filelist = [ f for f in os.listdir(directory) if f.endswith(".json") ]
+    filelist = [ f for f in os.listdir(directory) if f.endswith(".json") or f.endswith(".pkl")]
     for f in filelist:
         os.remove(os.path.join(directory, f))    
 
