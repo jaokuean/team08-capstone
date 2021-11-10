@@ -45,15 +45,26 @@ def make_prediction(img, predictor):
     num_plots = len(outputs["instances"].get_fields()["pred_boxes"].tensor.to("cpu").numpy())
     print("Number of tables on this page: {0}".format(num_plots))
 
-    # source: https://stackoverflow.com/questions/41210823/using-plt-imshow-to-display-multiple-images
-    plt.figure(figsize=(50, 50))
-    figure, axis = plt.subplots(num_plots, 1)
+    if num_plots == 0:
+        return table_list, table_coords
+    if num_plots == 1:
+        figure, axis = plt.subplots(figsize=(50,50))
+        for i, box in enumerate(outputs["instances"].get_fields()["pred_boxes"].tensor.to("cpu").numpy()):
+            x1, y1, x2, y2 = box
+            table_list.append(np.array(img[int(y1):int(y2), int(x1):int(x2)], copy=True))
+            table_coords.append([int(x1),int(y1),int(x2-x1),int(y2-y1)])
+            axis.imshow(cv2.cvtColor(img[int(y1):int(y2), int(x1):int(x2)], cv2.COLOR_BGR2RGB))
+            print()
+    else:
+        # source: https://stackoverflow.com/questions/41210823/using-plt-imshow-to-display-multiple-images
+        plt.figure(figsize=(50, 50))
+        figure, axis = plt.subplots(num_plots, 1)
 
-    for i, box in enumerate(outputs["instances"].get_fields()["pred_boxes"].tensor.to("cpu").numpy()):
-        x1, y1, x2, y2 = box
-        table_list.append(np.array(img[int(y1):int(y2), int(x1):int(x2)], copy=True))
-        table_coords.append([int(x1),int(y1),int(x2-x1),int(y2-y1)])
-        axis[i].imshow(cv2.cvtColor(img[int(y1):int(y2), int(x1):int(x2)], cv2.COLOR_BGR2RGB))
-        print()
+        for i, box in enumerate(outputs["instances"].get_fields()["pred_boxes"].tensor.to("cpu").numpy()):
+            x1, y1, x2, y2 = box
+            table_list.append(np.array(img[int(y1):int(y2), int(x1):int(x2)], copy=True))
+            table_coords.append([int(x1),int(y1),int(x2-x1),int(y2-y1)])
+            axis[i].imshow(cv2.cvtColor(img[int(y1):int(y2), int(x1):int(x2)], cv2.COLOR_BGR2RGB))
+            print()
         
     return table_list, table_coords
