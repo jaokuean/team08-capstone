@@ -541,10 +541,10 @@ def table_pipeline(file_path):
     pdf_url = report['url']
 
     # create dictionary for report 
-    pickle = {}
-    pickle['company'] = company
-    pickle['year'] = year
-    pickle['url'] = pdf_url
+    table_pickle = {}
+    table_pickle['company'] = company
+    table_pickle['year'] = year
+    table_pickle['url'] = pdf_url
 
     path = 'data/new_report/table_images/' + company + '_' + year
     os.mkdir(path)
@@ -560,12 +560,12 @@ def table_pipeline(file_path):
 
     try:
         print('calling extract_tbl_from_pdf')
-        pickle['tbl_pages'], report['table_keywords'], report['table_image_keywords'], report['table_images']= extract_tbl_from_pdf(pdf_url, pages_to_look_for, path) # returns a dict  
+        table_pickle['tbl_pages'], report['table_keywords'], report['table_image_keywords'], report['table_images']= extract_tbl_from_pdf(pdf_url, pages_to_look_for, path) # returns a dict  
         print('Successful for {0}, {1}'.format(company, year))
     except Exception as e:
         print(e)
         print("Error occurred in table_extraction/ Request failed")
-        pickle['tbl_pages'] = []
+        table_pickle['tbl_pages'] = []
         report['table_keywords'] = 'nan'
         report['table_image_keywords'] = 'nan'
         report['table_images'] = 'nan'
@@ -577,7 +577,7 @@ def table_pipeline(file_path):
         json.dump(report, outfile)
     
     with open(output_path_pickle,"wb") as outpickle:
-        pickle.dump(pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(table_pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
         
     return output_path_json, output_path_pickle
 
