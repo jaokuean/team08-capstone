@@ -240,6 +240,7 @@ def delete_intermediate_files():
     directory = "data/new_report/"
     filelist = [ f for f in os.listdir(directory) if f.endswith(".json") or f.endswith(".pkl")]
     for f in filelist:
+<<<<<<< Updated upstream
         os.remove(os.path.join(directory, f))    
 
         
@@ -345,3 +346,52 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 
 
 
+=======
+        os.remove(os.path.join(mydir, f))
+
+
+################################### Main Function ###################################
+def new_url_run(report_url, report_company, report_year, downloaded=False):
+
+    #     # data collection
+    #     ## new json generated in "data/new_report" -OK IF REPORT CONTENT IS EMPTY, none is returned
+    #     report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
+
+    #     # text extraction
+    #     ## new BERT_embeddings_json generated in "data/new_report" - OK
+    #     #report_bert_output_file_path = bert_filtering(report_output_file_path)
+    #     report_bert_output_file_path = 'data/new_report/Canada Pension2017_BERT_embeddings.json'
+
+    #     ## relevance prediction - OK
+    #     text_output_path = relevance_prediction(report_bert_output_file_path)
+    #     ## all other text predictions - OK
+    #     #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
+    #     all_text_output_path = text_except_relevance(text_output_path)
+
+    #     table extraction -  AIFEN & JERMAINE COMMENT THIS OUT
+    #     report_output_file_path = "data/new_report/Canada Pension2017.json"
+    #     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
+
+    #     # chart detection - JK COMMENT THIS OUT
+    #     report_output_file_path = "data/new_report/Canada Pension2017.json"
+    #     chart_output_path = chart_pipeline(report_output_file_path)
+
+    #     # combine all data into database
+    #     all_json = [all_text_output_path,table_output_path,chart_output_path]
+    #     final_output_path = combine_intermediate_json(all_json)
+    #     append_json_to_database(final_output_path)
+    #     append_pickle_to_database(table_output_pickle_path)
+    #     append_images_to_database() #word cloud, charts, tables
+
+    #     # clear the new_report folder for new report next time
+    #     delete_intermediate_files # delete all json files, keeping the empty wordcloud, chart, table folders
+
+    # test functiona call
+
+
+if __name__ == "__main__":
+    report_url = "https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf"
+    report_company = "Canada Pension"
+    report_year = "2017"
+    new_url_run(report_url, report_company, report_year, downloaded=False)
+>>>>>>> Stashed changes
