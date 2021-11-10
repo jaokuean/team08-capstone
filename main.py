@@ -213,7 +213,7 @@ def append_images_to_database():
     # moves file from source to target_dir and deletes files from source
     folders = ["wordcloud_images","ChartExtraction_Output","table_images"]
     new_report_folder = "data/new_report/"
-    database_folder = "data/dashboard_data/" 
+    database_folder = "assets/data/dashboard_data/" 
     
     for folder in folders:
         source_dir = new_report_folder + folder
