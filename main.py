@@ -153,7 +153,7 @@ def append_json_to_database(file_path):
     with open(file_path,'r') as infile:  
         new_entry = json.load(infile)
     
-    database_path = "data/dashboard_data_interim/final_database.json"  #CHANGE
+    database_path = "data/dashboard_data/final_database.json"  
     
     with open(database_path,'r') as infile:  
         database = json.load(infile)
@@ -180,11 +180,11 @@ def append_pickle_to_database(file_path):
     with open(file_path, 'rb') as input_pickle:
         new_pickle = pickle.load(input_pickle)
     
-    database_path = "data/dashboard_data_interim/tbl_ALL.pickle"  #CHANGE
-
+    database_path = "data/dashboard_data/tbl_ALL.pickle"  
+    
     with open(database_path, 'rb') as input_pickle:
         database = pickle.load(input_pickle)
-
+    
     database.append(new_pickle)
     
     with open(database_path,"wb") as outpickle:
@@ -207,7 +207,7 @@ def append_images_to_database():
     # moves file from source to target_dir and deletes files from source
     folders = ["wordcloud_images","ChartExtraction_Output","table_images"]
     new_report_folder = "data/new_report/"
-    database_folder = "data/dashboard_data_interim/" #CHANGE
+    database_folder = "data/dashboard_data/" 
     
     for folder in folders:
         source_dir = new_report_folder + folder
@@ -236,11 +236,14 @@ def delete_intermediate_files():
     for f in filelist:
         os.remove(os.path.join(directory, f))    
 
+        
+        
+
 
 ################################### Main Function ################################### 
 def new_url_run(report_url,report_company,report_year,downloaded=False):   
     """
-    Main Function to run to whole information extraction pipeline for a new report
+    Main Function to run to whole information extraction pipeline for a new report. New report files are created in data/new_report/ and subsquently moved to data/dashboard_data/.
     
     Parameters
     ----------
@@ -264,7 +267,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
     """
     
     # data collection
-    ## new json generated in "data/new_report" -OK IF REPORT CONTENT IS EMPTY, none is returned
+    ## new json generated in "data/new_report" 
     report_output_file_path = upload_pdf(report_url,report_company,report_year,downloaded)
     # check if PDF could be collected, throw exception if it cannot
     if report_output_file_path == "":
@@ -272,28 +275,28 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
            
     
     # text extraction
-    ## new BERT_embeddings_json generated in "data/new_report" - OK 
+    ## new BERT_embeddings_json generated in "data/new_report" 
     report_bert_output_file_path = bert_filtering(report_output_file_path)
     #report_bert_output_file_path = 'data/new_report/Canada Pension2017_BERT_embeddings.json'
     
-    ## relevance prediction - OK
+    ## relevance prediction 
     text_output_path = relevance_prediction(report_bert_output_file_path)
     # check if got relevant sentences, throw exception if there are none
     if text_output_path == "":
         #delete intermediate files
-        #delete_intermediate_files()
+        delete_intermediate_files()
         raise ValueError
         
-    ## all other text predictions - OK 
+    ## all other text predictions 
     #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
     all_text_output_path = text_except_relevance(text_output_path)
     
    
-      # table extraction -  AIFEN & JERMAINE COMMENT THIS OUT
+      # table extraction
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
-    # chart detection - JK COMMENT THIS OUT
+    # chart detection 
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
     chart_output_path = chart_pipeline(report_output_file_path)
     
@@ -318,14 +321,15 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 
 # test functiona call
 
-if __name__ == "__main__":
-    # report_url = "https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf"
-    # report_company = "Canada Pension"
-    # report_year = "2017"
-    report_url = "http://en.cmbc.com.cn/upload/images/2020/11/2017%20ESG%20REPORT.pdf"
-    report_company = "CMBC Capital"
-    report_year = "2017"
-    new_url_run(report_url,report_company,report_year,downloaded=False)
+# if __name__ == "__main__":
+    report_urls = ["https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf","https://www.gam.com/-/media/content/corporate-responsibility/gam-responsible-investment-policy.pdf"]
+    report_companys = ["Canada Pension","GAM"]
+    report_years = ["2017","2020"]
+
+    for i in range(len(report_urls)):
+        print(report_companys[i])
+        new_url_run(report_urls[i],report_companys[i],report_years[i],downloaded=False)
+        print(f"DONE WITH {report_companys[i]}")
 
     
 
