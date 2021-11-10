@@ -10,7 +10,7 @@ import pdf2image
 import cv2
 import camelot
 import pandas as pd
-import pickle
+import pickle5 as pickle
 
 # import Multi-Type-TD-TSR
 import torch, torchvision
@@ -44,10 +44,10 @@ setup_logger()
 cfg = get_cfg()
 
 #set yaml
-cfg.merge_from_file('All_X152.yaml')
+cfg.merge_from_file('table_extraction/All_X152.yaml')
 
 #set model weights
-cfg.MODEL.WEIGHTS = 'model_final.pth' # Set path model .pth
+cfg.MODEL.WEIGHTS = 'table_extraction/model_final.pth' # Set path model .pth
 
 predictor = DefaultPredictor(cfg) 
 
@@ -541,13 +541,16 @@ def table_pipeline(file_path):
     pdf_url = report['url']
 
     # create dictionary for report 
-    pickle = {}
-    pickle['company'] = company
-    pickle['year'] = year
-    pickle['url'] = pdf_url
+    tbl_pickle = {}
+    tbl_pickle['company'] = company
+    tbl_pickle['year'] = year
+    tbl_pickle['url'] = pdf_url
 
     path = 'data/new_report/table_images/' + company + '_' + year
-    os.mkdir(path)
+    try:
+        os.mkdir(path)
+    except:
+        print(path + ' already exists!')
     print(f"Detection for Report: {company}_{year}")
 
     # relevant pages for ESG info extraction
@@ -560,12 +563,12 @@ def table_pipeline(file_path):
 
     try:
         print('calling extract_tbl_from_pdf')
-        pickle['tbl_pages'], report['table_keywords'], report['table_image_keywords'], report['table_images']= extract_tbl_from_pdf(pdf_url, pages_to_look_for, path) # returns a dict  
+        tbl_pickle['tbl_pages'], report['table_keywords'], report['table_image_keywords'], report['table_images']= extract_tbl_from_pdf(pdf_url, pages_to_look_for, path) # returns a dict  
         print('Successful for {0}, {1}'.format(company, year))
     except Exception as e:
         print(e)
         print("Error occurred in table_extraction/ Request failed")
-        pickle['tbl_pages'] = []
+        tbl_pickle['tbl_pages'] = []
         report['table_keywords'] = 'nan'
         report['table_image_keywords'] = 'nan'
         report['table_images'] = 'nan'
@@ -577,7 +580,7 @@ def table_pipeline(file_path):
         json.dump(report, outfile)
     
     with open(output_path_pickle,"wb") as outpickle:
-        pickle.dump(pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(tbl_pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
         
     return output_path_json, output_path_pickle
 

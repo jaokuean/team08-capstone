@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 import ast
-import pickle
+import pickle5 as pickle
 import shutil
 import os
 
@@ -16,7 +16,7 @@ from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
 
 # table detection
-#from table_extraction.table_pipeline import *
+from table_extraction.table_pipeline import *
 # chart detection 
 from chart_extraction.chart_extraction import *
 
@@ -130,10 +130,10 @@ def append_pickle_to_database(file_path):
         new_pickle = pickle.load(input_pickle)
     
     database_path = "data/dashboard_data_interim/tbl_ALL.pickle"  #CHANGE
-    
+
     with open(database_path, 'rb') as input_pickle:
         database = pickle.load(input_pickle)
-    
+
     database.append(new_pickle)
     
     with open(database_path,"wb") as outpickle:
@@ -160,10 +160,7 @@ def delete_intermediate_files():
     directory = "data/new_report/"
     filelist = [ f for f in os.listdir(directory) if f.endswith(".json") ]
     for f in filelist:
-        os.remove(os.path.join(mydir, f))    
-
-        
-        
+        os.remove(os.path.join(directory, f))    
 
 
 ################################### Main Function ################################### 
@@ -197,22 +194,22 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
    
       # table extraction -  AIFEN & JERMAINE COMMENT THIS OUT
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
-#     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
+    table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
     # chart detection - JK COMMENT THIS OUT
 #     report_output_file_path = "data/new_report/Canada Pension2017.json"
     chart_output_path = chart_pipeline(report_output_file_path)
     
     # combine all data into database
-#     print("APPENDING NEW REPORT TO DATABASE")
-#     all_json = [all_text_output_path,table_output_path,chart_output_path]
-#     final_output_path = combine_intermediate_json(all_json)
-#     append_json_to_database(final_output_path)
-#     append_pickle_to_database(table_output_pickle_path)
-#     append_images_to_database() #word cloud, charts, tables
+    print("APPENDING NEW REPORT TO DATABASE")
+    all_json = [all_text_output_path,table_output_path,chart_output_path]
+    final_output_path = combine_intermediate_json(all_json)
+    append_json_to_database(final_output_path)
+    append_pickle_to_database(table_output_pickle_path)
+    append_images_to_database() #word cloud, charts, tables
     
 #     # clear the new_report folder for new report next time
-#     delete_intermediate_files() # delete all json files, keeping the empty wordcloud, chart, table folders
+    delete_intermediate_files() # delete all json files, keeping the empty wordcloud, chart, table folders
     
     
         
@@ -225,8 +222,11 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 # test functiona call
 
 if __name__ == "__main__":
-    report_url = "https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf"
-    report_company = "Canada Pension"
+    # report_url = "https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf"
+    # report_company = "Canada Pension"
+    # report_year = "2017"
+    report_url = "http://en.cmbc.com.cn/upload/images/2020/11/2017%20ESG%20REPORT.pdf"
+    report_company = "CMBC Capital"
     report_year = "2017"
     new_url_run(report_url,report_company,report_year,downloaded=False)
 
