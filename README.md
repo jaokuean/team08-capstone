@@ -11,9 +11,22 @@ Our project pipeline is as follows:
 ## Getting Started
 This project uses Python 3.7.6, Jupyter Notebooks and Python Scripts. Upon cloning this repository into your local machine, run the following command to install all relevant packages.
 ```bash
-pip install -r requirements.txt
+conda create -n newenv python=3.7.6
+conda activate newenv
+while read requirement; do conda install --yes -c conda-forge -c pytorch -c anaconda -c ralexx $requirement || pip install $requirement; done < requirements.txt
 ```
-To run our dashboard which will access our project pipeline (from data collection to all information extraction), run the following in the root directory:
+
+As there are additional files that are too big to upload to github, but are required to run the pipeline, you will also need to do the following steps:
+1. Place "model_final.pth" into the **table_detection** folder
+2. unzip the bert model "uncased_L-12_H-768_A-12.zip" and place it inside the root folder
+3. Change a file in the detectron2 package by commenting out the second code line that starts with "model.to()". Skip this step if you have GPU on your machine. The file is located at a path similar to this /Users/xinminaw/opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
+
+When done, run this in the environment to start the bert model.
+```bash
+bert-serving-start -model_dir /path to your bert model/ -num_worker=4
+```
+
+To run our dashboard which will access our project pipeline (from data collection to all information extraction), open another terminal and activate the same environment as above and run the following in the root directory:
 ```bash
 python app.py
 ````
