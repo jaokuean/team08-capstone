@@ -138,7 +138,7 @@ def combine_intermediate_json(all_json_paths): # input [text,table,chart]
 
 
 def append_json_to_database(file_path):
-     """
+    """
     Function that appends the json containing combined data from all intermediate files to the database json file.
 
     Parameters
@@ -192,7 +192,7 @@ def append_pickle_to_database(file_path):
 
         
 def append_images_to_database():
-     """
+    """
     Function that moves output images from new report (source) to the database folders (target). images at the source files will be deleted.
 
     Parameters
@@ -321,7 +321,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 
 # test functiona call
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
     report_urls = ["https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf","https://www.gam.com/-/media/content/corporate-responsibility/gam-responsible-investment-policy.pdf"]
     report_companys = ["Canada Pension","GAM"]
     report_years = ["2017","2020"]
