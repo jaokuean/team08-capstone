@@ -57,7 +57,7 @@ def make_prediction(img, predictor):
             print()
     else:
         # source: https://stackoverflow.com/questions/41210823/using-plt-imshow-to-display-multiple-images
-        plt.figure(figsize=(50, 50))
+        plt.figure(figsize=(200, 100))
         figure, axis = plt.subplots(num_plots, 1)
 
         for i, box in enumerate(outputs["instances"].get_fields()["pred_boxes"].tensor.to("cpu").numpy()):
