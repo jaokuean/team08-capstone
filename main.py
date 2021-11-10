@@ -108,7 +108,7 @@ def combine_intermediate_json(all_json_paths): # input [text,table,chart]
     ------
     output_path : str
         String of path to output file containing combined data from all 3 files.
-    """  
+    """ 
     
     all_json = []
     # open files
@@ -138,6 +138,7 @@ def combine_intermediate_json(all_json_paths): # input [text,table,chart]
 
 
 def append_json_to_database(file_path):
+    
     """
     Function that appends the json containing combined data from all intermediate files to the database json file.
 
@@ -148,9 +149,9 @@ def append_json_to_database(file_path):
     Return
     ------
     None
-    """  
-        
-    with open(file_path,'r') as infile:  
+    """
+       
+    with open(file_path,'r') as infile:
         new_entry = json.load(infile)
     
     database_path = "data/dashboard_data/final_database.json"  
@@ -161,10 +162,12 @@ def append_json_to_database(file_path):
     database.append(new_entry)
     
     with open(database_path,'w') as output_file:  
-        json.dump(database, output_file)   
+        json.dump(database, output_file)
+        
 
 
 def append_pickle_to_database(file_path):
+    
     """
     Function that appends the pickle file of the new report to the database pickle file.
 
@@ -179,16 +182,19 @@ def append_pickle_to_database(file_path):
     
     with open(file_path, 'rb') as input_pickle:
         new_pickle = pickle.load(input_pickle)
-    
+
     database_path = "data/dashboard_data/tbl_ALL.pickle"  
-    
+
     with open(database_path, 'rb') as input_pickle:
         database = pickle.load(input_pickle)
-    
+
     database.append(new_pickle)
-    
+
     with open(database_path,"wb") as outpickle:
         pickle.dump(database,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
+
+    
+
 
         
 def append_images_to_database():
@@ -202,7 +208,7 @@ def append_images_to_database():
     Return
     ------
     None
-    """  
+    """ 
     
     # moves file from source to target_dir and deletes files from source
     folders = ["wordcloud_images","ChartExtraction_Output","table_images"]
@@ -321,7 +327,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 
 # test functiona call
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     report_urls = ["https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf","https://www.gam.com/-/media/content/corporate-responsibility/gam-responsible-investment-policy.pdf"]
     report_companys = ["Canada Pension","GAM"]
     report_years = ["2017","2020"]
