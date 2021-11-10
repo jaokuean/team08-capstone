@@ -1,10 +1,24 @@
 import nltk
-# nltk.download('vader_lexicon')
+nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import numpy as np
 
 
 def get_sentiment_score(sentence):
+    """
+    Calculates the polarity sentiment for a sentence using VADER.
+
+    Parameters
+    ----------
+    sentence : str
+        Sentence we would like to retrieve polarity sentiment for
+
+    Return
+    ------
+    polarity score : float
+        Polarity sentiment score for the sentence
+
+    """   
     sid = SentimentIntensityAnalyzer()
 
     update_lexicon_esg = {
@@ -38,4 +52,19 @@ def get_sentiment_score(sentence):
     return sid.polarity_scores(sentence)['compound']
 
 def proc_temp_sentiments(temp_results):
+    """
+    Processes and calculates the average sentiment within each category
+
+    Parameters
+    ----------
+    temp_results : list[list]
+        Contains the temporary results in the previous for loop. 
+        It is a list of lists, with each inner list giving [number of predicted sentences in that class, total polarity sentiment]
+
+    Return
+    ------
+    results : list
+        Polarity sentiment score for each decarbonisation category. Index corresponds to the class; i.e. 0 corresponds to decarbonisation
+
+    """   
     return [i[1]/i[0] if i[0] != 0 else None for i in temp_results]

@@ -2,6 +2,24 @@ import pandas as pd
 import numpy as np
 
 def get_sum_probs(df, heu_preds):
+    """
+    This sums all the model predicted probabilities of the sentence belonging to each class
+
+    Parameters
+    ----------
+    df : DataFrame
+        Has 25 columns; 5 for each model
+        Dataframe containing probabilities of each model's prediction of a sentence being in that class.
+    heu_preds: list
+        Gives the heuristics' prediction of the sentence's class
+
+    Return
+    ------
+    probs : DataFrame
+        Each row corresponds to each sentence. 
+        There are 5 columns; each giving the total model predicted probabilities of the sentence belonging to that class
+
+    """   
     df['0_total'] = df['lr_prob_0'] + df['cb_prob_0'] + df['svm_prob_0'] + df['nb_prob_0'] + df['rf_prob_0']
     df['1_total'] = df['lr_prob_1'] + df['cb_prob_1'] + df['svm_prob_1'] + df['nb_prob_1'] + df['rf_prob_1']
     df['2_total'] = df['lr_prob_2'] + df['cb_prob_2'] + df['svm_prob_2'] + df['nb_prob_2'] + df['rf_prob_2']
@@ -15,6 +33,21 @@ def get_sum_probs(df, heu_preds):
     return probs
 
 def get_majority_pred_soft(df):
+    """
+    This gives the final predicted text class by finding the highest summed probabilities amongst the 5 for each sentence
+
+    Parameters
+    ----------
+    df : DataFrame
+        Each row corresponds to each sentence. 
+        There are 5 columns; each giving the total model predicted probabilities of the sentence belonging to that class
+
+    Return
+    ------
+    final_pred : List[Str]
+        Each item consists of the final predicted class for each sentence
+
+    """   
     final_pred = []
     for i in df.iterrows():
         lst = [j for j in i[1]]   
@@ -38,6 +71,20 @@ class_two = ["waste","paper", "office","recycled","environmental"]
 class_three = ["sustainable","investment","investments","bonds", "portfolio", "finance"]
 
 def carbon_class_filter(row):
+    """
+    This is an implementation of the word heuristics classifier
+
+    Parameters
+    ----------
+    row : Dictionary
+        Each row corresponds to a predicted relevant sentence
+
+    Return
+    ------
+    pred : int
+        Returns the predicted text class of the sentence according to the heuristics classifier
+
+    """ 
     sentence = row["sentence"]
     if any(map(sentence.__contains__, class_zero)):
         return 0

@@ -10,7 +10,7 @@ import pdf2image
 import cv2
 import camelot
 import pandas as pd
-import pickle
+import pickle5 as pickle
 
 # import Multi-Type-TD-TSR
 import torch, torchvision
@@ -44,10 +44,10 @@ setup_logger()
 cfg = get_cfg()
 
 #set yaml
-cfg.merge_from_file('All_X152.yaml')
+cfg.merge_from_file('table_extraction/All_X152.yaml')
 
 #set model weights
-cfg.MODEL.WEIGHTS = 'model_final.pth' # Set path model .pth
+cfg.MODEL.WEIGHTS = 'table_extraction/model_final.pth' # Set path model .pth
 
 predictor = DefaultPredictor(cfg) 
 
@@ -547,7 +547,10 @@ def table_pipeline(file_path):
     table_pickle['url'] = pdf_url
 
     path = 'data/new_report/table_images/' + company + '_' + year
-    os.mkdir(path)
+    try:
+        os.mkdir(path)
+    except:
+        print(path + ' already exists!')
     print(f"Detection for Report: {company}_{year}")
 
     # relevant pages for ESG info extraction
