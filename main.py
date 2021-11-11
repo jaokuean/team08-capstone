@@ -121,9 +121,9 @@ def combine_intermediate_json(all_json_paths): # input [text,table,chart]
     final_json = all_json[0]
     
     # append table data
-#     final_json["table_keywords"] = all_json[1]["table_keywords"]
-#     final_json["table_image_keywords"] = all_json[1]["table_image_keywords"]
-#     final_json["table_images"] = all_json[1]["table_images"]
+    final_json["table_keywords"] = all_json[1]["table_keywords"]
+    final_json["table_image_keywords"] = all_json[1]["table_image_keywords"]
+    final_json["table_images"] = all_json[1]["table_images"]
 
     # append  chart data
     final_json["chart_images_keywords"] = all_json[2]["chart_images_keywords"]
