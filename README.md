@@ -9,7 +9,7 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source pacakges that have to installed for the code to run. Upon cloning this repository into your local machine, run the following command to install most of the relevant packages.
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source pacakges that have to installed for the code to run. Upon cloning this repository into your local machine, run the following command to create a conda environment and install most of the relevant packages.
 ```bash
 conda create -n newenv python=3.7.6
 conda activate newenv
@@ -17,9 +17,12 @@ while read requirement; do conda install --yes -c conda-forge -c pytorch -c anac
 ```
 
 As there are additional files that are too big to upload to github, but are required to run the pipeline, you will also need to do the following steps:
-1. Place "model_final.pth" into the **table_detection** folder
-2. unzip the bert model "uncased_L-12_H-768_A-12.zip" and place it inside the root folder
-3. Change a file in the detectron2 package by commenting out the second code line that starts with "model.to()". Skip this step if you have GPU on your machine. The file is located at a path similar to this /Users/xinminaw/opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
+1. Place the **data** folder in the root folder
+2. Place "model_final.pth" into the **table_detection** folder
+3. unzip the bert model "uncased_L-12_H-768_A-12.zip" and place it inside the root folder
+4. Change a file in the detectron2 package by commenting out the second code line that starts with "model.to()". Skip this step if you have GPU on your machine. The file is located at a path similar to this /Users/xinminaw/opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
+
+Note : If you did not clone this repository but used the zip file specified in our report in obtain our codes and data, you can skip steps 1,2 and 3.
 
 When done, run this in the environment to start the bert model.
 ```bash
