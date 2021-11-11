@@ -56,7 +56,7 @@ The following table contains a brief description of the files and folders our th
 | Folder | Description |
 | - | - |
 | **assets** | Main data folder for data used in the dashboard. It conatins the stylesheet, images and database used for the dashboard. |
-| **data** | Main data folder for data used during internal analysis and development. Main folders required for final pipeline to run includes **saved_models** and **new_report** folders. **saved_models** folder contains trained models required for the text extraction pipeline. **new_report** folder contains 3 empty folders namely: "ChartExtraction_Output", "wordcloud_images" and "table_images". This folder is used as an intermediate folder when a new report URL is uploaded. The information extracted from the new report after running through our whole pipeline will then be added to the main database in the assets/dashboard_data folder. |
+| **data** | Main data folder for data used during internal analysis and development. Main folders required for final pipeline to run includes **saved_models** and **new_report** folders. **saved_models** folder contains trained models required for the text extraction pipeline. **new_report** folder contains 3 empty folders namely: "ChartExtraction_Output", "wordcloud_images" and "table_images". This folder is used as an intermediate folder when a new report URL is uploaded. The information extracted from the new report after running through our whole pipeline will then be moved from the new_report folder to the main database in the assets/dashboard_data folder. |
 
 
 
