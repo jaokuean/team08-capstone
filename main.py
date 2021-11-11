@@ -121,13 +121,36 @@ def combine_intermediate_json(all_json_paths): # input [text,table,chart]
     final_json = all_json[0]
     
     # append table data
-#     final_json["table_keywords"] = all_json[1]["table_keywords"]
-#     final_json["table_image_keywords"] = all_json[1]["table_image_keywords"]
-#     final_json["table_images"] = all_json[1]["table_images"]
+    final_json["table_keywords"] = all_json[1]["table_keywords"]
+    final_json["table_image_keywords"] = all_json[1]["table_image_keywords"]
+    table_images_paths = all_json[1]["table_images"]
+    if table_images_paths != "nan":
+        table_images_paths_final = {}
+        for page, table_image_path_list in table_images_paths.items():
+            path_list = []
+            for path in table_image_path_list:
+                path_final = re.sub("new_report","dashboard_data",path)
+                path_list.append(path_final)
+            table_images_paths_final[page] = path_list      
+        final_json["table_images"] = table_images_paths_final
+    else:
+        final_json["table_images"] = all_json[1]["table_images"]
+
 
     # append  chart data
     final_json["chart_images_keywords"] = all_json[2]["chart_images_keywords"]
-    final_json["chart_images"] = all_json[2]["chart_images"]
+    chart_images_paths = all_json[2]["chart_images"]
+    chart_images_paths_final = {}
+    if chart_images_paths != "nan":
+        for page, chart_image_path_list in chart_images_paths.items():
+            path_list = []
+            for path in chart_image_path_list:
+                path_final = re.sub("new_report","dashboard_data",path)
+                path_list.append(path_final)
+            chart_images_paths_final[page] = path_list      
+        final_json["chart_images"] = chart_images_paths_final
+    else:
+        final_json["chart_images"] = all_json[2]["chart_images"]
     
     output_path = all_json_paths[2][:-12] + "_FINAL.json"
                                                       
@@ -135,6 +158,8 @@ def combine_intermediate_json(all_json_paths): # input [text,table,chart]
         json.dump(final_json, output_file)   
     
     return output_path
+
+
 
 
 def append_json_to_database(file_path):
@@ -154,7 +179,7 @@ def append_json_to_database(file_path):
     with open(file_path,'r') as infile:
         new_entry = json.load(infile)
     
-    database_path = "data/dashboard_data/final_database.json"  
+    database_path = "assets/data/dashboard_data/final_database.json"  
     
     with open(database_path,'r') as infile:  
         database = json.load(infile)
@@ -183,7 +208,7 @@ def append_pickle_to_database(file_path):
     with open(file_path, 'rb') as input_pickle:
         new_pickle = pickle.load(input_pickle)
 
-    database_path = "data/dashboard_data/tbl_ALL.pickle"  
+    database_path = "assets/data/dashboard_data/tbl_ALL.pickle"  
 
     with open(database_path, 'rb') as input_pickle:
         database = pickle.load(input_pickle)

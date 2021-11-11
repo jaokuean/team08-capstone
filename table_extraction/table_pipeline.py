@@ -583,10 +583,3 @@ def table_pipeline(file_path):
         pickle.dump(table_pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
         
     return output_path_json, output_path_pickle
-
-
-# FOR TESTING PURPOSES - @XinMin can call the table_pipeline(company_dict) function directly in the main pipeline
-# file_path = 'all_asset_managers_preprocessed_vfinal.json'
-# f = open(file_path,)
-# data = json.load(f)
-# table_pipeline(data[1])
