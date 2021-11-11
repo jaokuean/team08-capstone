@@ -16,11 +16,11 @@ conda activate newenv
 while read requirement; do conda install --yes -c conda-forge -c pytorch -c anaconda -c ralexx $requirement || pip install $requirement; done < requirements.txt
 ```
 
-As there are additional files that are too big to upload to github, but are required to run the pipeline, you will also need to do the following steps:
+As there are additional files that are too big to upload to github, but are necessary to run the pipeline, you will also need to do the following steps:
 1. Place the **data** folder in the root folder
-2. Place "model_final.pth" into the **table_detection** folder
+2. Place "model_final.pth" into the **table_extraction** folder
 3. unzip the bert model "uncased_L-12_H-768_A-12.zip" and place it inside the root folder
-4. Change a file in the detectron2 package by commenting out the second code line that starts with "model.to()". Skip this step if you have GPU on your machine. The file is located at a path similar to this /Users/xinminaw/opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
+4. Edit the build.py file in the detectron2 package by commenting out the second code line that starts with "model.to()". Skip this step if you have GPU on your machine. The file is located at a path similar to this /Users/xinminaw/opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
 
 Note : If you did not clone this repository but used the zip file specified in our report in obtain our codes and data, you can skip steps 1,2 and 3.
 
@@ -46,7 +46,7 @@ The following table contains a brief description of the files and folders in thi
 | **combining_data** | Folder containing jupyter notebook that will combine all information extracted to create final database |
 | **relevance_prediction** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for relevance prediction and python script that will run the the relevance prediction portion of the text extraction pipeline  | 
 | **sentiment_analysis** | Folder containing jupyter notebook that is used for internal analysis and code development of VADER to conduct sentiment analysis and python script that will run the the sentiment analysis portion of the text extraction pipeline  |
-| **table_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of table pipeline, python script that will run the table extraction pipeline, yaml files and our modified Multi_Type_TD_TSR pacakge that is required for the pipeline code to run. |
+| **table_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of table pipeline, python script that will run the table extraction pipeline, yaml files and our modified Multi_Type_TD_TSR package that is required for the tabular pipeline code to run. |
 | **text_classification** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for text classification and python script that will run the the text classification portion of the text extraction pipeline  | 
 | **text_filtering** | Folder containing jupyter notebook that is used for internal analysis and code development of data collection, page and sentence filtering for subsequent tasks and python script that will run the data collection, page and sentence filtering pipeline  | 
 | **word_cloud** | Python script that will run the word cloud generation portion of the text extraction pipeline |
