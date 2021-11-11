@@ -1,29 +1,12 @@
 #!/bin/bash
-# text
-pip install wordcloud 
-pip install matplotlib
-pip install sklearn
-pip install catboost
-pip install nltk
-pip install spacy
-pip install tqdm
-pip install requests
-pip install pdfminer3
-pip install gensim
-pip install scipy
-pip install pandas
+# create environment
+conda create -y -n condaenvt python=3.7.6
 
-#charts_ext
-pip install opencv
-pip install opencv-python
-pip install pytesseract
-pip install pdf2image
-pip install matplotlib
+# install project requirements, conda install if it is available on conda channels, else pip install
+while read requirement; do conda install -n condaenvt --y -q -c conda-forge -c pytorch -c anaconda -c ralexx $requirement || pip install $requirement; done < requirements.txt
 
-#dashboard
-pip install dash
-pip install dash_bootstrap_components
-pip install wordcloud
-pip install pandas
-pip install nltk
-pip install pickle5
+# activate conda environment
+source ~/opt/anaconda3/bin/activate condaenvt
+
+# print python version to ensure it is 3.7.6
+python --version 
