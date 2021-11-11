@@ -42,6 +42,7 @@ The following table contains a brief description of the files and folders in thi
 | **main.py** | Main file for running the entire project pipeline for a new report URL. |
 | **app.py** | Main file for running dashboard which also runs the main.py if a new report URL is uploaded. |
 | **requirements.sh** | KIV |
+| **requirements.txt** | KIV |
 | **chart_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of chart pipeline and python script that will run the chart extraction pipeline |
 | **combining_data** | Folder containing jupyter notebook that will combine all information extracted to create final database |
 | **relevance_prediction** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for relevance prediction and python script that will run the the relevance prediction portion of the text extraction pipeline  | 
@@ -50,6 +51,10 @@ The following table contains a brief description of the files and folders in thi
 | **text_classification** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for text classification and python script that will run the the text classification portion of the text extraction pipeline  | 
 | **text_filtering** | Folder containing jupyter notebook that is used for internal analysis and code development of data collection, page and sentence filtering for subsequent tasks and python script that will run the data collection, page and sentence filtering pipeline  | 
 | **word_cloud** | Python script that will run the word cloud generation portion of the text extraction pipeline |
+## Data
+| **assets** | Main data folder for data used in the dashboard. It conatins the stylesheet, images and database used for the dashboard. |
+| **data** | Main data folder for data used during internal analysis and development. Main folders required for final pipeline to run includes **saved_models** and **new_report** folders. **saved_models** folder contains trained models required for the text extraction pipeline. **new_report** folder contains 3 empty folders namely: "ChartExtraction_Output", "wordcloud_images" and "table_images". This folder is used as an intermediate folder when a new report URL is uploaded. The information extracted from the new report after running through our whole pipeline will then be added to the main database in the assets/dashboard_data folder. |
+
 
 
 ## Application Demo
