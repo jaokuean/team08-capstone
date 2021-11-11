@@ -9,7 +9,7 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source pacakges that have to installed for the code to run. Upon cloning this repository into your local machine, run the following command to create a conda environment and install most of the relevant packages.
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source pacakges that have to be installed for the code to run. Upon cloning this repository into your local machine, run the following command to create a conda environment and install most of the relevant packages.
 ```bash
 conda create -n newenv python=3.7.6
 conda activate newenv
@@ -29,7 +29,7 @@ When done, run this in the environment to start the bert model.
 bert-serving-start -model_dir /path to your bert model/ -num_worker=4
 ```
 
-To run our dashboard which will access our project pipeline (from data collection to all information extraction), open another terminal and activate the same environment as above and run the following in the root directory:
+To run our dashboard which will access our entire information extraction pipeline, open another terminal and activate the same environment as above and run the following in the root directory:
 ```bash
 python app.py
 ````
