@@ -17,7 +17,7 @@ while read requirement; do conda install --yes -c conda-forge -c pytorch -c anac
 ```
 
 As there are additional files that are too big to upload to github, but are necessary to run the pipeline, you will also need to do the following steps:
-1. Place the **data** folder in the root folder
+1. Place the **data** and **assets** folder in the root folder
 2. Place "model_final.pth" into the **table_extraction** folder
 3. unzip the bert model "uncased_L-12_H-768_A-12.zip" and place it inside the root folder
 4. Edit the build.py file in the detectron2 package by substiuting "cfg.MODEL.DEVICE" to "cpu" in the codeline that starts with "model.to()". Skip this step if you are able to access GPU on your machine. The file is located at a path similar to this /Users/xinminaw/opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
