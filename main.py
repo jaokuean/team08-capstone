@@ -5,7 +5,6 @@ import pickle5 as pickle
 import shutil
 import os
 
-
 # data collection, page and bert sentence filtering
 from text_filtering.data_collection_filtering_pipeline import *
 # # # relevance prediction
@@ -16,17 +15,21 @@ from rule_mining.rule_mining_pipeline import *
 from sentiment_analysis.sentiment_analysis_pipeline import *
 from word_cloud.word_cloud_pipeline import *
 
+# table detection
+from table_extraction.table_pipeline import *
+# chart detection 
+from chart_extraction.chart_extraction import *
+
 
 ################################### Helper Functions ################################### 
 # Text Classification
 def text_except_relevance(json_path):
     """
     Function that runs carbon class prediction pipeline, sentiment analysis pipeline, word cloud generation pipeline and sentiment analysis pipeline for 1 FI after running it through the relevance prediction pipeline.
-
     Parameters
+    ----------
     json_path : str
         String of path to a json file containing company's report details, "text_output" field which includes pages of relevance sentences, relevant sentences predicted by the model and probability scores. 
-
     Return
     ------
     output_path : str
@@ -94,7 +97,6 @@ def text_except_relevance(json_path):
 def combine_intermediate_json(all_json_paths): # input [text,table,chart]
     """
     Function that combines all intermediate output files from text extraction, table extraction and chart extraction, into 1 json.
-
     Parameters
     ----------
     json_path : list of str
@@ -161,7 +163,6 @@ def append_json_to_database(file_path):
     
     """
     Function that appends the json containing combined data from all intermediate files to the database json file.
-
     Parameters
     ----------
     file_path : list of str
@@ -190,7 +191,6 @@ def append_pickle_to_database(file_path):
     
     """
     Function that appends the pickle file of the new report to the database pickle file.
-
     Parameters
     ----------
     file_path : str
@@ -220,7 +220,6 @@ def append_pickle_to_database(file_path):
 def append_images_to_database():
     """
     Function that moves output images from new report (source) to the database folders (target). images at the source files will be deleted.
-
     Parameters
     ----------
     None
@@ -248,7 +247,6 @@ def append_images_to_database():
 def delete_intermediate_files():
     """
     Function that deletes all intermediate and final json in the new_report directory. Clears the directory after data for the new report is added to database.
-
     Parameters
     ----------
     None
@@ -303,7 +301,6 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
     # text extraction
     ## new BERT_embeddings_json generated in "data/new_report" 
     report_bert_output_file_path = bert_filtering(report_output_file_path)
-    #report_bert_output_file_path = 'data/new_report/Canada Pension2017_BERT_embeddings.json'
     
     ## relevance prediction 
     text_output_path = relevance_prediction(report_bert_output_file_path)
@@ -314,17 +311,13 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
         raise ValueError
         
     ## all other text predictions 
-    #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
     all_text_output_path = text_except_relevance(text_output_path)
     
    
       # table extraction
-#     report_output_file_path = "data/new_report/Canada Pension2017.json"
-
     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
     # chart detection 
-#     report_output_file_path = "data/new_report/Canada Pension2017.json"
     chart_output_path = chart_pipeline(report_output_file_path)
     
     # combine all data into database
