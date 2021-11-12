@@ -10,7 +10,7 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing). Upon doing so, run the following commands within the root directory. 
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing) into a single zip folder. Upon doing so, run the following commands within the root directory. 
 
 ```bash
 conda create -n nus08_env python=3.7.6
