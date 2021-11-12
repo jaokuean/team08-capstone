@@ -10,11 +10,14 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing). Upon doing so, run the following command within the root directory. This will automatically create a conda environment named **nus08_env** and install all the relevant packages required for this project. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. 
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing). Upon doing so, run the following commands within the root directory. 
 
-```bash 
-bash shell_scripts/requirements.sh
+```bash
+conda create -n nus08_env python=3.7.6
+conda activate nus08_env
+while read requirement; do conda install -n nus08_env --y -q -c conda-forge -c pytorch -c anaconda -c ralexx $requirement || pip install $requirement; done < requirements.txt
 ```
+This will create a conda environment named **nus08_env** and install all the relevant packages required for this project. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. 
 
 As there are additional files that are too big to upload to github, but are necessary to run the pipeline, you will also need to do the following steps:
 1. Place the **data** and **assets** folder in the root folder
@@ -24,7 +27,7 @@ As there are additional files that are too big to upload to github, but are nece
 
 Note : If you did not clone this repository but used the folder from our drive to obtain our codes and data, you can skip steps 1,2 and 3.
 
-When done, activate nus08_env via conda activate nus08_env and run this in the new terminal window to start the API connection with BERT-as-service. 
+When done, activate nus08_env via **conda activate nus08_env** and run this in the new terminal window to start the API connection with BERT-as-service. 
 ```bash 
 bash shell_scripts/start_bert.sh
 ```
