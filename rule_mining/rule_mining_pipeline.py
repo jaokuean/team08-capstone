@@ -5,7 +5,21 @@ else:
 import pandas as pd
 import re
 
-def rule_mining_pipeline(df):       
+def rule_mining_pipeline(df):    
+    """
+    Entry code to generate mined text from each sentence
+
+    Parameters
+    ----------
+    df : dataframe
+        Dataframe representation of predicted relevant text
+
+    Return
+    ------
+    formatted_texts : list
+        Gives markdown formatted text of original sentence. Mined portions will be enclosed in asterisks for bolding on dashboard
+
+    """  
     formatted_texts = []
     text_data = list(df.sentence)
 

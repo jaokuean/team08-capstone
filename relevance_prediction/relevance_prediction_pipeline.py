@@ -1,3 +1,4 @@
+# import packages
 import pickle
 import pandas as pd
 import nltk
@@ -5,7 +6,7 @@ from relevance_prediction.preprocessing import * # import clean function
 import json
 
 
-# instantiate models
+# load pretrained models and instantiate them
 DATA_FOLDER = "data/"
 LOGREG_VECT = DATA_FOLDER + "saved_models/relevance_models/model_LR_vectorizer.pkl"
 LOGREG_MODEL = DATA_FOLDER + "saved_models/relevance_models/model_LR.pkl"
@@ -18,19 +19,27 @@ RF_MODEL = DATA_FOLDER + "saved_models/relevance_models/model_RF.pkl"
 LOGREG_MODEL_BERT = DATA_FOLDER + "saved_models/relevance_models/model_LR_BERT.pkl"
 META_MODEL = DATA_FOLDER + "saved_models/relevance_models/model_meta.pkl"
 
-# takes in json with 1 field
 def modelling_pipeline(company):
-    # READ PROCESSED DATA
-#     NEW RECORD
-#     with open(output_name,) as inputfile:
-#         processed_json = json.load(inputfile)
+    """
+    Main function that runs pre-trained machine learning models to predict relevance of a sentence.
+
+    Parameters
+    ----------
+    company : dict of {str : str or dict}
+        Dictionary containing a company's name, year, highly relevant sentences and their BERT word embeddings.
+
+    Return
+    ------
+    ensemble_predictions : dataframe
+        Dataframe that contains sentences predicted as relevant. Columns include page number of the sentences, actual sentence text and the probability scores predicted.
+    """   
     
     processed_json = company
     sentences_direct = processed_json["bert_relevant_sentences_direct_original"]
     sentences_indirect = processed_json["bert_relevant_sentences_indirect_original"]
     sentences = dict(list(sentences_direct.items()) + list(sentences_indirect.items()))
     
-    # for BERT models
+    # obtain sentence embeddings for BERT models
     sentences_direct_embeddings = company["bert_relevant_sentences_direct_original_embeddings"]
     sentences_indirect_embeddings  = company["bert_relevant_sentences_indirect_original_embeddings"]
     sentences_embeddings  = dict(list(sentences_direct_embeddings.items()) + list(sentences_indirect_embeddings.items()))
@@ -52,7 +61,6 @@ def modelling_pipeline(company):
     processed_df['cleaned_sentence'] = processed_df['sentence'].apply(clean_sentence)
     
     # MAKE PREDICTIONS
-
     # LOGISTIC REGRESSION PREDICTION
     lr_vectorizer = pickle.load(open(LOGREG_VECT, "rb"))
     lr_model = pickle.load(open(LOGREG_MODEL, "rb"))
@@ -87,20 +95,11 @@ def modelling_pipeline(company):
 
     print("LR, SVM, NB, RF predictions complete")
     
-    # LOGISTIC REGRESSION BERT
+    # LOGISTIC REGRESSION BERT PREDICTION
     lr_bert_model = pickle.load(open(LOGREG_MODEL_BERT, "rb"))
-#     bert_embeddings = vectorize_dataset_bert(processed_df)
     lr_bert_predictions = lr_bert_model.predict_proba(list(processed_df.sentence_embeddings))
     processed_df["LR_BERT_prob_1"] =  lr_predictions[:, 1]
-    processed_df["LR_BERT_prob_0"] =  lr_predictions[:, 0]
-    
-#     # SUPPORT VECTOR MACHINE BERT
-#     svm_bert_model = pickle.load(open(SVM_MODEL_BERT, "rb"))
-#     svm_bert_predictions = svm_bert_model.predict_proba(list(processed_df.sentence_embeddings))
-#     processed_df["SVM_BERT_prob_1"] = svm_bert_predictions[:, 1]
-#     processed_df["SVM_BERT_prob_0"] = svm_bert_predictions[:, 0]
-        
-    #processed_df.to_csv(prediction_csv, index=False)
+    processed_df["LR_BERT_prob_0"] =  lr_predictions[:, 0]   
 
     print("BASELINE PREDICTIONS COMPLETE")        
 
@@ -124,13 +123,28 @@ def modelling_pipeline(company):
     predictions_df = predictions_df.loc[predictions_df.relevance == 1]
     ensemble_predictions = pd.DataFrame(data=predictions_df,columns=["page", "sentence", "relevance_prob"]) 
 
-    print("ENSEMBLE PREDICTIONS COMPLETE")        
+    print("ENSEMBLE PREDICTIONS COMPLETE") 
+    
     
     # save ensemble predictions
     return ensemble_predictions
 
 
 def relevance_prediction(file_path):
+    """
+    Main relevance modelling prediction pipeline function.
+
+    Parameters
+    ----------
+    file_path : str
+        String of path to a json file containing company's report details, filtered text and bert emebddings for highly relevant sentences.
+
+    Return
+    ------
+    output_path : str
+        String of path to output file containing "text_output" field which includes pages of relevance sentences, relevant sentences predicted by the model and probability scores. If no relevant sentences predicted, return empty string
+    """  
+    
     with open(file_path, 'r') as infile:
         company = json.load(infile)
     
@@ -142,10 +156,15 @@ def relevance_prediction(file_path):
     sentences_direct = company["bert_relevant_sentences_direct_original"]
     sentences_indirect = company["bert_relevant_sentences_indirect_original"]
     sentences = dict(list(sentences_direct.items()) + list(sentences_indirect.items()))
-
+    
+    # if there are relevant sentences after filtering by BERT, predict the relevance of the sentences
     if len(sentences) != 0:
         print("RUNNING RELEVANCE MODELLING PIPELINE")
         data = modelling_pipeline(company)
+        
+        # if not relevant sentences predicted
+        if data.shape[0] == 0:
+            return ""
         data_json = json.loads(data.reset_index().drop("index",axis=1).to_json())
         for k,v in data_json.items():
             data_json[k] = list(data_json[k].values())
@@ -160,6 +179,8 @@ def relevance_prediction(file_path):
         json.dump(company_details, outfile)
     
     print("DONE RUNNING RELEVANCE MODELLING PIPELINE")
+    
+    
     return output_path
 
 

@@ -10,15 +10,19 @@ import pdf2image
 import cv2
 import camelot
 import pandas as pd
+import pickle5 as pickle
 
 # import Multi-Type-TD-TSR
 import torch, torchvision
 import pytesseract
 import detectron2
-import Multi_Type_TD_TSR.google_colab.deskew as deskew
-import Multi_Type_TD_TSR.google_colab.table_detection as table_detection
-import Multi_Type_TD_TSR.google_colab.table_xml as txml
-import Multi_Type_TD_TSR.google_colab.table_ocr as tocr
+
+# test
+import table_extraction.Multi_Type_TD_TSR.google_colab
+import table_extraction.Multi_Type_TD_TSR.google_colab.deskew as deskew
+import table_extraction.Multi_Type_TD_TSR.google_colab.table_detection as table_detection
+import table_extraction.Multi_Type_TD_TSR.google_colab.table_xml as txml
+import table_extraction.Multi_Type_TD_TSR.google_colab.table_ocr as tocr
 import pandas as pd
 import os
 import json
@@ -27,6 +31,7 @@ import random
 from detectron2.utils.logger import setup_logger
 
 # import common detectron2 utilities
+# error here
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
 from detectron2.config import get_cfg
@@ -39,10 +44,10 @@ setup_logger()
 cfg = get_cfg()
 
 #set yaml
-cfg.merge_from_file('All_X152.yaml')
+cfg.merge_from_file('table_extraction/All_X152.yaml')
 
 #set model weights
-cfg.MODEL.WEIGHTS = 'model_final.pth' # Set path model .pth
+cfg.MODEL.WEIGHTS = 'table_extraction/model_final.pth' # Set path model .pth
 
 predictor = DefaultPredictor(cfg) 
 
@@ -508,14 +513,14 @@ def extract_tbl_from_pdf(pdf_url, pages_to_look_for, path):
     
     return pdf_dict, tbl_keywords_dict, img_keywords_dict, image_path_obj
 
-def table_pipeline(report):
+def table_pipeline(file_path):
     """
     Main table pipeline function.
 
     Parameters
     ----------
-    report : dict of {str : str or dict}
-        Dictionary of a company's report details and preprocessed text.
+    file_path : str
+        String of path to a company's report details and preprocessed text.
 
     Return
     ------
@@ -524,19 +529,28 @@ def table_pipeline(report):
     report : dict of {str : str or dict}
         Dictionary containing a company's report details, preprocessed text and table pipeline output.
     """          
+    
+    # open file
+    with open(file_path, 'r') as infile:
+        report = json.load(infile)
+    
+    
     # basic information
     company = report['company']
     year = report['year']
     pdf_url = report['url']
 
     # create dictionary for report 
-    pickle = {}
-    pickle['company'] = company
-    pickle['year'] = year
-    pickle['url'] = pdf_url
+    table_pickle = {}
+    table_pickle['company'] = company
+    table_pickle['year'] = year
+    table_pickle['url'] = pdf_url
 
-    path = 'data/dashboard_data/table_images/' + company + '_' + year
-    os.mkdir(path)
+    path = 'data/new_report/table_images/' + company + '_' + year
+    try:
+        os.mkdir(path)
+    except:
+        print(path + ' already exists!')
     print(f"Detection for Report: {company}_{year}")
 
     # relevant pages for ESG info extraction
@@ -549,21 +563,23 @@ def table_pipeline(report):
 
     try:
         print('calling extract_tbl_from_pdf')
-        pickle['tbl_pages'], report['table_keywords'], report['table_image_keywords'], report['table_images']= extract_tbl_from_pdf(pdf_url, pages_to_look_for, path) # returns a dict  
+        table_pickle['tbl_pages'], report['table_keywords'], report['table_image_keywords'], report['table_images']= extract_tbl_from_pdf(pdf_url, pages_to_look_for, path) # returns a dict  
         print('Successful for {0}, {1}'.format(company, year))
     except Exception as e:
         print(e)
         print("Error occurred in table_extraction/ Request failed")
-        pickle['tbl_pages'] = []
+        table_pickle['tbl_pages'] = []
         report['table_keywords'] = 'nan'
         report['table_image_keywords'] = 'nan'
         report['table_images'] = 'nan'
-
-    return pickle, report
-
-
-# FOR TESTING PURPOSES - @XinMin can call the table_pipeline(company_dict) function directly in the main pipeline
-file_path = 'all_asset_managers_preprocessed_vfinal.json'
-f = open(file_path,)
-data = json.load(f)
-pickle, report = table_pipeline(data[1])
+    
+    output_path_json = file_path[:-5] + "_table_output.json"
+    output_path_pickle = file_path[:-5] + "_table_output.pkl"
+    
+    with open(output_path_json, "w") as outfile:  
+        json.dump(report, outfile)
+    
+    with open(output_path_pickle,"wb") as outpickle:
+        pickle.dump(table_pickle,outpickle,protocol=pickle.HIGHEST_PROTOCOL)
+        
+    return output_path_json, output_path_pickle
