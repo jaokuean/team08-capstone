@@ -308,7 +308,6 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
     # text extraction
     ## new BERT_embeddings_json generated in "data/new_report" 
     report_bert_output_file_path = bert_filtering(report_output_file_path)
-    #report_bert_output_file_path = 'data/new_report/Canada Pension2017_BERT_embeddings.json'
     
     ## relevance prediction 
     text_output_path = relevance_prediction(report_bert_output_file_path)
@@ -319,17 +318,13 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
         raise ValueError
         
     ## all other text predictions 
-    #text_output_path = "data/new_report/Canada Pension2017_text_output.json"
     all_text_output_path = text_except_relevance(text_output_path)
     
    
       # table extraction
-#     report_output_file_path = "data/new_report/Canada Pension2017.json"
-
     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
     # chart detection 
-#     report_output_file_path = "data/new_report/Canada Pension2017.json"
     chart_output_path = chart_pipeline(report_output_file_path)
     
     # combine all data into database
