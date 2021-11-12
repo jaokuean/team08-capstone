@@ -27,8 +27,9 @@ As there are additional files that are too big to upload to github, but are nece
 
 Note : If you did not clone this repository but used the folder from our drive to obtain our codes and data, you can skip steps 1,2 and 3.
 
-When done, activate nus08_env via **conda activate nus08_env** and run this in the new terminal window to start the API connection with BERT-as-service. 
+When done, activate the nus08_env and run this in the new terminal window to start the API connection with BERT-as-service. 
 ```bash 
+conda activate nus08_env
 bash shell_scripts/start_bert.sh
 ```
 
@@ -48,7 +49,7 @@ The following table contains a brief description of the files and folders in thi
 | - | - |
 | **main.py** | Main file for running the entire project pipeline for a new report URL. |
 | **app.py** | Main file for running dashboard which also runs the main.py if a new report URL is uploaded. |
-| **shell_scripts** | This folder contains 2 shell scripts. requirements.sh is used to install the required project dependencies and start_bert.sh is used to initialise the connection with the BERT-as-service API |
+| **shell_scripts** | This folder is used to contain shell scripts. start_bert.sh is used to initialise the connection with the BERT-as-service API |
 | **requirements.txt** | This contains all the package and version requirements for our project. It has been modified to support both conda install and pip install as some of our packages cannot be found on conda channels |
 | **chart_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of chart pipeline and python script that will run the chart extraction pipeline |
 | **combining_data** | Folder containing jupyter notebook that will combine all information extracted to create final database |
@@ -70,7 +71,7 @@ The following table contains a brief description of the files and folders our th
 On our dashboard, users can search for a company name to obtain the relevant information extracted from a specific report, displayed on the dashboard. However if the desired report does not exist in our current database, users can upload a URL to the PDF or upload a PDF from their local directory. This new report will run through our pipeline, relevant information will extracted and displayed on the dashbaord, it will also be appended to our database for future use.
 You can access a video of our dashboard demo here : https://youtu.be/VApBSNr_FFg
 
-## Built With (help with this)
+## Built With
 - [plotly | dash](https://dash.plotly.com/)
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [Natural Language Toolkit](https://www.nltk.org/)
