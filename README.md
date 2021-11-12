@@ -48,7 +48,7 @@ The following table contains a brief description of the files and folders in thi
 | - | - |
 | **main.py** | Main file for running the entire project pipeline for a new report URL. |
 | **app.py** | Main file for running dashboard which also runs the main.py if a new report URL is uploaded. |
-| **shell_scripts** | This folder contains 2 shell scripts. requirements.sh is used to install the required project dependencies and start_bert.sh is used to initialise the connection with the BERT-as-service API |
+| **shell_scripts** | This folder is used to contain shell scripts. start_bert.sh is used to initialise the connection with the BERT-as-service API |
 | **requirements.txt** | This contains all the package and version requirements for our project. It has been modified to support both conda install and pip install as some of our packages cannot be found on conda channels |
 | **chart_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of chart pipeline and python script that will run the chart extraction pipeline |
 | **combining_data** | Folder containing jupyter notebook that will combine all information extracted to create final database |
