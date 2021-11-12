@@ -64,7 +64,7 @@ The following table contains a brief description of the files and folders our th
 
 ## Application Demo
 On our dashboard, users can search for a company name to obtain the relevant information extracted from a specific report, displayed on the dashboard. However if the desired report does not exist in our current database, users can upload a URL to the PDF or upload a PDF from their local directory. This new report will run through our pipeline, relevant information will extracted and displayed on the dashbaord, it will also be appended to our database for future use.
-![burpple_plus_demo.gif](assets/burpple_plus_demo.gif) CHANGE
+Youtube link to our dashboard demo : https://youtu.be/VApBSNr_FFg
 
 ## Built With (help with this)
 - [plotly | dash](https://dash.plotly.com/)
