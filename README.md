@@ -33,6 +33,10 @@ To run our dashboard which will access our entire information extraction pipelin
 python app.py
 ````
 
+Afterwards, simply copy and paste the link that appears in your terminal into your browser. Click enter and you should be able to begin viewing all the processed decarbonisation related information. 
+
+![DashboardLink.png](https://i.ibb.co/3BD9Mjc/tg-image-2356045203.jpg)
+
 
 ## Files
 The following table contains a brief description of the files and folders in this repository.
