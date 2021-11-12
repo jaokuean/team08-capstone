@@ -10,7 +10,7 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing) Upon doing so, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing). Upon doing so, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
 ```bash 
 bash shell_scripts/requirements.sh
 ```
