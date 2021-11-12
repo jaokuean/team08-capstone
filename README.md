@@ -10,7 +10,7 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. Upon cloning this repository into your local machine, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download our folder from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing) Upon doing so, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
 ```bash 
 bash shell_scripts/requirements.sh
 ```
@@ -21,7 +21,7 @@ As there are additional files that are too big to upload to github, but are nece
 3. unzip the bert model "bert_model.zip" and place it inside the root folder
 4. Edit the build.py file in the detectron2 package by substiuting "cfg.MODEL.DEVICE" to "cpu" in the codeline that starts with "model.to()". Skip this step if you are able to access GPU on your machine. The file is located at a path similar to this ~./opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
 
-Note : If you did not clone this repository but used the zip file specified in our report in obtain our codes and data, you can skip steps 1,2 and 3.
+Note : If you did not clone this repository but used the folder from our drive to obtain our codes and data, you can skip steps 1,2 and 3.
 
 When done, activate nus08_env via conda activate nus08_env and run this in the new terminal window to start the API connection with BERT-as-service. 
 ```bash 
