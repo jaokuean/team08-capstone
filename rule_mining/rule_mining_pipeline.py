@@ -39,6 +39,11 @@ def rule_mining_pipeline(df):
     return formatted_texts
 
 if __name__ == '__main__':
-    b = ["To ensure continuous reduction in water consumption, rules have been implemented for procurement, building utility replacements and new developments, thus allowing for long- term refinement.", "We have committed to using 100% renewable electricity by mid-2020.","We have committed to using 100% renewable electricity by 2020.", "This will reduce our firms GHG footprint by 75% compared with 2004 levels."]
+    b = ["A strategy that minimizes Scope 1 and 2 emissions will reduce exposure to power utilities who burn fossil fuels to generate electricity (Scope 1), but maintain or increase exposure to oil and gas producers, a sector where 80-90% of emissions are in Scope 3.", 
+    "To ensure continuous reduction in water consumption, rules have been implemented for procurement, building utility replacements and new developments, thus allowing for long- term refinement.", "We have committed to using 100% renewable electricity by mid-2020.",
+    "We have committed to using 100% renewable electricity by 2020.",
+    "This will reduce our firms GHG footprint by 75% compared with 2004 levels.",
+    "Consistent with BlackRocks goal to double offerings of sustainable ETFs (to 150), iShares launched over 45 new sustainable ETFs across the US, Europe, and Canada in 2020.",
+    ]
     df = pd.DataFrame(b, columns = ['sentence'])
     print(rule_mining_pipeline(df))
