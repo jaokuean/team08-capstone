@@ -27,8 +27,9 @@ As there are additional files that are too big to upload to github, but are nece
 
 Note : If you did not clone this repository but used the folder from our drive to obtain our codes and data, you can skip steps 1,2 and 3.
 
-When done, activate nus08_env via **conda activate nus08_env** and run this in the new terminal window to start the API connection with BERT-as-service. 
+When done, activate the nus08_env and run this in the new terminal window to start the API connection with BERT-as-service. 
 ```bash 
+conda activate nus08_env
 bash shell_scripts/start_bert.sh
 ```
 
