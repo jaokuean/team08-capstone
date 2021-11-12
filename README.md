@@ -10,9 +10,23 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
+<<<<<<< Updated upstream
 This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. Upon cloning this repository into your local machine, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
 ```bash 
 bash shell_scripts/requirements.sh
+=======
+<<<<<<< Updated upstream
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. Upon cloning this repository into your local machine, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
+```bash 
+bash shell_scripts/requirements.sh
+=======
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source pacakges that have to be installed for the code to run. Upon cloning this repository into your local machine, run the following command to create a conda environment and install most of the relevant packages.
+```bash
+conda create -n newenv python=3.7.6
+conda activate newenv
+while read requirement; do conda install --yes -c conda-forge -c pytorch -c anaconda -c ralexx $requirement || pip install $requirement; done < requirements.txt
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 ```
 
 As there are additional files that are too big to upload to github, but are necessary to run the pipeline, you will also need to do the following steps:
@@ -28,7 +42,15 @@ When done, activate nus08_env via conda activate nus08_env and run this in the n
 bash shell_scripts/start_bert.sh
 ```
 
+<<<<<<< Updated upstream
 To run our dashboard which will access our entire information extraction pipeline, open another terminal, activate the same environment as above and run the following in the root directory:
+=======
+<<<<<<< Updated upstream
+To run our dashboard which will access our entire information extraction pipeline, open another terminal, activate the same environment as above and run the following in the root directory:
+=======
+To run our dashboard which will access our entire information extraction pipeline, open another terminal and activate the same environment as above and run the following in the root directory:
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 ```bash
 python app.py
 ````
@@ -44,22 +66,57 @@ The following table contains a brief description of the files and folders in thi
 | - | - |
 | **main.py** | Main file for running the entire project pipeline for a new report URL. |
 | **app.py** | Main file for running dashboard which also runs the main.py if a new report URL is uploaded. |
+<<<<<<< Updated upstream
 | **shell_scripts** | This folder contains 2 shell scripts. requirements.sh is used to install the required project dependencies and start_bert.sh is used to initialise the connection with the BERT-as-service API |
 | **requirements.txt** | This contains all the package and version requirements for our project. It has been modified to support both conda install and pip install as some of our packages cannot be found on conda channels |
+=======
+<<<<<<< Updated upstream
+| **shell_scripts** | This folder contains 2 shell scripts. requirements.sh is used to install the required project dependencies and start_bert.sh is used to initialise the connection with the BERT-as-service API |
+| **requirements.txt** | This contains all the package and version requirements for our project. It has been modified to support both conda install and pip install as some of our packages cannot be found on conda channels |
+=======
+| **requirements.sh** | KIV |
+| **requirements.txt** | KIV |
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 | **chart_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of chart pipeline and python script that will run the chart extraction pipeline |
 | **combining_data** | Folder containing jupyter notebook that will combine all information extracted to create final database |
 | **relevance_prediction** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for relevance prediction and python script that will run the the relevance prediction portion of the text extraction pipeline  | 
 | **sentiment_analysis** | Folder containing jupyter notebook that is used for internal analysis and code development of VADER to conduct sentiment analysis and python script that will run the the sentiment analysis portion of the text extraction pipeline  |
+<<<<<<< Updated upstream
 | **table_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of table pipeline, python script that will run the table extraction pipeline, yaml files and our modified Multi_Type_TD_TSR package that is required for the table extraction pipeline code to run |
 | **text_classification** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for text classification and python script that will run the the text classification portion of the text extraction pipeline  | 
 | **text_filtering** | Folder containing jupyter notebook that is used for internal analysis and code development of data collection, page and sentence filtering for subsequent tasks and python script that will run the data collection, page and sentence filtering pipeline  | 
 | **word_cloud** | Folder containing jupyter notebook that is used for internal analysis and code development of word clouds and python script that will run the word cloud generation portion of the text extraction pipeline |
+=======
+<<<<<<< Updated upstream
+| **table_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of table pipeline, python script that will run the table extraction pipeline, yaml files and our modified Multi_Type_TD_TSR package that is required for the table extraction pipeline code to run |
+| **text_classification** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for text classification and python script that will run the the text classification portion of the text extraction pipeline  | 
+| **text_filtering** | Folder containing jupyter notebook that is used for internal analysis and code development of data collection, page and sentence filtering for subsequent tasks and python script that will run the data collection, page and sentence filtering pipeline  | 
+| **word_cloud** | Folder containing jupyter notebook that is used for internal analysis and code development of word clouds and python script that will run the word cloud generation portion of the text extraction pipeline |
+=======
+| **table_extraction** | Folder containing jupyter notebook that is used for internal analysis and code development of table pipeline, python script that will run the table extraction pipeline, yaml files and our modified Multi_Type_TD_TSR package that is required for the table extraction pipeline code to run. |
+| **text_classification** | Folder containing jupyter notebook that is used for internal analysis and code development of machine learning models for text classification and python script that will run the the text classification portion of the text extraction pipeline  | 
+| **text_filtering** | Folder containing jupyter notebook that is used for internal analysis and code development of data collection, page and sentence filtering for subsequent tasks and python script that will run the data collection, page and sentence filtering pipeline  | 
+| **word_cloud** | Python script that will run the word cloud generation portion of the text extraction pipeline |
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 ## Data
 The following table contains a brief description of the files and folders our the data folders.
 | Folder | Description |
 | - | - |
+<<<<<<< Updated upstream
 | **assets** | Main data folder for data used in the dashboard. It contains the stylesheet, images and database used for the dashboard |
 | **data** | Main data folder for data used during internal analysis and development. Main folders required for final pipeline to run includes **saved_models** and **new_report** folders. **saved_models** folder contains trained models required for the text extraction pipeline. **new_report** folder contains 3 empty folders namely: "ChartExtraction_Output", "wordcloud_images" and "table_images". This folder is used as an intermediate folder when a new report URL is uploaded. The information extracted from the new report after running through our whole pipeline will then be moved from the new_report folder to the main database in the assets/dashboard_data folder. |
+=======
+<<<<<<< Updated upstream
+| **assets** | Main data folder for data used in the dashboard. It contains the stylesheet, images and database used for the dashboard |
+| **data** | Main data folder for data used during internal analysis and development. Main folders required for final pipeline to run includes **saved_models** and **new_report** folders. **saved_models** folder contains trained models required for the text extraction pipeline. **new_report** folder contains 3 empty folders namely: "ChartExtraction_Output", "wordcloud_images" and "table_images". This folder is used as an intermediate folder when a new report URL is uploaded. The information extracted from the new report after running through our whole pipeline will then be moved from the new_report folder to the main database in the assets/dashboard_data folder. |
+=======
+| **assets** | Main data folder for data used in the dashboard. It conatins the stylesheet, images and database used for the dashboard. |
+| **data** | Main data folder for data used during internal analysis and development. Main folders required for final pipeline to run includes **saved_models** and **new_report** folders. **saved_models** folder contains trained models required for the text extraction pipeline. **new_report** folder contains 3 empty folders namely: "ChartExtraction_Output", "wordcloud_images" and "table_images". This folder is used as an intermediate folder when a new report URL is uploaded. The information extracted from the new report after running through our whole pipeline will then be moved from the new_report folder to the main database in the assets/dashboard_data folder. |
+
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 
 ## Application Demo

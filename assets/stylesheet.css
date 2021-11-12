@@ -92,7 +92,7 @@
     
     .section-header h6 {
         min-width: 100px;
-        max-width: 450px;
+        max-width: 550px;
         height: 38px;
         background-color: #F5F8FB;
         border-right: 3px solid #CCCCCC;
@@ -281,6 +281,8 @@
         border-style: none;
     }
     
+    .upload-right-button {}
+    
     .upload-right-button:hover {
         margin-top: 20px;
         border-radius: 5px;
@@ -299,6 +301,12 @@
         grid-auto-rows: auto;
         grid-gap: 0px;
         padding: 10px;
+    }
+    
+    .insights_left_content,
+    .insights_right_content {
+        height: 1100px;
+        overflow: auto;
     }
     
     .insights_right_content {
@@ -574,8 +582,6 @@
         margin-top: 10px;
         overflow: auto;
     }
-    
-    @media(max-width:1800px) {}
     
     @media(max-width:1300px) {
         .upload-main-container {
