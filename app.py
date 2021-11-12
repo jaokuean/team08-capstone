@@ -1,40 +1,33 @@
 # Latest
 # # Data handling prerequisite
+import re
+import pickle5 as pickle
+import json
+import requests
+import datetime
+import os
+from nltk.corpus import stopwords
+import matplotlib.colors as mcolors
+from matplotlib import pyplot as plt
+from main import *
+from flask import request
+from dash.exceptions import PreventUpdate
+from wordcloud import WordCloud, STOPWORDS
+from dash import dash_table
+import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output, State, MATCH, ALL, ALLSMALLER
+from dash import html
+from dash import dcc
+import dash
 import pandas as pd
-import plotly.express as px
 from collections import OrderedDict
 import base64
 from io import BytesIO
-from matplotlib import pyplot as plt
-import matplotlib.colors as mcolors
-from nltk.corpus import stopwords
-import os
-import datetime
-import requests
-import json
-import pickle5 as pickle
-import re
+import matplotlib
+matplotlib.use('Agg')
 
 # Dash prerequisites
-import dash
-from dash import dcc
-from dash import html
-from dash.dependencies import Input, Output, State, MATCH, ALL, ALLSMALLER
 # import dash_trich_components as dtc
-import dash_bootstrap_components as dbc
-from dash import dash_table
-from wordcloud import WordCloud, STOPWORDS
-from dash.exceptions import PreventUpdate
-from flask import request
-
-# Extract each pdf page to image
-from pdf2image import convert_from_path, convert_from_bytes
-from pdf2image.exceptions import (
-    PDFInfoNotInstalledError,
-    PDFPageCountError,
-    PDFSyntaxError
-)
-
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app.title = 'NatWest Dashboard'
@@ -100,7 +93,7 @@ def find_report_dict():
 def readData(file_path):
     with open(file_path, 'r') as file:
         data = json.load(file)
-    print(f"==> Retrieved DATABASE: {data[0]['company']}{data[0]['year']}")
+    print(f"==> Retrieved DATABASE JSON: {len(data)} records found")
     return data
 
 
@@ -108,7 +101,7 @@ def readPickle(file_path):
     with open(file_path, 'rb') as f:
         data = pickle.load(f)
     print(
-        f"==> Retrieved TABLE PICKLEs: {data[0]['company']}{data[0]['year']}")
+        f"==> Retrieved TABLE PICKLEs: {len(data)} records found")
     return data
 
 
@@ -147,11 +140,11 @@ def processText(data):
 
 # Process all database for running dashboard
 # 1. loading pickle files
-loaded_tbl_all = readPickle('assets/data/tbl_ALL.pickle')
+loaded_tbl_all = readPickle('assets/data/dashboard_data/tbl_ALL.pickle')
 
 # 2. loading json files
 # json_input = readData('assets/data/BlackRock2020.json')
-json_input = readData('assets/data/final_database.json')
+json_input = readData('assets/data/dashboard_data/final_database.json')
 
 json_input = processText(json_input)
 # 3. Append filelist for directory
@@ -251,7 +244,7 @@ def validateInputs(inputUrl, inputCompany, inputYear):
 def findCompanies(input_value):
     newlist = []
     for company in files:
-        if(input_value in company['company'].lower()):
+        if(input_value.lower() in company['company'].lower()):
             newlist.append(company)
     return newlist
 
@@ -262,8 +255,13 @@ def generateFilelist(input_value):
     if(query_found == 0):
         return html.H4("No Search Results")
 
+    total_report = 0
+    for company in query_files:
+        total_report = total_report + len(company['reports'])
+
     file_directory = [
-        html.H4(str(query_found) + " Found"),
+        html.H4(str(query_found) + " Companies Found"),
+        html.H4(str(total_report) + " Reports Found"),
         html.Div(
             children=[
                 html.Ul(
@@ -290,26 +288,17 @@ def generateFilelist(input_value):
     ]
     return file_directory
 
-# TODO: PIPELINE CODE HERE
 
-
-def extract_info(pdf_url, pages, path):
+def run_extraction_pipeline(pdf_url, report_company, report_year):
     try:
-        response = requests.get(pdf_url, timeout=30)
-    except:
-        print("Requests failed.")
-        return "nan"
-    i = 1
-    image_path_obj = {}
-
-    images = convert_from_bytes(response.content)
-    for i, image in enumerate(images):
-        if i not in pages:
-            continue
-        print(f"==> Convert page {i} of pdf to image...")
-        image.save(f"{path}/{str(i)}.png")
-        image_path_obj[str(i)] = path + "/" + str(i) + ".png"
-    return image_path_obj
+        new_url_run(pdf_url, report_company, str(
+            report_year), downloaded=False)
+        print("===> COMBINED PIPELINE SUCCESS!")
+        return True
+    except Exception as e:
+        print("==> COMBINED PIPELINE FAILED")
+        print(e)
+        return False
 
 
 def process_pdf_url(inputUrl, inputCompany, inputYear):
@@ -367,7 +356,7 @@ left_content = html.Div(
             [
                 dbc.NavItem(
                     dbc.NavLink(
-                        [icon_db, html.Span("Dashboard")], href="/dashboard", className="nav-Link")
+                        [icon_upload,  html.Span("Library")], href="/upload", className="nav-Link")
                 ),
                 dbc.NavItem(
                     dbc.NavLink(
@@ -375,8 +364,10 @@ left_content = html.Div(
                 ),
                 dbc.NavItem(
                     dbc.NavLink(
-                        [icon_upload,  html.Span("Library")], href="/upload", className="nav-Link")
+                        [icon_db, html.Span("Dashboard")], href="/dashboard", className="nav-Link")
                 ),
+
+
                 dbc.NavItem(
                     dbc.NavLink(
                         [icon_doc,  html.Span("GitHub")], href="https://github.com/jaokuean/team08-capstone/", className="doc-nav-Link")
@@ -617,11 +608,14 @@ def getChartKeywords(company, year, pagenumber, index):
     # print(f"==> KEYWORDS FOUND : {keywords_list}")
     return keywords_list
 
-
 # For getting chart images
+
+
 def changeFilepath(imgpath):
+    path = imgpath
     # print(imgpath)
-    path = imgpath.replace("dashboard", "dashboard_data")
+    if("dashboard_data" not in imgpath):
+        path = imgpath.replace("dashboard", "dashboard_data")
     return path
 
 
@@ -687,8 +681,6 @@ def generate_df_cards():
     dropdown_vals = ['All', ]
 
     # gather keywords
-    print(f"entered: {report_obj['table_keywords']}")
-    print(f"entered2: {report_obj}")
     if(report_obj['table_keywords'] == "nan"):
         pass
     else:
@@ -792,14 +784,7 @@ def generate_insight(report_name, card_list):
         children=[
             html.H5("Decarbonisation-Related Chart and Figures"),
             html.H6(str(len(card_list))+" Images Found"),
-            dcc.Dropdown(
-                id='filter-dropdown-pd',
-                options=[
-                    {
-                        'label': kw, 'value': kw
-                    } for kw in dropdown_vals
-                ], value='All'
-            ),
+
             html.Div(
                 className="insights-grid",
                 children=[
@@ -846,14 +831,6 @@ def generate_insight(report_name, card_list):
         children=[
             html.H5("Decarbonisation-Related Tables"),
             html.H6(str(len(df_cards))+" Tables Found"),
-            dcc.Dropdown(
-                id='filter-dropdown-pd',
-                options=[
-                    {
-                        'label': kw, 'value': kw
-                    } for kw in dropdown_vals
-                ], value='All'
-            )
         ] + df_cards_full
     )
 
@@ -903,23 +880,6 @@ upload_content = html.Div(
         html.Div(
             className="upload-right-container",
             children=[
-                html.H5(
-                    className="upload-sub-header-top",
-                    children=["Upload a PDF file"]
-                ),
-                dcc.Upload(
-                    id="upload-pdf",
-                    className="file-selection-box",
-                    children=[
-                        'Drag and Drop or ',
-                        html.A('Select a File')
-                    ]
-                ),
-                html.H4(
-                    className="upload-sub-divider",
-                    children=["OR"],
-                    style={'text-align': 'center'}
-                ),
                 html.H5(
                     className="upload-sub-header-top",
                     children=["Paste URL of PDF report"]
@@ -1009,10 +969,6 @@ right_content = html.Div(
     id="page-content"
 )
 
-# Landing page when user first enter
-index = html.Div(
-    dcc.Link('upload', refresh=True, href='/upload')
-)
 
 app.layout = html.Div(
     className='content', children=[
@@ -1026,8 +982,10 @@ app.layout = html.Div(
 
 @ app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def render_page_content(pathname):
+    print(f"USER ON: |{pathname}|")
     if pathname == "/":
-        return index
+        print(f"USER ON: |INDEX|")
+        return upload_fn
     # DASHBOARD
     elif pathname == "/dashboard":
         return dcc.Location(pathname="/dashboard/"+getCurrReport(), id="url")
@@ -1062,6 +1020,7 @@ def render_page_content(pathname):
         return default_page
     # UPLOAD/LIBRARY
     elif pathname == "/upload":
+        print(f"USER ON: |UPLOAD|")
         return upload_fn
     # If the user tries to reach a different page, return a 404 message
     return dbc.Jumbotron(
@@ -1161,17 +1120,27 @@ def input_render(n_clicks, inputUrl, inputCompany, inputYear):
     if (n_clicks > 0) and ((inputUrl is None) or (inputCompany is None) or (inputYear is None)):
         return [html.Ol(className="err-list-ol", children=["- Please enter all fields"])]
 
-    print(f"==> Validation Triggered {inputUrl}| {inputCompany}| {inputYear}")
     err_message_list = validateInputs(inputUrl, inputCompany, inputYear)
-    print("==> Validation Complete ")
-
     if(err_message_list == []):
         try:
             new_url, new_company, new_year = inputUrl, inputCompany, inputYear
             print("====> NEW REPORT TO ADD: ")
-            print(new_url, new_company, new_year)
+            print(f"{new_url}|{new_company}| {new_year}")
             filetoappend = f"{new_company}_{new_year}.pdf"
-            return dcc.Location(pathname="/insights/"+filetoappend, id="url")
+            if(run_extraction_pipeline(new_url, new_company, new_year) == True):
+                global loaded_tbl_all
+                global json_input
+                global files
+                loaded_tbl_all = readPickle(
+                    'assets/data/dashboard_data/tbl_ALL.pickle')
+                json_input = readData(
+                    'assets/data/dashboard_data/final_database.json')
+                json_input = processText(json_input)
+                files = uploaded_files()  # For all files dir
+                return dcc.Location(pathname="/insights/"+filetoappend, id="url")
+            else:
+                return [html.Ol(className="err-list-ol", children=["- URL link cannot be processed."])]
+
         except Exception as e:
             print(e)
             return [html.Ol(className="err-list-ol", children=["- URL link cannot be processed."])]
@@ -1192,87 +1161,6 @@ def update_output(input_value):
     return updateList
 
     # Callback for filtering of lst of pandas tables
-
-
-@ app.callback(
-    Output('insights_cleaned_tables', 'children'),
-    [Input('filter-dropdown-pd', 'value')])
-def display_filtered_pd_table(state):
-    df_cards, dropdown_vals = generate_df_cards()
-    df_cards_full = [
-        dbc.Card(
-            className="insights-cards",
-            children=[
-                dbc.CardBody(
-                    [
-                        dash_table.DataTable(
-                            id='cleaned-tables-container',
-                            columns=df['df_cols'],
-                            data=df['df'],
-                            style_data={
-                                'whiteSpace': 'normal',
-                                'height': 'auto',
-                                'lineHeight': '25px',
-                            },
-                            style_header={
-                                'backgroundColor': '#7D55C7',
-                                'color': 'white'
-                            },
-                            style_cell={
-                                'fontSize': 14,
-                                'padding': '10px',
-                                'font-family': 'Helvetica',
-                                'overflow': 'hidden'
-                            },
-                        ),
-                        html.H4(
-                            "Retrieved from Page " + df['pageNum'],
-                            className="insights-card-title"
-                        ),
-                        html.P(
-                            className="insights-card-footer",
-                            children=[
-                                html.Span(
-                                    children=[
-                                        word,
-                                    ]
-                                ) for word in df['keywords']
-                            ]
-                        ),
-                    ]
-                ),
-            ]
-        ) for df in df_cards
-    ]
-
-    unfiltered_df = [
-        html.H5("Decarbonisation-Related Tables"),
-        html.H6(str(len(df_cards))+" Tables Found"),
-        dcc.Dropdown(
-            id='filter-dropdown-pd',
-            options=[
-                {
-                    'label': kw,
-                    'value': kw
-                } for kw in dropdown_vals
-            ], value=state
-        )
-    ] + df_cards_full
-
-    if state == 'All':
-        return unfiltered_df
-    else:
-        idxs = []
-        for idx, tbl in enumerate(df_cards):
-            if state in tbl['keywords']:
-                idxs.append(idx+2)
-
-    filtered_df = unfiltered_df[0:2]
-    for i in idxs:
-
-        filtered_df.append(unfiltered_df[i])
-
-    return filtered_df
 
 # Callback for filtering of carbon class
 # 36 and 3rd last
@@ -1296,3 +1184,6 @@ def display_table(state):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
+
+
+# cat final_database.json | python -m json.tool > finaldb.json

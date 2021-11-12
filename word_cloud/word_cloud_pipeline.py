@@ -3,6 +3,25 @@ from .utils import *
 import os
 
 def word_cloud_pipeline(sentence, pred_class, company, year):
+    """
+    Main word cloud function to generate word cloud by carbon class.
+
+    Parameters
+    ----------
+    sentence : list of str
+        List of sentences predicted as relevant.
+    pred_class : list of str
+        List of carbon classes predicted for each sentence.
+    company : str
+        Name of company.
+    year : str
+        Year of reporting.
+
+    Return
+    ------
+    wordcloud_img_path : list of str
+        List of 4 word cloud image paths for each of the 4 carbon classes.
+    """  
     # create a list to store 4 wordcloud image paths for 4 classes
     wordcloud_img_path = []
 

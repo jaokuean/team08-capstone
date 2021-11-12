@@ -10,10 +10,14 @@ Our project pipeline is as follows:
 
 
 ## Getting Started
-This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. Upon cloning this repository into your local machine, run the following command within the root directory to create a conda environment and install all the relevant packages. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. For simplicity, we have set the conda environment within the shell script as nus08_env.
-```bash 
-bash shell_scripts/requirements.sh
+This project uses Python 3.7.6, Jupyter Notebooks, Python Scripts and other open source packages that have to be installed for the code to run. The operating system will be a MacOS machine with intel processor chips. You can either clone this repository into your local machine or download all our codes and data from [our drive](https://drive.google.com/drive/folders/1ce9L5dHZXrWLzpRNf3iq6cdK5KU_QF0a?usp=sharing) into a single zip folder. Upon doing so, run the following commands within the root directory. 
+
+```bash
+conda create -n nus08_env python=3.7.6
+conda activate nus08_env
+while read requirement; do conda install -n nus08_env --y -q -c conda-forge -c pytorch -c anaconda -c ralexx $requirement || pip install $requirement; done < requirements.txt
 ```
+This will create a conda environment named **nus08_env** and install all the relevant packages required for this project. This step will take some time as a hybrid requirements file incorporating conda and pip installs had to be generated for our unique dependency requirements. 
 
 As there are additional files that are too big to upload to github, but are necessary to run the pipeline, you will also need to do the following steps:
 1. Place the **data** and **assets** folder in the root folder
@@ -21,9 +25,9 @@ As there are additional files that are too big to upload to github, but are nece
 3. unzip the bert model "bert_model.zip" and place it inside the root folder
 4. Edit the build.py file in the detectron2 package by substiuting "cfg.MODEL.DEVICE" to "cpu" in the codeline that starts with "model.to()". Skip this step if you are able to access GPU on your machine. The file is located at a path similar to this ~./opt/anaconda3/envs/env_name/lib/python3.7/site-packages/detectron2/modelling/meta_arch/build.py
 
-Note : If you did not clone this repository but used the zip file specified in our report in obtain our codes and data, you can skip steps 1,2 and 3.
+Note : If you did not clone this repository but used the folder from our drive to obtain our codes and data, you can skip steps 1,2 and 3.
 
-When done, activate nus08_env via conda activate nus08_env and run this in the new terminal window to start the API connection with BERT-as-service. 
+When done, activate nus08_env via **conda activate nus08_env** and run this in the new terminal window to start the API connection with BERT-as-service. 
 ```bash 
 bash shell_scripts/start_bert.sh
 ```
@@ -64,9 +68,9 @@ The following table contains a brief description of the files and folders our th
 
 ## Application Demo
 On our dashboard, users can search for a company name to obtain the relevant information extracted from a specific report, displayed on the dashboard. However if the desired report does not exist in our current database, users can upload a URL to the PDF or upload a PDF from their local directory. This new report will run through our pipeline, relevant information will extracted and displayed on the dashbaord, it will also be appended to our database for future use.
-![burpple_plus_demo.gif](assets/burpple_plus_demo.gif) CHANGE
+You can access a video of our dashboard demo here : https://youtu.be/VApBSNr_FFg
 
-## Built With (help with this)
+## Built With
 - [plotly | dash](https://dash.plotly.com/)
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [Natural Language Toolkit](https://www.nltk.org/)
