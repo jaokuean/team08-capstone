@@ -322,7 +322,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
     all_text_output_path = text_except_relevance(text_output_path)
     
    
-      # table extraction
+    # table extraction
     table_output_path, table_output_pickle_path = table_pipeline(report_output_file_path)
     
     # chart detection 
@@ -348,7 +348,7 @@ def new_url_run(report_url,report_company,report_year,downloaded=False):
 
 
 
-# test functiona call
+# test functions call
 
 if __name__ == "__main__":
     report_urls = ["https://www.cppinvestments.com/wp-content/uploads/2019/10/CPPIB_SI_Report_ENG.pdf",
