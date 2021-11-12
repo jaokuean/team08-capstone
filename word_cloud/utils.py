@@ -21,12 +21,45 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 
 def sent_to_words(sentences):
+    """
+    Tokenize sentences to words and lowercase.
+
+    Parameters
+    ----------
+    sentences : list of str
+        List of sentences.
+
+    Yield
+    ------
+    sent : list of str
+        List of tokens.
+    """ 
     for sent in sentences:
         sent = gensim.utils.simple_preprocess(str(sent), deacc=True) 
         yield(sent)
 
 def process_words(texts, bigram_mod, trigram_mod, stop_words=stop_words, allowed_postags=['NOUN', 'ADJ', 'VERB']):
-    """Remove Stopwords, Form Bigrams, Trigrams and Lemmatization"""
+    """
+    Remove stopwords, form Bigrams, Trigrams and lemmatization
+    
+    Parameters
+    ----------
+    texts : list of str
+        List of sentences.
+    bigram_mod : obj
+        Bigram model constructed.
+    trigram_mod : obj
+        Trigram model constructed.
+    stop_words : list of str
+        List of stop words.
+    allowed_postags : list of str
+        List of allowed postags.
+
+    Return
+    ------
+    texts_out : list of list of str
+        List of list of preprocessed words.
+    """
     texts = [[word for word in simple_preprocess(str(doc)) if word not in stop_words] for doc in texts]
     texts = [bigram_mod[doc] for doc in texts]
     texts = [trigram_mod[bigram_mod[doc]] for doc in texts]
@@ -40,7 +73,19 @@ def process_words(texts, bigram_mod, trigram_mod, stop_words=stop_words, allowed
     return texts_out
 
 def prepare_data(data):
-    
+    """
+    Process text data.
+
+    Parameters
+    ----------
+    data : list of str
+        List of sentences.
+
+    Return
+    ------
+    data_processed : list of list of str
+        List of list of processed words.
+    """ 
     data_words = list(sent_to_words(data))
 
     # Build the bigram and trigram models
@@ -54,6 +99,18 @@ def prepare_data(data):
     return data_processed
 
 def generate_wordcloud(data, path, carbon_class):
+    """
+    Generate wordcloud based on process texts.
+
+    Parameters
+    ----------
+    data : list of list of str
+        List of list of processed words.
+    path : str
+        Image path of wordcloud to be saved in.
+    carbon_class : str
+        One of the 4 carbon classes.
+    """ 
     cols = [color for name, color in mcolors.TABLEAU_COLORS.items()]
     
     if carbon_class == 'Carbon Emissions':
