@@ -304,10 +304,10 @@ def generate_extracted_text(tokens, pos_list, j, k):
         if tokens[tk_ind].text not in PUNC:
             extracted_text += ' '
         if tk_ind == j:
-            extracted_text += '**'
-        if tk_ind == k:
-            extracted_text += '**'
+            extracted_text += ' **'
         extracted_text += tokens[tk_ind].text  
+        if tk_ind == k:
+            extracted_text += '** '
     return extracted_text.strip()
 
 # case where we need to bold numbers only
@@ -336,5 +336,5 @@ def format_extracted_text_toolong(org_sentence):
         if pattern.match(tk.text) or tk.pos_ != 'NUM': 
             extracted_text += tk.text
         else:
-            extracted_text += '**' + tk.text + '**'
+            extracted_text += '**' + tk.text + '** '
     return extracted_text.strip()
