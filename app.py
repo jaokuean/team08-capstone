@@ -1,5 +1,15 @@
-# Latest
-# # Data handling prerequisite
+# Dash components
+from flask import request
+import dash
+from dash.exceptions import PreventUpdate
+from wordcloud import WordCloud, STOPWORDS
+from dash import dash_table
+import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output, State, MATCH, ALL, ALLSMALLER
+from dash import html
+from dash import dcc
+
+# Data handling prerequisite
 import re
 import pickle5 as pickle
 import json
@@ -10,15 +20,6 @@ from nltk.corpus import stopwords
 import matplotlib.colors as mcolors
 from matplotlib import pyplot as plt
 from main import *
-from flask import request
-from dash.exceptions import PreventUpdate
-from wordcloud import WordCloud, STOPWORDS
-from dash import dash_table
-import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output, State, MATCH, ALL, ALLSMALLER
-from dash import html
-from dash import dcc
-import dash
 import pandas as pd
 from collections import OrderedDict
 import base64
@@ -26,32 +27,62 @@ from io import BytesIO
 import matplotlib
 matplotlib.use('Agg')
 
-# Dash prerequisites
-# import dash_trich_components as dtc
-
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app.title = 'NatWest Dashboard'
 
-# ========================= Methods ===========================
-
+# ========================= ALL METHODS FOR DASHBOARD ===========================
 report_selected = "/"
 report_obj = {}
 
 
-def file_download_link(company, report_year):
-    """Create a Plotly Dash 'A' element that downloads a file from the app."""
+def generate_file_links(company, report_year):
+    """
+    Generate a html <a> link for each report in the database.
+
+    Parameters
+    ----------
+    company: str
+        Company Report Name.
+    report_year: str
+        Year of report.
+
+    Return
+    ------
+    Html component <a>  for each report.
+    """
     filename = company + "_" + str(report_year)
-    #print("file generated: === > " + filename)
     link = "/insights/" + filename
     return html.A(id="selected-report", children=[filename], href=link)
 
 
-def getCurrentYear():
+def getDropdownYears():
+    """
+    Get valid years for input in library page.
+
+    Parameters
+    ----------
+
+    Return
+    ------
+    list of int
+        List of years input for dropdown plus two years ahead.
+    """
     now = datetime.datetime.now()
     return now.year + 2
 
 
-def uploaded_files():
+def generate_reports():
+    """
+    Generate a list of reports with object data retrieved from the final_database.json file stored in json_input.
+
+    Parameters
+    ----------
+
+    Return
+    ------
+    files : list of str
+        List of sorted reports grouped by company name and years.
+    """
     files = []
     all_company = []
     for obj in json_input:
@@ -77,37 +108,69 @@ def uploaded_files():
                 folder['reports'].append(year)
                 folder['reports'].sort(reverse=True)
                 break
-                # print("ERROR IN READING UNIQUE FOLDERS")
     files.sort(key=lambda x: x["company"])
 
     return files
 
 
-def find_report_dict():
-    for obj in json_input:
-        if obj['company'] == getCurrReport().replace(".pdf", "") and obj['year'] == "2020":  # to change year to a fn
-            return obj
-    return None
-
-
 def readData(file_path):
+    """
+    Read json file with all data extraction pipeline.
+
+    Parameters
+    ----------
+    file_path: str
+        Image path to json file.
+
+    Return
+    ------
+    data : dict of {str : str or dict}
+        Dictionary containing company's report details, preprocessed text and table/chart pipeline output.
+    """
     with open(file_path, 'r') as file:
         data = json.load(file)
-    print(f"==> Retrieved DATABASE JSON: {len(data)} records found")
+
+    # Check if json is loaded properly
+    print(f"==> Retrieved DATABASE JSON FILE: {len(data)} records found!")
     return data
 
 
 def readPickle(file_path):
+    """
+    Read pickle file for cleaned table dataframes from table extraction pipeline.
+
+    Parameters
+    ----------
+    file_path: str
+        Image path to pickle file.
+
+    Return
+    ------
+    data : dict of {str : str or dict}
+        Dictionary containing table pipeline output.
+    """
     with open(file_path, 'rb') as f:
         data = pickle.load(f)
     print(
-        f"==> Retrieved TABLE PICKLEs: {len(data)} records found")
+        f"==> Retrieved TABLE PICKLE DATA: {len(data)} records found1")
     return data
 
 
 def processMinedText(list):
+    """
+    Method to process every relevant sentences extracted mined text and ensure that bold markdown works correctly by adjusting "**" in between a set of relevant sentences.
+
+    Parameters
+    ----------
+    list: list of str
+        List of mined text from database json file.
+
+    Return
+    ------
+    newlist : list of str
+        List of mined text with correct markdowns.
+    """
     newlist = []
-    counter = 0
     for item in list:
         try:
             results = re.search('\*(.*)\*', item)
@@ -128,6 +191,19 @@ def processMinedText(list):
 
 
 def processText(data):
+    """
+    Method to process each report object for to ensure correct formatting.
+
+    Parameters
+    ----------
+    data: dict of {str : str or dict}
+        List of releveant sentences from database json file
+
+    Return
+    ------
+    processedData : dict of {str : str or dict}
+        Dictionary containing formatted company's report details, preprocessed text and table pipeline output.
+    """
     processedData = []
     for obj in data:
         currObj = obj
@@ -138,30 +214,36 @@ def processText(data):
     return processedData
 
 
-# Process all database for running dashboard
-# 1. loading pickle files
-loaded_tbl_all = readPickle('assets/data/dashboard_data/tbl_ALL.pickle')
-
-# 2. loading json files
-# json_input = readData('assets/data/BlackRock2020.json')
-json_input = readData('assets/data/dashboard_data/final_database.json')
-
-json_input = processText(json_input)
-# 3. Append filelist for directory
-files = uploaded_files()  # For all files dir
-
-
 def getCurrReport():
-    print(f"GET: ===> {report_selected}")
+    """
+    Get the current report that user has selected from library page.
+
+    Parameters
+    ----------
+
+    Return
+    ------
+    report_selected : str
+        File name of report (<COMPANY>_<YEAR>.pdf)
+    """
+    print(f"CURRENT REPORT: ===> {report_selected}")
     return report_selected
 
 
-def getCurrReportObj():
-    print(f"GET OBJECt: ===> {report_selected}")
-    return report_obj
+def generate_relevance_cat(list):
+    """
+    Method to process each relevance_prob of each extracted sentences for each report and convert them to high, med and low for viewing in the dashboard.
 
+    Parameters
+    ----------
+    list: list of str
+        List of relevance probability of each relevant sentences.
 
-def getUpdatedList(list):
+    Return
+    ------
+    newlist : list of str
+        List of relevance probability of a relevant sentence extracted.
+    """
     newlist = []
     if(isinstance(list[0], float) == True):
         for x in list:
@@ -177,43 +259,75 @@ def getUpdatedList(list):
 
 
 def setCurrReport(report_name):
+    """
+    Method to collect selected report data from user in Library page.
+
+    Parameters
+    ----------
+    report_name: str
+        Report name selected by user.
+
+    Return
+    ------
+    """
     global report_selected
     global report_obj
 
-    # Process report name for retrival from database
+    # Process report name for retrival from database json file
     report_selected = report_name.replace("%20", " ")
     report_selected = report_selected.replace(".pdf", "")
     report_details = report_selected.split("_")
     company = report_details[0]
     year = report_details[1]
 
-    print(f"SET: ===> {report_selected} | {company} | {year}")
+    print(
+        f"USER SELECTED NEW REPORT: ===> {report_selected} | {company} | {year}")
     for obj in json_input:
-        # to change year to a fn
         if obj['company'] == company and obj['year'] == year:
             report_obj = obj
 
             if(report_obj['text_output']['relevance_prob'] == []):
                 break
             else:
-                report_obj['text_output']['relevance_prob'] = getUpdatedList(
+                report_obj['text_output']['relevance_prob'] = generate_relevance_cat(
                     report_obj['text_output']['relevance_prob'])
 
-    # Ai Fen: added pickle_input details
+    # Added pickle file details for clean tables dataframe to each report data object
     for obj in loaded_tbl_all:
         if obj['company'] == company and obj['year'] == year:
             report_obj['table_dfs'] = obj['tbl_pages']
 
-    # Ai Fen: added kw input details
+    # Added pickle file details for clean tables dataframe corresponding keywords to each report data object
     for obj in json_input:
         if obj['company'] == company and obj['year'] == year:
             report_obj['table_keywords'] = obj['table_keywords']
 
 
 def validateInputs(inputUrl, inputCompany, inputYear):
+    """
+    Method to validate users input. Each error message is returned when the conditions are met.
+    1. User did not enter any of the input fields.
+    2. User enter a pdf url link that already exist in our database.
+    3. User enter a company report name with the same year.
+
+    Parameters
+    ----------
+    inputUrl: str
+        Report url input by user.
+    inputCompany: str
+        Report company input by user.
+    inputYear: int
+        Report year input by user.
+
+    Return
+    ------
+    message_list : list of str
+        List of error messages based on user input.
+    """
     message_list = []
     print("==> Validation Starts:")
 
+    # Validation 1: Check if user entered respective fields
     if((inputUrl is None)):
         message_list.append("- Please enter a URL. ")
     if((inputCompany is None)):
@@ -227,12 +341,12 @@ def validateInputs(inputUrl, inputCompany, inputYear):
     company = str(inputCompany)
     year = str(inputYear)
 
-    # Validation 1: Check if link exist in json
+    # Validation 3: Check if link exist in json
     for obj in json_input:
         if(obj['url'] == pdf_url):
             message_list.append("- Report already exists ")
 
-    # Validation 2: Check if inputCompany exist in json
+    # Validation 4: Check if inputCompany exist in json
     for obj in json_input:
         if(obj['company'] == company and obj['year'] == year):
             message_list.append(
@@ -242,6 +356,19 @@ def validateInputs(inputUrl, inputCompany, inputYear):
 
 
 def findCompanies(input_value):
+    """
+    Method to search for a report based on search query.
+
+    Parameters
+    ----------
+    input_value: str
+        Search query input by user in search bar.
+
+    Return
+    ------
+    newlist : list of str
+        List of reports found by search query input.
+    """
     newlist = []
     for company in files:
         if(input_value.lower() in company['company'].lower()):
@@ -249,7 +376,20 @@ def findCompanies(input_value):
     return newlist
 
 
-def generateFilelist(input_value):
+def generateSearchFileList(input_value):
+    """
+    Method to generate components for directory after user input a search query.
+
+    Parameters
+    ----------
+    input_value: str
+        Search query input by user in search bar.
+
+    Return
+    ------
+    file_directory : list of dash components
+        List of dash components based on user search input value.
+    """
     query_files = findCompanies(input_value)
     query_found = len(query_files)
     if(query_found == 0):
@@ -274,7 +414,7 @@ def generateFilelist(input_value):
                                 children=[
                                     html.Li(
                                         children=[
-                                            file_download_link(
+                                            generate_file_links(
                                                 filename['company'], report)
                                         ]
                                     ) for report in filename['reports']
@@ -290,47 +430,47 @@ def generateFilelist(input_value):
 
 
 def run_extraction_pipeline(pdf_url, report_company, report_year):
+    """
+    Method to generate components for directory after user input a search query.
+
+    Parameters
+    ----------
+    pdf_url: str
+        Valid pdf url input by user in upload section.
+    report_company: str
+        Valid report name input by user in upload section.
+    report_year: int
+        Valid report year input by user in upload section.
+
+    Return
+    ------
+    bool
+        True if extraction pipeline run successfully else False.
+    """
     try:
         new_url_run(pdf_url, report_company, str(
             report_year), downloaded=False)
-        print("===> COMBINED PIPELINE SUCCESS!")
+        print("===> EXTRACTION PIPELINE SUCCESS!")
         return True
     except Exception as e:
-        print("==> COMBINED PIPELINE FAILED")
+        print("==> EXTRACTION PIPELINE FAILED!")
         print(e)
         return False
 
 
-def process_pdf_url(inputUrl, inputCompany, inputYear):
-    relevant_pages = [1, 2, 3, 4, 5]
-    company = str(inputCompany)
-    year = str(inputYear)
-    pdf_url = str(inputUrl)
+# ============================== DATABASE LOADING ==============================
+# Load data on start up
+# 1. Load pickle files
+loaded_tbl_all = readPickle('assets/data/dashboard_data/tbl_ALL.pickle')
 
-    json_obj = {}
-    json_obj['company'] = company
-    json_obj['year'] = year
-    json_obj['pdf_url'] = pdf_url
+# 2. Load json files
+json_input = readData('assets/data/dashboard_data/final_database.json')
+json_input = processText(json_input)
 
-    print(f"==> Trying process : {company}| {year}| {pdf_url}")
-    source = "output/"
-    if not os.path.exists(source):  # Check if file exist
-        os.mkdir(source)
+# 3. Append each report object in databse for directory list in library page
+files = generate_reports()
 
-    path = source + company + '_' + year
-
-    if not os.path.exists(path):
-        # file exists
-        os.mkdir(path)
-
-    json_obj['images_path'] = extract_info(pdf_url, relevant_pages, path)
-    print(f"==> Complete Extraction process")
-    json_input.append(json_obj)
-
-    return json_input
-
-
-# ========================= Sidebar ==============================
+# ============================== SIDEBAR MAIN CODES ==============================
 icon_db = html.Img(
     className="icon-nav-link",
     src=app.get_asset_url('icon-dashboard.png')
@@ -366,8 +506,6 @@ left_content = html.Div(
                     dbc.NavLink(
                         [icon_db, html.Span("Dashboard")], href="/dashboard", className="nav-Link")
                 ),
-
-
                 dbc.NavItem(
                     dbc.NavLink(
                         [icon_doc,  html.Span("GitHub")], href="https://github.com/jaokuean/team08-capstone/", className="doc-nav-Link")
@@ -378,18 +516,29 @@ left_content = html.Div(
         ),
     ],
 )
-# ========================= Main Pages ===========================
-# Dashboard Components
+
+# ============================== DASHBOARD MAIN CODES ==============================
 
 
 def generate_dashboard(report_name):
+    """
+    Method to generate dashboard components based on selected report in Library page.
+
+    Parameters
+    ----------
+    report_name: str
+        Company report name selected by user in the library page.
+
+    Return
+    ------
+    All dashboard dash components.
+    """
     dashboard_header = html.Div(
         className="section-header",
         children=[
             html.H6(id="report_name_id", children=[report_name])
-        ])
-######################################## DASHBOARD PAGE DONE ########################################################
-
+        ]
+    )
     dashboard_bar_chart = html.Div(
         className="section-dashboard_bar_chart",
         children=[
@@ -410,46 +559,59 @@ def generate_dashboard(report_name):
                     },
                 },
             )
-        ])
-
+        ]
+    )
     dashboard_wordcloud1 = html.Div(
         className="section-dashboard_wordcloud1",
         children=[
-            html.Img(src=app.get_asset_url(
-                report_obj["wordcloud_img_path"][0]))
-        ])
-
+            html.Img(
+                src=app.get_asset_url(
+                    report_obj["wordcloud_img_path"][0]
+                )
+            )
+        ]
+    )
     dashboard_wordcloud2 = html.Div(
         className="section-dashboard_wordcloud2",
         children=[
-            html.Img(src=app.get_asset_url(
-                report_obj["wordcloud_img_path"][1]))
-        ])
-
+            html.Img(
+                src=app.get_asset_url(
+                    report_obj["wordcloud_img_path"][1]
+                )
+            )
+        ]
+    )
     dashboard_wordcloud3 = html.Div(
         className="section-dashboard_wordcloud3",
         children=[
-            html.Img(src=app.get_asset_url(
-                report_obj["wordcloud_img_path"][2]))
-        ])
+            html.Img(
+                src=app.get_asset_url(
+                    report_obj["wordcloud_img_path"][2]
+                )
+            )
+        ]
+    )
 
     dashboard_wordcloud4 = html.Div(
         className="section-dashboard_wordcloud4",
         children=[
-            html.Img(src=app.get_asset_url(
-                report_obj["wordcloud_img_path"][3]))
-        ])
-
-    # TODO: Jermaine THIS PART DONE
+            html.Img(
+                src=app.get_asset_url(
+                    report_obj["wordcloud_img_path"][3]
+                )
+            )
+        ]
+    )
     dashboard_relevant_tables = html.Div(
         className="section-dashboard_relevant_tables",
         children=[
-            html.H6("Decarbonisation-Related Information",
-                    style={'display': 'inline-block'}),
+            html.H6(
+                "Decarbonisation-Related Information",
+                style={'display': 'inline-block'}
+            ),
             html.Div(
                 className="section-dashboard_filter_class",
                 children=[
-
                     html.H4(
                         "Select Carbon Category"
                     ),
@@ -544,7 +706,8 @@ def generate_dashboard(report_name):
                             'column_id': 'relevance_prob',
                         },
                         'color': 'red'
-                    }, {
+                    },
+                    {
                         'if': {
                             'filter_query': '{Sentence} eq ""',
                             'column_id': 'Sentence',
@@ -568,7 +731,6 @@ def generate_dashboard(report_name):
             dashboard_relevant_tables
         ]
     )
-
     dashboard = html.Div(
         className="section-main",
         children=[
@@ -576,15 +738,31 @@ def generate_dashboard(report_name):
             dashboard_content
         ]
     )
-
     return dashboard
 
-
-# Insights Components
+# ============================== INSIGHTS MAIN CODES ==============================
 
 
 def getTblKeywords(company, year, pagenumber, index):
-    # print(f"==> GETKEYWORDS : {pagenumber}|{index}")
+    """
+    Method to keyword list associated with each data table for each page of a report.
+
+    Parameters
+    ----------
+    company: str
+        Company report name.
+    year: int
+        Report year.
+    pagenumber: int
+        Page number of report.
+    index: int
+        Index for table extracted for each table.
+
+    Return
+    ------
+    keywords_list : list of str
+        List of keywords for each table index in each page.
+    """
     keywords_list = []
     for obj in json_input:
         if(obj['company'] == company and obj['year'] == year):
@@ -592,12 +770,29 @@ def getTblKeywords(company, year, pagenumber, index):
                 keywords_list = obj['table_image_keywords'][pagenumber][index]
             except:
                 keywords_list = keywords_list
-    # print(f"==> KEYWORDS FOUND : {keywords_list}")
     return keywords_list
 
 
 def getChartKeywords(company, year, pagenumber, index):
-    # print(f"==> GETKEYWORDS : {pagenumber}|{index}")
+    """
+    Method to keyword list associated with each chart for each page of a report.
+
+    Parameters
+    ----------
+    company: str
+        Company report name.
+    year: int
+        Report year.
+    pagenumber: int
+        Page number of report.
+    index: int
+        Index for table extracted for each table.
+
+    Return
+    ------
+    keywords_list : list of str
+        List of keywords for each chart index in each page.
+    """
     keywords_list = []
     for obj in json_input:
         if(obj['company'] == company and obj['year'] == year):
@@ -605,21 +800,43 @@ def getChartKeywords(company, year, pagenumber, index):
                 keywords_list = obj['chart_images_keywords'][pagenumber][index]
             except:
                 keywords_list = keywords_list
-    # print(f"==> KEYWORDS FOUND : {keywords_list}")
     return keywords_list
-
-# For getting chart images
 
 
 def changeFilepath(imgpath):
+    """
+    Method to change image file path due to wrong file path appened in chart extraction pipeline.
+
+    Parameters
+    ----------
+    imgpath: str
+        Image path of chart image.
+
+    Return
+    ------
+    path : str
+        List of keywords for each table index in each page.
+    """
     path = imgpath
-    # print(imgpath)
     if("dashboard_data" not in imgpath):
         path = imgpath.replace("dashboard", "dashboard_data")
     return path
 
 
 def generate_cards(report_name):
+    """
+    Method to generate card information for each table and chart to view on insights page.
+
+    Parameters
+    ----------
+    report_name: str
+        Company report name selected by user in the library page.
+
+    Return
+    ------
+    card_list : dict of {str : str or dict}
+        Dictionary containing image paths for each table and charts.
+    """
     card_list = []
     count = 0  # counter for images
     report_name = report_name.replace(".pdf", "")
@@ -628,15 +845,12 @@ def generate_cards(report_name):
 
     # Get table images
     for obj in json_input:
-       # print(f"OBJ: {obj['table_images'].items()}")
         if(obj['company'] == report_company_name and obj['year'] == report_year):
             if(obj['table_images'] == "nan"):
                 break
             for page in obj['table_images'].items():
-                # print(f"PAGE: {page[1]}")
                 for index, img in enumerate(page[1]):
                     count = count + 1
-                    # print(f"IMGPATH:  {index} |{img} | {count}")
                     image_path = {
                         "imagepath": img,
                         "pageNum": page[0],
@@ -644,22 +858,17 @@ def generate_cards(report_name):
                         "keywords": getTblKeywords(report_company_name, report_year, page[0], index),
                         "image_count": count,
                     }
-                    # print(f"{count}image found on page {page[0]}: {image_path}")
                     card_list.append(image_path)
             break
 
-    # Get Chart images
+    # Get chart images
     for obj in json_input:
-       # print(f"OBJ: {obj['table_images'].items()}")
         if(obj['company'] == report_company_name and obj['year'] == report_year):
-            # print(f"entered: {obj['chart_images']}")
             if(obj['chart_images'] == "nan"):
                 break
             for page in obj['chart_images'].items():
-                # print(f"PAGE: {page[1]}")
                 for index, img in enumerate(page[1]):
                     count = count + 1
-                    # print(f"IMGPATH:  {index} |{img} | {count}")
                     image_path = {
                         "imagepath": changeFilepath(img),
                         "pageNum": page[0],
@@ -667,20 +876,30 @@ def generate_cards(report_name):
                         "keywords": getChartKeywords(report_company_name, report_year, page[0], index),
                         "image_count": count,
                     }
-                    # print(f"{count}image found on page {page[0]}: {image_path}")
                     card_list.append(image_path)
             break
-
-    # print(card_list)
     return card_list
 
 
 def generate_df_cards():
+    """
+    Method to generate card information for each table dataframe to view on insights page.
+
+    Parameters
+    ----------
+
+    Return
+    ------
+    df_card_lst : dict of {str : str or dict}
+        Dictionary containing data points for each table dataframe
+    list of str
+        List of dropdown values (deprecated)
+    """
     df_card_lst = []
     count = 1  # counter for df
     dropdown_vals = ['All', ]
 
-    # gather keywords
+    # Gather table keywords
     if(report_obj['table_keywords'] == "nan"):
         pass
     else:
@@ -700,7 +919,7 @@ def generate_df_cards():
                     dropdown_vals.extend(kw)
                     count += 1
 
-        # gather dfs
+        # Gather dfs
         idx = 0
         for page, tbls in report_obj['table_dfs'].items():
             if len(tbls) == 0:
@@ -714,11 +933,24 @@ def generate_df_cards():
                     df_card_lst[idx]['df_cols'] = df_col_param
                     idx += 1
 
-    # print(df_card_lst)
     return df_card_lst, sorted(list(set(dropdown_vals)))
 
 
 def generate_insight(report_name, card_list):
+    """
+    Method to generate insights components based on selected report in Library page.
+
+    Parameters
+    ----------
+    report_name: str
+        Company report name selected by user in the library page.
+    card_list : dict of {str : str or dict}
+        Dictionary containing image paths for each table and charts.
+
+    Return
+    ------
+    All insights dash components.
+    """
     insights_header = html.Div(
         className="section-header",
         children=[
@@ -783,7 +1015,7 @@ def generate_insight(report_name, card_list):
         className="insights_left_content",
         children=[
             html.H5("Decarbonisation-Related Chart and Figures"),
-            html.H6(str(len(card_list))+" Images Found"),
+            html.H6(str(len(card_list)) + " Images Found"),
 
             html.Div(
                 className="insights-grid",
@@ -824,7 +1056,6 @@ def generate_insight(report_name, card_list):
             )
         ],
     )
-
     insights_tables = html.Div(
         className="insights_right_content",
         id="insights_cleaned_tables",
@@ -849,11 +1080,10 @@ def generate_insight(report_name, card_list):
 
         ]
     )
-
     return insights
 
 
-# Upload Components
+# ============================== LIBRARY MAIN CODES ==============================
 upload_header = html.Div(
     className="section-header",
     children=[
@@ -922,7 +1152,7 @@ upload_content = html.Div(
                     placeholder="Select Year",
                     options=[
                         {'label': x, 'value': x}
-                        for x in reversed(range(1999, getCurrentYear()))
+                        for x in reversed(range(1999, getDropdownYears()))
                     ],
                     style={
                         'border': "none",
@@ -951,7 +1181,7 @@ upload_fn = html.Div(
         upload_content
     ]
 )
-
+# ============================== APP STARTUP CODES ==============================
 # Default Page when user have not selected a report from library
 default_page = html.Div(
     className="section-main",
@@ -964,31 +1194,44 @@ default_page = html.Div(
             ])
     ]
 )
-# ========================= App Layout ===========================
 right_content = html.Div(
     id="page-content"
 )
-
 
 app.layout = html.Div(
     className='content', children=[
         dcc.Location(id="url", refresh=True), left_content, right_content
     ]
 )
-
-# ========================= Back end callbacks ===========================
-# Callback for NavBar
+# ============================== ALL BACK-END CALLBACKS ==============================
 
 
-@ app.callback(Output("page-content", "children"), [Input("url", "pathname")])
-def render_page_content(pathname):
-    print(f"USER ON: |{pathname}|")
+@ app.callback(
+    Output("page-content", "children"),
+    [
+        Input("url", "pathname")
+    ]
+)
+def render_page_content(pathname):  # Callback for NavBar
+    """
+    Callback method to route user to selected path.
+
+    Parameters
+    ----------
+    pathname: str
+        Path route name
+
+    Return
+    ------
+    Dash components based on path route.
+    """
+    print(f"USER ON PAGE: |{pathname}|")
+    # DEFAULT
     if pathname == "/":
-        print(f"USER ON: |INDEX|")
         return upload_fn
     # DASHBOARD
     elif pathname == "/dashboard":
-        return dcc.Location(pathname="/dashboard/"+getCurrReport(), id="url")
+        return dcc.Location(pathname="/dashboard/" + getCurrReport(), id="url")
     elif pathname == "/dashboard//":
         return default_page
     elif "/dashboard" in pathname:
@@ -1004,23 +1247,19 @@ def render_page_content(pathname):
     elif pathname == "/insights/":
         return dcc.Location(pathname="/insights/"+getCurrReport(), id="url")
     elif "/insights" in pathname:
-        # print(f"substring:{pathname[10:]}|{len(pathname)}")
         if(getCurrReport() in pathname or len(pathname) > 10):
             pass
         else:
             pathname = pathname + getCurrReport()
-        # print(f"==>current path: {pathname}")
         if(pathname != "/insights/"):
             report_name = pathname.split("/")[2]
             setCurrReport(report_name)
             report_curr = getCurrReport()
-            print(f"==> CURRENT PAGE {report_curr}")
             card_list = generate_cards(report_curr)
             return generate_insight(report_curr, card_list)
         return default_page
     # UPLOAD/LIBRARY
     elif pathname == "/upload":
-        print(f"USER ON: |UPLOAD|")
         return upload_fn
     # If the user tries to reach a different page, return a 404 message
     return dbc.Jumbotron(
@@ -1032,48 +1271,67 @@ def render_page_content(pathname):
     )
 
 
-# Validation for URL link
-# Test Link:
-# https://www.uobgroup.com/AR2020/documents/UOB-Sustainability-Report-2020.pdf
-# https://wwwap1se.cdn.triggerfish.cloud/uploads/2018/10/ap1_2017_annual_report.pdf
-
-
 @ app.callback(
     Output("upload-url-output", "children"),
-    Input("inputUrl", "value"))
-def url_render(inputUrl):
+    Input("inputUrl", "value")
+)
+def url_render(inputUrl):  # Validation for URL link
     """
+    Callback method to validate user inputs in upload section in Library page.
     Valid case:
     1. Contains http
     2. Reachable Link
     3. Unique URL link
+
+    Parameters
+    ----------
+    pathname: str
+        Path route name
+
+    Return
+    ------
+    Error message based on user inputs.
     """
     if (inputUrl is None):
         raise PreventUpdate
     else:
         pass
-    # Not Valid: if url does not exist in Json file
+    # 1. Does not contain http
     if("http" not in inputUrl):
-        return u'URL is not a valid link'
+        return u'URL is not a valid link (Does not contain http, or is non-reachable))'
+    # 2. Check if link is reachable using request and catch error if link is broken.
     try:
         response = requests.get(inputUrl)
-        # ExtractPDF function -> check if link can extract pdf
     except:
-        return u"URL link cannot be reached. "
-        # Validation 1: Check if link exist in json
+        return u"URL link is broken or cannot be reached. "
+    # 3. Check if pdf link is unique URL link
     for obj in json_input:
         if(obj['url'] == inputUrl):
             return u"Report already exists "
     else:  # valid case
         return u"Valid URL link "
 
-# Validation for Company Name
-
 
 @ app.callback(
     Output("upload-companyname-output", "children"),
-    Input("inputCompany", "value"))
-def companyName_render(inputCompany):
+    Input("inputCompany", "value")
+)
+def companyName_render(inputCompany):  # Validation for Company Name
+    """
+    Callback method to validate user company inputs in upload section in Library page.
+    Valid case:
+    1. Not empty
+    2. >2 characters
+
+    Parameters
+    ----------
+    inputCompany: str
+        Company name input string.
+
+    Return
+    ------
+    Error message based on user inputs.
+    """
     if (inputCompany is None):
         raise PreventUpdate
     else:
@@ -1083,13 +1341,29 @@ def companyName_render(inputCompany):
     else:  # valid case
         return
 
-# Validation for Years
-
 
 @ app.callback(
     Output('upload-year-output', 'children'),
-    [Input("inputYear-val", "value")])
-def update_output(value):
+    [
+        Input("inputYear-val", "value")
+    ]
+)
+def update_output(value):  # Validation for Years
+    """
+    Callback method to validate user company inputs in upload section in Library page.
+    Valid case:
+    1. Not empty
+    2. Selected a year
+
+    Parameters
+    ----------
+    value: str
+        Dropdown year input.
+
+    Return
+    ------
+    Error message based on user inputs.
+    """
     if (value is None):
         raise PreventUpdate
     else:
@@ -1100,9 +1374,6 @@ def update_output(value):
         return None
 
 
-# Validation upon clicking submit btn
-
-
 @ app.callback(
     Output("upload-output", "children"),
     Input('submit-val', 'n_clicks'),
@@ -1110,9 +1381,32 @@ def update_output(value):
         State("inputUrl", "value"),
         State("inputCompany", "value"),
         State("inputYear", "value")
-    ], prevent_initial_call=True
+    ],
+    prevent_initial_call=True  # Prevent function for running on load
 )
+# Validation upon clicking submit btn
 def input_render(n_clicks, inputUrl, inputCompany, inputYear):
+    """
+    Callback method to validate user company inputs in upload section in Library page.
+    Valid case:
+    1. Not empty
+    2. Selected a year
+
+    Parameters
+    ----------
+    n_clicks: str
+        Number of clicks on btn.
+    inputUrl: str
+        Valid pdf url input by user in upload section.
+    report_company: str
+        Valid report name input by user in upload section.
+    report_year: int
+        Valid report year input by user in upload section.
+
+    Return
+    ------
+    Error message based on user inputs or error processing extraction pipeline.
+    """
     if n_clicks is None:
         raise PreventUpdate
 
@@ -1124,8 +1418,8 @@ def input_render(n_clicks, inputUrl, inputCompany, inputYear):
     if(err_message_list == []):
         try:
             new_url, new_company, new_year = inputUrl, inputCompany, inputYear
-            print("====> NEW REPORT TO ADD: ")
-            print(f"{new_url}|{new_company}| {new_year}")
+            print(
+                f"====> PREPARING TO ADD NEW REPORT: {new_url}|{new_company}| {new_year}")
             filetoappend = f"{new_company}_{new_year}.pdf"
             if(run_extraction_pipeline(new_url, new_company, new_year) == True):
                 global loaded_tbl_all
@@ -1136,41 +1430,59 @@ def input_render(n_clicks, inputUrl, inputCompany, inputYear):
                 json_input = readData(
                     'assets/data/dashboard_data/final_database.json')
                 json_input = processText(json_input)
-                files = uploaded_files()  # For all files dir
+                files = generate_reports()  # For all files dir
                 return dcc.Location(pathname="/insights/"+filetoappend, id="url")
             else:
                 return [html.Ol(className="err-list-ol", children=["- URL link cannot be processed."])]
-
         except Exception as e:
             print(e)
             return [html.Ol(className="err-list-ol", children=["- URL link cannot be processed."])]
     else:
         return [html.Ol(className="err-list-ol", children=[err]) for err in err_message_list]
 
-# Updating file list
-
 
 @ app.callback(
     Output("file-list", "children"),
     Input('searchquery', 'value'),
 )
-def update_output(input_value):
-    # print(f'SEARCHING ====>>>> :|{input_value}|')
-    updateList = generateFilelist(input_value)
+def update_output(input_value):  # Updating file list
+    """
+    Callback method to search query for reports in Library page.
 
+    Parameters
+    ----------
+    input_value: str
+        Search query for report.
+
+    Return
+    ------
+    updateList : list of dash components
+        List of dash components based on user search input value.
+    """
+    updateList = generateSearchFileList(input_value)
     return updateList
-
-    # Callback for filtering of lst of pandas tables
-
-# Callback for filtering of carbon class
-# 36 and 3rd last
 
 
 @ app.callback(
     Output('table-container', 'data'),
-    [Input('filter_dropdown', 'value')])
+    [
+        Input('filter_dropdown', 'value')
+    ]
+)
 def display_table(state):
+    """
+    (Deprecated) Display dataframe tables in Insights page.
 
+    Parameters
+    ----------
+    state: str
+        Dropdown category selection.
+
+    Return
+    ------
+    updateList : Dict of table records
+        Dictionary of table data.
+    """
     df = pd.DataFrame.from_dict({
         x: report_obj['text_output'][x] for x in report_obj['text_output'] if x != "sentence"
     })
@@ -1185,5 +1497,5 @@ def display_table(state):
 if __name__ == "__main__":
     app.run_server(debug=True)
 
-
+# For formatting large json file
 # cat final_database.json | python -m json.tool > finaldb.json

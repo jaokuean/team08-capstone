@@ -19,3 +19,13 @@ deprecated/esgbert/bert.mar
 bert
 
 .requirements.sh.swp
+uncased_L-12_H-768_A-12/bert_config.json
+uncased_L-12_H-768_A-12/bert_model.ckpt.data-00000-of-00001
+uncased_L-12_H-768_A-12/bert_model.ckpt.index
+uncased_L-12_H-768_A-12/bert_model.ckpt.meta
+uncased_L-12_H-768_A-12/vocab.txt
+uncased_L-12_H-768_A-12/bert_config.json
+uncased_L-12_H-768_A-12/bert_model.ckpt.data-00000-of-00001
+uncased_L-12_H-768_A-12/bert_model.ckpt.index
+uncased_L-12_H-768_A-12/bert_model.ckpt.meta
+uncased_L-12_H-768_A-12/vocab.txt
